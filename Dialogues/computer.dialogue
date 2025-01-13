@@ -1,0 +1,10 @@
+~ computerStart
+You interacted with the computer.
+- Check X
+	OMG Everything is terrible
+- Check Bluesky
+	OMG Everything is fine
+
+- Start again => computerStart
+- End the conversation => END
+=> END

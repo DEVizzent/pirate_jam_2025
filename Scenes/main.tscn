@@ -1,0 +1,34 @@
+[gd_scene load_steps=4 format=3 uid="uid://dgkef4gh4x4lj"]
+
+[ext_resource type="Script" path="res://Scripts/load_scene_button.gd" id="1_l42si"]
+[ext_resource type="AudioStream" uid="uid://cev5h7xscfaj" path="res://Audio/I3-Modern - Anticipation Alternative.ogg" id="1_qgd6n"]
+[ext_resource type="PackedScene" uid="uid://saa12b1iubt5" path="res://Scenes/top_down_movement_scene.tscn" id="2_41hwd"]
+
+[node name="Main" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Title" type="Label" parent="CanvasLayer"]
+offset_right = 1152.0
+offset_bottom = 648.0
+theme_override_font_sizes/font_size = 48
+text = "Choose a template"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="2DTopDownButton" type="Button" parent="CanvasLayer"]
+offset_left = 432.0
+offset_top = 384.0
+offset_right = 696.0
+offset_bottom = 416.0
+text = "2D Top down movement
+(BOI, Vampire Survivors, JRPGs)"
+script = ExtResource("1_l42si")
+scene = ExtResource("2_41hwd")
+
+[node name="MusicPlayer" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1_qgd6n")
+autoplay = true
+parameters/looping = true
+
+[connection signal="pressed" from="CanvasLayer/2DTopDownButton" to="CanvasLayer/2DTopDownButton" method="_on_pressed"]

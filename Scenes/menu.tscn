@@ -1,0 +1,203 @@
+[gd_scene load_steps=9 format=3 uid="uid://bko0ifwwfqndb"]
+
+[ext_resource type="Script" path="res://Scripts/play_button.gd" id="1_nyeas"]
+[ext_resource type="Script" path="res://Scripts/credits.gd" id="2_cb2hs"]
+[ext_resource type="AudioStream" uid="uid://pdsjvudu0kf8" path="res://Audio/mouse-click-153941.mp3" id="2_j7bih"]
+[ext_resource type="Script" path="res://Scripts/options.gd" id="2_yb5yv"]
+[ext_resource type="Script" path="res://Scripts/CreditsPanel.gd" id="3_h6cna"]
+[ext_resource type="AudioStream" uid="uid://c7swdp5vyrn1a" path="res://Audio/Spring_In_My_Step.ogg" id="5_n8v8w"]
+[ext_resource type="PackedScene" uid="uid://dj5irjery4ayh" path="res://Scenes/volumeSlider.tscn" id="6_rnviu"]
+[ext_resource type="Script" path="res://Scenes/game_save_controller.gd" id="8_nshsa"]
+
+[node name="Menu" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Title" type="Label" parent="CanvasLayer"]
+offset_top = 128.0
+offset_right = 1152.0
+offset_bottom = 195.0
+theme_override_font_sizes/font_size = 48
+text = "A GAME"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PlayButton" type="Button" parent="CanvasLayer"]
+offset_left = 480.0
+offset_top = 216.0
+offset_right = 664.0
+offset_bottom = 264.0
+text = "Play"
+script = ExtResource("1_nyeas")
+
+[node name="MouseClick" type="AudioStreamPlayer2D" parent="CanvasLayer/PlayButton"]
+stream = ExtResource("2_j7bih")
+bus = &"sfx"
+
+[node name="Options" type="Button" parent="CanvasLayer"]
+offset_left = 480.0
+offset_top = 280.0
+offset_right = 664.0
+offset_bottom = 328.0
+text = "Options"
+script = ExtResource("2_yb5yv")
+
+[node name="MouseClick" type="AudioStreamPlayer2D" parent="CanvasLayer/Options"]
+position = Vector2(0, -64)
+stream = ExtResource("2_j7bih")
+bus = &"sfx"
+
+[node name="Credits" type="Button" parent="CanvasLayer"]
+offset_left = 480.0
+offset_top = 344.0
+offset_right = 664.0
+offset_bottom = 392.0
+text = "Credits"
+script = ExtResource("2_cb2hs")
+
+[node name="MouseClick" type="AudioStreamPlayer2D" parent="CanvasLayer/Credits"]
+position = Vector2(0, -64)
+stream = ExtResource("2_j7bih")
+bus = &"sfx"
+
+[node name="CreditsPanel" type="Panel" parent="CanvasLayer"]
+visible = false
+offset_left = 48.0
+offset_top = 40.0
+offset_right = 1120.0
+offset_bottom = 616.0
+script = ExtResource("3_h6cna")
+
+[node name="MouseClick" type="AudioStreamPlayer2D" parent="CanvasLayer/CreditsPanel"]
+position = Vector2(432, 176)
+stream = ExtResource("2_j7bih")
+bus = &"sfx"
+
+[node name="Title" type="Label" parent="CanvasLayer/CreditsPanel"]
+layout_mode = 0
+offset_left = 408.0
+offset_top = 224.0
+offset_right = 648.0
+offset_bottom = 272.0
+theme_override_font_sizes/font_size = 28
+text = "A Game"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Credits Line 1" type="Label" parent="CanvasLayer/CreditsPanel"]
+layout_mode = 0
+offset_left = 408.0
+offset_top = 272.0
+offset_right = 648.0
+offset_bottom = 320.0
+theme_override_font_sizes/font_size = 16
+text = "by David Church Rodríguez"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CloseButton" type="Button" parent="CanvasLayer/CreditsPanel"]
+layout_mode = 0
+offset_left = 1024.0
+offset_top = 16.0
+offset_right = 1056.0
+offset_bottom = 48.0
+text = "X"
+
+[node name="OptionsPanel" type="Panel" parent="CanvasLayer"]
+visible = false
+offset_left = 48.0
+offset_top = 40.0
+offset_right = 1120.0
+offset_bottom = 616.0
+script = ExtResource("3_h6cna")
+
+[node name="MouseClick" type="AudioStreamPlayer2D" parent="CanvasLayer/OptionsPanel"]
+position = Vector2(432, 176)
+stream = ExtResource("2_j7bih")
+bus = &"sfx"
+
+[node name="Title" type="Label" parent="CanvasLayer/OptionsPanel"]
+layout_mode = 0
+offset_left = 408.0
+offset_top = 56.0
+offset_right = 648.0
+offset_bottom = 104.0
+theme_override_font_sizes/font_size = 28
+text = "Options
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CloseButton" type="Button" parent="CanvasLayer/OptionsPanel"]
+layout_mode = 0
+offset_left = 1024.0
+offset_top = 16.0
+offset_right = 1056.0
+offset_bottom = 48.0
+text = "X"
+
+[node name="MasterVolume" type="Label" parent="CanvasLayer/OptionsPanel"]
+layout_mode = 0
+offset_left = 400.0
+offset_top = 144.0
+offset_right = 518.0
+offset_bottom = 167.0
+text = "Master Volume"
+
+[node name="HSlider" parent="CanvasLayer/OptionsPanel/MasterVolume" instance=ExtResource("6_rnviu")]
+layout_mode = 0
+offset_left = 144.0
+offset_top = 8.0
+offset_right = 244.0
+offset_bottom = 24.0
+bus_name = "Master"
+
+[node name="MusicVolume" type="Label" parent="CanvasLayer/OptionsPanel"]
+layout_mode = 0
+offset_left = 400.0
+offset_top = 176.0
+offset_right = 518.0
+offset_bottom = 199.0
+text = "Music Volume
+"
+
+[node name="HSlider" parent="CanvasLayer/OptionsPanel/MusicVolume" instance=ExtResource("6_rnviu")]
+layout_mode = 0
+offset_left = 144.0
+offset_top = 8.0
+offset_right = 244.0
+offset_bottom = 24.0
+bus_name = "music"
+
+[node name="SFXVolume" type="Label" parent="CanvasLayer/OptionsPanel"]
+layout_mode = 0
+offset_left = 400.0
+offset_top = 208.0
+offset_right = 518.0
+offset_bottom = 231.0
+text = "SFX Volume"
+
+[node name="HSlider" parent="CanvasLayer/OptionsPanel/SFXVolume" instance=ExtResource("6_rnviu")]
+layout_mode = 0
+offset_left = 144.0
+offset_top = 8.0
+offset_right = 244.0
+offset_bottom = 24.0
+bus_name = "sfx"
+
+[node name="MenuMusic" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_n8v8w")
+autoplay = true
+bus = &"music"
+parameters/looping = true
+
+[node name="GameSaveController" type="Node2D" parent="."]
+script = ExtResource("8_nshsa")
+
+[node name="Player" type="Node2D" parent="GameSaveController"]
+
+[connection signal="pressed" from="CanvasLayer/PlayButton" to="CanvasLayer/PlayButton" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/Options" to="CanvasLayer/Options" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/Credits" to="CanvasLayer/Credits" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/CreditsPanel/CloseButton" to="CanvasLayer/CreditsPanel" method="_on_close_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/OptionsPanel/CloseButton" to="CanvasLayer/OptionsPanel" method="_on_close_button_pressed"]

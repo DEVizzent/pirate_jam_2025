@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cev5h7xscfaj"
+path="res://.godot/imported/I3-Modern - Anticipation Alternative.ogg-462983b3566c308d58ea3c4038f94f7f.oggvorbisstr"
+
+[deps]
+
+source_file="res://Audio/I3-Modern - Anticipation Alternative.ogg"
+dest_files=["res://.godot/imported/I3-Modern - Anticipation Alternative.ogg-462983b3566c308d58ea3c4038f94f7f.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
