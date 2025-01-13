@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="2D Game Jam Template"
+config/name="Pirate Software Jam 16"
 run/main_scene="res://Scenes/menu.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
@@ -22,6 +22,7 @@ buses/default_bus_layout="res://Audio/audio_buses.tres"
 [autoload]
 
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
+SfxAudioPlayer="*res://Autoloads/SFXAudioPlayer/sfx_audio_player.tscn"
 
 [editor_plugins]
 

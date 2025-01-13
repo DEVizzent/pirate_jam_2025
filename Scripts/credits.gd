@@ -4,4 +4,4 @@ extends Button
 
 func _on_pressed():
 	Credits_panel.show()
-	get_node("MouseClick").play()
+	SfxAudioPlayer.play("MouseClick")

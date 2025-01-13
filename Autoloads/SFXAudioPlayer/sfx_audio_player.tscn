@@ -1,0 +1,34 @@
+[gd_scene load_steps=8 format=3 uid="uid://ttspdatssrfs"]
+
+[ext_resource type="Script" path="res://Autoloads/SFXAudioPlayer/sfx_audio_player.gd" id="1_l21os"]
+[ext_resource type="Script" path="res://Autoloads/SFXAudioPlayer/sfx_collection.gd" id="2_0mesw"]
+[ext_resource type="Script" path="res://Autoloads/SFXAudioPlayer/sfx_resource.gd" id="3_jxsb1"]
+[ext_resource type="AudioStream" uid="uid://c4eamr8fg4cv7" path="res://Audio/mouse-click-153941.ogg" id="4_d1vc6"]
+
+[sub_resource type="Resource" id="Resource_87kte"]
+script = ExtResource("3_jxsb1")
+sfx_name = "MouseClick"
+sfx_stream = ExtResource("4_d1vc6")
+
+[sub_resource type="Resource" id="Resource_vmfdw"]
+script = ExtResource("2_0mesw")
+sfx_resources = Array[ExtResource("3_jxsb1")]([SubResource("Resource_87kte")])
+
+[sub_resource type="AudioStreamOggVorbis" id="AudioStreamOggVorbis_qk5fs"]
+
+[node name="SfxAudioPlayer" type="Node"]
+script = ExtResource("1_l21os")
+sfx_resource_collection = SubResource("Resource_vmfdw")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = SubResource("AudioStreamOggVorbis_qk5fs")
+bus = &"sfx"
+
+[node name="AudioStreamPlayer1" type="AudioStreamPlayer" parent="."]
+bus = &"sfx"
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+bus = &"sfx"
+
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="."]
+bus = &"sfx"

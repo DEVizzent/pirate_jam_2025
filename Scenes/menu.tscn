@@ -1,8 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://bko0ifwwfqndb"]
+[gd_scene load_steps=8 format=3 uid="uid://bko0ifwwfqndb"]
 
 [ext_resource type="Script" path="res://Scripts/play_button.gd" id="1_nyeas"]
 [ext_resource type="Script" path="res://Scripts/credits.gd" id="2_cb2hs"]
-[ext_resource type="AudioStream" uid="uid://pdsjvudu0kf8" path="res://Audio/mouse-click-153941.mp3" id="2_j7bih"]
 [ext_resource type="Script" path="res://Scripts/options.gd" id="2_yb5yv"]
 [ext_resource type="Script" path="res://Scripts/CreditsPanel.gd" id="3_h6cna"]
 [ext_resource type="AudioStream" uid="uid://c7swdp5vyrn1a" path="res://Audio/Spring_In_My_Step.ogg" id="5_n8v8w"]
@@ -30,10 +29,6 @@ offset_bottom = 264.0
 text = "Play"
 script = ExtResource("1_nyeas")
 
-[node name="MouseClick" type="AudioStreamPlayer2D" parent="CanvasLayer/PlayButton"]
-stream = ExtResource("2_j7bih")
-bus = &"sfx"
-
 [node name="Options" type="Button" parent="CanvasLayer"]
 offset_left = 480.0
 offset_top = 280.0
@@ -41,11 +36,6 @@ offset_right = 664.0
 offset_bottom = 328.0
 text = "Options"
 script = ExtResource("2_yb5yv")
-
-[node name="MouseClick" type="AudioStreamPlayer2D" parent="CanvasLayer/Options"]
-position = Vector2(0, -64)
-stream = ExtResource("2_j7bih")
-bus = &"sfx"
 
 [node name="Credits" type="Button" parent="CanvasLayer"]
 offset_left = 480.0
@@ -55,11 +45,6 @@ offset_bottom = 392.0
 text = "Credits"
 script = ExtResource("2_cb2hs")
 
-[node name="MouseClick" type="AudioStreamPlayer2D" parent="CanvasLayer/Credits"]
-position = Vector2(0, -64)
-stream = ExtResource("2_j7bih")
-bus = &"sfx"
-
 [node name="CreditsPanel" type="Panel" parent="CanvasLayer"]
 visible = false
 offset_left = 48.0
@@ -67,11 +52,6 @@ offset_top = 40.0
 offset_right = 1120.0
 offset_bottom = 616.0
 script = ExtResource("3_h6cna")
-
-[node name="MouseClick" type="AudioStreamPlayer2D" parent="CanvasLayer/CreditsPanel"]
-position = Vector2(432, 176)
-stream = ExtResource("2_j7bih")
-bus = &"sfx"
 
 [node name="Title" type="Label" parent="CanvasLayer/CreditsPanel"]
 layout_mode = 0
@@ -110,11 +90,6 @@ offset_top = 40.0
 offset_right = 1120.0
 offset_bottom = 616.0
 script = ExtResource("3_h6cna")
-
-[node name="MouseClick" type="AudioStreamPlayer2D" parent="CanvasLayer/OptionsPanel"]
-position = Vector2(432, 176)
-stream = ExtResource("2_j7bih")
-bus = &"sfx"
 
 [node name="Title" type="Label" parent="CanvasLayer/OptionsPanel"]
 layout_mode = 0
