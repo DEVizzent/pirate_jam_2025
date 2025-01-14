@@ -23,6 +23,8 @@ buses/default_bus_layout="res://Audio/audio_buses.tres"
 
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
 SfxAudioPlayer="*res://Autoloads/SFXAudioPlayer/sfx_audio_player.tscn"
+EventBus="*res://Autoloads/EventBus/event_bus.gd"
+MusicController="*res://Autoloads/MusicController/music_controller.tscn"
 
 [editor_plugins]
 

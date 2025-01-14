@@ -161,7 +161,6 @@ bus_name = "sfx"
 
 [node name="MenuMusic" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("6_l0j8x")
-autoplay = true
 bus = &"music"
 parameters/looping = true
 
