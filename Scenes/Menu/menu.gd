@@ -21,5 +21,6 @@ func _on_credits_pressed() -> void:
 
 
 func _on_close_button_pressed() -> void:
+	SfxAudioPlayer.play("MouseClick")
 	credits_panel.hide()
 	options_panel.hide()
