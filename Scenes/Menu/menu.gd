@@ -1,8 +1,8 @@
 extends Node2D
 
 @onready var play_scene: PackedScene = preload("res://Scenes/main.tscn")
-@onready var options_panel : Panel = $CanvasLayer/OptionsPanel
-@onready var credits_panel : Panel = $CanvasLayer/CreditsPanel
+@onready var options_panel : Panel = $CanvasLayer/Control/OptionsPanel
+@onready var credits_panel : Panel = $CanvasLayer/Control/CreditsPanel
 
 
 func _on_play_button_pressed() -> void:
