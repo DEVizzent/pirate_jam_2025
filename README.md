@@ -64,7 +64,7 @@ Si nos salta un error diciendo:
 	hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 	```
 Se debe a que nuestres compañeres han entregado cambios que nosotres aun no tenemos. Asi que deberemos descargarlos antes de poder entregar
-`` git pull origin [nombreDeRama en la que estoy] --rebase ```
+``` git pull origin [nombreDeRama en la que estoy] --rebase ```
 Ahora ,si no hay ningun conflicto, podremos entregar los cambios:
 	``` git push origin [devel/o la rama en la que me encuentre] ```
 	
