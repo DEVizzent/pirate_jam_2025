@@ -57,12 +57,12 @@ Al realizar el commit esos cambios siguen estando solo en tu ordenador, para hac
 Si nos salta un error diciendo:
 	```
 	! [rejected]         master -> master (non-fast-forward)
-error: failed to push some refs to 'https://github.com/REDACTED.git'
-hint: Updates were rejected because the tip of your current branch is behind
-hint: its remote counterpart. Integrate the remote changes (e.g.
-hint: 'git pull ...') before pushing again.
-hint: See the 'Note about fast-forwards' in 'git push --help' for details.
-```
+	error: failed to push some refs to 'https://github.com/REDACTED.git'
+	hint: Updates were rejected because the tip of your current branch is behind
+	hint: its remote counterpart. Integrate the remote changes (e.g.
+	hint: 'git pull ...') before pushing again.
+	hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+	```
 Se debe a que nuestres compañeres han entregado cambios que nosotres aun no tenemos. Asi que deberemos descargarlos antes de poder entregar
 `` git pull origin [nombreDeRama en la que estoy] --rebase ```
 Ahora ,si no hay ningun conflicto, podremos entregar los cambios:
@@ -82,3 +82,7 @@ Con ello nuestra herramienta se abrira mostrando los 4 versiones del codigo:
 	4. (Esta es editable) La version final que queremos, donde solucionamos el conflicto.
 Con esto podremos ver como era el codigo antes, y las dos modificaciones que se le hicieron. Asi podremos estrujarnos los sesos para definir que se queda y que se va.
 Tras resolver el conflicto podemos añadir los cambios, entregarlos y distribuirlos.
+
+### La he liado con git, y ahora que?
+
+Muchisimos errores comunes y como arreglarlos de una forma adecuada estan cubiertos aqui: https://ohshitgit.com/ 
