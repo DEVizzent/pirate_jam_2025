@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Autoloads/SFXAudioPlayer/sfx_audio_player.gd" id="1_l21os"]
 [ext_resource type="Script" path="res://Autoloads/SFXAudioPlayer/sfx_collection.gd" id="2_0mesw"]
 [ext_resource type="Script" path="res://Autoloads/SFXAudioPlayer/sfx_resource.gd" id="3_jxsb1"]
-[ext_resource type="AudioStream" uid="uid://c4eamr8fg4cv7" path="res://Audio/mouse-click-153941.ogg" id="4_d1vc6"]
+[ext_resource type="AudioStream" uid="uid://cx3oj0hggp0hm" path="res://Audio/mouse-click-153941.ogg" id="4_d1vc6"]
 
 [sub_resource type="Resource" id="Resource_87kte"]
 script = ExtResource("3_jxsb1")
