@@ -1,8 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://bko0ifwwfqndb"]
+[gd_scene load_steps=3 format=3 uid="uid://bko0ifwwfqndb"]
 
 [ext_resource type="Script" path="res://Scenes/Menu/menu.gd" id="1_8jp8g"]
 [ext_resource type="Script" path="res://Scenes/Menu/volumeSlider.gd" id="5_2dd7u"]
-[ext_resource type="Script" path="res://Scenes/game_save_controller.gd" id="7_0dpyi"]
 
 [node name="Menu" type="Node2D"]
 script = ExtResource("1_8jp8g")
@@ -185,11 +184,6 @@ max_value = 1.0
 step = 0.001
 script = ExtResource("5_2dd7u")
 bus_name = "sfx"
-
-[node name="GameSaveController" type="Node2D" parent="."]
-script = ExtResource("7_0dpyi")
-
-[node name="Player" type="Node2D" parent="GameSaveController"]
 
 [connection signal="pressed" from="CanvasLayer/Control/VBoxContainer/PlayButton" to="." method="_on_play_button_pressed"]
 [connection signal="pressed" from="CanvasLayer/Control/VBoxContainer/Options" to="." method="_on_options_pressed"]
