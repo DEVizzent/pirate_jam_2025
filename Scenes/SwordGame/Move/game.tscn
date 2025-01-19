@@ -34,7 +34,7 @@ size = Vector3(15, 1, 15)
 material = SubResource("StandardMaterial3D_7n8wi")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.415408, 0.909635, 0, -0.909635, 0.415408, 0, 1.5, 0.25)
+transform = Transform3D(1, 0, 0, 0, 0.415408, 0.909635, 0, -0.909635, 0.415408, 0, 1.5, 0.35)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.415281, 0.909693, 0, -0.909693, 0.415281, 0, 1, 1.92086)
@@ -103,6 +103,8 @@ value = 1.0
 nine_patch_stretch = true
 texture_progress = SubResource("PlaceholderTexture2D_n35qy")
 
+[connection signal="game_ended" from="." to="Sword" method="_on_game_game_ended"]
+[connection signal="game_started" from="." to="Sword" method="_on_game_game_started"]
 [connection signal="update_energy_progress_bar" from="." to="UI" method="_on_game_update_energy_progress_bar"]
 [connection signal="update_resistance_progress_bar" from="." to="UI" method="_on_game_update_resistance_progress_bar"]
 [connection signal="sword_mouse_exit" from="Sword" to="." method="_on_sword_sword_mouse_exit"]

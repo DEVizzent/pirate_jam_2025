@@ -2,6 +2,8 @@ extends Node3D
 
 signal update_energy_progress_bar(progress : float)
 signal update_resistance_progress_bar(progress : float)
+signal game_started()
+signal game_ended()
 signal sword_resistance_exhausted()
 signal candidate_energy_exhausted()
 
@@ -36,6 +38,7 @@ func _ready() -> void:
 	sword_resistance_exhausted.connect(_on_sword_resistance_exhausted)
 	await get_tree().create_timer(1.0).timeout
 	game_running = true
+	game_started.emit()
 
 func _process(delta: float) -> void:
 	if not game_running:
@@ -52,10 +55,12 @@ func _on_sword_sword_mouse_exit() -> void:
 
 func _on_candidate_energy_exhausted() -> void:
 	game_running = false
+	game_ended.emit()
 	await get_tree().create_timer(2.0).timeout
 	get_tree().change_scene_to_packed(load("res://Scenes/Menu/menu.tscn"))
 
 func _on_sword_resistance_exhausted() -> void:
 	game_running = false
+	game_ended.emit()
 	await get_tree().create_timer(2.0).timeout
 	get_tree().change_scene_to_packed(load("res://Scenes/Menu/menu.tscn"))
