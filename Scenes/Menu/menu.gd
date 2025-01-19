@@ -1,9 +1,11 @@
 extends Node2D
 
-@onready var play_scene: PackedScene = preload("res://Scenes/main.tscn")
+@onready var play_scene: PackedScene = preload("res://Scenes/SwordGame/Move/game.tscn")
 @onready var options_panel : Panel = $CanvasLayer/Control/OptionsPanel
 @onready var credits_panel : Panel = $CanvasLayer/Control/CreditsPanel
 
+func _ready() -> void:
+	MusicController.switch_to_menu_song()
 
 func _on_play_button_pressed() -> void:
 	SfxAudioPlayer.play("MouseClick")
