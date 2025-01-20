@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://ucnoq3ouiwch"]
+
+[ext_resource type="Texture2D" uid="uid://cpdkifs2jn150" path="res://icon.svg" id="1_007f5"]
+[ext_resource type="Script" path="res://Scenes/SwordGame/Keep/keep_2d.gd" id="1_vb8p8"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_besl6"]
+radius = 120.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ty4kc"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_vb8p8")
+
+[node name="AreaResistance" type="Area2D" parent="."]
+position = Vector2(565, 250)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AreaResistance"]
+shape = SubResource("CircleShape2D_besl6")
+
+[node name="Player" type="Area2D" parent="."]
+position = Vector2(565, 250)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+shape = SubResource("CircleShape2D_ty4kc")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player"]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_007f5")
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="area_entered" from="AreaResistance" to="." method="_on_static_body_entered"]
+[connection signal="area_exited" from="AreaResistance" to="." method="_on_static_body_exited"]

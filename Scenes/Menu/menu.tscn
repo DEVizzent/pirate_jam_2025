@@ -42,6 +42,10 @@ vertical_alignment = 1
 layout_mode = 2
 text = "Play"
 
+[node name="PlayButton2" type="Button" parent="CanvasLayer/Control/VBoxContainer"]
+layout_mode = 2
+text = "Play Keep"
+
 [node name="Options" type="Button" parent="CanvasLayer/Control/VBoxContainer"]
 layout_mode = 2
 text = "Options"
@@ -186,6 +190,7 @@ script = ExtResource("5_2dd7u")
 bus_name = "sfx"
 
 [connection signal="pressed" from="CanvasLayer/Control/VBoxContainer/PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/VBoxContainer/PlayButton2" to="." method="_on_play_keep_button_pressed"]
 [connection signal="pressed" from="CanvasLayer/Control/VBoxContainer/Options" to="." method="_on_options_pressed"]
 [connection signal="pressed" from="CanvasLayer/Control/VBoxContainer/Credits" to="." method="_on_credits_pressed"]
 [connection signal="pressed" from="CanvasLayer/Control/VBoxContainer/Credits" to="CanvasLayer/Control/VBoxContainer/Credits" method="_on_pressed"]
