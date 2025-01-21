@@ -8,4 +8,4 @@ extends Resource
 func apply() -> void:
 		KingdomStats.faith = KingdomStats.faith + faith
 		KingdomStats.food = KingdomStats.food + food
-		KingdomStats.force = KingdomStats.food + force
+		KingdomStats.force = KingdomStats.force + force

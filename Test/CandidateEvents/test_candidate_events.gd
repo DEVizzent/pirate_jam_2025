@@ -23,7 +23,6 @@ func _ready() -> void:
 
 func update_label(_from : int, to : int, label: Label) -> void:
 	label.text = str(to)
-	print_debug("tag updated to " + str(to))
 
 func manage_tag(toggled_on: bool, tag : KingdomEvent.Tag) -> void:
 	if toggled_on:
@@ -33,8 +32,7 @@ func manage_tag(toggled_on: bool, tag : KingdomEvent.Tag) -> void:
 	KingdomStats.tags.erase(tag)
 
 func execute_event() -> void:
-	if current_event.invoke():
-		print_debug("Evento ejecutado")
-	else:
-		print_debug("Evento fallido")
+	if not current_event:
+		print_debug('All events consumed')
+	current_event.invoke()
 	current_event = kingdom_event_collection.pop_front()

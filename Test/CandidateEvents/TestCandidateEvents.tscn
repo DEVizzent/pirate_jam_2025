@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://17m4t26184e5"]
+[gd_scene load_steps=20 format=3 uid="uid://17m4t26184e5"]
 
 [ext_resource type="Script" path="res://Test/CandidateEvents/test_candidate_events.gd" id="1_ceaqs"]
 [ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="2_es8v8"]
@@ -19,14 +19,35 @@ force = 0
 
 [sub_resource type="Resource" id="Resource_1nmud"]
 script = ExtResource("2_es8v8")
+internal_name = "Faith increase 1"
 kingdom_modifier = SubResource("Resource_ku0bb")
 event_condition_collection = Array[ExtResource("3_dbg0o")]([SubResource("Resource_g43t7")])
 probability = 100
 
+[sub_resource type="Resource" id="Resource_x3kcn"]
+script = ExtResource("6_gjxkd")
+stat_to_compare = 0
+operator = 1
+value = 4
+
 [sub_resource type="Resource" id="Resource_f3mdv"]
 script = ExtResource("2_es8v8")
+internal_name = "Faith increase 2"
 kingdom_modifier = SubResource("Resource_ku0bb")
-event_condition_collection = Array[ExtResource("3_dbg0o")]([SubResource("Resource_g43t7")])
+event_condition_collection = Array[ExtResource("3_dbg0o")]([SubResource("Resource_g43t7"), SubResource("Resource_x3kcn")])
+probability = 100
+
+[sub_resource type="Resource" id="Resource_60djc"]
+script = ExtResource("5_0rbm7")
+faith = -2
+food = 1
+force = 1
+
+[sub_resource type="Resource" id="Resource_aiur8"]
+script = ExtResource("2_es8v8")
+internal_name = "Exchange Faith with food and force, no condition"
+kingdom_modifier = SubResource("Resource_60djc")
+event_condition_collection = Array[ExtResource("3_dbg0o")]([])
 probability = 100
 
 [sub_resource type="Resource" id="Resource_76cb2"]
@@ -43,6 +64,7 @@ force = 0
 
 [sub_resource type="Resource" id="Resource_15ooi"]
 script = ExtResource("2_es8v8")
+internal_name = "Increase food if faith 6+"
 kingdom_modifier = SubResource("Resource_p2lpa")
 event_condition_collection = Array[ExtResource("3_dbg0o")]([SubResource("Resource_76cb2")])
 probability = 100
@@ -55,12 +77,14 @@ force = 0
 
 [sub_resource type="Resource" id="Resource_rb1mh"]
 script = ExtResource("2_es8v8")
+internal_name = "increase faith no condition"
 kingdom_modifier = SubResource("Resource_7wuij")
 event_condition_collection = Array[ExtResource("3_dbg0o")]([])
 probability = 100
 
 [sub_resource type="Resource" id="Resource_60mt5"]
 script = ExtResource("2_es8v8")
+internal_name = "Food if faith 6+zs"
 kingdom_modifier = SubResource("Resource_p2lpa")
 event_condition_collection = Array[ExtResource("3_dbg0o")]([SubResource("Resource_76cb2")])
 probability = 100
@@ -73,7 +97,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ceaqs")
-kingdom_event_collection = Array[ExtResource("2_es8v8")]([SubResource("Resource_1nmud"), SubResource("Resource_f3mdv"), SubResource("Resource_15ooi"), SubResource("Resource_rb1mh"), SubResource("Resource_60mt5")])
+kingdom_event_collection = Array[ExtResource("2_es8v8")]([SubResource("Resource_1nmud"), SubResource("Resource_f3mdv"), SubResource("Resource_aiur8"), SubResource("Resource_15ooi"), SubResource("Resource_rb1mh"), SubResource("Resource_60mt5")])
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
