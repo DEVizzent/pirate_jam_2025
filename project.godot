@@ -25,6 +25,7 @@ DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
 SfxAudioPlayer="*res://Autoloads/SFXAudioPlayer/sfx_audio_player.tscn"
 EventBus="*res://Autoloads/EventBus/event_bus.gd"
 MusicController="*res://Autoloads/MusicController/music_controller.tscn"
+KingdomStats="*res://Autoloads/KindomStats/kingdom_stats.gd"
 
 [editor_plugins]
 

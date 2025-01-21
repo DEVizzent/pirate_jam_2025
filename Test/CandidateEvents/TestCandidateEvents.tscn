@@ -1,0 +1,154 @@
+[gd_scene load_steps=17 format=3 uid="uid://17m4t26184e5"]
+
+[ext_resource type="Script" path="res://Test/CandidateEvents/test_candidate_events.gd" id="1_ceaqs"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="2_es8v8"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="3_dbg0o"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition_has_tag.gd" id="4_c4qjg"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_modifier.gd" id="5_0rbm7"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition_has_stat.gd" id="6_gjxkd"]
+
+[sub_resource type="Resource" id="Resource_g43t7"]
+script = ExtResource("4_c4qjg")
+tag = 0
+
+[sub_resource type="Resource" id="Resource_ku0bb"]
+script = ExtResource("5_0rbm7")
+faith = 1
+food = 0
+force = 0
+
+[sub_resource type="Resource" id="Resource_1nmud"]
+script = ExtResource("2_es8v8")
+kingdom_modifier = SubResource("Resource_ku0bb")
+event_condition_collection = Array[ExtResource("3_dbg0o")]([SubResource("Resource_g43t7")])
+probability = 100
+
+[sub_resource type="Resource" id="Resource_f3mdv"]
+script = ExtResource("2_es8v8")
+kingdom_modifier = SubResource("Resource_ku0bb")
+event_condition_collection = Array[ExtResource("3_dbg0o")]([SubResource("Resource_g43t7")])
+probability = 100
+
+[sub_resource type="Resource" id="Resource_76cb2"]
+script = ExtResource("6_gjxkd")
+stat_to_compare = 0
+operator = 1
+value = 5
+
+[sub_resource type="Resource" id="Resource_p2lpa"]
+script = ExtResource("5_0rbm7")
+faith = 0
+food = 2
+force = 0
+
+[sub_resource type="Resource" id="Resource_15ooi"]
+script = ExtResource("2_es8v8")
+kingdom_modifier = SubResource("Resource_p2lpa")
+event_condition_collection = Array[ExtResource("3_dbg0o")]([SubResource("Resource_76cb2")])
+probability = 100
+
+[sub_resource type="Resource" id="Resource_7wuij"]
+script = ExtResource("5_0rbm7")
+faith = 3
+food = 0
+force = 0
+
+[sub_resource type="Resource" id="Resource_rb1mh"]
+script = ExtResource("2_es8v8")
+kingdom_modifier = SubResource("Resource_7wuij")
+event_condition_collection = Array[ExtResource("3_dbg0o")]([])
+probability = 100
+
+[sub_resource type="Resource" id="Resource_60mt5"]
+script = ExtResource("2_es8v8")
+kingdom_modifier = SubResource("Resource_p2lpa")
+event_condition_collection = Array[ExtResource("3_dbg0o")]([SubResource("Resource_76cb2")])
+probability = 100
+
+[node name="TestCandidateEvents" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ceaqs")
+kingdom_event_collection = Array[ExtResource("2_es8v8")]([SubResource("Resource_1nmud"), SubResource("Resource_f3mdv"), SubResource("Resource_15ooi"), SubResource("Resource_rb1mh"), SubResource("Resource_60mt5")])
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 75)
+layout_mode = 2
+alignment = 1
+
+[node name="Faith" type="HBoxContainer" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="Name" type="Label" parent="VBoxContainer/HBoxContainer/Faith"]
+layout_mode = 2
+text = "FAITH: "
+
+[node name="Value" type="Label" parent="VBoxContainer/HBoxContainer/Faith"]
+layout_mode = 2
+text = "4"
+
+[node name="Food" type="HBoxContainer" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="Name" type="Label" parent="VBoxContainer/HBoxContainer/Food"]
+layout_mode = 2
+text = "FOOD:"
+
+[node name="Value" type="Label" parent="VBoxContainer/HBoxContainer/Food"]
+layout_mode = 2
+text = "4
+"
+
+[node name="Force" type="HBoxContainer" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="Name" type="Label" parent="VBoxContainer/HBoxContainer/Force"]
+layout_mode = 2
+text = "FORCE: "
+
+[node name="Value" type="Label" parent="VBoxContainer/HBoxContainer/Force"]
+layout_mode = 2
+text = "4
+"
+
+[node name="CenterContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 25
+alignment = 1
+
+[node name="CheckButton" type="CheckButton" parent="VBoxContainer/CenterContainer"]
+layout_mode = 2
+text = "Example 1"
+
+[node name="CheckButton2" type="CheckButton" parent="VBoxContainer/CenterContainer"]
+layout_mode = 2
+text = "Example 2"
+
+[node name="CheckButton3" type="CheckButton" parent="VBoxContainer/CenterContainer"]
+layout_mode = 2
+text = "Example 3"
+
+[node name="CheckButton4" type="CheckButton" parent="VBoxContainer/CenterContainer"]
+layout_mode = 2
+text = "Example 4"
+
+[node name="CheckButton5" type="CheckButton" parent="VBoxContainer/CenterContainer"]
+layout_mode = 2
+text = "Example 5"
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Execute Current Event
+"
