@@ -1,11 +1,13 @@
-[gd_scene load_steps=20 format=3 uid="uid://17m4t26184e5"]
+[gd_scene load_steps=22 format=3 uid="uid://17m4t26184e5"]
 
 [ext_resource type="Script" path="res://Test/CandidateEvents/test_candidate_events.gd" id="1_ceaqs"]
 [ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="2_es8v8"]
 [ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="3_dbg0o"]
+[ext_resource type="Resource" uid="uid://dadtdvosui7gw" path="res://Dialogues/computer.dialogue" id="3_m6o1e"]
 [ext_resource type="Script" path="res://Resources/Events/event_condition_has_tag.gd" id="4_c4qjg"]
 [ext_resource type="Script" path="res://Resources/Events/kingdom_modifier.gd" id="5_0rbm7"]
 [ext_resource type="Script" path="res://Resources/Events/event_condition_has_stat.gd" id="6_gjxkd"]
+[ext_resource type="Resource" uid="uid://bcget58hmwe6h" path="res://Dialogues/dialogue.dialogue" id="7_pwjcf"]
 
 [sub_resource type="Resource" id="Resource_g43t7"]
 script = ExtResource("4_c4qjg")
@@ -23,6 +25,7 @@ internal_name = "Faith increase 1"
 kingdom_modifier = SubResource("Resource_ku0bb")
 event_condition_collection = Array[ExtResource("3_dbg0o")]([SubResource("Resource_g43t7")])
 probability = 100
+dialog = ExtResource("3_m6o1e")
 
 [sub_resource type="Resource" id="Resource_x3kcn"]
 script = ExtResource("6_gjxkd")
@@ -36,6 +39,7 @@ internal_name = "Faith increase 2"
 kingdom_modifier = SubResource("Resource_ku0bb")
 event_condition_collection = Array[ExtResource("3_dbg0o")]([SubResource("Resource_g43t7"), SubResource("Resource_x3kcn")])
 probability = 100
+dialog = ExtResource("7_pwjcf")
 
 [sub_resource type="Resource" id="Resource_60djc"]
 script = ExtResource("5_0rbm7")

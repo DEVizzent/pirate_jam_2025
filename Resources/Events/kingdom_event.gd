@@ -13,6 +13,7 @@ enum Tag {
 @export var kingdom_modifier : KingdomModifier
 @export var event_condition_collection : Array[EventCondition]
 @export_range(0, 100) var probability : int
+@export var dialog : DialogueResource
 
 func invoke() -> bool:
 	if (randi_range(0,100) > probability):
@@ -24,6 +25,8 @@ func invoke() -> bool:
 			return false
 	#All conditions checked, apply the event
 	kingdom_modifier.apply()
+	if dialog:
+		DialogueManager.show_dialogue_balloon(dialog)
 	print_debug(internal_name + ': Applied!')
 	return true
 	
