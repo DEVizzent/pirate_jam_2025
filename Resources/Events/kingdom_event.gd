@@ -2,6 +2,7 @@ class_name KingdomEvent
 extends Resource
 
 enum Tag {
+	NO_TAG, #Valor por defecto, no hace nada
 	EXAMPLE_1,
 	EXAMPLE_2,
 	EXAMPLE_3,

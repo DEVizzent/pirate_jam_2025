@@ -13,6 +13,8 @@ script = ExtResource("6_oj13l")
 faith = 1
 food = 1
 force = 1
+add_tag = 0
+remove_tag = 0
 
 [sub_resource type="Resource" id="Resource_v60ab"]
 script = ExtResource("2_whwq8")
