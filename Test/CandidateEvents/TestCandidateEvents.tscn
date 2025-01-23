@@ -18,6 +18,8 @@ script = ExtResource("5_0rbm7")
 faith = 1
 food = 0
 force = 0
+add_tag = 0
+remove_tag = 0
 
 [sub_resource type="Resource" id="Resource_1nmud"]
 script = ExtResource("2_es8v8")
@@ -46,6 +48,8 @@ script = ExtResource("5_0rbm7")
 faith = -2
 food = 1
 force = 1
+add_tag = 0
+remove_tag = 0
 
 [sub_resource type="Resource" id="Resource_aiur8"]
 script = ExtResource("2_es8v8")
@@ -65,6 +69,8 @@ script = ExtResource("5_0rbm7")
 faith = 0
 food = 2
 force = 0
+add_tag = 0
+remove_tag = 0
 
 [sub_resource type="Resource" id="Resource_15ooi"]
 script = ExtResource("2_es8v8")
@@ -78,6 +84,8 @@ script = ExtResource("5_0rbm7")
 faith = 3
 food = 0
 force = 0
+add_tag = 0
+remove_tag = 0
 
 [sub_resource type="Resource" id="Resource_rb1mh"]
 script = ExtResource("2_es8v8")

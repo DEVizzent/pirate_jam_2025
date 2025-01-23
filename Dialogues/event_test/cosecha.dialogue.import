@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://bryhfhky7yohy"
+path="res://.godot/imported/cosecha.dialogue-53388fd8efb07afbb73d798005eef8c9.tres"
+
+[deps]
+
+source_file="res://Dialogues/event_test/cosecha.dialogue"
+dest_files=["res://.godot/imported/cosecha.dialogue-53388fd8efb07afbb73d798005eef8c9.tres"]
+
+[params]
+
+defaults=true

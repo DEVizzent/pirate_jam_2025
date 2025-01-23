@@ -1,12 +1,101 @@
-[gd_scene load_steps=13 format=3 uid="uid://dbs076kggosn1"]
+[gd_scene load_steps=29 format=3 uid="uid://dbs076kggosn1"]
 
 [ext_resource type="Script" path="res://Test/CandidateEvents/test_candidates.gd" id="1_q8efg"]
 [ext_resource type="Script" path="res://Resources/candidate.gd" id="2_02q77"]
 [ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="2_whwq8"]
-[ext_resource type="Resource" uid="uid://dadtdvosui7gw" path="res://Dialogues/computer.dialogue" id="3_xih0e"]
+[ext_resource type="PackedScene" uid="uid://bvqnf42a5t62j" path="res://Test/CandidateEvents/candidate_cube.tscn" id="3_cvhll"]
 [ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="4_rbpqn"]
+[ext_resource type="Resource" uid="uid://b23qb220j6eof" path="res://Dialogues/event_test/event.dialogue" id="5_me6i4"]
 [ext_resource type="Script" path="res://Resources/Events/kingdom_modifier.gd" id="6_oj13l"]
-[ext_resource type="Resource" uid="uid://bcget58hmwe6h" path="res://Dialogues/dialogue.dialogue" id="7_144jo"]
+[ext_resource type="Resource" uid="uid://cbhq7hglykaa8" path="res://Dialogues/candidate_tests/pepito.dialogue" id="6_w5aqo"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition_has_stat.gd" id="6_xnay7"]
+[ext_resource type="Resource" uid="uid://b16c6eqkjko4c" path="res://Dialogues/candidate_tests/juanito.dialogue" id="7_6wm5t"]
+[ext_resource type="Resource" uid="uid://d1tq1prd11rdl" path="res://Dialogues/candidate_tests/jilito.dialogue" id="8_nn2fh"]
+[ext_resource type="Resource" uid="uid://bryhfhky7yohy" path="res://Dialogues/event_test/cosecha.dialogue" id="9_8xtl2"]
+[ext_resource type="Resource" uid="uid://c26rbfl3qy2cp" path="res://Dialogues/event_test/hambruna.dialogue" id="10_5tjsy"]
+
+[sub_resource type="Resource" id="Resource_ay685"]
+script = ExtResource("6_oj13l")
+faith = 2
+food = 2
+force = 2
+add_tag = 0
+remove_tag = 0
+
+[sub_resource type="Resource" id="Resource_eaame"]
+script = ExtResource("2_whwq8")
+internal_name = "KingdomGreat"
+kingdom_modifier = SubResource("Resource_ay685")
+event_condition_collection = Array[ExtResource("4_rbpqn")]([])
+probability = 100
+dialog = ExtResource("5_me6i4")
+
+[sub_resource type="Resource" id="Resource_nx46d"]
+script = ExtResource("6_xnay7")
+stat_to_compare = 0
+operator = 1
+value = 4
+
+[sub_resource type="Resource" id="Resource_8cxcy"]
+script = ExtResource("6_oj13l")
+faith = -1
+food = -1
+force = -1
+add_tag = 0
+remove_tag = 0
+
+[sub_resource type="Resource" id="Resource_uwnc5"]
+script = ExtResource("2_whwq8")
+internal_name = "TwentyPos"
+kingdom_modifier = SubResource("Resource_8cxcy")
+event_condition_collection = Array[ExtResource("4_rbpqn")]([SubResource("Resource_nx46d")])
+probability = 20
+dialog = ExtResource("5_me6i4")
+
+[sub_resource type="Resource" id="Resource_oj5vl"]
+script = ExtResource("6_oj13l")
+faith = 0
+food = 3
+force = 0
+add_tag = 2
+remove_tag = 0
+
+[sub_resource type="Resource" id="Resource_xcm4h"]
+script = ExtResource("2_whwq8")
+internal_name = "cosecha"
+kingdom_modifier = SubResource("Resource_oj5vl")
+event_condition_collection = Array[ExtResource("4_rbpqn")]([])
+probability = 75
+dialog = ExtResource("9_8xtl2")
+
+[sub_resource type="Resource" id="Resource_53s06"]
+script = ExtResource("6_xnay7")
+stat_to_compare = 1
+operator = 1
+value = 2
+
+[sub_resource type="Resource" id="Resource_n4euf"]
+script = ExtResource("6_oj13l")
+faith = 0
+food = -3
+force = 0
+add_tag = 0
+remove_tag = 2
+
+[sub_resource type="Resource" id="Resource_4hutg"]
+script = ExtResource("2_whwq8")
+internal_name = "hambruna"
+kingdom_modifier = SubResource("Resource_n4euf")
+event_condition_collection = Array[ExtResource("4_rbpqn")]([SubResource("Resource_53s06")])
+probability = 25
+dialog = ExtResource("10_5tjsy")
+
+[sub_resource type="Resource" id="Resource_ob2bb"]
+script = ExtResource("2_02q77")
+name = "Pepito"
+dialogue = ExtResource("6_w5aqo")
+kingdom_event_collection = Array[ExtResource("2_whwq8")]([SubResource("Resource_eaame"), SubResource("Resource_uwnc5"), SubResource("Resource_xcm4h"), SubResource("Resource_4hutg")])
+character_scene = ExtResource("3_cvhll")
 
 [sub_resource type="Resource" id="Resource_puwfc"]
 script = ExtResource("6_oj13l")
@@ -23,25 +112,16 @@ kingdom_modifier = SubResource("Resource_puwfc")
 event_condition_collection = Array[ExtResource("4_rbpqn")]([])
 probability = 100
 
-[sub_resource type="Resource" id="Resource_ob2bb"]
-script = ExtResource("2_02q77")
-name = "Pepito"
-presentation_dialoge = ExtResource("3_xih0e")
-main_dialoge = ExtResource("7_144jo")
-kingdom_event_collection = Array[ExtResource("2_whwq8")]([SubResource("Resource_v60ab")])
-
 [sub_resource type="Resource" id="Resource_mpo2v"]
 script = ExtResource("2_02q77")
-name = "Pepito"
-presentation_dialoge = ExtResource("3_xih0e")
-main_dialoge = ExtResource("7_144jo")
+name = "Juanito"
+dialogue = ExtResource("7_6wm5t")
 kingdom_event_collection = Array[ExtResource("2_whwq8")]([SubResource("Resource_v60ab")])
 
 [sub_resource type="Resource" id="Resource_r5vxm"]
 script = ExtResource("2_02q77")
-name = "Pepito"
-presentation_dialoge = ExtResource("3_xih0e")
-main_dialoge = ExtResource("7_144jo")
+name = "Jilito"
+dialogue = ExtResource("8_nn2fh")
 kingdom_event_collection = Array[ExtResource("2_whwq8")]([SubResource("Resource_v60ab")])
 
 [node name="TestCandidateEvents" type="Control"]

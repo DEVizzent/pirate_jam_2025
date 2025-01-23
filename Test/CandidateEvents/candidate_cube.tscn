@@ -1,0 +1,107 @@
+[gd_scene load_steps=10 format=3 uid="uid://bvqnf42a5t62j"]
+
+[ext_resource type="Script" path="res://Test/CandidateEvents/candidate_cube.gd" id="1_f8r4r"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ob7d1"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_e0w8i"]
+
+[sub_resource type="Animation" id="Animation_s7g2u"]
+resource_name = "happy"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MeshInstance3D:material_override:albedo_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0, 0.964706, 0, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_om3pr"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MeshInstance3D:material_override:albedo_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "position_3d"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = PackedFloat32Array(0, 1, 0, 0, 0)
+
+[sub_resource type="Animation" id="Animation_avgs6"]
+resource_name = "sad"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MeshInstance3D:material_override:albedo_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0, 0, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_2ye4u"]
+resource_name = "angry"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MeshInstance3D:material_override:albedo_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 0, 0, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_6fyr8"]
+resource_name = "vibrate"
+length = 0.8
+loop_mode = 1
+tracks/0/type = "position_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0, 0, 0, 0.2, 1, 0, -0.2, 0, 0.6, 1, 0, 0.2, 0, 0.8, 1, 0, 0, 0)
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_dp0cu"]
+_data = {
+"RESET": SubResource("Animation_om3pr"),
+"angry": SubResource("Animation_2ye4u"),
+"happy": SubResource("Animation_s7g2u"),
+"sad": SubResource("Animation_avgs6"),
+"vibrate": SubResource("Animation_6fyr8")
+}
+
+[node name="CandidateCube" type="Node3D"]
+script = ExtResource("1_f8r4r")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+material_override = SubResource("StandardMaterial3D_ob7d1")
+mesh = SubResource("CapsuleMesh_e0w8i")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_dp0cu")
+}

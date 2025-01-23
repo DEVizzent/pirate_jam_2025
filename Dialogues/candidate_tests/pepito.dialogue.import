@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://cbhq7hglykaa8"
+path="res://.godot/imported/pepito.dialogue-2cca14186b29897dd14b919eee5a8906.tres"
+
+[deps]
+
+source_file="res://Dialogues/candidate_tests/pepito.dialogue"
+dest_files=["res://.godot/imported/pepito.dialogue-2cca14186b29897dd14b919eee5a8906.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://d1tq1prd11rdl"
+path="res://.godot/imported/jilito.dialogue-f94c47ebebce0eb8315bcbc46259b902.tres"
+
+[deps]
+
+source_file="res://Dialogues/candidate_tests/jilito.dialogue"
+dest_files=["res://.godot/imported/jilito.dialogue-f94c47ebebce0eb8315bcbc46259b902.tres"]
+
+[params]
+
+defaults=true

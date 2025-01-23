@@ -24,6 +24,15 @@ func _ready() -> void:
 	$VBoxContainer/HBoxContainer2/VBoxContainer/Button.pressed.connect(choose_candidate.bind(candidate1))
 	$VBoxContainer/HBoxContainer2/VBoxContainer2/Button.pressed.connect(choose_candidate.bind(candidate2))
 	$VBoxContainer/HBoxContainer2/VBoxContainer3/Button.pressed.connect(choose_candidate.bind(candidate3))
+	candidates_introduction()
+	
+func candidates_introduction() -> void:
+	DialogueManager.show_dialogue_balloon(candidate1.dialogue, "presentation")
+	await DialogueManager.dialogue_ended
+	DialogueManager.show_dialogue_balloon(candidate2.dialogue, "presentation")
+	await DialogueManager.dialogue_ended
+	DialogueManager.show_dialogue_balloon(candidate3.dialogue, "presentation")
+	await DialogueManager.dialogue_ended
 	
 
 func set_candidates() -> void:
@@ -44,7 +53,7 @@ func manage_tag(toggled_on: bool, tag : KingdomEvent.Tag) -> void:
 
 func choose_candidate(choosen_one : Candidate) -> void:
 	print_debug('Long live to king ' + choosen_one.name + '!!!!')
-	DialogueManager.show_dialogue_balloon(choosen_one.presentation_dialoge)
-	DialogueManager.show_dialogue_balloon(choosen_one.main_dialoge)
+	DialogueManager.show_dialogue_balloon(choosen_one.dialogue, 'main')
+	await DialogueManager.dialogue_ended
 	for event in choosen_one.kingdom_event_collection:
-		event.invoke()
+		await event.invoke()

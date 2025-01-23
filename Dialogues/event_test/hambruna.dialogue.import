@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://c26rbfl3qy2cp"
+path="res://.godot/imported/hambruna.dialogue-476a82f7fdaa0e64cc3f7a00736f75b5.tres"
+
+[deps]
+
+source_file="res://Dialogues/event_test/hambruna.dialogue"
+dest_files=["res://.godot/imported/hambruna.dialogue-476a82f7fdaa0e64cc3f7a00736f75b5.tres"]
+
+[params]
+
+defaults=true
