@@ -34,7 +34,7 @@ enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://Dialogues/dialogue.dialogue", "res://Dialogues/computer.dialogue", "res://Dialogues/candidate_tests_2/main.dialogue", "res://Dialogues/candidate_tests_2/presentation.dialogue", "res://Dialogues/candidate_tests_3/presentation.dialogue", "res://Dialogues/candidate_tests_3/main.dialogue", "res://Dialogues/candidate_tests/pepito.dialogue", "res://Dialogues/candidate_tests/juanito.dialogue", "res://Dialogues/candidate_tests/jilito.dialogue", "res://Dialogues/event_test/hambruna.dialogue", "res://Dialogues/event_test/cosecha.dialogue", "res://Dialogues/event_test/event.dialogue")
+locale/translations_pot_files=PackedStringArray("res://Dialogues/dialogue.dialogue", "res://Dialogues/computer.dialogue", "res://Dialogues/candidate_tests/pepito.dialogue", "res://Dialogues/candidate_tests/juanito.dialogue", "res://Dialogues/candidate_tests/jilito.dialogue", "res://Dialogues/event_test/hambruna.dialogue", "res://Dialogues/event_test/cosecha.dialogue", "res://Dialogues/event_test/event.dialogue")
 
 [rendering]
 
