@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Candidate" load_steps=3 format=3 uid="uid://coyj65bhp68rf"]
+
+[ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="1_upd1q"]
+[ext_resource type="Script" path="res://Resources/candidate.gd" id="2_vkw4g"]
+
+[resource]
+script = ExtResource("2_vkw4g")
+name = "Morgana La Fey"
+kingdom_event_collection = Array[ExtResource("1_upd1q")]([])

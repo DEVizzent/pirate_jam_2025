@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://b1dk1pdw7e11s"
+path="res://.godot/imported/HighFoodFamineDialogue.dialogue-990329e6f8d87794dc2fb1aaf888e9f1.tres"
+
+[deps]
+
+source_file="res://Resources/Event Resources/General/HighFoodFamineDialogue.dialogue"
+dest_files=["res://.godot/imported/HighFoodFamineDialogue.dialogue-990329e6f8d87794dc2fb1aaf888e9f1.tres"]
+
+[params]
+
+defaults=true

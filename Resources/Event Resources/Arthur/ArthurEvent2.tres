@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="KingdomEvent" load_steps=6 format=3 uid="uid://c7c7lm6w6wrxf"]
+
+[ext_resource type="Resource" uid="uid://53jjil1nxfro" path="res://Resources/Event Resources/Arthur/ArthurEvent2Dialogue.dialogue" id="1_6hs8t"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="2_bn5im"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_modifier.gd" id="3_r67dx"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="4_l0rc8"]
+
+[sub_resource type="Resource" id="Resource_gvmm7"]
+script = ExtResource("3_r67dx")
+faith = 1
+food = -1
+force = 1
+add_tag = 0
+remove_tag = 0
+
+[resource]
+script = ExtResource("4_l0rc8")
+internal_name = "ArthurEvent2"
+kingdom_modifier = SubResource("Resource_gvmm7")
+event_condition_collection = Array[ExtResource("2_bn5im")]([])
+probability = 50
+dialog = ExtResource("1_6hs8t")

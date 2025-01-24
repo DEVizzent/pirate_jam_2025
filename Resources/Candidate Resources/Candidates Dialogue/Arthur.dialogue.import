@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://b3uobovy7vyb"
+path="res://.godot/imported/Arthur.dialogue-cb03895a9e389085c36fa4545795d662.tres"
+
+[deps]
+
+source_file="res://Resources/Candidate Resources/Candidates Dialogue/Arthur.dialogue"
+dest_files=["res://.godot/imported/Arthur.dialogue-cb03895a9e389085c36fa4545795d662.tres"]
+
+[params]
+
+defaults=true

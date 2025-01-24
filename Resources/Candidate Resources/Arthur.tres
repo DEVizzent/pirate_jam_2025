@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Candidate" load_steps=4 format=3 uid="uid://bv2s115vi22nf"]
+
+[ext_resource type="Resource" uid="uid://b3uobovy7vyb" path="res://Resources/Candidate Resources/Candidates Dialogue/Arthur.dialogue" id="1_qqtdh"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="2_41o7j"]
+[ext_resource type="Script" path="res://Resources/candidate.gd" id="3_kmtak"]
+
+[resource]
+script = ExtResource("3_kmtak")
+name = "Arthur Pendragon"
+dialogue = ExtResource("1_qqtdh")
+kingdom_event_collection = Array[ExtResource("2_41o7j")]([])
