@@ -1,6 +1,8 @@
 ~ main
+do DialogueEventBus.animate("Pepito", "happy")
 Pepito: I will do Britania great again.
 => END
 ~ presentation
+do DialogueEventBus.animate("Pepito", "happy")
 Pepito: Hello, I'm a motherfucker king
 => END

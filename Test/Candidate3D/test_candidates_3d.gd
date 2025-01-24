@@ -1,4 +1,4 @@
-extends Control
+extends Node3D
 
 @onready var faith_value_label : Label = $VBoxContainer/HBoxContainer/Faith/Value
 @onready var food_value_label : Label = $VBoxContainer/HBoxContainer/Food/Value
@@ -9,23 +9,35 @@ var candidate1 : Candidate
 var candidate2 : Candidate
 var candidate3 : Candidate
 
+var character_candidate1 : Node3D
+var character_candidate2 : Node3D
+var character_candidate3 : Node3D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	EventBus.faith_changed.connect(update_label.bind(faith_value_label))
-	EventBus.food_changed.connect(update_label.bind(food_value_label))
-	EventBus.force_changed.connect(update_label.bind(force_value_label))
-	$VBoxContainer/CenterContainer/CheckButton.toggled.connect(manage_tag.bind(KingdomEvent.Tag.EXAMPLE_1))
-	$VBoxContainer/CenterContainer/CheckButton2.toggled.connect(manage_tag.bind(KingdomEvent.Tag.EXAMPLE_2))
-	$VBoxContainer/CenterContainer/CheckButton3.toggled.connect(manage_tag.bind(KingdomEvent.Tag.EXAMPLE_3))
-	$VBoxContainer/CenterContainer/CheckButton4.toggled.connect(manage_tag.bind(KingdomEvent.Tag.EXAMPLE_4))
-	$VBoxContainer/CenterContainer/CheckButton5.toggled.connect(manage_tag.bind(KingdomEvent.Tag.EXAMPLE_5))
 	set_candidates()
-	$VBoxContainer/HBoxContainer2/VBoxContainer/Button.pressed.connect(choose_candidate.bind(candidate1))
-	$VBoxContainer/HBoxContainer2/VBoxContainer2/Button.pressed.connect(choose_candidate.bind(candidate2))
-	$VBoxContainer/HBoxContainer2/VBoxContainer3/Button.pressed.connect(choose_candidate.bind(candidate3))
+	candidate_in_scene()
+	
+func candidate_in_scene() -> void:
+	character_candidate1 = candidate1.get_character()
+	add_child(character_candidate1)
+	character_candidate1.position = Vector3(4, 0, -1)
+	character_candidate2 = candidate2.get_character()
+	add_child(character_candidate2)
+	character_candidate2.position = Vector3(0, 0, -4)
+	character_candidate3 = candidate3.get_character()
+	add_child(character_candidate3)
+	character_candidate3.position = Vector3(-4, 0, -1)
+	var tween = create_tween()
+	tween.set_parallel(true)
+	tween.tween_property(character_candidate1, "position", Vector3(4, 0, 4), 3.0)
+	tween.tween_property(character_candidate2, "position", Vector3(0, 0, 4), 3.0)
+	tween.tween_property(character_candidate3, "position", Vector3(-4, 0, 4), 3.0)
+	await tween.finished
 	candidates_introduction()
 	
+	
+
 func candidates_introduction() -> void:
 	DialogueManager.show_dialogue_balloon(candidate1.dialogue, "presentation")
 	await DialogueManager.dialogue_ended
@@ -39,16 +51,6 @@ func set_candidates() -> void:
 	candidate1 = kingdom_candidate_collection.pop_front()
 	candidate2 = kingdom_candidate_collection.pop_front()
 	candidate3 = kingdom_candidate_collection.pop_front()
-
-func update_label(_from : int, to : int, label: Label) -> void:
-	label.text = str(to)
-
-func manage_tag(toggled_on: bool, tag : KingdomEvent.Tag) -> void:
-	if toggled_on:
-		KingdomStats.tags.append(tag)
-		return
-	
-	KingdomStats.tags.erase(tag)
 
 func choose_candidate(choosen_one : Candidate) -> void:
 	print_debug('Long live to king ' + choosen_one.name + '!!!!')

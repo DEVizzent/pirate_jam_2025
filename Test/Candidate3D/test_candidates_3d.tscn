@@ -1,0 +1,181 @@
+[gd_scene load_steps=30 format=3 uid="uid://p1134m4hptc2"]
+
+[ext_resource type="Script" path="res://Test/Candidate3D/test_candidates_3d.gd" id="1_v6afb"]
+[ext_resource type="PackedScene" uid="uid://c17hbfgkcfgkt" path="res://Test/Candidate3D/test_candidates_ui.tscn" id="2_c238h"]
+[ext_resource type="Script" path="res://Resources/candidate.gd" id="2_nqnq0"]
+[ext_resource type="PackedScene" uid="uid://bvqnf42a5t62j" path="res://Test/CandidateEvents/candidate_cube.tscn" id="3_w0x60"]
+[ext_resource type="Resource" uid="uid://cbhq7hglykaa8" path="res://Dialogues/candidate_tests/pepito.dialogue" id="4_osof0"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="5_uotmy"]
+[ext_resource type="Resource" uid="uid://b23qb220j6eof" path="res://Dialogues/event_test/event.dialogue" id="6_mn1xo"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="7_w3glc"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_modifier.gd" id="8_7d1t4"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition_has_stat.gd" id="9_4sau4"]
+[ext_resource type="Resource" uid="uid://bryhfhky7yohy" path="res://Dialogues/event_test/cosecha.dialogue" id="10_1p1p7"]
+[ext_resource type="Resource" uid="uid://c26rbfl3qy2cp" path="res://Dialogues/event_test/hambruna.dialogue" id="11_8wkkf"]
+[ext_resource type="Resource" uid="uid://b16c6eqkjko4c" path="res://Dialogues/candidate_tests/juanito.dialogue" id="12_37bi6"]
+[ext_resource type="Resource" uid="uid://d1tq1prd11rdl" path="res://Dialogues/candidate_tests/jilito.dialogue" id="13_1ha4d"]
+
+[sub_resource type="Resource" id="Resource_ay685"]
+script = ExtResource("8_7d1t4")
+faith = 2
+food = 2
+force = 2
+add_tag = 0
+remove_tag = 0
+
+[sub_resource type="Resource" id="Resource_eaame"]
+script = ExtResource("5_uotmy")
+internal_name = "KingdomGreat"
+kingdom_modifier = SubResource("Resource_ay685")
+event_condition_collection = Array[ExtResource("7_w3glc")]([])
+probability = 100
+dialog = ExtResource("6_mn1xo")
+
+[sub_resource type="Resource" id="Resource_nx46d"]
+script = ExtResource("9_4sau4")
+stat_to_compare = 0
+operator = 1
+value = 4
+
+[sub_resource type="Resource" id="Resource_8cxcy"]
+script = ExtResource("8_7d1t4")
+faith = -1
+food = -1
+force = -1
+add_tag = 0
+remove_tag = 0
+
+[sub_resource type="Resource" id="Resource_uwnc5"]
+script = ExtResource("5_uotmy")
+internal_name = "TwentyPos"
+kingdom_modifier = SubResource("Resource_8cxcy")
+event_condition_collection = Array[ExtResource("7_w3glc")]([SubResource("Resource_nx46d")])
+probability = 20
+dialog = ExtResource("6_mn1xo")
+
+[sub_resource type="Resource" id="Resource_oj5vl"]
+script = ExtResource("8_7d1t4")
+faith = 0
+food = 3
+force = 0
+add_tag = 2
+remove_tag = 0
+
+[sub_resource type="Resource" id="Resource_xcm4h"]
+script = ExtResource("5_uotmy")
+internal_name = "cosecha"
+kingdom_modifier = SubResource("Resource_oj5vl")
+event_condition_collection = Array[ExtResource("7_w3glc")]([])
+probability = 75
+dialog = ExtResource("10_1p1p7")
+
+[sub_resource type="Resource" id="Resource_53s06"]
+script = ExtResource("9_4sau4")
+stat_to_compare = 1
+operator = 1
+value = 2
+
+[sub_resource type="Resource" id="Resource_n4euf"]
+script = ExtResource("8_7d1t4")
+faith = 0
+food = -3
+force = 0
+add_tag = 0
+remove_tag = 2
+
+[sub_resource type="Resource" id="Resource_4hutg"]
+script = ExtResource("5_uotmy")
+internal_name = "hambruna"
+kingdom_modifier = SubResource("Resource_n4euf")
+event_condition_collection = Array[ExtResource("7_w3glc")]([SubResource("Resource_53s06")])
+probability = 25
+dialog = ExtResource("11_8wkkf")
+
+[sub_resource type="Resource" id="Resource_2w5tm"]
+script = ExtResource("2_nqnq0")
+name = "Pepito"
+dialogue = ExtResource("4_osof0")
+kingdom_event_collection = Array[ExtResource("5_uotmy")]([SubResource("Resource_eaame"), SubResource("Resource_uwnc5"), SubResource("Resource_xcm4h"), SubResource("Resource_4hutg")])
+character_scene = ExtResource("3_w0x60")
+
+[sub_resource type="Resource" id="Resource_puwfc"]
+script = ExtResource("8_7d1t4")
+faith = 1
+food = 1
+force = 1
+add_tag = 0
+remove_tag = 0
+
+[sub_resource type="Resource" id="Resource_v60ab"]
+script = ExtResource("5_uotmy")
+internal_name = "candidate"
+kingdom_modifier = SubResource("Resource_puwfc")
+event_condition_collection = Array[ExtResource("7_w3glc")]([])
+probability = 100
+
+[sub_resource type="Resource" id="Resource_1ixce"]
+script = ExtResource("2_nqnq0")
+name = "Juanito"
+dialogue = ExtResource("12_37bi6")
+kingdom_event_collection = Array[ExtResource("5_uotmy")]([SubResource("Resource_v60ab")])
+character_scene = ExtResource("3_w0x60")
+
+[sub_resource type="Resource" id="Resource_py4ev"]
+script = ExtResource("2_nqnq0")
+name = "Jilito"
+dialogue = ExtResource("13_1ha4d")
+kingdom_event_collection = Array[ExtResource("5_uotmy")]([SubResource("Resource_v60ab")])
+character_scene = ExtResource("3_w0x60")
+
+[node name="TestCandidates3D" type="Node3D"]
+script = ExtResource("1_v6afb")
+kingdom_candidate_collection = Array[ExtResource("2_nqnq0")]([SubResource("Resource_2w5tm"), SubResource("Resource_1ixce"), SubResource("Resource_py4ev")])
+
+[node name="Sala" type="Node3D" parent="."]
+
+[node name="Suelo" type="CSGBox3D" parent="Sala"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+size = Vector3(12, 1, 12)
+
+[node name="Techo" type="CSGBox3D" parent="Sala"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.5, 0)
+size = Vector3(12, 1, 12)
+
+[node name="ParedZ1" type="CSGBox3D" parent="Sala"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, -6)
+size = Vector3(12, 6, 1)
+
+[node name="ParedZ2" type="CSGBox3D" parent="Sala"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 6)
+size = Vector3(12, 6, 1)
+
+[node name="ParedX1" type="CSGBox3D" parent="Sala"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 2.5, 0)
+size = Vector3(1, 6, 12)
+
+[node name="ParedX2" type="CSGBox3D" parent="Sala"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 2.5, 0)
+size = Vector3(1, 6, 12)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Sala"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 2, 2)
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="Sala"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 2, -2)
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="Sala"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 2, 2)
+
+[node name="OmniLight3D4" type="OmniLight3D" parent="Sala"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 2, -2)
+
+[node name="OmniLight3D5" type="OmniLight3D" parent="Sala"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 1)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-1, -1.51808e-08, 8.60946e-08, 0, 0.984808, 0.173648, -8.74228e-08, 0.173648, -0.984808, 0, 1.5, -3)
+
+[node name="TestCandidateUI" parent="." instance=ExtResource("2_c238h")]
+
+[node name="Node3D" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -1)

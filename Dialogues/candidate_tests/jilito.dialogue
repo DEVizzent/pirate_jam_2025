@@ -1,7 +1,8 @@
 ~ main
-
+do DialogueEventBus.animate("Pepito", "angry")
 Jilito: A grup of events will happen
 => END
 ~ presentation
+do DialogueEventBus.animate("Pepito", "angry")
 Jilito: Good morning ladies and gentlemen. I'm a tea pot.
 => END
