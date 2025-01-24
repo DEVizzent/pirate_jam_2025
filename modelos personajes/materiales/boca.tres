@@ -1,0 +1,10 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://dokiiilk8xw7s"]
+
+[ext_resource type="Shader" path="res://modelos personajes/materiales/segunda_text.gdshader" id="1_o6qgd"]
+[ext_resource type="Texture2D" uid="uid://df2t0gnnfmdc0" path="res://modelos personajes/texturas/caras/caramorgana.png" id="2_6s0uo"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_o6qgd")
+shader_parameter/face_animation = Vector2(0.25, 0.5)
+shader_parameter/second_texture = ExtResource("2_6s0uo")
