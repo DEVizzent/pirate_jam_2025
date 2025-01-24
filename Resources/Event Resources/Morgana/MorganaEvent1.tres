@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="KingdomEvent" load_steps=7 format=3 uid="uid://b5niwg6ntdh3s"]
+
+[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_4o51y"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="1_pfcs0"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_modifier.gd" id="2_ni424"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="3_22vwh"]
+
+[sub_resource type="Resource" id="Resource_wemsq"]
+script = ExtResource("1_4o51y")
+using_states = PackedStringArray()
+titles = {}
+character_names = PackedStringArray()
+first_title = ""
+lines = {}
+raw_text = ""
+
+[sub_resource type="Resource" id="Resource_gvmm7"]
+script = ExtResource("2_ni424")
+faith = 1
+food = 1
+force = 0
+add_tag = 7
+remove_tag = 0
+
+[resource]
+script = ExtResource("3_22vwh")
+internal_name = "MorganaEvent1"
+kingdom_modifier = SubResource("Resource_gvmm7")
+event_condition_collection = Array[ExtResource("1_pfcs0")]([])
+probability = 100
+dialog = SubResource("Resource_wemsq")

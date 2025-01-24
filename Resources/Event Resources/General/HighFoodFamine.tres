@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="KingdomEvent" load_steps=8 format=3 uid="uid://bn14q23qa60o8"]
+
+[ext_resource type="Resource" uid="uid://b1dk1pdw7e11s" path="res://Resources/Event Resources/General/HighFoodFamineDialogue.dialogue" id="1_5u6e7"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="1_tdkty"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="2_w5558"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition_has_stat.gd" id="3_6jc3e"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_modifier.gd" id="4_8mj3s"]
+
+[sub_resource type="Resource" id="Resource_6pj80"]
+script = ExtResource("3_6jc3e")
+stat_to_compare = 1
+operator = 1
+value = 6
+
+[sub_resource type="Resource" id="Resource_tvcvh"]
+script = ExtResource("4_8mj3s")
+faith = 0
+food = -2
+force = 0
+add_tag = 8
+remove_tag = 0
+
+[resource]
+script = ExtResource("2_w5558")
+internal_name = "HighFoodFamine"
+kingdom_modifier = SubResource("Resource_tvcvh")
+event_condition_collection = Array[ExtResource("1_tdkty")]([SubResource("Resource_6pj80")])
+probability = 50
+dialog = ExtResource("1_5u6e7")

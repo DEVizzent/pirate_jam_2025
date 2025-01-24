@@ -8,6 +8,9 @@ enum Tag {
 	EXAMPLE_3,
 	EXAMPLE_4,
 	EXAMPLE_5,
+	PAGANS_EXILED,
+	FAE_WELCOME,
+	FAMINE,
 }
 
 @export var internal_name : String = ''
