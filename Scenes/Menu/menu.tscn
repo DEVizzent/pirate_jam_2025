@@ -3,20 +3,16 @@
 [ext_resource type="Script" path="res://Scenes/Menu/menu.gd" id="1_8jp8g"]
 [ext_resource type="Script" path="res://Scenes/Menu/volumeSlider.gd" id="5_2dd7u"]
 
-[node name="Menu" type="Node2D"]
-script = ExtResource("1_8jp8g")
-
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="Control" type="Control" parent="CanvasLayer"]
+[node name="Menu" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_8jp8g")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Control"]
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -31,30 +27,30 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 40
 
-[node name="Title" type="Label" parent="CanvasLayer/Control/VBoxContainer"]
+[node name="Title" type="Label" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 48
 text = "A GAME"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="PlayButton" type="Button" parent="CanvasLayer/Control/VBoxContainer"]
+[node name="PlayButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 text = "Play"
 
-[node name="PlayButton2" type="Button" parent="CanvasLayer/Control/VBoxContainer"]
+[node name="PlayButton2" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 text = "Play Keep"
 
-[node name="Options" type="Button" parent="CanvasLayer/Control/VBoxContainer"]
+[node name="Options" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 text = "Options"
 
-[node name="Credits" type="Button" parent="CanvasLayer/Control/VBoxContainer"]
+[node name="Credits" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 text = "Credits"
 
-[node name="CreditsPanel" type="Panel" parent="CanvasLayer/Control"]
+[node name="CreditsPanel" type="Panel" parent="."]
 visible = false
 layout_mode = 1
 anchors_preset = 8
@@ -69,7 +65,7 @@ offset_bottom = 288.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Title" type="Label" parent="CanvasLayer/Control/CreditsPanel"]
+[node name="Title" type="Label" parent="CreditsPanel"]
 layout_mode = 0
 offset_left = 408.0
 offset_top = 224.0
@@ -80,7 +76,7 @@ text = "A Game"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Credits Line 1" type="Label" parent="CanvasLayer/Control/CreditsPanel"]
+[node name="Credits Line 1" type="Label" parent="CreditsPanel"]
 layout_mode = 0
 offset_left = 408.0
 offset_top = 272.0
@@ -91,7 +87,7 @@ text = "by David Church Rodríguez"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="CloseButton" type="Button" parent="CanvasLayer/Control/CreditsPanel"]
+[node name="CloseButton" type="Button" parent="CreditsPanel"]
 layout_mode = 0
 offset_left = 1024.0
 offset_top = 16.0
@@ -99,7 +95,7 @@ offset_right = 1056.0
 offset_bottom = 48.0
 text = "X"
 
-[node name="OptionsPanel" type="Panel" parent="CanvasLayer/Control"]
+[node name="OptionsPanel" type="Panel" parent="."]
 visible = false
 layout_mode = 1
 anchors_preset = 8
@@ -114,7 +110,7 @@ offset_bottom = 288.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Title" type="Label" parent="CanvasLayer/Control/OptionsPanel"]
+[node name="Title" type="Label" parent="OptionsPanel"]
 layout_mode = 0
 offset_left = 408.0
 offset_top = 56.0
@@ -126,7 +122,7 @@ text = "Options
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="CloseButton" type="Button" parent="CanvasLayer/Control/OptionsPanel"]
+[node name="CloseButton" type="Button" parent="OptionsPanel"]
 layout_mode = 0
 offset_left = 1024.0
 offset_top = 16.0
@@ -134,7 +130,7 @@ offset_right = 1056.0
 offset_bottom = 48.0
 text = "X"
 
-[node name="MasterVolume" type="Label" parent="CanvasLayer/Control/OptionsPanel"]
+[node name="MasterVolume" type="Label" parent="OptionsPanel"]
 layout_mode = 0
 offset_left = 400.0
 offset_top = 144.0
@@ -142,7 +138,7 @@ offset_right = 518.0
 offset_bottom = 167.0
 text = "Master Volume"
 
-[node name="AudioBusSlider" type="HSlider" parent="CanvasLayer/Control/OptionsPanel/MasterVolume"]
+[node name="AudioBusSlider" type="HSlider" parent="OptionsPanel/MasterVolume"]
 layout_mode = 0
 offset_left = 144.0
 offset_right = 244.0
@@ -152,7 +148,7 @@ step = 0.001
 script = ExtResource("5_2dd7u")
 bus_name = "Master"
 
-[node name="MusicVolume" type="Label" parent="CanvasLayer/Control/OptionsPanel"]
+[node name="MusicVolume" type="Label" parent="OptionsPanel"]
 layout_mode = 0
 offset_left = 400.0
 offset_top = 176.0
@@ -161,7 +157,7 @@ offset_bottom = 199.0
 text = "Music Volume
 "
 
-[node name="AudioBusSlider" type="HSlider" parent="CanvasLayer/Control/OptionsPanel/MusicVolume"]
+[node name="AudioBusSlider" type="HSlider" parent="OptionsPanel/MusicVolume"]
 layout_mode = 0
 offset_left = 144.0
 offset_right = 244.0
@@ -171,7 +167,7 @@ step = 0.001
 script = ExtResource("5_2dd7u")
 bus_name = "music"
 
-[node name="SFXVolume" type="Label" parent="CanvasLayer/Control/OptionsPanel"]
+[node name="SFXVolume" type="Label" parent="OptionsPanel"]
 layout_mode = 0
 offset_left = 400.0
 offset_top = 208.0
@@ -179,7 +175,7 @@ offset_right = 518.0
 offset_bottom = 231.0
 text = "SFX Volume"
 
-[node name="AudioBusSlider" type="HSlider" parent="CanvasLayer/Control/OptionsPanel/SFXVolume"]
+[node name="AudioBusSlider" type="HSlider" parent="OptionsPanel/SFXVolume"]
 layout_mode = 0
 offset_left = 144.0
 offset_right = 244.0
@@ -188,11 +184,3 @@ max_value = 1.0
 step = 0.001
 script = ExtResource("5_2dd7u")
 bus_name = "sfx"
-
-[connection signal="pressed" from="CanvasLayer/Control/VBoxContainer/PlayButton" to="." method="_on_play_button_pressed"]
-[connection signal="pressed" from="CanvasLayer/Control/VBoxContainer/PlayButton2" to="." method="_on_play_keep_button_pressed"]
-[connection signal="pressed" from="CanvasLayer/Control/VBoxContainer/Options" to="." method="_on_options_pressed"]
-[connection signal="pressed" from="CanvasLayer/Control/VBoxContainer/Credits" to="." method="_on_credits_pressed"]
-[connection signal="pressed" from="CanvasLayer/Control/VBoxContainer/Credits" to="CanvasLayer/Control/VBoxContainer/Credits" method="_on_pressed"]
-[connection signal="pressed" from="CanvasLayer/Control/CreditsPanel/CloseButton" to="." method="_on_close_button_pressed"]
-[connection signal="pressed" from="CanvasLayer/Control/OptionsPanel/CloseButton" to="." method="_on_close_button_pressed"]
