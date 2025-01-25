@@ -1,8 +1,15 @@
 ~ main
-do DialogueEventBus.animate("Pepito", "angry")
-Jilito: A grup of events will happen
+do DialogueEventBus.animate("Jilito", "vibrate")
+Jilito: I will make this teangdom with me as a TEAng the tea paradise.
+do DialogueEventBus.animate("Jilito", "RESET")
 => END
 ~ presentation
-do DialogueEventBus.animate("Pepito", "angry")
+do DialogueEventBus.animate("Jilito", "vibrate")
 Jilito: Good morning ladies and gentlemen. I'm a tea pot.
+do DialogueEventBus.animate("Jilito", "RESET")
+=> END
+~ asKing
+do DialogueEventBus.animate("Jilito", "vibrate")
+Jilito: A grup of events will happen
+do DialogueEventBus.animate("Jilito", "RESET")
 => END

@@ -3,6 +3,7 @@ do DialogueEventBus.animate("Pepito", "happy")
 Pepito: I will do Britania great again.
 => END
 ~ presentation
-do DialogueEventBus.animate("Pepito", "happy")
+do DialogueEventBus.animate("Pepito", "vibrate")
 Pepito: Hello, I'm a motherfucker king
+do DialogueEventBus.animate("Pepito", "RESET")
 => END

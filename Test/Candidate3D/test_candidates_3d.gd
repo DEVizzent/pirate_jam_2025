@@ -35,8 +35,6 @@ func candidate_in_scene() -> void:
 	tween.tween_property(character_candidate3, "position", Vector3(-4, 0, 4), 3.0)
 	await tween.finished
 	candidates_introduction()
-	
-	
 
 func candidates_introduction() -> void:
 	DialogueManager.show_dialogue_balloon(candidate1.dialogue, "presentation")
@@ -44,6 +42,15 @@ func candidates_introduction() -> void:
 	DialogueManager.show_dialogue_balloon(candidate2.dialogue, "presentation")
 	await DialogueManager.dialogue_ended
 	DialogueManager.show_dialogue_balloon(candidate3.dialogue, "presentation")
+	await DialogueManager.dialogue_ended
+	candidates_main()
+
+func candidates_main() -> void:
+	DialogueManager.show_dialogue_balloon(candidate1.dialogue, "main")
+	await DialogueManager.dialogue_ended
+	DialogueManager.show_dialogue_balloon(candidate2.dialogue, "main")
+	await DialogueManager.dialogue_ended
+	DialogueManager.show_dialogue_balloon(candidate3.dialogue, "main")
 	await DialogueManager.dialogue_ended
 
 func set_candidates() -> void:

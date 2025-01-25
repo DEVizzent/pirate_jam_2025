@@ -1,8 +1,15 @@
 ~ main
-do DialogueEventBus.animate("Pepito", "sad")
+do DialogueEventBus.animate("Juanito", "vibrate")
 Juanito: Now every body should talk in Spanish, pero con acento latino.
+do DialogueEventBus.animate("Juanito", "RESET")
 => END
 ~ presentation
-do DialogueEventBus.animate("Pepito", "sad")
+do DialogueEventBus.animate("Juanito", "vibrate")
 Juanito: Hi, who I am?
+do DialogueEventBus.animate("Juanito", "RESET")
+=> END
+~ asKing
+do DialogueEventBus.animate("Juanito", "vibrate")
+Juanito: 
+do DialogueEventBus.animate("Juanito", "RESET")
 => END
