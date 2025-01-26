@@ -1,0 +1,94 @@
+[gd_scene load_steps=9 format=3 uid="uid://dnij6wam3pspb"]
+
+[ext_resource type="Script" path="res://Scenes/SwordGame/mini_game.gd" id="1_udgx5"]
+[ext_resource type="Script" path="res://Scenes/SwordGame/Move/sword.gd" id="2_y4lm2"]
+[ext_resource type="Script" path="res://Scenes/SwordGame/Move/ui.gd" id="3_p8j8n"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_velob"]
+top_radius = 0.03
+bottom_radius = 0.03
+height = 1.5
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_djkk2"]
+radius = 0.1
+
+[sub_resource type="SphereMesh" id="SphereMesh_phf5k"]
+radius = 0.1
+height = 0.2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mp5s7"]
+albedo_color = Color(1, 1, 0, 1)
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_mir5c"]
+size = Vector2(27, 27)
+
+[node name="MiniGame" type="Node3D"]
+script = ExtResource("1_udgx5")
+
+[node name="Sword" type="Node3D" parent="."]
+script = ExtResource("2_y4lm2")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Sword"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.233695, 0)
+mesh = SubResource("CylinderMesh_velob")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Sword"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sword/StaticBody3D"]
+shape = SubResource("SphereShape3D_djkk2")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Sword/StaticBody3D"]
+mesh = SubResource("SphereMesh_phf5k")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_mp5s7")
+
+[node name="UI" type="Control" parent="."]
+visible = false
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 3
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+script = ExtResource("3_p8j8n")
+
+[node name="MarginContainer" type="MarginContainer" parent="UI"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/MarginContainer"]
+layout_mode = 2
+
+[node name="SwordResistance" type="TextureProgressBar" parent="UI/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.0
+max_value = 1.0
+step = 0.001
+value = 1.0
+nine_patch_stretch = true
+texture_progress = SubResource("PlaceholderTexture2D_mir5c")
+
+[node name="CandidateEnergy" type="TextureProgressBar" parent="UI/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.0
+max_value = 1.0
+step = 0.001
+value = 1.0
+nine_patch_stretch = true
+texture_progress = SubResource("PlaceholderTexture2D_mir5c")
+
+[connection signal="mouse_entered" from="Sword/StaticBody3D" to="Sword" method="_on_static_body_3d_mouse_entered"]
+[connection signal="mouse_exited" from="Sword/StaticBody3D" to="Sword" method="_on_static_body_3d_mouse_exited"]

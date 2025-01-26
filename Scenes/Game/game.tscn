@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://csk21t2i0qguo"]
+
+[ext_resource type="Script" path="res://Scenes/Game/game.gd" id="1_q5na8"]
+[ext_resource type="PackedScene" uid="uid://c0xv84l4ds1an" path="res://Scenes/RoyalHall/royal_hall.tscn" id="1_xd715"]
+[ext_resource type="PackedScene" uid="uid://bko0ifwwfqndb" path="res://Scenes/Menu/menu.tscn" id="3_stosb"]
+[ext_resource type="PackedScene" uid="uid://dnij6wam3pspb" path="res://Scenes/SwordGame/MiniGame.tscn" id="4_o4ogt"]
+
+[node name="Game" type="Node3D"]
+script = ExtResource("1_q5na8")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="RoyalHall" parent="." instance=ExtResource("1_xd715")]
+
+[node name="MiniGame" parent="." instance=ExtResource("4_o4ogt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+
+[node name="Menu" parent="." instance=ExtResource("3_stosb")]
