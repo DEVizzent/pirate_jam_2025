@@ -1,9 +1,18 @@
-[gd_resource type="Resource" script_class="Candidate" load_steps=3 format=3 uid="uid://coyj65bhp68rf"]
+[gd_resource type="Resource" script_class="Candidate" load_steps=6 format=3 uid="uid://coyj65bhp68rf"]
 
+[ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="1_2fql8"]
 [ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="1_upd1q"]
+[ext_resource type="PackedScene" uid="uid://bvqnf42a5t62j" path="res://Test/CandidateEvents/candidate_cube.tscn" id="2_23nf7"]
 [ext_resource type="Script" path="res://Resources/candidate.gd" id="2_vkw4g"]
+[ext_resource type="Resource" uid="uid://d20a5lcjrhfw8" path="res://Resources/Candidate Resources/Candidates Dialogue/Morgana.dialogue" id="3_idwi0"]
 
 [resource]
 script = ExtResource("2_vkw4g")
 name = "Morgana La Fey"
+social_class = 0
+candidate_conditions = Array[ExtResource("1_2fql8")]([])
+dialogue = ExtResource("3_idwi0")
 kingdom_event_collection = Array[ExtResource("1_upd1q")]([])
+minigame_difficulty = 10
+minigame_time = 10
+character_scene = ExtResource("2_23nf7")

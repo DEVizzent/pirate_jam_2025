@@ -1,12 +1,25 @@
-[gd_scene load_steps=5 format=3 uid="uid://csk21t2i0qguo"]
+[gd_scene load_steps=10 format=3 uid="uid://csk21t2i0qguo"]
 
 [ext_resource type="Script" path="res://Scenes/Game/game.gd" id="1_q5na8"]
 [ext_resource type="PackedScene" uid="uid://c0xv84l4ds1an" path="res://Scenes/RoyalHall/royal_hall.tscn" id="1_xd715"]
+[ext_resource type="Script" path="res://Resources/candidate.gd" id="2_0awwt"]
 [ext_resource type="PackedScene" uid="uid://bko0ifwwfqndb" path="res://Scenes/Menu/menu.tscn" id="3_stosb"]
+[ext_resource type="Script" path="res://Resources/game_candidates.gd" id="3_wtr34"]
+[ext_resource type="Resource" uid="uid://bv2s115vi22nf" path="res://Resources/Candidate Resources/Arthur.tres" id="4_dnbb4"]
 [ext_resource type="PackedScene" uid="uid://dnij6wam3pspb" path="res://Scenes/SwordGame/MiniGame.tscn" id="4_o4ogt"]
+[ext_resource type="Resource" uid="uid://coyj65bhp68rf" path="res://Resources/Candidate Resources/Morgana.tres" id="5_5km70"]
+
+[sub_resource type="Resource" id="Resource_xlayc"]
+script = ExtResource("3_wtr34")
+tutorial_candidates = Array[ExtResource("2_0awwt")]([ExtResource("4_dnbb4"), ExtResource("5_5km70")])
+early_game_candidates = Array[ExtResource("2_0awwt")]([])
+mid_game_candidates = Array[ExtResource("2_0awwt")]([])
+late_game_candidates = Array[ExtResource("2_0awwt")]([])
+end_game_candidates = Array[ExtResource("2_0awwt")]([])
 
 [node name="Game" type="Node3D"]
 script = ExtResource("1_q5na8")
+game_candidates = SubResource("Resource_xlayc")
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
