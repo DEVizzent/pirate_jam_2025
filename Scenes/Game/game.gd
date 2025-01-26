@@ -14,6 +14,7 @@ const CAMERA_MENU_VIEW_ROTATION : Vector3 = Vector3(0, 0, 0)
 var run_turn : Turn
 var turn_candidates : Array[Candidate]
 var candidate_instances : Array[Node3D]
+var has_king : bool = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -30,9 +31,9 @@ func tutorial() -> void:
 	await _introduce_game_candidates()
 	
 
-func start_minigame() -> void:
+func start_minigame(candidate : Candidate) -> void:
 	await _move_camera(mini_game.get_camera_position(), mini_game.get_camera_rotation())
-	mini_game.start()
+	mini_game.start(candidate)
 	await mini_game.game_ended
 
 func _introduce_game_candidates() -> void:
@@ -68,9 +69,16 @@ func _mini_game_block() -> void:
 		key = candidate_instances.find(candidate)
 		_move_character_to_position(candidate, CharacterPositions.mini_game_position, randf_range(2., 3.))
 		await get_tree().create_timer(1.0).timeout
-		await start_minigame()
+		await start_minigame(turn_candidates[key])
 		await _move_camera(CAMERA_MAIN_VIEW_POSITION + Vector3(0, 0, -1), CAMERA_MAIN_VIEW_ROTATION)
-	pass
+		if has_king:
+			await _move_camera(CAMERA_MAIN_VIEW_POSITION + Vector3(0, 1, -1), CAMERA_MAIN_VIEW_ROTATION)
+			coronation(mini_game.get_candidate())
+			return
+	push_error('Implement no king case')
+
+func coronation(candidate: Candidate) -> void:
+	push_error('Not more implementation')
 
 func _move_camera(camera_position: Vector3, camera_rotation: Vector3) -> void:
 	var tween : Tween = get_tree().create_tween()
@@ -87,7 +95,4 @@ func _move_character_to_position(character : Node3D, character_position: Vector3
 	return
 
 func _on_mini_game_ended(excalibur_extracted : bool) -> void:
-	if excalibur_extracted:
-		print_debug("Excalibur extracted")
-		return
-	print_debug("Candidate fails")
+	has_king = excalibur_extracted

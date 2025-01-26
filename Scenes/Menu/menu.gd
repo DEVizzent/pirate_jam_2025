@@ -18,7 +18,7 @@ func _ready() -> void:
 func _on_play_button_pressed() -> void:
 	SfxAudioPlayer.play("MouseClick")
 	visible = false
-	DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
+	#DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
 	play_game_pressed.emit()
 	
 

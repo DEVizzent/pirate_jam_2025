@@ -30,6 +30,7 @@ var sword_resistance : float :
 
 var mouse_on_sword : bool = false
 var game_running : bool = false
+var candidate : Candidate
 
 func _ready() -> void:
 	candidate_energy_exhausted.connect(_on_candidate_energy_exhausted)
@@ -49,13 +50,16 @@ func get_camera_position() -> Vector3:
 func get_camera_rotation() -> Vector3:
 	return Vector3(-1.14319, .0, .0)
 
-func start() -> void:
+func start(game_candidate : Candidate) -> void:
+	candidate = game_candidate
 	MusicController.switch_to_level_song()
 	sword_resistance = max_sword_resistance
-	candidate_energy = max_candidate_energy
+	candidate_energy = candidate.minigame_time
 	game_running = true
 	game_started.emit()
-	
+
+func get_candidate() -> Candidate:
+	return candidate
 
 func _on_sword_sword_mouse_over() -> void:
 	mouse_on_sword = true

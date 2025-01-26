@@ -5,6 +5,7 @@ signal sword_mouse_exit()
 
 var tween : Tween
 var rand : RandomNumberGenerator
+#TODO: add difficulty logic
 
 func _ready() -> void:
 	rand = RandomNumberGenerator.new()

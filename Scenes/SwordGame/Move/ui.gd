@@ -12,7 +12,7 @@ func _ready() -> void:
 func _on_game_start() -> void:
 	visible = true
 
-func _on_game_end() -> void:
+func _on_game_end(_excalibur_extracted: bool) -> void:
 	await get_tree().create_timer(1.0).timeout
 	visible = false
 
