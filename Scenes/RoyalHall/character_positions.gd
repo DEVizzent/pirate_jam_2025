@@ -12,3 +12,5 @@ static var presentation_position : Array[Vector3] = [
 	Vector3(4.5, 0, 4),
 	Vector3(-4.5, 0, 4),
 ]
+
+static var mini_game_position : Vector3 = Vector3(0, 0, -1)

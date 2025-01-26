@@ -33,6 +33,7 @@ func tutorial() -> void:
 func start_minigame() -> void:
 	await _move_camera(mini_game.get_camera_position(), mini_game.get_camera_rotation())
 	mini_game.start()
+	await mini_game.game_ended
 
 func _introduce_game_candidates() -> void:
 	var candidate_num = 0
@@ -54,7 +55,7 @@ func _introduce_game_candidates() -> void:
 func _game_candidates_main() -> void:
 	var key : int
 	for candidate in candidate_instances:
-		key = candidate_instances.find(key)
+		key = candidate_instances.find(candidate)
 		_move_camera(candidate.position + Vector3(0, 1, -2), CAMERA_MAIN_VIEW_ROTATION)
 		DialogueManager.show_dialogue_balloon(turn_candidates[key].dialogue, 'main')
 		await DialogueManager.dialogue_ended
@@ -62,6 +63,13 @@ func _game_candidates_main() -> void:
 	_mini_game_block()
 
 func _mini_game_block() -> void:
+	var key : int
+	for candidate in candidate_instances:
+		key = candidate_instances.find(candidate)
+		_move_character_to_position(candidate, CharacterPositions.mini_game_position, randf_range(2., 3.))
+		await get_tree().create_timer(1.0).timeout
+		await start_minigame()
+		await _move_camera(CAMERA_MAIN_VIEW_POSITION + Vector3(0, 0, -1), CAMERA_MAIN_VIEW_ROTATION)
 	pass
 
 func _move_camera(camera_position: Vector3, camera_rotation: Vector3) -> void:
@@ -71,7 +79,12 @@ func _move_camera(camera_position: Vector3, camera_rotation: Vector3) -> void:
 	tween.tween_property(camera, "rotation", camera_rotation, 2.0)
 	await tween.finished
 	return
-	
+
+func _move_character_to_position(character : Node3D, character_position: Vector3, duration: float) -> void:
+	var tween : Tween = get_tree().create_tween()
+	tween.tween_property(character, "position", character_position, duration)
+	await tween.finished
+	return
 
 func _on_mini_game_ended(excalibur_extracted : bool) -> void:
 	if excalibur_extracted:
