@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://c0xv84l4ds1an"]
+
+[node name="RoyalHall" type="Node3D"]
+
+[node name="Suelo" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+size = Vector3(12, 1, 12)
+
+[node name="Techo" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.5, 0)
+size = Vector3(12, 1, 12)
+
+[node name="ParedZ1" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, -6)
+size = Vector3(12, 6, 1)
+
+[node name="ParedZ2" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 6)
+size = Vector3(12, 6, 1)
+
+[node name="ParedX1" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 2.5, 0)
+size = Vector3(1, 6, 12)
+
+[node name="ParedX2" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 2.5, 0)
+size = Vector3(1, 6, 12)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 2, 2)
+light_color = Color(1, 0.882353, 0.607843, 1)
+light_bake_mode = 1
+omni_range = 6.0
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 2, -2)
+light_color = Color(1, 0.882353, 0.607843, 1)
+light_bake_mode = 1
+omni_range = 6.0
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 2, 2)
+light_color = Color(1, 0.882353, 0.607843, 1)
+light_bake_mode = 1
+omni_range = 6.0
+
+[node name="OmniLight3D4" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 2, -2)
+light_color = Color(1, 0.882353, 0.607843, 1)
+light_bake_mode = 1
+omni_range = 6.0
+
+[node name="OmniLight3D5" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 1)
+light_color = Color(1, 0.882353, 0.607843, 1)
+light_bake_mode = 1
+omni_range = 6.0
