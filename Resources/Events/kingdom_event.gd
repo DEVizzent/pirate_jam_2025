@@ -19,8 +19,6 @@ enum Tag {
 @export_range(0, 100) var probability : int = 100
 @export var dialog : DialogueResource
 
-signal event_finished()
-
 func invoke() -> bool:
 	if (randi_range(0,100) > probability):
 		print_debug(internal_name + ': Probability failed')
