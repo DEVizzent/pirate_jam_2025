@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="Candidate" load_steps=8 format=3 uid="uid://2yqfqvho8le3"]
+
+[ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="1_cg8yv"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition_has_tag.gd" id="2_smoc3"]
+[ext_resource type="PackedScene" uid="uid://bvqnf42a5t62j" path="res://Test/CandidateEvents/candidate_cube.tscn" id="2_x6ml3"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="4_h8u4e"]
+[ext_resource type="Resource" uid="uid://bpvtkkj112qr4" path="res://Resources/Candidate Resources/Candidates Dialogue/Merlin.dialogue" id="4_x2p65"]
+[ext_resource type="Script" path="res://Resources/candidate.gd" id="5_uegyy"]
+
+[sub_resource type="Resource" id="Resource_32ji3"]
+script = ExtResource("2_smoc3")
+tag = 7
+
+[resource]
+script = ExtResource("5_uegyy")
+name = "Merlin"
+social_class = 0
+candidate_conditions = Array[ExtResource("1_cg8yv")]([SubResource("Resource_32ji3")])
+dialogue = ExtResource("4_x2p65")
+kingdom_event_collection = Array[ExtResource("4_h8u4e")]([])
+minigame_difficulty = 10
+minigame_time = 10
+character_scene = ExtResource("2_x6ml3")

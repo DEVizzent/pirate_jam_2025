@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://dpr1vftao40nw"
+path="res://.godot/imported/ArthurEvent4Dialogue.dialogue-4dcea7b965cfdfcdcc8a344594f881e8.tres"
+
+[deps]
+
+source_file="res://Resources/Event Resources/Arthur/ArthurEvent4Dialogue.dialogue"
+dest_files=["res://.godot/imported/ArthurEvent4Dialogue.dialogue-4dcea7b965cfdfcdcc8a344594f881e8.tres"]
+
+[params]
+
+defaults=true

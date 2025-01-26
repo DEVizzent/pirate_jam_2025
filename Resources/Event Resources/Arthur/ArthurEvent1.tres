@@ -10,7 +10,7 @@ script = ExtResource("3_rd51m")
 faith = 1
 food = 0
 force = 1
-add_tag = 6
+add_tag = 1
 remove_tag = 0
 
 [resource]

@@ -3,13 +3,15 @@ extends Resource
 
 enum Tag {
 	NO_TAG, #Valor por defecto, no hace nada
-	EXAMPLE_1,
-	EXAMPLE_2,
-	EXAMPLE_3,
-	EXAMPLE_4,
-	EXAMPLE_5,
 	PAGANS_EXILED,
+	FRENCH_SPOKEN,
+	FAKE_POPE,
+	DRAGONSLAYER,
+	HOLY_GRAIL,
 	FAE_WELCOME,
+	FAE_DIPLOMACY,
+	WRONG_CRUSADE,
+	DEER_CHILD,
 	FAMINE,
 }
 

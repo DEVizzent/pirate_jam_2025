@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://bpvtkkj112qr4"
+path="res://.godot/imported/Merlin.dialogue-abcd97f58fa2593f7b2c29ba000e34dd.tres"
+
+[deps]
+
+source_file="res://Resources/Candidate Resources/Candidates Dialogue/Merlin.dialogue"
+dest_files=["res://.godot/imported/Merlin.dialogue-abcd97f58fa2593f7b2c29ba000e34dd.tres"]
+
+[params]
+
+defaults=true

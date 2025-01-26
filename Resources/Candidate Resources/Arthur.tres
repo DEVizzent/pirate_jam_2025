@@ -8,8 +8,8 @@
 
 [resource]
 script = ExtResource("3_kmtak")
-name = "Arthur Pendragon"
-social_class = 0
+name = "Arthur"
+social_class = 1
 candidate_conditions = Array[ExtResource("1_otnyp")]([])
 dialogue = ExtResource("1_qqtdh")
 kingdom_event_collection = Array[ExtResource("2_41o7j")]([])

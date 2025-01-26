@@ -1,9 +1,13 @@
 ~ main
+do DialogueEventBus.animate("Morgana", "talk")
 Morgana: The land is changing. You can change.
 => END
 ~ presentation
+do DialogueEventBus.animate("Morgana", "talk")
 Morgana: Oh, wait. You are supposed to pick my brother, right?
+do DialogueEventBus.animate("Morgana", "sassy")
 Morgana: I am just filler, and disposable. That is what you are implying.
+do DialogueEventBus.animate("Morgana", "talk")
 Morgana: Look, I don't want to spend my energy changing your mind, but you don't have to abide by the rules.
 Morgana: You can build your own destiny.
 => END

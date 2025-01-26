@@ -93,8 +93,12 @@ dialog = ExtResource("10_5tjsy")
 [sub_resource type="Resource" id="Resource_ob2bb"]
 script = ExtResource("2_02q77")
 name = "Pepito"
+social_class = 0
+candidate_conditions = Array[ExtResource("4_rbpqn")]([])
 dialogue = ExtResource("6_w5aqo")
 kingdom_event_collection = Array[ExtResource("2_whwq8")]([SubResource("Resource_eaame"), SubResource("Resource_uwnc5"), SubResource("Resource_xcm4h"), SubResource("Resource_4hutg")])
+minigame_difficulty = 10
+minigame_time = 10
 character_scene = ExtResource("3_cvhll")
 
 [sub_resource type="Resource" id="Resource_puwfc"]
@@ -115,14 +119,22 @@ probability = 100
 [sub_resource type="Resource" id="Resource_mpo2v"]
 script = ExtResource("2_02q77")
 name = "Juanito"
+social_class = 0
+candidate_conditions = Array[ExtResource("4_rbpqn")]([])
 dialogue = ExtResource("7_6wm5t")
 kingdom_event_collection = Array[ExtResource("2_whwq8")]([SubResource("Resource_v60ab")])
+minigame_difficulty = 10
+minigame_time = 10
 
 [sub_resource type="Resource" id="Resource_r5vxm"]
 script = ExtResource("2_02q77")
 name = "Jilito"
+social_class = 0
+candidate_conditions = Array[ExtResource("4_rbpqn")]([])
 dialogue = ExtResource("8_nn2fh")
 kingdom_event_collection = Array[ExtResource("2_whwq8")]([SubResource("Resource_v60ab")])
+minigame_difficulty = 10
+minigame_time = 10
 
 [node name="TestCandidateEvents" type="Control"]
 layout_mode = 3

@@ -17,7 +17,7 @@ script = ExtResource("4_8mj3s")
 faith = 0
 food = -2
 force = 0
-add_tag = 8
+add_tag = 10
 remove_tag = 0
 
 [resource]

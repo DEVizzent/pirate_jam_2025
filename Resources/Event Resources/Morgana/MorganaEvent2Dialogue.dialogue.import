@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://dtsjxh6sx80a8"
+path="res://.godot/imported/MorganaEvent2Dialogue.dialogue-7fd7f564a8aeed664fbbcd9f744cd85f.tres"
+
+[deps]
+
+source_file="res://Resources/Event Resources/Morgana/MorganaEvent2Dialogue.dialogue"
+dest_files=["res://.godot/imported/MorganaEvent2Dialogue.dialogue-7fd7f564a8aeed664fbbcd9f744cd85f.tres"]
+
+[params]
+
+defaults=true
