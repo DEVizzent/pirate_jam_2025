@@ -1,0 +1,11 @@
+[gd_resource type="ORMMaterial3D" load_steps=4 format=3 uid="uid://c7i2wpodwyq2c"]
+
+[ext_resource type="Texture2D" uid="uid://11i4rq4ftstd" path="res://Environment/PropMats/MI_Treasure_Chest_BC_Utility - sRGB - Texture.tga" id="1_iti4c"]
+[ext_resource type="Texture2D" uid="uid://bs2oo55fnsksb" path="res://Environment/PropMats/MI_Treasure_Chest_NM_Utility - Raw.tga" id="2_vj3ih"]
+[ext_resource type="Texture2D" uid="uid://cfhklf7cxc0n0" path="res://Environment/PropMats/MI_Treasure_Chest_ORM_Utility - Raw.tga" id="3_p43ft"]
+
+[resource]
+albedo_texture = ExtResource("1_iti4c")
+orm_texture = ExtResource("3_p43ft")
+normal_enabled = true
+normal_texture = ExtResource("2_vj3ih")

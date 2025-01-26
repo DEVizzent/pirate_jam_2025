@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cjlwnokpl2mko"
+path="res://.godot/imported/SM_Cross_Gold.obj-3e8a2f329c8107eb15557467476105bc.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Cross_Gold.obj-3e8a2f329c8107eb15557467476105bc.mesh"]
+
+source_file="res://Environment/Props/SM_Cross_Gold.obj"
+dest_files=["res://.godot/imported/SM_Cross_Gold.obj-3e8a2f329c8107eb15557467476105bc.mesh", "res://.godot/imported/SM_Cross_Gold.obj-3e8a2f329c8107eb15557467476105bc.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

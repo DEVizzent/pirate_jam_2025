@@ -1,0 +1,11 @@
+[gd_resource type="ORMMaterial3D" load_steps=4 format=3 uid="uid://cyxf83m1e7a4d"]
+
+[ext_resource type="Texture2D" uid="uid://cwd4ijd0b1xp0" path="res://Environment/PropMats/MI_Pagan_Statue_Hastur_BC_Utility - sRGB - Texture.tga" id="1_3latp"]
+[ext_resource type="Texture2D" uid="uid://c0mplhk0sbaaq" path="res://Environment/PropMats/MI_Pagan_Statue_Hastur_NM_Utility - Raw.tga" id="2_qbjkq"]
+[ext_resource type="Texture2D" uid="uid://dxeb2085qs7dd" path="res://Environment/PropMats/MI_Pagan_Statue_Hastur_ORM_Utility - Raw.tga" id="3_olgmx"]
+
+[resource]
+albedo_texture = ExtResource("1_3latp")
+orm_texture = ExtResource("3_olgmx")
+normal_enabled = true
+normal_texture = ExtResource("2_qbjkq")

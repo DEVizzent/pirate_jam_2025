@@ -1,0 +1,13 @@
+[gd_resource type="ShaderMaterial" load_steps=5 format=3 uid="uid://d1pdorrqhh3h3"]
+
+[ext_resource type="Shader" uid="uid://bgl4prqcjwrpf" path="res://Environment/MM_VS_Test.tres" id="1_tjom8"]
+[ext_resource type="Texture2D" uid="uid://chwa0uygvtmu2" path="res://Environment/Tileables/Rock_BC.png" id="2_pp5j3"]
+[ext_resource type="Texture2D" uid="uid://labfkme6soob" path="res://Environment/Tileables/Rock_NM.png" id="3_r1xjp"]
+[ext_resource type="Texture2D" uid="uid://b8aghignpci7j" path="res://Environment/Tileables/Rock_ORM.png" id="4_x8l07"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_tjom8")
+shader_parameter/BC = ExtResource("2_pp5j3")
+shader_parameter/ORM = ExtResource("4_x8l07")
+shader_parameter/NM = ExtResource("3_r1xjp")

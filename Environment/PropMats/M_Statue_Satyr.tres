@@ -1,0 +1,11 @@
+[gd_resource type="ORMMaterial3D" load_steps=4 format=3 uid="uid://cn0b4abwrayo5"]
+
+[ext_resource type="Texture2D" uid="uid://crksax1kda186" path="res://Environment/PropMats/MI_Pagan_Statue_Satire_BC_Utility - sRGB - Texture.tga" id="1_mxxtn"]
+[ext_resource type="Texture2D" uid="uid://ku50bkhr7tos" path="res://Environment/PropMats/MI_Pagan_Statue_Satire_NM_Utility - Raw.tga" id="2_1sc7a"]
+[ext_resource type="Texture2D" uid="uid://dij8m4uirwk0j" path="res://Environment/PropMats/MI_Pagan_Statue_Satire_ORM_Utility - Raw.tga" id="3_sxqv2"]
+
+[resource]
+albedo_texture = ExtResource("1_mxxtn")
+orm_texture = ExtResource("3_sxqv2")
+normal_enabled = true
+normal_texture = ExtResource("2_1sc7a")

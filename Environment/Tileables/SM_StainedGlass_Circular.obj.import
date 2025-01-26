@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://casasvqcqxi6b"
+path="res://.godot/imported/SM_StainedGlass_Circular.obj-61a4e2c798826d97e2df0f4e35bf7535.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_StainedGlass_Circular.obj-61a4e2c798826d97e2df0f4e35bf7535.mesh"]
+
+source_file="res://Environment/Tileables/SM_StainedGlass_Circular.obj"
+dest_files=["res://.godot/imported/SM_StainedGlass_Circular.obj-61a4e2c798826d97e2df0f4e35bf7535.mesh", "res://.godot/imported/SM_StainedGlass_Circular.obj-61a4e2c798826d97e2df0f4e35bf7535.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

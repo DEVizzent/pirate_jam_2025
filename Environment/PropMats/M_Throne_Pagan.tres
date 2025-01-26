@@ -1,0 +1,11 @@
+[gd_resource type="ORMMaterial3D" load_steps=4 format=3 uid="uid://oau4r7uoiqd8"]
+
+[ext_resource type="Texture2D" uid="uid://0br7jxhhffmj" path="res://Environment/PropMats/MI_Throne_Pagan_BC_Utility - sRGB - Texture.tga" id="1_30ign"]
+[ext_resource type="Texture2D" uid="uid://dyqfun53rknbn" path="res://Environment/PropMats/MI_Throne_Pagan_NM_Utility - Raw.tga" id="2_kyvsm"]
+[ext_resource type="Texture2D" uid="uid://bjfr24ycgd7ky" path="res://Environment/PropMats/MI_Throne_Pagan_ORM_Utility - Raw.tga" id="3_8t5b3"]
+
+[resource]
+albedo_texture = ExtResource("1_30ign")
+orm_texture = ExtResource("3_8t5b3")
+normal_enabled = true
+normal_texture = ExtResource("2_kyvsm")

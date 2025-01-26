@@ -1,0 +1,11 @@
+[gd_resource type="ORMMaterial3D" load_steps=4 format=3 uid="uid://cnqs4mff85d35"]
+
+[ext_resource type="Texture2D" uid="uid://5aqnd618iuuv" path="res://Environment/PropMats/MI_Throne_Sword_BC_Utility - sRGB - Texture.tga" id="1_hchx3"]
+[ext_resource type="Texture2D" uid="uid://bcv5kl4qwnigh" path="res://Environment/PropMats/MI_Throne_Sword_NM_Utility - Raw.tga" id="2_03ow2"]
+[ext_resource type="Texture2D" uid="uid://6x387obnlunt" path="res://Environment/PropMats/MI_Throne_Sword_ORM_Utility - Raw.tga" id="3_8jji4"]
+
+[resource]
+albedo_texture = ExtResource("1_hchx3")
+orm_texture = ExtResource("3_8jji4")
+normal_enabled = true
+normal_texture = ExtResource("2_03ow2")

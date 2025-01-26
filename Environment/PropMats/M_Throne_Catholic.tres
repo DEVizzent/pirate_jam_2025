@@ -1,0 +1,11 @@
+[gd_resource type="ORMMaterial3D" load_steps=4 format=3 uid="uid://cmqvvvehbsiuc"]
+
+[ext_resource type="Texture2D" uid="uid://boyj7xmptslqp" path="res://Environment/PropMats/MI_Throne_Christian_BC_Utility - sRGB - Texture.tga" id="1_vpkf7"]
+[ext_resource type="Texture2D" uid="uid://cw0y4u0a6emin" path="res://Environment/PropMats/MI_Throne_Christian_NM_Utility - Raw.tga" id="2_1gkmm"]
+[ext_resource type="Texture2D" uid="uid://brgw5vyga1pbl" path="res://Environment/PropMats/MI_Throne_Christian_ORM_Utility - Raw.tga" id="3_xnthq"]
+
+[resource]
+albedo_texture = ExtResource("1_vpkf7")
+orm_texture = ExtResource("3_xnthq")
+normal_enabled = true
+normal_texture = ExtResource("2_1gkmm")

@@ -1,0 +1,11 @@
+[gd_resource type="ORMMaterial3D" load_steps=4 format=3 uid="uid://dv34wujxr6y8k"]
+
+[ext_resource type="Texture2D" uid="uid://cfo7hp28v7f1t" path="res://Environment/PropMats/MI_Cross_Wood_BC_Utility - sRGB - Texture.tga" id="1_7vbea"]
+[ext_resource type="Texture2D" uid="uid://recufsl7taey" path="res://Environment/PropMats/MI_Cross_Wood_NM_Utility - Raw.tga" id="2_ngp36"]
+[ext_resource type="Texture2D" uid="uid://5e0iix274t6o" path="res://Environment/PropMats/MI_Cross_Wood_ORM_Utility - Raw.tga" id="3_abja6"]
+
+[resource]
+albedo_texture = ExtResource("1_7vbea")
+orm_texture = ExtResource("3_abja6")
+normal_enabled = true
+normal_texture = ExtResource("2_ngp36")

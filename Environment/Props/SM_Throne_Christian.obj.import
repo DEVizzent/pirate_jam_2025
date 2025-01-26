@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bc2fu21el0ses"
+path="res://.godot/imported/SM_Throne_Christian.obj-dad5df83093318b9fe0ecf909c31444a.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Throne_Christian.obj-dad5df83093318b9fe0ecf909c31444a.mesh"]
+
+source_file="res://Environment/Props/SM_Throne_Christian.obj"
+dest_files=["res://.godot/imported/SM_Throne_Christian.obj-dad5df83093318b9fe0ecf909c31444a.mesh", "res://.godot/imported/SM_Throne_Christian.obj-dad5df83093318b9fe0ecf909c31444a.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

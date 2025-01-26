@@ -1,0 +1,13 @@
+[gd_resource type="ShaderMaterial" load_steps=5 format=3 uid="uid://cb50hw3dwf0k5"]
+
+[ext_resource type="Shader" uid="uid://bgl4prqcjwrpf" path="res://Environment/MM_VS_Test.tres" id="1_81bur"]
+[ext_resource type="Texture2D" uid="uid://cug226iswstnf" path="res://Environment/Tileables/Marble_BC.png" id="2_1x8dq"]
+[ext_resource type="Texture2D" uid="uid://c2m2buvtt58ir" path="res://Environment/Tileables/Marble_NM.png" id="3_6351v"]
+[ext_resource type="Texture2D" uid="uid://bshryylri75ol" path="res://Environment/Tileables/Marble_ORM.png" id="4_7b4y2"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_81bur")
+shader_parameter/BC = ExtResource("2_1x8dq")
+shader_parameter/ORM = ExtResource("4_7b4y2")
+shader_parameter/NM = ExtResource("3_6351v")

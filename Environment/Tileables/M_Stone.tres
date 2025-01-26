@@ -1,0 +1,11 @@
+[gd_resource type="ORMMaterial3D" load_steps=4 format=3 uid="uid://egy44fwa5vyr"]
+
+[ext_resource type="Texture2D" uid="uid://chwa0uygvtmu2" path="res://Environment/Tileables/Rock_BC.png" id="1_djym0"]
+[ext_resource type="Texture2D" uid="uid://labfkme6soob" path="res://Environment/Tileables/Rock_NM.png" id="2_ooxg6"]
+[ext_resource type="Texture2D" uid="uid://b8aghignpci7j" path="res://Environment/Tileables/Rock_ORM.png" id="3_nd2kk"]
+
+[resource]
+albedo_texture = ExtResource("1_djym0")
+orm_texture = ExtResource("3_nd2kk")
+normal_enabled = true
+normal_texture = ExtResource("2_ooxg6")

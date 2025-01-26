@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://djnyin6umt3qo"
+path="res://.godot/imported/SM_Stained_Glass_Arc.obj-e912dc81a2deaefee28d5228e45d004e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Stained_Glass_Arc.obj-e912dc81a2deaefee28d5228e45d004e.mesh"]
+
+source_file="res://Environment/Tileables/SM_Stained_Glass_Arc.obj"
+dest_files=["res://.godot/imported/SM_Stained_Glass_Arc.obj-e912dc81a2deaefee28d5228e45d004e.mesh", "res://.godot/imported/SM_Stained_Glass_Arc.obj-e912dc81a2deaefee28d5228e45d004e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

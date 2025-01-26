@@ -1,0 +1,11 @@
+[gd_resource type="ORMMaterial3D" load_steps=4 format=3 uid="uid://dshe2wnsqia2y"]
+
+[ext_resource type="Texture2D" uid="uid://cug226iswstnf" path="res://Environment/Tileables/Marble_BC.png" id="1_taeom"]
+[ext_resource type="Texture2D" uid="uid://bshryylri75ol" path="res://Environment/Tileables/Marble_ORM.png" id="2_jyjuq"]
+[ext_resource type="Texture2D" uid="uid://c2m2buvtt58ir" path="res://Environment/Tileables/Marble_NM.png" id="2_mci67"]
+
+[resource]
+albedo_texture = ExtResource("1_taeom")
+orm_texture = ExtResource("2_jyjuq")
+normal_enabled = true
+normal_texture = ExtResource("2_mci67")

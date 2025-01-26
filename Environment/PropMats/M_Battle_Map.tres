@@ -1,0 +1,11 @@
+[gd_resource type="ORMMaterial3D" load_steps=4 format=3 uid="uid://c7c2pfqe0hsw5"]
+
+[ext_resource type="Texture2D" uid="uid://btovfss1q57ou" path="res://Environment/PropMats/MI_Battle_Map_Table_BC_Utility - sRGB - Texture.tga" id="1_ps42l"]
+[ext_resource type="Texture2D" uid="uid://c64h7qrmfdhx2" path="res://Environment/PropMats/MI_Battle_Map_Table_NM_Utility - Raw.tga" id="2_ahhy1"]
+[ext_resource type="Texture2D" uid="uid://drhxyvltknqop" path="res://Environment/PropMats/MI_Battle_Map_Table_ORM_Utility - Raw.tga" id="3_cqfqr"]
+
+[resource]
+albedo_texture = ExtResource("1_ps42l")
+orm_texture = ExtResource("3_cqfqr")
+normal_enabled = true
+normal_texture = ExtResource("2_ahhy1")
