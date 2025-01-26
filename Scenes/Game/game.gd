@@ -64,6 +64,9 @@ func _game_candidates_main() -> void:
 	_mini_game_block()
 
 func _mini_game_block() -> void:
+	if (run_turn == Turn.TUTORIAL):
+		candidate_instances.reverse()
+		turn_candidates.reverse()
 	var key : int
 	for candidate in candidate_instances:
 		key = candidate_instances.find(candidate)
@@ -78,7 +81,18 @@ func _mini_game_block() -> void:
 	push_error('Implement no king case')
 
 func coronation(candidate: Candidate) -> void:
-	push_error('Not more implementation')
+	var key : int = turn_candidates.find(candidate)
+	if not candidate_instances[key]:
+		push_error('Candidate character not found')
+	_move_character_to_position(candidate_instances[key], CharacterPositions.throne_position, 4.0)
+	await get_tree().create_timer(1.0).timeout
+	_move_camera(CAMERA_MAIN_VIEW_POSITION, CAMERA_MAIN_VIEW_ROTATION)
+	for event in candidate.kingdom_event_collection:
+		await event.invoke()
+	next_round()
+
+func next_round() -> void:
+	pass #TODO: Prepare next round
 
 func _move_camera(camera_position: Vector3, camera_rotation: Vector3) -> void:
 	var tween : Tween = get_tree().create_tween()
