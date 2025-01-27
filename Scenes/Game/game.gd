@@ -22,10 +22,11 @@ func _ready() -> void:
 	mini_game.game_ended.connect(_on_mini_game_ended)
 
 func start_run() -> void:
+	MusicController.switch_to_level_song()
 	run_turn = Turn.TUTORIAL
-	tutorial()
+	prepare_turn_candidates()
 
-func tutorial() -> void:
+func prepare_turn_candidates() -> void:
 	_move_camera(CAMERA_MAIN_VIEW_POSITION, CAMERA_MAIN_VIEW_ROTATION)
 	turn_candidates = game_candidates.get_candidates_by_turn(run_turn)
 	await _introduce_game_candidates()
@@ -92,7 +93,27 @@ func coronation(candidate: Candidate) -> void:
 	next_round()
 
 func next_round() -> void:
+	_set_next_turn()
 	pass #TODO: Prepare next round
+
+func _set_next_turn() -> void:
+	match run_turn:
+		Turn.TUTORIAL:
+			run_turn = Turn.FIRST
+		Turn.FIRST:
+			run_turn = Turn.SECOND
+		Turn.SECOND:
+			run_turn = Turn.THIRD
+		Turn.THIRD:
+			run_turn = Turn.FOURTH
+		Turn.FOURTH:
+			run_turn = Turn.FIVETH
+		Turn.FIVETH:
+			run_turn = Turn.SIXTH
+		Turn.SIXTH:
+			run_turn = Turn.PLUS
+		Turn.PLUS:
+			run_turn = Turn.PLUS
 
 func _move_camera(camera_position: Vector3, camera_rotation: Vector3) -> void:
 	var tween : Tween = get_tree().create_tween()
