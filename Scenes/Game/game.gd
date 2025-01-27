@@ -69,8 +69,10 @@ func _mini_game_block() -> void:
 		candidate_instances.reverse()
 		turn_candidates.reverse()
 	var key : int
+	var previous_position : Vector3
 	for candidate in candidate_instances:
 		key = candidate_instances.find(candidate)
+		previous_position = candidate.position
 		_move_character_to_position(candidate, CharacterPositions.mini_game_position, randf_range(2., 3.))
 		await get_tree().create_timer(1.0).timeout
 		await start_minigame(turn_candidates[key])
@@ -79,6 +81,8 @@ func _mini_game_block() -> void:
 			await _move_camera(CAMERA_MAIN_VIEW_POSITION + Vector3(0, 1, -1), CAMERA_MAIN_VIEW_ROTATION)
 			coronation(mini_game.get_candidate())
 			return
+		else:
+			_move_character_to_position(candidate, previous_position, randf_range(2., 3.))
 	push_error('Implement no king case')
 
 func coronation(candidate: Candidate) -> void:
@@ -94,7 +98,11 @@ func coronation(candidate: Candidate) -> void:
 
 func next_round() -> void:
 	_set_next_turn()
-	pass #TODO: Prepare next round
+	var candidate_instance : Node3D = candidate_instances.pop_back()
+	while candidate_instance:
+		candidate_instance.queue_free()
+		candidate_instance = candidate_instances.pop_back()
+	prepare_turn_candidates()
 
 func _set_next_turn() -> void:
 	match run_turn:
