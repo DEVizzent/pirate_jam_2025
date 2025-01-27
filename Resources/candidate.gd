@@ -9,7 +9,7 @@ enum SocialClass {CLERGY, NOBILITY, PLEBE}
 @export var kingdom_event_collection : Array[KingdomEvent]
 @export_range(0, 20) var minigame_difficulty : int = 10
 @export_range(0, 300) var minigame_time : int = 10
-@export var character_scene : PackedScene
+@export var character_scene : PackedScene = preload("res://Test/CandidateEvents/candidate_cube.tscn")
 
 func get_character() -> Node3D:
 	var character: Node3D = character_scene.instantiate()
