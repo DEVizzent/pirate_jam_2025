@@ -24,7 +24,7 @@ remove_tag = 0
 
 [resource]
 script = ExtResource("4_ai6kd")
-internal_name = "MorganaEvent1"
+internal_name = "MorganaEvent2"
 kingdom_modifier = SubResource("Resource_gvmm7")
 event_condition_collection = Array[ExtResource("2_k683b")]([])
 probability = 50

@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="KingdomEvent" load_steps=8 format=3 uid="uid://bq6cq76uwci7h"]
+
+[ext_resource type="Resource" uid="uid://b0veu0p0h1ce4" path="res://Resources/Event Resources/Merlin/MerlinEvent1Dialogue.dialogue" id="1_hkypn"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="2_3461n"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_modifier.gd" id="3_6ish6"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition_has_stat.gd" id="3_le83m"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="4_kl3hc"]
+
+[sub_resource type="Resource" id="Resource_ttcob"]
+script = ExtResource("3_le83m")
+stat_to_compare = 2
+operator = 2
+value = 6
+
+[sub_resource type="Resource" id="Resource_qua1r"]
+script = ExtResource("3_6ish6")
+faith = 0
+food = -1
+force = -1
+add_tag = 12
+remove_tag = 0
+
+[resource]
+script = ExtResource("4_kl3hc")
+internal_name = "MerlinEvent3"
+kingdom_modifier = SubResource("Resource_qua1r")
+event_condition_collection = Array[ExtResource("2_3461n")]([SubResource("Resource_ttcob")])
+probability = 50
+dialog = ExtResource("1_hkypn")

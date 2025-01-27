@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://b0veu0p0h1ce4"
+path="res://.godot/imported/MerlinEvent1Dialogue.dialogue-e70e73f14bbe4cd2aef0d19945492cac.tres"
+
+[deps]
+
+source_file="res://Resources/Event Resources/Merlin/MerlinEvent1Dialogue.dialogue"
+dest_files=["res://.godot/imported/MerlinEvent1Dialogue.dialogue-e70e73f14bbe4cd2aef0d19945492cac.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://cs8kk3r2jv3ag"
+path="res://.godot/imported/MedievalKing.dialogue-89cf041d7751480a883f44e4797c898e.tres"
+
+[deps]
+
+source_file="res://Resources/Candidate Resources/Candidates Dialogue/MedievalKing.dialogue"
+dest_files=["res://.godot/imported/MedievalKing.dialogue-89cf041d7751480a883f44e4797c898e.tres"]
+
+[params]
+
+defaults=true

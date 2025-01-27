@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="KingdomEvent" load_steps=8 format=3 uid="uid://bn57f6lpa6uij"]
+
+[ext_resource type="Resource" uid="uid://b3afx4ogn6cep" path="res://Resources/Event Resources/MassiveSoldier/MassiveSoldierEvent1Dialogue.dialogue" id="1_sc8rf"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="2_e4dtr"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_modifier.gd" id="3_lo2uw"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition_has_stat.gd" id="3_ttiap"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="4_nvnll"]
+
+[sub_resource type="Resource" id="Resource_a06jk"]
+script = ExtResource("3_ttiap")
+stat_to_compare = 2
+operator = 1
+value = 6
+
+[sub_resource type="Resource" id="Resource_j0fh0"]
+script = ExtResource("3_lo2uw")
+faith = 0
+food = 1
+force = -1
+add_tag = 18
+remove_tag = 0
+
+[resource]
+script = ExtResource("4_nvnll")
+internal_name = "MassiveSoldierEvent1"
+kingdom_modifier = SubResource("Resource_j0fh0")
+event_condition_collection = Array[ExtResource("2_e4dtr")]([SubResource("Resource_a06jk")])
+probability = 50
+dialog = ExtResource("1_sc8rf")

@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://bv7atmnuwm11t"
+path="res://.godot/imported/MassiveSoldierEvent3Dialogue.dialogue-136f5e78646158ddefb1df0a4be4c037.tres"
+
+[deps]
+
+source_file="res://Resources/Event Resources/MassiveSoldier/MassiveSoldierEvent3Dialogue.dialogue"
+dest_files=["res://.godot/imported/MassiveSoldierEvent3Dialogue.dialogue-136f5e78646158ddefb1df0a4be4c037.tres"]
+
+[params]
+
+defaults=true

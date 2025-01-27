@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://dp6tudqn82jf0"
+path="res://.godot/imported/MassiveSoldier.dialogue-a9981dc5ccf833c0e26a1d5dfd298d6e.tres"
+
+[deps]
+
+source_file="res://Resources/Candidate Resources/Candidates Dialogue/MassiveSoldier.dialogue"
+dest_files=["res://.godot/imported/MassiveSoldier.dialogue-a9981dc5ccf833c0e26a1d5dfd298d6e.tres"]
+
+[params]
+
+defaults=true

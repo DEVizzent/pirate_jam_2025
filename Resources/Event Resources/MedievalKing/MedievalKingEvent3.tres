@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="KingdomEvent" load_steps=8 format=3 uid="uid://bjily2bip3hnw"]
+
+[ext_resource type="Resource" uid="uid://bjd4nd6mvti4h" path="res://Resources/Event Resources/MedievalKing/MedievalKingEvent3Dialogue.dialogue" id="1_18c21"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="2_y3rot"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition_has_tag.gd" id="3_8ynq3"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_modifier.gd" id="3_jfyky"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="4_7b5l8"]
+
+[sub_resource type="Resource" id="Resource_0uf61"]
+script = ExtResource("3_8ynq3")
+has_not = false
+tag = 4
+
+[sub_resource type="Resource" id="Resource_j0fh0"]
+script = ExtResource("3_jfyky")
+faith = 0
+food = 0
+force = -1
+add_tag = 20
+remove_tag = 0
+
+[resource]
+script = ExtResource("4_7b5l8")
+internal_name = "MedievalKingEvent1"
+kingdom_modifier = SubResource("Resource_j0fh0")
+event_condition_collection = Array[ExtResource("2_y3rot")]([SubResource("Resource_0uf61")])
+probability = 50
+dialog = ExtResource("1_18c21")

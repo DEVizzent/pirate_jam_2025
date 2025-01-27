@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://cmkg6g3h7as08"
+path="res://.godot/imported/MedievalKingEvent2Dialogue.dialogue-6fdba3faeb401b7eb1ea8c99130d9b07.tres"
+
+[deps]
+
+source_file="res://Resources/Event Resources/MedievalKing/MedievalKingEvent2Dialogue.dialogue"
+dest_files=["res://.godot/imported/MedievalKingEvent2Dialogue.dialogue-6fdba3faeb401b7eb1ea8c99130d9b07.tres"]
+
+[params]
+
+defaults=true

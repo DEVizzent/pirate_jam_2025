@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="KingdomEvent" load_steps=10 format=3 uid="uid://be6ibv6ubva1"]
+
+[ext_resource type="Resource" uid="uid://l7bws3wcw21n" path="res://Resources/Event Resources/MassiveSoldier/MassiveSoldierEvent4Dialogue.dialogue" id="1_pgvn8"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="2_jdw5d"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_modifier.gd" id="3_8e5nm"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition_has_stat.gd" id="3_wrrk4"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="4_5vh40"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition_has_tag.gd" id="4_bqluh"]
+
+[sub_resource type="Resource" id="Resource_pjc0x"]
+script = ExtResource("3_wrrk4")
+stat_to_compare = 2
+operator = 1
+value = 5
+
+[sub_resource type="Resource" id="Resource_sj8ii"]
+script = ExtResource("4_bqluh")
+has_not = false
+tag = 4
+
+[sub_resource type="Resource" id="Resource_j0fh0"]
+script = ExtResource("3_8e5nm")
+faith = 0
+food = 0
+force = -1
+add_tag = 20
+remove_tag = 0
+
+[resource]
+script = ExtResource("4_5vh40")
+internal_name = "MassiveSoldierEvent4"
+kingdom_modifier = SubResource("Resource_j0fh0")
+event_condition_collection = Array[ExtResource("2_jdw5d")]([SubResource("Resource_pjc0x"), SubResource("Resource_sj8ii")])
+probability = 50
+dialog = ExtResource("1_pgvn8")

@@ -8,7 +8,7 @@
 
 [resource]
 script = ExtResource("2_vkw4g")
-name = "Morgana La Fey"
+name = "Morgana"
 social_class = 0
 candidate_conditions = Array[ExtResource("1_2fql8")]([])
 dialogue = ExtResource("3_idwi0")
