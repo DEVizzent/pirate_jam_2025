@@ -11,6 +11,7 @@ const CAMERA_MENU_VIEW_ROTATION : Vector3 = Vector3(0, 0, 0)
 @onready var camera : Camera3D = $Camera3D
 @onready var mini_game : MiniGame = $MiniGame
 @export var game_candidates : GameCandidates 
+@export var general_events : Array[KingdomEvent]
 var run_turn : Turn
 var turn_candidates : Array[Candidate]
 var candidate_instances : Array[Node3D]
@@ -95,6 +96,21 @@ func coronation(candidate: Candidate) -> void:
 	for event in candidate.kingdom_event_collection:
 		await event.invoke()
 	next_round()
+func execute_candidate_events(candidate_events : Array[KingdomEvent]) -> void:
+	var number_of_events_to_execute : int = randi_range(3, 5)
+	var number_of_executed_events : int = 0
+	for candidate_event in candidate_events:
+		if await candidate_event.invoke():
+			number_of_executed_events += 1
+		if number_of_executed_events >= number_of_events_to_execute:
+			return
+	general_events.shuffle()
+	for general_event in general_events:
+		if await general_event.invoke():
+			number_of_executed_events += 1
+		if number_of_executed_events >= number_of_events_to_execute:
+			return
+	
 
 func next_round() -> void:
 	_set_next_turn()
