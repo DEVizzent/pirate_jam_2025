@@ -34,6 +34,7 @@ enum Tag {
 @export var internal_name : String = ''
 @export var kingdom_modifier : KingdomModifier
 @export var event_condition_collection : Array[EventCondition]
+@export var must : bool = false
 @export_range(0, 100) var probability : int = 100
 @export var dialog : DialogueResource
 
