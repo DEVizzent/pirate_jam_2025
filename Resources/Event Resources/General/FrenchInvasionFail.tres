@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="KingdomEvent" load_steps=10 format=3 uid="uid://cbnpuwdnysd6v"]
+
+[ext_resource type="Resource" uid="uid://cc8q3rnsiaxeu" path="res://Resources/Event Resources/General/FrenchInvasionFailDialogue.dialogue" id="1_18on8"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="2_lujg3"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition_has_tag.gd" id="3_nhsx7"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition_has_stat.gd" id="4_02h28"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_modifier.gd" id="5_imdo6"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="6_u158f"]
+
+[sub_resource type="Resource" id="Resource_b8c85"]
+script = ExtResource("3_nhsx7")
+has_not = false
+tag = 13
+
+[sub_resource type="Resource" id="Resource_gvfy4"]
+script = ExtResource("4_02h28")
+stat_to_compare = 2
+operator = 1
+value = 4
+
+[sub_resource type="Resource" id="Resource_tvcvh"]
+script = ExtResource("5_imdo6")
+faith = 0
+food = -1
+force = -1
+add_tag = 18
+remove_tag = 0
+
+[resource]
+script = ExtResource("6_u158f")
+internal_name = "FrenchTithe"
+kingdom_modifier = SubResource("Resource_tvcvh")
+event_condition_collection = Array[ExtResource("2_lujg3")]([SubResource("Resource_b8c85"), SubResource("Resource_gvfy4")])
+probability = 25
+dialog = ExtResource("1_18on8")

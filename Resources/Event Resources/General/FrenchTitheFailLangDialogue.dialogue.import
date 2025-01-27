@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://drjnbaweplokr"
+path="res://.godot/imported/FrenchTitheFailLangDialogue.dialogue-1cf9bc27fa7d17c91cb91273797d0c95.tres"
+
+[deps]
+
+source_file="res://Resources/Event Resources/General/FrenchTitheFailLangDialogue.dialogue"
+dest_files=["res://.godot/imported/FrenchTitheFailLangDialogue.dialogue-1cf9bc27fa7d17c91cb91273797d0c95.tres"]
+
+[params]
+
+defaults=true

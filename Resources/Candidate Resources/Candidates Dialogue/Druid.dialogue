@@ -1,0 +1,13 @@
+~ main
+do DialogueEventBus.animate("Druid", "talk")
+A Druid: The crows have gathered me here.
+do DialogueEventBus.animate("Druid", "sniff")
+A Druid: There's something in the air, and I will bring it out.
+=> END
+~ presentation
+do DialogueEventBus.animate("Druid", "talk")
+A Druid: The Old Gods are looking at us.
+A Druid: They wonder if we are going to stay weird, or if we are going to follow the path of the Feeble Minded world of reason.
+A Druid: Promises were made aeons ago regarding our soil, and it is up to us to enforce them.
+A Druid: Even if we don't remember them anymore.
+=> END

@@ -25,6 +25,10 @@ enum Tag {
 	FAE_EXILED,
 	FAMISHED,
 	AKAB,
+	DEBT_FORGIVEN,
+	GOD_SACRIFICED,
+	FAE_INFILTRATED,
+	FAE_ARMY
 }
 
 @export var internal_name : String = ''

@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://cjuckyc5fqljg"
+path="res://.godot/imported/DruidEvent1Dialogue.dialogue-e2b44b7aa2a614a321e9f942357ccb5b.tres"
+
+[deps]
+
+source_file="res://Resources/Event Resources/Druid/DruidEvent1Dialogue.dialogue"
+dest_files=["res://.godot/imported/DruidEvent1Dialogue.dialogue-e2b44b7aa2a614a321e9f942357ccb5b.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://depmuk8ravow2"
+path="res://.godot/imported/Druid.dialogue-9b9adb987d3887f9291ac6c45bb3d2a5.tres"
+
+[deps]
+
+source_file="res://Resources/Candidate Resources/Candidates Dialogue/Druid.dialogue"
+dest_files=["res://.godot/imported/Druid.dialogue-9b9adb987d3887f9291ac6c45bb3d2a5.tres"]
+
+[params]
+
+defaults=true

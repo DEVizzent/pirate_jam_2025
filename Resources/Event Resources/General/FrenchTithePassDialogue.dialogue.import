@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://dc2f4tk6ynm78"
+path="res://.godot/imported/FrenchTithePassDialogue.dialogue-06e203c1fd916f3254b0a418fa06978a.tres"
+
+[deps]
+
+source_file="res://Resources/Event Resources/General/FrenchTithePassDialogue.dialogue"
+dest_files=["res://.godot/imported/FrenchTithePassDialogue.dialogue-06e203c1fd916f3254b0a418fa06978a.tres"]
+
+[params]
+
+defaults=true

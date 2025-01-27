@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://buqpp28260efi"
+path="res://.godot/imported/DruidEvent2Dialogue.dialogue-1c61d18616f3223837d4aa6b30ba92fc.tres"
+
+[deps]
+
+source_file="res://Resources/Event Resources/Druid/DruidEvent2Dialogue.dialogue"
+dest_files=["res://.godot/imported/DruidEvent2Dialogue.dialogue-1c61d18616f3223837d4aa6b30ba92fc.tres"]
+
+[params]
+
+defaults=true

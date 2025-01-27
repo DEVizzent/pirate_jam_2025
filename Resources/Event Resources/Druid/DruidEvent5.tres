@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="KingdomEvent" load_steps=8 format=3 uid="uid://bm2jim5w1j5vi"]
+
+[ext_resource type="Resource" uid="uid://kw3m26dlrryj" path="res://Resources/Event Resources/Druid/DruidEvent5Dialogue.dialogue" id="1_iltnb"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="2_e7owx"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_modifier.gd" id="3_8mhnh"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition_has_tag.gd" id="3_kqopv"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="4_pvb6n"]
+
+[sub_resource type="Resource" id="Resource_ohkrd"]
+script = ExtResource("3_kqopv")
+has_not = false
+tag = 7
+
+[sub_resource type="Resource" id="Resource_gvmm7"]
+script = ExtResource("3_8mhnh")
+faith = 0
+food = 0
+force = 1
+add_tag = 26
+remove_tag = 0
+
+[resource]
+script = ExtResource("4_pvb6n")
+internal_name = "DruidEvent1"
+kingdom_modifier = SubResource("Resource_gvmm7")
+event_condition_collection = Array[ExtResource("2_e7owx")]([SubResource("Resource_ohkrd")])
+probability = 25
+dialog = ExtResource("1_iltnb")

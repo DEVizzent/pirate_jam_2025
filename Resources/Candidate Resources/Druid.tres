@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Candidate" load_steps=8 format=3 uid="uid://b0reofdmvpn3v"]
+
+[ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="1_6wgd3"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition_has_tag.gd" id="2_6qm86"]
+[ext_resource type="PackedScene" uid="uid://bvqnf42a5t62j" path="res://Test/CandidateEvents/candidate_cube.tscn" id="2_wmgcj"]
+[ext_resource type="Resource" uid="uid://depmuk8ravow2" path="res://Resources/Candidate Resources/Candidates Dialogue/Druid.dialogue" id="4_jo7jk"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="4_sw0sj"]
+[ext_resource type="Script" path="res://Resources/candidate.gd" id="5_gd2gr"]
+
+[sub_resource type="Resource" id="Resource_i6bgb"]
+script = ExtResource("2_6qm86")
+has_not = true
+tag = 1
+
+[resource]
+script = ExtResource("5_gd2gr")
+name = "MedievalKing"
+social_class = 0
+candidate_conditions = Array[ExtResource("1_6wgd3")]([SubResource("Resource_i6bgb")])
+dialogue = ExtResource("4_jo7jk")
+kingdom_event_collection = Array[ExtResource("4_sw0sj")]([])
+minigame_difficulty = 10
+minigame_time = 10
+character_scene = ExtResource("2_wmgcj")

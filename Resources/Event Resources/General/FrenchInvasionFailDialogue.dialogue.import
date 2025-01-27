@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://cc8q3rnsiaxeu"
+path="res://.godot/imported/FrenchInvasionFailDialogue.dialogue-b277e4508b6cd85721f0bb5e4a1a1747.tres"
+
+[deps]
+
+source_file="res://Resources/Event Resources/General/FrenchInvasionFailDialogue.dialogue"
+dest_files=["res://.godot/imported/FrenchInvasionFailDialogue.dialogue-b277e4508b6cd85721f0bb5e4a1a1747.tres"]
+
+[params]
+
+defaults=true
