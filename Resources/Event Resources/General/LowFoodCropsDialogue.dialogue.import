@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://j6nvryk1iapd"
+path="res://.godot/imported/LowFoodCropsDialogue.dialogue-c5cb2803ff9709a8c41a165a8b51cb82.tres"
+
+[deps]
+
+source_file="res://Resources/Event Resources/General/LowFoodCropsDialogue.dialogue"
+dest_files=["res://.godot/imported/LowFoodCropsDialogue.dialogue-c5cb2803ff9709a8c41a165a8b51cb82.tres"]
+
+[params]
+
+defaults=true

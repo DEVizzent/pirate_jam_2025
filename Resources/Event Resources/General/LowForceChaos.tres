@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="KingdomEvent" load_steps=8 format=3 uid="uid://df70136wjnddx"]
+
+[ext_resource type="Resource" uid="uid://ckpxg7ammxqyv" path="res://Resources/Event Resources/General/LowForceChaosDialogue.dialogue" id="1_wde7l"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="2_ll8gv"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition_has_stat.gd" id="3_3028o"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_modifier.gd" id="4_paxyo"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="5_o082v"]
+
+[sub_resource type="Resource" id="Resource_6pj80"]
+script = ExtResource("3_3028o")
+stat_to_compare = 2
+operator = 2
+value = 4
+
+[sub_resource type="Resource" id="Resource_tvcvh"]
+script = ExtResource("4_paxyo")
+faith = 0
+food = 0
+force = 1
+add_tag = 0
+remove_tag = 22
+
+[resource]
+script = ExtResource("5_o082v")
+internal_name = "HighForceUnrest"
+kingdom_modifier = SubResource("Resource_tvcvh")
+event_condition_collection = Array[ExtResource("2_ll8gv")]([SubResource("Resource_6pj80")])
+probability = 50
+dialog = ExtResource("1_wde7l")

@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://dde63mjju4lhj"
+path="res://.godot/imported/LowFaithMonstersDialogue.dialogue-b3271eba5b4fe9b05840373f1120ca9c.tres"
+
+[deps]
+
+source_file="res://Resources/Event Resources/General/LowFaithMonstersDialogue.dialogue"
+dest_files=["res://.godot/imported/LowFaithMonstersDialogue.dialogue-b3271eba5b4fe9b05840373f1120ca9c.tres"]
+
+[params]
+
+defaults=true

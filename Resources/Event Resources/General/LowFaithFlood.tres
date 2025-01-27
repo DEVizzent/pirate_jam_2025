@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="KingdomEvent" load_steps=10 format=3 uid="uid://bw1ubh41tkabh"]
+
+[ext_resource type="Resource" uid="uid://dj7whf3n5fxrb" path="res://Resources/Event Resources/General/LowFaithFloodDialogue.dialogue" id="1_n77hr"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="2_8ocj7"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition_has_stat.gd" id="3_ohs83"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition_has_tag.gd" id="4_2qoto"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_modifier.gd" id="5_g7r2x"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="6_c6cnd"]
+
+[sub_resource type="Resource" id="Resource_6pj80"]
+script = ExtResource("3_ohs83")
+stat_to_compare = 0
+operator = 2
+value = 4
+
+[sub_resource type="Resource" id="Resource_b8c85"]
+script = ExtResource("4_2qoto")
+has_not = false
+tag = 1
+
+[sub_resource type="Resource" id="Resource_tvcvh"]
+script = ExtResource("5_g7r2x")
+faith = 2
+food = -1
+force = 0
+add_tag = 0
+remove_tag = 0
+
+[resource]
+script = ExtResource("6_c6cnd")
+internal_name = "LowFaithFlood"
+kingdom_modifier = SubResource("Resource_tvcvh")
+event_condition_collection = Array[ExtResource("2_8ocj7")]([SubResource("Resource_6pj80"), SubResource("Resource_b8c85")])
+probability = 50
+dialog = ExtResource("1_n77hr")

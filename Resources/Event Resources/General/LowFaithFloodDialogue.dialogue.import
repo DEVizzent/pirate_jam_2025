@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://dj7whf3n5fxrb"
+path="res://.godot/imported/LowFaithFloodDialogue.dialogue-2503497ca6e983f319776f3eb6f9cf4b.tres"
+
+[deps]
+
+source_file="res://Resources/Event Resources/General/LowFaithFloodDialogue.dialogue"
+dest_files=["res://.godot/imported/LowFaithFloodDialogue.dialogue-2503497ca6e983f319776f3eb6f9cf4b.tres"]
+
+[params]
+
+defaults=true

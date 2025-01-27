@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://bbdxsbr5ppqhl"
+path="res://.godot/imported/HighFaithAbandomentDialogue.dialogue-03223995c2a4574852bb58bf1658dd71.tres"
+
+[deps]
+
+source_file="res://Resources/Event Resources/General/HighFaithAbandomentDialogue.dialogue"
+dest_files=["res://.godot/imported/HighFaithAbandomentDialogue.dialogue-03223995c2a4574852bb58bf1658dd71.tres"]
+
+[params]
+
+defaults=true

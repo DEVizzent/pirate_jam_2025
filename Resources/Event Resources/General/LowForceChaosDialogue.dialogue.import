@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://ckpxg7ammxqyv"
+path="res://.godot/imported/LowForceChaosDialogue.dialogue-b16fe97f09d6e02ceb356fbd6e61e229.tres"
+
+[deps]
+
+source_file="res://Resources/Event Resources/General/LowForceChaosDialogue.dialogue"
+dest_files=["res://.godot/imported/LowForceChaosDialogue.dialogue-b16fe97f09d6e02ceb356fbd6e61e229.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://c25sc3kp2u31a"
+path="res://.godot/imported/HighFaithMayhemDialogue.dialogue-2efd6eaa469aee1e5d2579f5f81c9a5b.tres"
+
+[deps]
+
+source_file="res://Resources/Event Resources/General/HighFaithMayhemDialogue.dialogue"
+dest_files=["res://.godot/imported/HighFaithMayhemDialogue.dialogue-2efd6eaa469aee1e5d2579f5f81c9a5b.tres"]
+
+[params]
+
+defaults=true

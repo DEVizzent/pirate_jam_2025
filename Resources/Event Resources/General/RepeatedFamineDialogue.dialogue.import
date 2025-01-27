@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://c7rc0jhj7ay2r"
+path="res://.godot/imported/RepeatedFamineDialogue.dialogue-0313c5c41741aa5c7a21804c1e7e23df.tres"
+
+[deps]
+
+source_file="res://Resources/Event Resources/General/RepeatedFamineDialogue.dialogue"
+dest_files=["res://.godot/imported/RepeatedFamineDialogue.dialogue-0313c5c41741aa5c7a21804c1e7e23df.tres"]
+
+[params]
+
+defaults=true

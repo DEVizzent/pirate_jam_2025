@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://b2ufg1clga24c"
+path="res://.godot/imported/HighForceUnrestDialogue.dialogue-c31dca0bc19bb9ce6eb06f9ffbe07f85.tres"
+
+[deps]
+
+source_file="res://Resources/Event Resources/General/HighForceUnrestDialogue.dialogue"
+dest_files=["res://.godot/imported/HighForceUnrestDialogue.dialogue-c31dca0bc19bb9ce6eb06f9ffbe07f85.tres"]
+
+[params]
+
+defaults=true
