@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://dckvvx15t4a3m"
+path="res://.godot/imported/AngryPeasantEvent1Dialogue.dialogue-4c84b0e6c8770ea0ffe0c85af09a4211.tres"
+
+[deps]
+
+source_file="res://Resources/Event Resources/AngryPeasant/AngryPeasantEvent1Dialogue.dialogue"
+dest_files=["res://.godot/imported/AngryPeasantEvent1Dialogue.dialogue-4c84b0e6c8770ea0ffe0c85af09a4211.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://bd2ysqyh2a6we"
+path="res://.godot/imported/Pope.dialogue-a44713b5f1d9dc3faaeb9107077a50cd.tres"
+
+[deps]
+
+source_file="res://Resources/Candidate Resources/Candidates Dialogue/Pope.dialogue"
+dest_files=["res://.godot/imported/Pope.dialogue-a44713b5f1d9dc3faaeb9107077a50cd.tres"]
+
+[params]
+
+defaults=true

@@ -1,14 +1,16 @@
-[gd_resource type="Resource" script_class="Candidate" load_steps=10 format=3 uid="uid://cnnl40q2yv2wx"]
+[gd_resource type="Resource" script_class="Candidate" load_steps=12 format=3 uid="uid://cnnl40q2yv2wx"]
 
 [ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="1_h04q1"]
 [ext_resource type="PackedScene" uid="uid://bvqnf42a5t62j" path="res://Test/CandidateEvents/candidate_cube.tscn" id="2_2c2t5"]
 [ext_resource type="Resource" uid="uid://bk4wark1n15q7" path="res://Resources/Candidate Resources/Candidates Dialogue/RandomPeasant.dialogue" id="3_jvl3u"]
 [ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="4_82l3i"]
-[ext_resource type="Resource" uid="uid://bn57f6lpa6uij" path="res://Resources/Event Resources/MassiveSoldier/MassiveSoldierEvent1.tres" id="5_5ldvw"]
-[ext_resource type="Resource" uid="uid://bu14q3dc2fwbk" path="res://Resources/Event Resources/MassiveSoldier/MassiveSoldierEvent2.tres" id="6_58f22"]
-[ext_resource type="Resource" uid="uid://b46tglh0dkxaa" path="res://Resources/Event Resources/MassiveSoldier/MassiveSoldierEvent3.tres" id="7_0gev0"]
-[ext_resource type="Resource" uid="uid://be6ibv6ubva1" path="res://Resources/Event Resources/MassiveSoldier/MassiveSoldierEvent4.tres" id="8_pfau0"]
+[ext_resource type="Resource" uid="uid://bkpu512p3icxr" path="res://Resources/Event Resources/RandomPeasant/RandomPeasantEvent1.tres" id="5_g3nd5"]
+[ext_resource type="Resource" uid="uid://4khb1kobsreb" path="res://Resources/Event Resources/RandomPeasant/RandomPeasantEvent2.tres" id="6_kc2tp"]
+[ext_resource type="Resource" uid="uid://cfgp2vlyqwxea" path="res://Resources/Event Resources/RandomPeasant/RandomPeasantEvent3.tres" id="7_3s7e4"]
+[ext_resource type="Resource" uid="uid://dyomwavw1heoa" path="res://Resources/Event Resources/RandomPeasant/RandomPeasantEvent4.tres" id="8_ljv2y"]
 [ext_resource type="Script" path="res://Resources/candidate.gd" id="9_6341w"]
+[ext_resource type="Resource" uid="uid://cpjqsaqvvlo02" path="res://Resources/Event Resources/RandomPeasant/RandomPeasantEvent5.tres" id="9_mpurs"]
+[ext_resource type="Resource" uid="uid://codunoj4plh8h" path="res://Resources/Event Resources/RandomPeasant/RandomPeasantEvent6.tres" id="10_k8dxw"]
 
 [resource]
 script = ExtResource("9_6341w")
@@ -16,7 +18,7 @@ name = "RandomPeasant"
 social_class = 2
 candidate_conditions = Array[ExtResource("1_h04q1")]([])
 dialogue = ExtResource("3_jvl3u")
-kingdom_event_collection = Array[ExtResource("4_82l3i")]([ExtResource("5_5ldvw"), ExtResource("6_58f22"), ExtResource("7_0gev0"), ExtResource("8_pfau0")])
+kingdom_event_collection = Array[ExtResource("4_82l3i")]([ExtResource("5_g3nd5"), ExtResource("6_kc2tp"), ExtResource("7_3s7e4"), ExtResource("8_ljv2y"), ExtResource("9_mpurs"), ExtResource("10_k8dxw")])
 minigame_difficulty = 10
 minigame_time = 10
 character_scene = ExtResource("2_2c2t5")

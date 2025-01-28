@@ -19,7 +19,7 @@ tag = 1
 
 [resource]
 script = ExtResource("5_gd2gr")
-name = "MedievalKing"
+name = "Druid"
 social_class = 0
 candidate_conditions = Array[ExtResource("1_6wgd3")]([SubResource("Resource_i6bgb")])
 dialogue = ExtResource("4_jo7jk")

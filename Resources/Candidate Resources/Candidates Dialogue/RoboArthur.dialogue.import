@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://cmk0ukrhtmmf2"
+path="res://.godot/imported/RoboArthur.dialogue-0cdf9cf9dbbb8c6a9fd5f21216b5a092.tres"
+
+[deps]
+
+source_file="res://Resources/Candidate Resources/Candidates Dialogue/RoboArthur.dialogue"
+dest_files=["res://.godot/imported/RoboArthur.dialogue-0cdf9cf9dbbb8c6a9fd5f21216b5a092.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="KingdomEvent" load_steps=9 format=3 uid="uid://dna5cnwfjicoo"]
+
+[ext_resource type="Resource" uid="uid://cqjhwuv8tkdh3" path="res://Resources/Event Resources/Cultist/CultistEvent2Dialogue.dialogue" id="1_25pwg"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="2_fkkot"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition_has_tag.gd" id="3_mb22e"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_modifier.gd" id="3_n4f3n"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="4_bqduy"]
+
+[sub_resource type="Resource" id="Resource_c5vsn"]
+script = ExtResource("3_mb22e")
+has_not = true
+tag = 26
+
+[sub_resource type="Resource" id="Resource_jkryy"]
+script = ExtResource("3_mb22e")
+has_not = true
+tag = 24
+
+[sub_resource type="Resource" id="Resource_gvmm7"]
+script = ExtResource("3_n4f3n")
+faith = 0
+food = 0
+force = 0
+add_tag = 0
+remove_tag = 0
+
+[resource]
+script = ExtResource("4_bqduy")
+internal_name = "CultistEvent2"
+kingdom_modifier = SubResource("Resource_gvmm7")
+event_condition_collection = Array[ExtResource("2_fkkot")]([SubResource("Resource_c5vsn"), SubResource("Resource_jkryy")])
+must = true
+probability = 100
+dialog = ExtResource("1_25pwg")

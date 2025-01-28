@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://cjy6hett6i1du"
+path="res://.godot/imported/PopeEvent2Dialogue.dialogue-b10d140aabd6130a9561c62e195d431f.tres"
+
+[deps]
+
+source_file="res://Resources/Event Resources/Pope/PopeEvent2Dialogue.dialogue"
+dest_files=["res://.godot/imported/PopeEvent2Dialogue.dialogue-b10d140aabd6130a9561c62e195d431f.tres"]
+
+[params]
+
+defaults=true

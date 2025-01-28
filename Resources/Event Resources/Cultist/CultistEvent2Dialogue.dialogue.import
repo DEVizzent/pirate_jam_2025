@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://cqjhwuv8tkdh3"
+path="res://.godot/imported/CultistEvent2Dialogue.dialogue-4856eb32ac5ac0dd2aa2f2da99c48ff9.tres"
+
+[deps]
+
+source_file="res://Resources/Event Resources/Cultist/CultistEvent2Dialogue.dialogue"
+dest_files=["res://.godot/imported/CultistEvent2Dialogue.dialogue-4856eb32ac5ac0dd2aa2f2da99c48ff9.tres"]
+
+[params]
+
+defaults=true

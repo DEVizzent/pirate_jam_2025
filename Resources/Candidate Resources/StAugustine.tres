@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="1_huiyl"]
 [ext_resource type="PackedScene" uid="uid://bvqnf42a5t62j" path="res://Test/CandidateEvents/candidate_cube.tscn" id="2_m124b"]
-[ext_resource type="Resource" uid="uid://b3uobovy7vyb" path="res://Resources/Candidate Resources/Candidates Dialogue/Arthur.dialogue" id="3_ipuqh"]
+[ext_resource type="Resource" uid="uid://bfeikwoxqbpn6" path="res://Resources/Candidate Resources/Candidates Dialogue/StAugustine.dialogue" id="3_2wlj1"]
 [ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="4_g0pjh"]
 [ext_resource type="Resource" uid="uid://c88osjr3eim0p" path="res://Resources/Event Resources/StAugustine/StAugustineEvent1.tres" id="5_koiga"]
 [ext_resource type="Resource" uid="uid://52lsn1u7x3v2" path="res://Resources/Event Resources/StAugustine/StAugustineEvent2.tres" id="6_7gyrs"]
@@ -16,7 +16,7 @@ script = ExtResource("10_b8pxa")
 name = "StAugustine"
 social_class = 1
 candidate_conditions = Array[ExtResource("1_huiyl")]([])
-dialogue = ExtResource("3_ipuqh")
+dialogue = ExtResource("3_2wlj1")
 kingdom_event_collection = Array[ExtResource("4_g0pjh")]([ExtResource("5_koiga"), ExtResource("6_7gyrs"), ExtResource("7_hfkst"), ExtResource("8_nn1bf"), ExtResource("9_lrcoe")])
 minigame_difficulty = 0
 minigame_time = 10

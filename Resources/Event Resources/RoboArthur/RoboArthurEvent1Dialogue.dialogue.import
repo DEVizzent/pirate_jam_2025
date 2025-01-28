@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://cugv2p74wh7r6"
+path="res://.godot/imported/RoboArthurEvent1Dialogue.dialogue-1716987f8fec16012ca811c5eece2f6e.tres"
+
+[deps]
+
+source_file="res://Resources/Event Resources/RoboArthur/RoboArthurEvent1Dialogue.dialogue"
+dest_files=["res://.godot/imported/RoboArthurEvent1Dialogue.dialogue-1716987f8fec16012ca811c5eece2f6e.tres"]
+
+[params]
+
+defaults=true

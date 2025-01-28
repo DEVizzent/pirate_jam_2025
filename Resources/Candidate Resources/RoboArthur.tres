@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="Candidate" load_steps=9 format=3 uid="uid://cyfijdgjspvv"]
+
+[ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="1_u0m8c"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition_has_stat.gd" id="2_7p827"]
+[ext_resource type="PackedScene" uid="uid://bvqnf42a5t62j" path="res://Test/CandidateEvents/candidate_cube.tscn" id="2_87r0y"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="4_snj1f"]
+[ext_resource type="Resource" uid="uid://cmk0ukrhtmmf2" path="res://Resources/Candidate Resources/Candidates Dialogue/RoboArthur.dialogue" id="4_xs3on"]
+[ext_resource type="Resource" uid="uid://c56mjlxiwb5um" path="res://Resources/Event Resources/RoboArthur/RoboArthurEvent1.tres" id="6_snupw"]
+[ext_resource type="Script" path="res://Resources/candidate.gd" id="10_ys453"]
+
+[sub_resource type="Resource" id="Resource_hrfq3"]
+script = ExtResource("2_7p827")
+stat_to_compare = 2
+operator = 1
+value = 6
+
+[resource]
+script = ExtResource("10_ys453")
+name = "RoboArthur"
+social_class = 1
+candidate_conditions = Array[ExtResource("1_u0m8c")]([SubResource("Resource_hrfq3")])
+dialogue = ExtResource("4_xs3on")
+kingdom_event_collection = Array[ExtResource("4_snj1f")]([ExtResource("6_snupw")])
+minigame_difficulty = 0
+minigame_time = 10
+character_scene = ExtResource("2_87r0y")

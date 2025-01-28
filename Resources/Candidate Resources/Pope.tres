@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="Candidate" load_steps=10 format=3 uid="uid://cb88qidiw3sx6"]
+
+[ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="1_uj2lt"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition_has_stat.gd" id="2_odx8m"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition_has_tag.gd" id="3_qted3"]
+[ext_resource type="PackedScene" uid="uid://bvqnf42a5t62j" path="res://Test/CandidateEvents/candidate_cube.tscn" id="4_x8h3d"]
+[ext_resource type="Resource" uid="uid://bd2ysqyh2a6we" path="res://Resources/Candidate Resources/Candidates Dialogue/Pope.dialogue" id="5_xdehb"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="6_ls4ow"]
+[ext_resource type="Script" path="res://Resources/candidate.gd" id="10_3ga0t"]
+
+[sub_resource type="Resource" id="Resource_ut32p"]
+script = ExtResource("2_odx8m")
+stat_to_compare = 0
+operator = 1
+value = 5
+
+[sub_resource type="Resource" id="Resource_08c1t"]
+script = ExtResource("3_qted3")
+has_not = false
+tag = 1
+
+[resource]
+script = ExtResource("10_3ga0t")
+name = "Pope"
+social_class = 0
+candidate_conditions = Array[ExtResource("1_uj2lt")]([SubResource("Resource_ut32p"), SubResource("Resource_08c1t")])
+dialogue = ExtResource("5_xdehb")
+kingdom_event_collection = Array[ExtResource("6_ls4ow")]([])
+minigame_difficulty = 0
+minigame_time = 10
+character_scene = ExtResource("4_x8h3d")

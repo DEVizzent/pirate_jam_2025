@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="KingdomEvent" load_steps=6 format=3 uid="uid://c56mjlxiwb5um"]
+
+[ext_resource type="Resource" uid="uid://cugv2p74wh7r6" path="res://Resources/Event Resources/RoboArthur/RoboArthurEvent1Dialogue.dialogue" id="1_jkin8"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="2_d4pa1"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_modifier.gd" id="4_lhge6"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="5_8vswx"]
+
+[sub_resource type="Resource" id="Resource_gvmm7"]
+script = ExtResource("4_lhge6")
+faith = 0
+food = 0
+force = 0
+add_tag = 0
+remove_tag = 0
+
+[resource]
+script = ExtResource("5_8vswx")
+internal_name = "RoboArthurEvent1"
+kingdom_modifier = SubResource("Resource_gvmm7")
+event_condition_collection = Array[ExtResource("2_d4pa1")]([])
+must = true
+probability = 100
+dialog = ExtResource("1_jkin8")

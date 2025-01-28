@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://d16vkoqa0t5pu"
+path="res://.godot/imported/AngryPeasant.dialogue-d89cd71d2edffcc9a780b44686badef0.tres"
+
+[deps]
+
+source_file="res://Resources/Candidate Resources/Candidates Dialogue/AngryPeasant.dialogue"
+dest_files=["res://.godot/imported/AngryPeasant.dialogue-d89cd71d2edffcc9a780b44686badef0.tres"]
+
+[params]
+
+defaults=true

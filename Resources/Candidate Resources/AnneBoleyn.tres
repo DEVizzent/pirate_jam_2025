@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="1_e21j5"]
 [ext_resource type="PackedScene" uid="uid://bvqnf42a5t62j" path="res://Test/CandidateEvents/candidate_cube.tscn" id="2_f7dag"]
-[ext_resource type="Resource" uid="uid://d20a5lcjrhfw8" path="res://Resources/Candidate Resources/Candidates Dialogue/Morgana.dialogue" id="3_dsquu"]
+[ext_resource type="Resource" uid="uid://6dge2skxq27c" path="res://Resources/Candidate Resources/Candidates Dialogue/AnneBoleyn.dialogue" id="3_bl3fj"]
 [ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="4_ms5pv"]
 [ext_resource type="Resource" uid="uid://fj3ea57aptca" path="res://Resources/Event Resources/AnneBoleyn/AnneBoleynEvent1.tres" id="5_hnee0"]
 [ext_resource type="Resource" uid="uid://b5l3jfgf6qyys" path="res://Resources/Event Resources/AnneBoleyn/AnneBoleynEvent2.tres" id="6_w46so"]
@@ -15,7 +15,7 @@ script = ExtResource("10_jjviu")
 name = "AnneBoleyn"
 social_class = 1
 candidate_conditions = Array[ExtResource("1_e21j5")]([])
-dialogue = ExtResource("3_dsquu")
+dialogue = ExtResource("3_bl3fj")
 kingdom_event_collection = Array[ExtResource("4_ms5pv")]([ExtResource("5_hnee0"), ExtResource("6_w46so"), ExtResource("7_raph2"), ExtResource("8_y30dc")])
 minigame_difficulty = 10
 minigame_time = 10
