@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://py37opydvj0a"
+path="res://.godot/imported/SM_Weapon_Rack.obj-a262a010ba6e8a1c0f1818d9c140778a.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_Weapon_Rack.obj-a262a010ba6e8a1c0f1818d9c140778a.mesh"]
+
+source_file="res://Environment/Props/SM_Weapon_Rack.obj"
+dest_files=["res://.godot/imported/SM_Weapon_Rack.obj-a262a010ba6e8a1c0f1818d9c140778a.mesh", "res://.godot/imported/SM_Weapon_Rack.obj-a262a010ba6e8a1c0f1818d9c140778a.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

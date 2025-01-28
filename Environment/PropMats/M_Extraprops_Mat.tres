@@ -1,0 +1,14 @@
+[gd_resource type="ORMMaterial3D" load_steps=5 format=3 uid="uid://dhk4j2xb7gn73"]
+
+[ext_resource type="Texture2D" uid="uid://ekm255o3gx1v" path="res://Environment/PropMats/ExtraProps_BC_Utility - sRGB - Texture.png" id="1_7hlce"]
+[ext_resource type="Texture2D" uid="uid://bj33ktsowqnyq" path="res://Environment/PropMats/ExtraProps_NM_Utility - Raw.png" id="2_kba84"]
+[ext_resource type="Texture2D" uid="uid://bbx6wo1bwy7si" path="res://Environment/PropMats/ExtraProps_Emissive.png" id="2_mfc2i"]
+[ext_resource type="Texture2D" uid="uid://deb04egf31lif" path="res://Environment/PropMats/ExtraProps_ORM_Utility - Raw.png" id="3_c2bg5"]
+
+[resource]
+albedo_texture = ExtResource("1_7hlce")
+orm_texture = ExtResource("3_c2bg5")
+emission_enabled = true
+emission_texture = ExtResource("2_mfc2i")
+normal_enabled = true
+normal_texture = ExtResource("2_kba84")

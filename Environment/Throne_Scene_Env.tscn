@@ -1,43 +1,43 @@
-[gd_scene load_steps=44 format=3 uid="uid://dbcoy0hay7258"]
+[gd_scene load_steps=44 format=3 uid="uid://cxtegggjlcju1"]
 
-[ext_resource type="ArrayMesh" uid="uid://casasvqcqxi6b" path="res://Environment/Tileables/SM_StainedGlass_Circular.obj" id="1_meq6h"]
-[ext_resource type="ArrayMesh" uid="uid://djnyin6umt3qo" path="res://Environment/Tileables/SM_Stained_Glass_Arc.obj" id="2_iq65w"]
-[ext_resource type="Material" uid="uid://egy44fwa5vyr" path="res://Environment/Tileables/M_Stone.tres" id="3_gkli0"]
-[ext_resource type="ArrayMesh" uid="uid://dn4kqrb04i00w" path="res://Environment/Tileables/SM_Wall_Long.obj" id="4_5ihan"]
-[ext_resource type="ArrayMesh" uid="uid://dp8be60h52uax" path="res://Environment/Tileables/SM_Wall_Tall_Deco.obj" id="5_2277l"]
-[ext_resource type="ArrayMesh" uid="uid://b1n0k30koomem" path="res://Environment/Tileables/SM_Window_Arc.obj" id="7_obyll"]
-[ext_resource type="ArrayMesh" uid="uid://c81p2ss13fbe4" path="res://Environment/Tileables/SM_Window_Circular.obj" id="8_k0awn"]
-[ext_resource type="Material" uid="uid://bypaycnnwon46" path="res://Environment/Tileables/M_Staiedglass_Tree.tres" id="9_3wx4n"]
-[ext_resource type="ArrayMesh" uid="uid://lyxsiygovs2w" path="res://Environment/Tileables/SM_Wall_Inset.obj" id="9_5svrx"]
-[ext_resource type="ArrayMesh" uid="uid://bot7t68k5cd3p" path="res://Environment/Props/SM_Column.obj" id="12_2nlql"]
-[ext_resource type="Material" uid="uid://c7c2pfqe0hsw5" path="res://Environment/PropMats/M_Battle_Map.tres" id="13_cuv20"]
-[ext_resource type="ArrayMesh" uid="uid://c3yv8eupxjg5b" path="res://Environment/Props/SM_Battle_Map_Table.obj" id="13_rt1rp"]
-[ext_resource type="ArrayMesh" uid="uid://cjlwnokpl2mko" path="res://Environment/Props/SM_Cross_Gold.obj" id="14_mqlng"]
-[ext_resource type="Material" uid="uid://b4y0lt7al88iq" path="res://Environment/PropMats/M_Cross_Gold.tres" id="15_3jibq"]
-[ext_resource type="ArrayMesh" uid="uid://d1mr4h4g4ri5y" path="res://Environment/Props/SM_Cross_Simple.obj" id="15_13hb0"]
-[ext_resource type="ArrayMesh" uid="uid://bywee414h05i4" path="res://Environment/Props/SM_Pagan_Statue_Hastur.obj" id="16_ha5j7"]
-[ext_resource type="Material" uid="uid://dv34wujxr6y8k" path="res://Environment/PropMats/M_Cross_Simple.tres" id="17_je66h"]
-[ext_resource type="ArrayMesh" uid="uid://bq3mppor745h7" path="res://Environment/Props/SM_Pagan_Statue_Satire.obj" id="17_jxw7m"]
-[ext_resource type="ArrayMesh" uid="uid://bc2fu21el0ses" path="res://Environment/Props/SM_Throne_Christian.obj" id="18_xkph4"]
-[ext_resource type="ArrayMesh" uid="uid://d3iugxxarjxku" path="res://Environment/Props/SM_Throne_Pagan.obj" id="19_3kpe5"]
-[ext_resource type="Material" uid="uid://cn0b4abwrayo5" path="res://Environment/PropMats/M_Statue_Satyr.tres" id="19_e0gh4"]
-[ext_resource type="ArrayMesh" uid="uid://fk8o5cqph5s8" path="res://Environment/Props/SM_Throne_Simple.obj" id="20_1dmq8"]
-[ext_resource type="ArrayMesh" uid="uid://nac3t67nwc7u" path="res://Environment/Props/SM_Throne_Swords.obj" id="21_mx43d"]
-[ext_resource type="Material" uid="uid://cyxf83m1e7a4d" path="res://Environment/PropMats/M_Statue_Hastur.tres" id="21_x4j4c"]
-[ext_resource type="ArrayMesh" uid="uid://h107mq3x8dkv" path="res://Environment/Props/SM_Treasure_Chest.obj" id="22_o2h0n"]
-[ext_resource type="Material" uid="uid://cmqvvvehbsiuc" path="res://Environment/PropMats/M_Throne_Catholic.tres" id="23_pk7ql"]
-[ext_resource type="Material" uid="uid://oau4r7uoiqd8" path="res://Environment/PropMats/M_Throne_Pagan.tres" id="25_god4a"]
-[ext_resource type="Material" uid="uid://cinkgf4fib36i" path="res://Environment/PropMats/M_Throne_Simple.tres" id="27_c0ywh"]
-[ext_resource type="Material" uid="uid://cnqs4mff85d35" path="res://Environment/PropMats/M_Throne_Sword.tres" id="29_1svk2"]
-[ext_resource type="Material" uid="uid://c7i2wpodwyq2c" path="res://Environment/PropMats/M_Chest.tres" id="31_yqcj5"]
-[ext_resource type="Material" uid="uid://d1pdorrqhh3h3" path="res://Environment/MM_Tileables_Stone.tres" id="33_psj0p"]
-[ext_resource type="ArrayMesh" uid="uid://c0agi8evlmf8u" path="res://Environment/Props/SM_Natural_Rock.obj" id="34_0j7w4"]
-[ext_resource type="ArrayMesh" uid="uid://cfbb1aiyonawd" path="res://Environment/Props/SM_Natural_Rock_B.obj" id="35_6ssxc"]
-[ext_resource type="Material" uid="uid://dhk4j2xb7gn73" path="res://Environment/PropMats/M_Extraprops_Mat.tres" id="35_movsg"]
-[ext_resource type="ArrayMesh" uid="uid://lnv137tth5sy" path="res://Environment/Props/SM_Banner.obj" id="36_u64nu"]
-[ext_resource type="ArrayMesh" uid="uid://bhatlcdwnotdl" path="res://Environment/Props/SM_Chandelier.obj" id="37_car20"]
-[ext_resource type="ArrayMesh" uid="uid://py37opydvj0a" path="res://Environment/Props/SM_Weapon_Rack.obj" id="38_pp0gx"]
-[ext_resource type="ArrayMesh" uid="uid://kc28ueqowbh6" path="res://Environment/Props/SM_Shield.obj" id="39_2b66a"]
+[ext_resource type="ArrayMesh" uid="uid://casasvqcqxi6b" path="res://Environment/Tileables/SM_StainedGlass_Circular.obj" id="1_ywegk"]
+[ext_resource type="ArrayMesh" uid="uid://djnyin6umt3qo" path="res://Environment/Tileables/SM_Stained_Glass_Arc.obj" id="2_bmref"]
+[ext_resource type="Material" uid="uid://egy44fwa5vyr" path="res://Environment/Tileables/M_Stone.tres" id="3_vqvj7"]
+[ext_resource type="ArrayMesh" uid="uid://lyxsiygovs2w" path="res://Environment/Tileables/SM_Wall_Inset.obj" id="4_pe54n"]
+[ext_resource type="ArrayMesh" uid="uid://dp8be60h52uax" path="res://Environment/Tileables/SM_Wall_Tall_Deco.obj" id="5_ymnwj"]
+[ext_resource type="ArrayMesh" uid="uid://dn4kqrb04i00w" path="res://Environment/Tileables/SM_Wall_Long.obj" id="6_hhj27"]
+[ext_resource type="ArrayMesh" uid="uid://b1n0k30koomem" path="res://Environment/Tileables/SM_Window_Arc.obj" id="7_h8ov1"]
+[ext_resource type="Material" uid="uid://bypaycnnwon46" path="res://Environment/Tileables/M_Staiedglass_Tree.tres" id="8_nsmn3"]
+[ext_resource type="ArrayMesh" uid="uid://c81p2ss13fbe4" path="res://Environment/Tileables/SM_Window_Circular.obj" id="9_6baym"]
+[ext_resource type="ArrayMesh" uid="uid://bot7t68k5cd3p" path="res://Environment/Props/SM_Column.obj" id="10_ikr0v"]
+[ext_resource type="Material" uid="uid://c7c2pfqe0hsw5" path="res://Environment/PropMats/M_Battle_Map.tres" id="11_ypqkq"]
+[ext_resource type="ArrayMesh" uid="uid://c3yv8eupxjg5b" path="res://Environment/Props/SM_Battle_Map_Table.obj" id="12_yf5qy"]
+[ext_resource type="Material" uid="uid://b4y0lt7al88iq" path="res://Environment/PropMats/M_Cross_Gold.tres" id="13_hxblc"]
+[ext_resource type="ArrayMesh" uid="uid://cjlwnokpl2mko" path="res://Environment/Props/SM_Cross_Gold.obj" id="14_bs3ra"]
+[ext_resource type="Material" uid="uid://dv34wujxr6y8k" path="res://Environment/PropMats/M_Cross_Simple.tres" id="15_lck8j"]
+[ext_resource type="ArrayMesh" uid="uid://d1mr4h4g4ri5y" path="res://Environment/Props/SM_Cross_Simple.obj" id="16_nphmq"]
+[ext_resource type="Material" uid="uid://cyxf83m1e7a4d" path="res://Environment/PropMats/M_Statue_Hastur.tres" id="17_l55h7"]
+[ext_resource type="ArrayMesh" uid="uid://bywee414h05i4" path="res://Environment/Props/SM_Pagan_Statue_Hastur.obj" id="18_3lt21"]
+[ext_resource type="Material" uid="uid://cn0b4abwrayo5" path="res://Environment/PropMats/M_Statue_Satyr.tres" id="19_qqxuj"]
+[ext_resource type="ArrayMesh" uid="uid://bq3mppor745h7" path="res://Environment/Props/SM_Pagan_Statue_Satire.obj" id="20_weng6"]
+[ext_resource type="Material" uid="uid://cmqvvvehbsiuc" path="res://Environment/PropMats/M_Throne_Catholic.tres" id="21_uwnjw"]
+[ext_resource type="ArrayMesh" uid="uid://bc2fu21el0ses" path="res://Environment/Props/SM_Throne_Christian.obj" id="22_8ynn6"]
+[ext_resource type="Material" uid="uid://oau4r7uoiqd8" path="res://Environment/PropMats/M_Throne_Pagan.tres" id="23_j7v7s"]
+[ext_resource type="ArrayMesh" uid="uid://d3iugxxarjxku" path="res://Environment/Props/SM_Throne_Pagan.obj" id="24_khmhx"]
+[ext_resource type="Material" uid="uid://cinkgf4fib36i" path="res://Environment/PropMats/M_Throne_Simple.tres" id="25_63kjs"]
+[ext_resource type="ArrayMesh" uid="uid://fk8o5cqph5s8" path="res://Environment/Props/SM_Throne_Simple.obj" id="26_guaht"]
+[ext_resource type="Material" uid="uid://cnqs4mff85d35" path="res://Environment/PropMats/M_Throne_Sword.tres" id="27_harld"]
+[ext_resource type="ArrayMesh" uid="uid://nac3t67nwc7u" path="res://Environment/Props/SM_Throne_Swords.obj" id="28_rcrt3"]
+[ext_resource type="Material" uid="uid://c7i2wpodwyq2c" path="res://Environment/PropMats/M_Chest.tres" id="29_83n75"]
+[ext_resource type="ArrayMesh" uid="uid://h107mq3x8dkv" path="res://Environment/Props/SM_Treasure_Chest.obj" id="30_han85"]
+[ext_resource type="Material" uid="uid://d1pdorrqhh3h3" path="res://Environment/MM_Tileables_Stone.tres" id="31_fhotc"]
+[ext_resource type="ArrayMesh" uid="uid://c0agi8evlmf8u" path="res://Environment/Props/SM_Natural_Rock.obj" id="32_nhcd1"]
+[ext_resource type="ArrayMesh" uid="uid://cfbb1aiyonawd" path="res://Environment/Props/SM_Natural_Rock_B.obj" id="33_7yk7b"]
+[ext_resource type="Material" uid="uid://dhk4j2xb7gn73" path="res://Environment/PropMats/M_Extraprops_Mat.tres" id="34_f3h7a"]
+[ext_resource type="ArrayMesh" uid="uid://lnv137tth5sy" path="res://Environment/Props/SM_Banner.obj" id="35_mb233"]
+[ext_resource type="ArrayMesh" uid="uid://bhatlcdwnotdl" path="res://Environment/Props/SM_Chandelier.obj" id="36_e6bbn"]
+[ext_resource type="ArrayMesh" uid="uid://py37opydvj0a" path="res://Environment/Props/SM_Weapon_Rack.obj" id="37_yh7rv"]
+[ext_resource type="ArrayMesh" uid="uid://kc28ueqowbh6" path="res://Environment/Props/SM_Shield.obj" id="38_25mj6"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_qk4xj"]
 sun_angle_max = 0.0
@@ -58,311 +58,311 @@ sky = SubResource("Sky_q74xm")
 
 [node name="SmStainedGlassCircular" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.486488, 0, -1.53398)
-mesh = ExtResource("1_meq6h")
+mesh = ExtResource("1_ywegk")
 
 [node name="SmStainedGlassArc" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.486488, 0, -1.53398)
-mesh = ExtResource("2_iq65w")
+mesh = ExtResource("2_bmref")
 
 [node name="SmWallLong" type="MeshInstance3D" parent="."]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 1.74846e-07, 0, -4)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("9_5svrx")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("4_pe54n")
 
 [node name="SmWallLong7" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.7499, 0, -4)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("5_2277l")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("5_ymnwj")
 
 [node name="SmWallLong53" type="MeshInstance3D" parent="."]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.74846e-07, 0, 0)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("5_2277l")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("5_ymnwj")
 
 [node name="SmWallLong56" type="MeshInstance3D" parent="."]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.74846e-07, 0, 8)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("5_2277l")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("5_ymnwj")
 
 [node name="SmWallLong10" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.7499, 0, 0)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("5_2277l")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("5_ymnwj")
 
 [node name="SmWallLong52" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.7499, 0, 4)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("5_2277l")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("5_ymnwj")
 
 [node name="SmWallLong5" type="MeshInstance3D" parent="."]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 1.74846e-07, 4, -4)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("9_5svrx")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("4_pe54n")
 
 [node name="SmWallLong23" type="MeshInstance3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 3.95947, 0, 8.03892)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("9_5svrx")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("4_pe54n")
 
 [node name="SmWallLong24" type="MeshInstance3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 7.95947, 0, 8.03892)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("9_5svrx")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("4_pe54n")
 
 [node name="SmWallLong25" type="MeshInstance3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 3.95947, 4, 8.03892)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("9_5svrx")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("4_pe54n")
 
 [node name="SmWallLong26" type="MeshInstance3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 7.95947, 4, 8.03892)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("9_5svrx")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("4_pe54n")
 
 [node name="SmWallLong31" type="MeshInstance3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 11.9595, 0, 8.03892)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("9_5svrx")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("4_pe54n")
 
 [node name="SmWallLong32" type="MeshInstance3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 15.9595, 0, 8.03892)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("9_5svrx")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("4_pe54n")
 
 [node name="SmWallLong33" type="MeshInstance3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 11.9595, 4, 8.03892)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("9_5svrx")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("4_pe54n")
 
 [node name="SmWallLong34" type="MeshInstance3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 15.9595, 4, 8.03892)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("9_5svrx")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("4_pe54n")
 
 [node name="SmWallLong35" type="MeshInstance3D" parent="."]
 transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 11.9595, 0, -3.96108)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("9_5svrx")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("4_pe54n")
 
 [node name="SmWallLong36" type="MeshInstance3D" parent="."]
 transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 7.95947, 0, -3.96108)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("9_5svrx")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("4_pe54n")
 
 [node name="SmWallLong37" type="MeshInstance3D" parent="."]
 transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 11.9595, 4, -3.96108)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("9_5svrx")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("4_pe54n")
 
 [node name="SmWallLong38" type="MeshInstance3D" parent="."]
 transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 7.95947, 4, -3.96108)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("9_5svrx")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("4_pe54n")
 
 [node name="SmWallLong27" type="MeshInstance3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4.1052, 0, -3.94009)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("9_5svrx")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("4_pe54n")
 
 [node name="SmWallLong59" type="MeshInstance3D" parent="."]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.103748, 0.00596452, 4.0612)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("9_5svrx")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("4_pe54n")
 
 [node name="SmWallLong28" type="MeshInstance3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.105203, 0, -3.94009)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("9_5svrx")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("4_pe54n")
 
 [node name="SmWallLong55" type="MeshInstance3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, 1, -1, -4.37114e-08, -4.37114e-08, 4.37114e-08, -1, 1.91069e-15, 0.105203, 0, 0.0454285)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("9_5svrx")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("4_pe54n")
 
 [node name="SmWallLong29" type="MeshInstance3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4.1052, 4, -3.94009)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("9_5svrx")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("4_pe54n")
 
 [node name="SmWallLong30" type="MeshInstance3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.105203, 4, -3.94009)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("9_5svrx")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("4_pe54n")
 
 [node name="SmWallLong2" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.98023e-08, 1, 0, -1, 2.98023e-08, 0, 0, 0, 1, 0, -0.2, 0)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("4_5ihan")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("6_hhj27")
 
 [node name="SmWallLong4" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.98023e-08, 1, 0, -1, 2.98023e-08, 0, 0, 0, 1, -4, -0.2, 0)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("4_5ihan")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("6_hhj27")
 
 [node name="SmWallLong3" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.98023e-08, 1, 0, -1, 2.98023e-08, 0, 0, 0, 1, 0, -0.2, -4)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("4_5ihan")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("6_hhj27")
 
 [node name="SmWallLong17" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.98023e-08, 1, 0, -1, 2.98023e-08, 0, 0, 0, 1, 4, -0.2, -4)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("4_5ihan")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("6_hhj27")
 
 [node name="SmWallLong8" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.98023e-08, 1, 0, -1, 2.98023e-08, 0, 0, 0, 1, 0, -0.2, 8)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("4_5ihan")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("6_hhj27")
 
 [node name="SmWallLong19" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.98023e-08, 1, 0, -1, 2.98023e-08, 0, 0, 0, 1, 0, -0.2, 4)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("4_5ihan")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("6_hhj27")
 
 [node name="SmWallLong57" type="MeshInstance3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, 1, -1, -4.37114e-08, -4.37114e-08, 4.37114e-08, -1, 1.91069e-15, -3.8948, 0, 0.0454285)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("9_5svrx")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("4_pe54n")
 
 [node name="SmWallLong58" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.98023e-08, 1, 0, -1, 2.98023e-08, 0, 0, 0, 1, -4, -0.2, 4)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("4_5ihan")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("6_hhj27")
 
 [node name="SmWallLong21" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.98023e-08, 1, 0, -1, 2.98023e-08, 0, 0, 0, 1, 4, -0.2, 8)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("4_5ihan")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("6_hhj27")
 
 [node name="SmWallLong22" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.98023e-08, 1, 0, -1, 2.98023e-08, 0, 0, 0, 1, 4, -0.2, 4)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("4_5ihan")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("6_hhj27")
 
 [node name="SmWallLong46" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.98023e-08, 1, 0, -1, 2.98023e-08, 0, 0, 0, 1, 8, -0.2, -4)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("4_5ihan")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("6_hhj27")
 
 [node name="SmWallLong47" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.98023e-08, 1, 0, -1, 2.98023e-08, 0, 0, 0, 1, 8, -0.2, 4)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("4_5ihan")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("6_hhj27")
 
 [node name="SmWallLong48" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.98023e-08, 1, 0, -1, 2.98023e-08, 0, 0, 0, 1, 12, -0.2, 0)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("4_5ihan")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("6_hhj27")
 
 [node name="SmWallLong49" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.98023e-08, 1, 0, -1, 2.98023e-08, 0, 0, 0, 1, 12, -0.2, -4)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("4_5ihan")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("6_hhj27")
 
 [node name="SmWallLong50" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.98023e-08, 1, 0, -1, 2.98023e-08, 0, 0, 0, 1, 12, -0.2, 4)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("4_5ihan")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("6_hhj27")
 
 [node name="SmWallLong9" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.98023e-08, 1, 0, -1, 2.98023e-08, 0, 0, 0, 1, 0, 8, -4)
-mesh = ExtResource("4_5ihan")
+mesh = ExtResource("6_hhj27")
 
 [node name="SmWallLong51" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.98023e-08, 1, 0, -1, 2.98023e-08, 0, 0, 0, 1, 0, 8, 0)
-mesh = ExtResource("4_5ihan")
+mesh = ExtResource("6_hhj27")
 
 [node name="SmWallLong11" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.98023e-08, 1, 0, -1, 2.98023e-08, 0, 0, 0, 1, 4, 8, -4)
-mesh = ExtResource("4_5ihan")
+mesh = ExtResource("6_hhj27")
 
 [node name="SmWallLong54" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.98023e-08, 1, 0, -1, 2.98023e-08, 0, 0, 0, 1, 4, 8, 0)
-mesh = ExtResource("4_5ihan")
+mesh = ExtResource("6_hhj27")
 
 [node name="SmWallLong18" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.98023e-08, 1, 0, -1, 2.98023e-08, 0, 0, 0, 1, 0, 8, 4)
-mesh = ExtResource("4_5ihan")
+mesh = ExtResource("6_hhj27")
 
 [node name="SmWallLong20" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.98023e-08, 1, 0, -1, 2.98023e-08, 0, 0, 0, 1, 4, 8, 4)
-mesh = ExtResource("4_5ihan")
+mesh = ExtResource("6_hhj27")
 
 [node name="SmWallLong39" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.98023e-08, 1, 0, -1, 2.98023e-08, 0, 0, 0, 1, 8, 8, 0)
-mesh = ExtResource("4_5ihan")
+mesh = ExtResource("6_hhj27")
 
 [node name="SmWallLong40" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.98023e-08, 1, 0, -1, 2.98023e-08, 0, 0, 0, 1, 8, 8, -4)
-mesh = ExtResource("4_5ihan")
+mesh = ExtResource("6_hhj27")
 
 [node name="SmWallLong41" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.98023e-08, 1, 0, -1, 2.98023e-08, 0, 0, 0, 1, 8, 8, 4)
-mesh = ExtResource("4_5ihan")
+mesh = ExtResource("6_hhj27")
 
 [node name="SmWallLong42" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.98023e-08, 1, 0, -1, 2.98023e-08, 0, 0, 0, 1, 12, 8, 0)
-mesh = ExtResource("4_5ihan")
+mesh = ExtResource("6_hhj27")
 
 [node name="SmWallLong43" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.98023e-08, 1, 0, -1, 2.98023e-08, 0, 0, 0, 1, 12, 8, -4)
-mesh = ExtResource("4_5ihan")
+mesh = ExtResource("6_hhj27")
 
 [node name="SmWallLong44" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.98023e-08, 1, 0, -1, 2.98023e-08, 0, 0, 0, 1, 12, 8, 4)
-mesh = ExtResource("4_5ihan")
+mesh = ExtResource("6_hhj27")
 
 [node name="SmWallLong12" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.98023e-08, 1, 0, -1, 2.98023e-08, 0, 0, 0, 1, 0, 8, -8)
-mesh = ExtResource("4_5ihan")
+mesh = ExtResource("6_hhj27")
 
 [node name="SmWallLong13" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.98023e-08, 1, 0, -1, 2.98023e-08, 0, 0, 0, 1, 0, 8, -12)
-mesh = ExtResource("4_5ihan")
+mesh = ExtResource("6_hhj27")
 
 [node name="SmWallLong14" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.98023e-08, 1, 0, -1, 2.98023e-08, 0, 0, 0, 1, 4, 8, -8)
-mesh = ExtResource("4_5ihan")
+mesh = ExtResource("6_hhj27")
 
 [node name="SmWallLong15" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.98023e-08, 1, 0, -1, 2.98023e-08, 0, 0, 0, 1, 4, 8, -12)
-mesh = ExtResource("4_5ihan")
+mesh = ExtResource("6_hhj27")
 
 [node name="SmWindowArc" type="MeshInstance3D" parent="."]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.74846e-07, 4, 4)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("7_obyll")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("7_h8ov1")
 
 [node name="SmStainedGlassArc2" type="MeshInstance3D" parent="SmWindowArc"]
 transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 0, 0, 0)
-material_override = ExtResource("9_3wx4n")
-mesh = ExtResource("2_iq65w")
+material_override = ExtResource("8_nsmn3")
+mesh = ExtResource("2_bmref")
 skeleton = NodePath("../..")
 
 [node name="SmWindowCircular" type="MeshInstance3D" parent="."]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.74846e-07, 4, 4)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("8_k0awn")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("9_6baym")
 
 [node name="SmStainedGlassCircular2" type="MeshInstance3D" parent="SmWindowCircular"]
-material_override = ExtResource("9_3wx4n")
-mesh = ExtResource("1_meq6h")
+material_override = ExtResource("8_nsmn3")
+mesh = ExtResource("1_ywegk")
 skeleton = NodePath("../..")
 
 [node name="SmColumn2" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.95034, -0.103181, 8.09287)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("12_2nlql")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("10_ikr0v")
 
 [node name="SmColumn5" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.9979, -0.148852, 5.05529)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("12_2nlql")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("10_ikr0v")
 
 [node name="SmColumn6" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.9979, -0.148852, -1.10198)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("12_2nlql")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("10_ikr0v")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.18921, 1.30655, -2.54679)
@@ -390,83 +390,83 @@ omni_range = 3.792
 
 [node name="SmColumn3" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.991203, 0, 0, 0, 0.991203, 0, 0, 0, 0.991203, 1.84928, -0.112424, 8.02494)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("12_2nlql")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("10_ikr0v")
 
 [node name="SmColumn4" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.95034, -0.103181, -3.90713)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("12_2nlql")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("10_ikr0v")
 
 [node name="SmColumn7" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.991203, 0, 0, 0, 0.991203, 0, 0, 0, 0.991203, 1.84928, -0.112424, -3.97506)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("12_2nlql")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("10_ikr0v")
 
 [node name="SmBattleMapTable" type="MeshInstance3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.05262, 0.12769, -2.12043)
-material_override = ExtResource("13_cuv20")
-mesh = ExtResource("13_rt1rp")
+material_override = ExtResource("11_ypqkq")
+mesh = ExtResource("12_yf5qy")
 
 [node name="SmCrossGold" type="MeshInstance3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.760882, -0.0663828, 1.95504)
-material_override = ExtResource("15_3jibq")
-mesh = ExtResource("14_mqlng")
+material_override = ExtResource("13_hxblc")
+mesh = ExtResource("14_bs3ra")
 
 [node name="EXCALIBUR PLACEHOLDER" type="MeshInstance3D" parent="."]
 transform = Transform3D(-9.58106e-09, 0, 0.219189, 0.0434743, 0.214834, 1.90032e-09, -0.214834, 0.0434743, -9.39071e-09, 3.80447, 0.965039, 5.59893)
-material_override = ExtResource("15_3jibq")
-mesh = ExtResource("14_mqlng")
+material_override = ExtResource("13_hxblc")
+mesh = ExtResource("14_bs3ra")
 
 [node name="SmCrossSimple" type="MeshInstance3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.760882, -0.0663828, 1.95504)
-material_override = ExtResource("17_je66h")
-mesh = ExtResource("15_13hb0")
+material_override = ExtResource("15_lck8j")
+mesh = ExtResource("16_nphmq")
 
 [node name="SmPaganStatueHastur" type="MeshInstance3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.760882, -0.0663828, 1.95504)
-material_override = ExtResource("21_x4j4c")
-mesh = ExtResource("16_ha5j7")
+material_override = ExtResource("17_l55h7")
+mesh = ExtResource("18_3lt21")
 
 [node name="SmPaganStatueSatire" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.98023e-08, 0, 1, 0, 1, 0, -1, 0, 2.98023e-08, 0.760882, -0.0663828, 1.95504)
-material_override = ExtResource("19_e0gh4")
-mesh = ExtResource("17_jxw7m")
+material_override = ExtResource("19_qqxuj")
+mesh = ExtResource("20_weng6")
 
 [node name="SmThroneChristian" type="MeshInstance3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1.79723, -0.0776938, 2.02348)
-material_override = ExtResource("23_pk7ql")
-mesh = ExtResource("18_xkph4")
+material_override = ExtResource("21_uwnjw")
+mesh = ExtResource("22_8ynn6")
 
 [node name="SmThronePagan" type="MeshInstance3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1.79723, -0.0776938, 2.02348)
-material_override = ExtResource("25_god4a")
-mesh = ExtResource("19_3kpe5")
+material_override = ExtResource("23_j7v7s")
+mesh = ExtResource("24_khmhx")
 
 [node name="SmThroneSimple" type="MeshInstance3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1.79723, -0.0776938, 2.02348)
-material_override = ExtResource("27_c0ywh")
-mesh = ExtResource("20_1dmq8")
+material_override = ExtResource("25_63kjs")
+mesh = ExtResource("26_guaht")
 
 [node name="SmThroneSwords" type="MeshInstance3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1.79723, -0.0776938, 2.02348)
-material_override = ExtResource("29_1svk2")
-mesh = ExtResource("21_mx43d")
+material_override = ExtResource("27_harld")
+mesh = ExtResource("28_rcrt3")
 
 [node name="SmTreasureChest" type="MeshInstance3D" parent="."]
 transform = Transform3D(1.53397, -0.000397438, 0.013515, 0.00039979, 1.53403, -0.000266021, -0.0135149, 0.000269522, 1.53397, 0.660731, 0.1278, -3.12456)
-material_override = ExtResource("31_yqcj5")
-mesh = ExtResource("22_o2h0n")
+material_override = ExtResource("29_83n75")
+mesh = ExtResource("30_han85")
 
 [node name="SmTreasureChest2" type="MeshInstance3D" parent="."]
 transform = Transform3D(1.53397, -0.000397438, 0.013515, 0.00039979, 1.53403, -0.000266021, -0.0135149, 0.000269522, 1.53397, 2.96444, 0.1278, -3.22426)
-material_override = ExtResource("31_yqcj5")
-mesh = ExtResource("22_o2h0n")
+material_override = ExtResource("29_83n75")
+mesh = ExtResource("30_han85")
 
 [node name="SmTreasureChest3" type="MeshInstance3D" parent="."]
 transform = Transform3D(1.53397, -0.000397438, 0.013515, 0.00039979, 1.53403, -0.000266021, -0.0135149, 0.000269522, 1.53397, 3.51683, 0.1278, -3.31956)
-material_override = ExtResource("31_yqcj5")
-mesh = ExtResource("22_o2h0n")
+material_override = ExtResource("29_83n75")
+mesh = ExtResource("30_han85")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_d2aic")
@@ -475,120 +475,120 @@ compositor = SubResource("Compositor_u2oyn")
 
 [node name="SmNaturalRock" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 3.53522, -0.0850077, 5.72223)
-material_override = ExtResource("33_psj0p")
-mesh = ExtResource("34_0j7w4")
+material_override = ExtResource("31_fhotc")
+mesh = ExtResource("32_nhcd1")
 
 [node name="SmNaturalRock2" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.335, 0, 0.580237, 0, 0.67, 0, -0.580237, 0, 0.335, 0.995919, -0.0850077, 3.27364)
-material_override = ExtResource("33_psj0p")
-mesh = ExtResource("34_0j7w4")
+material_override = ExtResource("31_fhotc")
+mesh = ExtResource("32_nhcd1")
 
 [node name="SmNaturalRockB" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.5, 0, 0.866025, 0, 1, 0, -0.866025, 0, 0.5, 2.58031, -0.0850077, 4.70757)
-material_override = ExtResource("33_psj0p")
-mesh = ExtResource("35_6ssxc")
+material_override = ExtResource("31_fhotc")
+mesh = ExtResource("33_7yk7b")
 
 [node name="SmNaturalRockB2" type="MeshInstance3D" parent="."]
 transform = Transform3D(-0.1675, 0, -0.290119, 0, 0.335, 0, 0.290119, 0, -0.1675, 5.38742, -0.0171071, 6.3722)
-material_override = ExtResource("33_psj0p")
-mesh = ExtResource("35_6ssxc")
+material_override = ExtResource("31_fhotc")
+mesh = ExtResource("33_7yk7b")
 
 [node name="SmWallInset2" type="MeshInstance3D" parent="."]
 transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 8, -0.2, 0)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("9_5svrx")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("4_pe54n")
 
 [node name="SmWallInset3" type="MeshInstance3D" parent="."]
 transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, 4, -0.2, 0)
-material_override = ExtResource("3_gkli0")
-mesh = ExtResource("9_5svrx")
+material_override = ExtResource("3_vqvj7")
+mesh = ExtResource("4_pe54n")
 
 [node name="SmBanner" type="MeshInstance3D" parent="."]
 transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 0.267657, 7.92554, -2.0649)
-material_override = ExtResource("35_movsg")
-mesh = ExtResource("36_u64nu")
+material_override = ExtResource("34_f3h7a")
+mesh = ExtResource("35_mb233")
 
 [node name="SmBanner3" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.37114e-08, 0, 1, 0, 1, 0, -1, 0, 4.37114e-08, 3.23792, 7.92554, -3.71016)
-material_override = ExtResource("35_movsg")
-mesh = ExtResource("36_u64nu")
+material_override = ExtResource("34_f3h7a")
+mesh = ExtResource("35_mb233")
 
 [node name="SmBanner4" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.37114e-08, 0, 1, 0, 1, 0, -1, 0, 4.37114e-08, 6.24198, 7.92554, -3.71016)
-material_override = ExtResource("35_movsg")
-mesh = ExtResource("36_u64nu")
+material_override = ExtResource("34_f3h7a")
+mesh = ExtResource("35_mb233")
 
 [node name="SmBanner5" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.37114e-08, 0, 1, 0, 1, 0, -1, 0, 4.37114e-08, 9.91661, 7.92554, -3.71016)
-material_override = ExtResource("35_movsg")
-mesh = ExtResource("36_u64nu")
+material_override = ExtResource("34_f3h7a")
+mesh = ExtResource("35_mb233")
 
 [node name="SmBanner6" type="MeshInstance3D" parent="."]
 transform = Transform3D(4.37114e-08, 0, 1, 0, 1, 0, -1, 0, 4.37114e-08, 12.9207, 7.92554, -3.71016)
-material_override = ExtResource("35_movsg")
-mesh = ExtResource("36_u64nu")
+material_override = ExtResource("34_f3h7a")
+mesh = ExtResource("35_mb233")
 
 [node name="SmBanner7" type="MeshInstance3D" parent="."]
 transform = Transform3D(-1.31134e-07, 0, -1, 0, 1, 0, 1, 0, -1.31134e-07, 12.9207, 7.92554, 7.79299)
-material_override = ExtResource("35_movsg")
-mesh = ExtResource("36_u64nu")
+material_override = ExtResource("34_f3h7a")
+mesh = ExtResource("35_mb233")
 
 [node name="SmBanner8" type="MeshInstance3D" parent="."]
 transform = Transform3D(-1.31134e-07, 0, -1, 0, 1, 0, 1, 0, -1.31134e-07, 9.91661, 7.92554, 7.79299)
-material_override = ExtResource("35_movsg")
-mesh = ExtResource("36_u64nu")
+material_override = ExtResource("34_f3h7a")
+mesh = ExtResource("35_mb233")
 
 [node name="SmBanner9" type="MeshInstance3D" parent="."]
 transform = Transform3D(-1.31134e-07, 0, -1, 0, 1, 0, 1, 0, -1.31134e-07, 6.24198, 7.92554, 7.79299)
-material_override = ExtResource("35_movsg")
-mesh = ExtResource("36_u64nu")
+material_override = ExtResource("34_f3h7a")
+mesh = ExtResource("35_mb233")
 
 [node name="SmBanner10" type="MeshInstance3D" parent="."]
 transform = Transform3D(-1.31134e-07, 0, -1, 0, 1, 0, 1, 0, -1.31134e-07, 3.40946, 7.92554, 7.79299)
-material_override = ExtResource("35_movsg")
-mesh = ExtResource("36_u64nu")
+material_override = ExtResource("34_f3h7a")
+mesh = ExtResource("35_mb233")
 
 [node name="SmBanner2" type="MeshInstance3D" parent="."]
 transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 0.267657, 7.92554, 5.99799)
-material_override = ExtResource("35_movsg")
-mesh = ExtResource("36_u64nu")
+material_override = ExtResource("34_f3h7a")
+mesh = ExtResource("35_mb233")
 
 [node name="SmChandelier" type="MeshInstance3D" parent="."]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0.615785, 0.13607, -1.95838)
-material_override = ExtResource("35_movsg")
-mesh = ExtResource("37_car20")
+material_override = ExtResource("34_f3h7a")
+mesh = ExtResource("36_e6bbn")
 
 [node name="SmChandelier2" type="MeshInstance3D" parent="."]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0.525245, -0.0496234, 4.86048)
-material_override = ExtResource("35_movsg")
-mesh = ExtResource("37_car20")
+material_override = ExtResource("34_f3h7a")
+mesh = ExtResource("36_e6bbn")
 
 [node name="SmChandelier3" type="MeshInstance3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 8.02958, -0.0496234, 6.72937)
-material_override = ExtResource("35_movsg")
-mesh = ExtResource("37_car20")
+material_override = ExtResource("34_f3h7a")
+mesh = ExtResource("36_e6bbn")
 
 [node name="SmChandelier4" type="MeshInstance3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 8.02958, -0.0496234, -2.49694)
-material_override = ExtResource("35_movsg")
-mesh = ExtResource("37_car20")
+material_override = ExtResource("34_f3h7a")
+mesh = ExtResource("36_e6bbn")
 
 [node name="SmWeaponRack" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.83682e-08, 0, 0.648988, 0, 0.648988, 0, -0.648988, 0, -2.83682e-08, 1.24016, 0.134977, -2.8638)
-material_override = ExtResource("35_movsg")
-mesh = ExtResource("38_pp0gx")
+material_override = ExtResource("34_f3h7a")
+mesh = ExtResource("37_yh7rv")
 
 [node name="SmWeaponRack2" type="MeshInstance3D" parent="."]
 transform = Transform3D(-2.83682e-08, 0, 0.648988, 0, 0.648988, 0, -0.648988, 0, -2.83682e-08, 2.04955, 0.134977, -2.8638)
-material_override = ExtResource("35_movsg")
-mesh = ExtResource("38_pp0gx")
+material_override = ExtResource("34_f3h7a")
+mesh = ExtResource("37_yh7rv")
 
 [node name="SmShield" type="MeshInstance3D" parent="."]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0.203918, 1.11116, -0.334396)
-material_override = ExtResource("35_movsg")
-mesh = ExtResource("39_2b66a")
+material_override = ExtResource("34_f3h7a")
+mesh = ExtResource("38_25mj6")
 
 [node name="SmShield2" type="MeshInstance3D" parent="."]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0.203918, 1.11116, 4.32812)
-material_override = ExtResource("35_movsg")
-mesh = ExtResource("39_2b66a")
+material_override = ExtResource("34_f3h7a")
+mesh = ExtResource("38_25mj6")
