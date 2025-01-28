@@ -1,10 +1,15 @@
-[gd_resource type="Resource" script_class="Candidate" load_steps=6 format=3 uid="uid://coyj65bhp68rf"]
+[gd_resource type="Resource" script_class="Candidate" load_steps=11 format=3 uid="uid://coyj65bhp68rf"]
 
 [ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="1_2fql8"]
 [ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="1_upd1q"]
 [ext_resource type="PackedScene" uid="uid://bvqnf42a5t62j" path="res://Test/CandidateEvents/candidate_cube.tscn" id="2_23nf7"]
 [ext_resource type="Script" path="res://Resources/candidate.gd" id="2_vkw4g"]
 [ext_resource type="Resource" uid="uid://d20a5lcjrhfw8" path="res://Resources/Candidate Resources/Candidates Dialogue/Morgana.dialogue" id="3_idwi0"]
+[ext_resource type="Resource" uid="uid://b5niwg6ntdh3s" path="res://Resources/Event Resources/Morgana/MorganaEvent1.tres" id="5_4payn"]
+[ext_resource type="Resource" uid="uid://dfoqg2pj5ct32" path="res://Resources/Event Resources/Morgana/MorganaEvent2.tres" id="6_kn0bh"]
+[ext_resource type="Resource" uid="uid://cjkb7car0td0c" path="res://Resources/Event Resources/Morgana/MorganaEvent3.tres" id="7_qvd4c"]
+[ext_resource type="Resource" uid="uid://dmhhegg0n41v8" path="res://Resources/Event Resources/Morgana/MorganaEvent4.tres" id="8_uhe8v"]
+[ext_resource type="Resource" uid="uid://bry5mgwlwk63g" path="res://Resources/Event Resources/Morgana/MorganaEvent5.tres" id="9_joqgp"]
 
 [resource]
 script = ExtResource("2_vkw4g")
@@ -12,7 +17,7 @@ name = "Morgana"
 social_class = 0
 candidate_conditions = Array[ExtResource("1_2fql8")]([])
 dialogue = ExtResource("3_idwi0")
-kingdom_event_collection = Array[ExtResource("1_upd1q")]([])
+kingdom_event_collection = Array[ExtResource("1_upd1q")]([ExtResource("5_4payn"), ExtResource("6_kn0bh"), ExtResource("7_qvd4c"), ExtResource("8_uhe8v"), ExtResource("9_joqgp")])
 minigame_difficulty = 10
 minigame_time = 10
 character_scene = ExtResource("2_23nf7")

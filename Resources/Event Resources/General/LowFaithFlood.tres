@@ -31,5 +31,6 @@ script = ExtResource("6_c6cnd")
 internal_name = "LowFaithFlood"
 kingdom_modifier = SubResource("Resource_tvcvh")
 event_condition_collection = Array[ExtResource("2_8ocj7")]([SubResource("Resource_6pj80"), SubResource("Resource_b8c85")])
+must = false
 probability = 50
 dialog = ExtResource("1_n77hr")

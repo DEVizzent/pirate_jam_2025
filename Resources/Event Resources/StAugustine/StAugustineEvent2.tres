@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="KingdomEvent" load_steps=9 format=3 uid="uid://52lsn1u7x3v2"]
+
+[ext_resource type="Resource" uid="uid://c1qqhckx56uyw" path="res://Resources/Event Resources/StAugustine/StAugustineEvent2Dialogue.dialogue" id="1_b0kg7"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="2_qewn3"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition_has_tag.gd" id="3_etsla"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_modifier.gd" id="4_a55cq"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="5_jhmtq"]
+
+[sub_resource type="Resource" id="Resource_il3c7"]
+script = ExtResource("3_etsla")
+has_not = false
+tag = 20
+
+[sub_resource type="Resource" id="Resource_g5vkt"]
+script = ExtResource("3_etsla")
+has_not = false
+tag = 27
+
+[sub_resource type="Resource" id="Resource_qua1r"]
+script = ExtResource("4_a55cq")
+faith = 0
+food = 0
+force = 0
+add_tag = 28
+remove_tag = 0
+
+[resource]
+script = ExtResource("5_jhmtq")
+internal_name = "StAugustineEvent1"
+kingdom_modifier = SubResource("Resource_qua1r")
+event_condition_collection = Array[ExtResource("2_qewn3")]([SubResource("Resource_il3c7"), SubResource("Resource_g5vkt")])
+must = false
+probability = 50
+dialog = ExtResource("1_b0kg7")

@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://bk4wark1n15q7"
+path="res://.godot/imported/RandomPeasant.dialogue-9a52b1d47038529d7a251287cc5a1ac3.tres"
+
+[deps]
+
+source_file="res://Resources/Candidate Resources/Candidates Dialogue/RandomPeasant.dialogue"
+dest_files=["res://.godot/imported/RandomPeasant.dialogue-9a52b1d47038529d7a251287cc5a1ac3.tres"]
+
+[params]
+
+defaults=true

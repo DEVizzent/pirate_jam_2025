@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="KingdomEvent" load_steps=6 format=3 uid="uid://b46tglh0dkxaa"]
 
-[ext_resource type="Resource" uid="uid://blc1ch5pqopoh" path="res://Resources/Event Resources/MassiveSoldier/MassiveSoldierEvent2Dialogue.dialogue" id="1_47nns"]
+[ext_resource type="Resource" uid="uid://bv7atmnuwm11t" path="res://Resources/Event Resources/MassiveSoldier/MassiveSoldierEvent3Dialogue.dialogue" id="1_tunpg"]
 [ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="2_vo8xb"]
 [ext_resource type="Script" path="res://Resources/Events/kingdom_modifier.gd" id="5_t66hl"]
 [ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="6_c5xpd"]
@@ -18,5 +18,6 @@ script = ExtResource("6_c5xpd")
 internal_name = "MassiveSoldierEvent3"
 kingdom_modifier = SubResource("Resource_j0fh0")
 event_condition_collection = Array[ExtResource("2_vo8xb")]([])
+must = false
 probability = 50
-dialog = ExtResource("1_47nns")
+dialog = ExtResource("1_tunpg")

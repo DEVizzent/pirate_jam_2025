@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Candidate" load_steps=8 format=3 uid="uid://2yqfqvho8le3"]
+[gd_resource type="Resource" script_class="Candidate" load_steps=12 format=3 uid="uid://2yqfqvho8le3"]
 
 [ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="1_cg8yv"]
 [ext_resource type="Script" path="res://Resources/Events/event_condition_has_tag.gd" id="2_smoc3"]
@@ -6,6 +6,10 @@
 [ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="4_h8u4e"]
 [ext_resource type="Resource" uid="uid://bpvtkkj112qr4" path="res://Resources/Candidate Resources/Candidates Dialogue/Merlin.dialogue" id="4_x2p65"]
 [ext_resource type="Script" path="res://Resources/candidate.gd" id="5_uegyy"]
+[ext_resource type="Resource" uid="uid://bubll7akyrefq" path="res://Resources/Event Resources/Merlin/MerlinEvent1.tres" id="6_ooxd7"]
+[ext_resource type="Resource" uid="uid://citpkmcgpkkh2" path="res://Resources/Event Resources/Merlin/MerlinEvent2.tres" id="7_ue4pu"]
+[ext_resource type="Resource" uid="uid://bq6cq76uwci7h" path="res://Resources/Event Resources/Merlin/MerlinEvent3.tres" id="8_18eix"]
+[ext_resource type="Resource" uid="uid://bfjek67p6ydpy" path="res://Resources/Event Resources/Merlin/MerlinEvent4.tres" id="9_oyw2o"]
 
 [sub_resource type="Resource" id="Resource_32ji3"]
 script = ExtResource("2_smoc3")
@@ -18,7 +22,7 @@ name = "Merlin"
 social_class = 0
 candidate_conditions = Array[ExtResource("1_cg8yv")]([SubResource("Resource_32ji3")])
 dialogue = ExtResource("4_x2p65")
-kingdom_event_collection = Array[ExtResource("4_h8u4e")]([])
+kingdom_event_collection = Array[ExtResource("4_h8u4e")]([ExtResource("6_ooxd7"), ExtResource("7_ue4pu"), ExtResource("8_18eix"), ExtResource("9_oyw2o")])
 minigame_difficulty = 10
 minigame_time = 10
 character_scene = ExtResource("2_x6ml3")

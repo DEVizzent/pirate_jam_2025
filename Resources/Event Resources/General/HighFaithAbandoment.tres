@@ -31,5 +31,6 @@ script = ExtResource("5_8lu6k")
 internal_name = "HighFaithAbandoment"
 kingdom_modifier = SubResource("Resource_tvcvh")
 event_condition_collection = Array[ExtResource("2_nw1v7")]([SubResource("Resource_6pj80"), SubResource("Resource_b8c85")])
+must = false
 probability = 50
 dialog = ExtResource("1_51bx6")

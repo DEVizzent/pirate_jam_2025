@@ -18,5 +18,6 @@ script = ExtResource("4_l0rc8")
 internal_name = "ArthurEvent2"
 kingdom_modifier = SubResource("Resource_gvmm7")
 event_condition_collection = Array[ExtResource("2_bn5im")]([])
+must = false
 probability = 25
 dialog = ExtResource("1_6hs8t")

@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://bfeikwoxqbpn6"
+path="res://.godot/imported/StAugustine.dialogue-918d01c97c78c27a777ad33bebac2d47.tres"
+
+[deps]
+
+source_file="res://Resources/Candidate Resources/Candidates Dialogue/StAugustine.dialogue"
+dest_files=["res://.godot/imported/StAugustine.dialogue-918d01c97c78c27a777ad33bebac2d47.tres"]
+
+[params]
+
+defaults=true
