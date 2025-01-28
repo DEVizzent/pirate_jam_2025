@@ -32,7 +32,8 @@ enum Tag {
 	PILGRIMAGE,
 	NEW_ROME,
 	PROTESTANTS,
-	FRANCE_CONQUERED
+	FRANCE_CONQUERED,
+	FRENCH_FRIENDS
 }
 
 @export var internal_name : String = ''

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Candidate" load_steps=10 format=3 uid="uid://di1j013s74n8"]
+
+[ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="1_e21j5"]
+[ext_resource type="PackedScene" uid="uid://bvqnf42a5t62j" path="res://Test/CandidateEvents/candidate_cube.tscn" id="2_f7dag"]
+[ext_resource type="Resource" uid="uid://d20a5lcjrhfw8" path="res://Resources/Candidate Resources/Candidates Dialogue/Morgana.dialogue" id="3_dsquu"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="4_ms5pv"]
+[ext_resource type="Resource" uid="uid://fj3ea57aptca" path="res://Resources/Event Resources/AnneBoleyn/AnneBoleynEvent1.tres" id="5_hnee0"]
+[ext_resource type="Resource" uid="uid://b5l3jfgf6qyys" path="res://Resources/Event Resources/AnneBoleyn/AnneBoleynEvent2.tres" id="6_w46so"]
+[ext_resource type="Resource" uid="uid://bw2xjamuo4odr" path="res://Resources/Event Resources/AnneBoleyn/AnneBoleynEvent3.tres" id="7_raph2"]
+[ext_resource type="Resource" uid="uid://5i75706j35ya" path="res://Resources/Event Resources/AnneBoleyn/AnneBoleynEvent4.tres" id="8_y30dc"]
+[ext_resource type="Script" path="res://Resources/candidate.gd" id="10_jjviu"]
+
+[resource]
+script = ExtResource("10_jjviu")
+name = "AnneBoleyn"
+social_class = 1
+candidate_conditions = Array[ExtResource("1_e21j5")]([])
+dialogue = ExtResource("3_dsquu")
+kingdom_event_collection = Array[ExtResource("4_ms5pv")]([ExtResource("5_hnee0"), ExtResource("6_w46so"), ExtResource("7_raph2"), ExtResource("8_y30dc")])
+minigame_difficulty = 10
+minigame_time = 10
+character_scene = ExtResource("2_f7dag")

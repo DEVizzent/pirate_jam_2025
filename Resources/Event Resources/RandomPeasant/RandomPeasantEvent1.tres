@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="KingdomEvent" load_steps=6 format=3 uid="uid://bkpu512p3icxr"]
+
+[ext_resource type="Resource" uid="uid://dmf54y5fbedb7" path="res://Resources/Event Resources/RandomPeasant/RandomPeasantEvent1Dialogue.dialogue" id="1_tiqww"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="2_rcvml"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_modifier.gd" id="3_6dikj"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="4_cwsc7"]
+
+[sub_resource type="Resource" id="Resource_gvmm7"]
+script = ExtResource("3_6dikj")
+faith = 0
+food = 2
+force = 0
+add_tag = 0
+remove_tag = 0
+
+[resource]
+script = ExtResource("4_cwsc7")
+internal_name = "RandomPeasantEvent1"
+kingdom_modifier = SubResource("Resource_gvmm7")
+event_condition_collection = Array[ExtResource("2_rcvml")]([])
+must = true
+probability = 100
+dialog = ExtResource("1_tiqww")

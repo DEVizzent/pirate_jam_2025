@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="KingdomEvent" load_steps=6 format=3 uid="uid://5i75706j35ya"]
+
+[ext_resource type="Resource" uid="uid://bslg74dfekajs" path="res://Resources/Event Resources/AnneBoleyn/AnneBoleynEvent4Dialogue.dialogue" id="1_fsawc"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="2_nh7n3"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_modifier.gd" id="3_i1qd7"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="4_qml43"]
+
+[sub_resource type="Resource" id="Resource_gvmm7"]
+script = ExtResource("3_i1qd7")
+faith = 0
+food = 0
+force = -1
+add_tag = 0
+remove_tag = 0
+
+[resource]
+script = ExtResource("4_qml43")
+internal_name = "AnneBoleynEvent4"
+kingdom_modifier = SubResource("Resource_gvmm7")
+event_condition_collection = Array[ExtResource("2_nh7n3")]([])
+must = false
+probability = 50
+dialog = ExtResource("1_fsawc")

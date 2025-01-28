@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="KingdomEvent" load_steps=10 format=3 uid="uid://4khb1kobsreb"]
+
+[ext_resource type="Resource" uid="uid://c2grm7df28a2t" path="res://Resources/Event Resources/RandomPeasant/RandomPeasantEvent2Dialogue.dialogue" id="1_pih2h"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="2_olp2e"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition_has_tag.gd" id="3_p1u63"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_modifier.gd" id="3_vss48"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="4_5ac37"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition_has_stat.gd" id="4_cuj7w"]
+
+[sub_resource type="Resource" id="Resource_0jmiv"]
+script = ExtResource("3_p1u63")
+has_not = false
+tag = 22
+
+[sub_resource type="Resource" id="Resource_3bqwe"]
+script = ExtResource("4_cuj7w")
+stat_to_compare = 2
+operator = 1
+value = 7
+
+[sub_resource type="Resource" id="Resource_gvmm7"]
+script = ExtResource("3_vss48")
+faith = 0
+food = 0
+force = 0
+add_tag = 0
+remove_tag = 0
+
+[resource]
+script = ExtResource("4_5ac37")
+internal_name = "RandomPeasantEvent2"
+kingdom_modifier = SubResource("Resource_gvmm7")
+event_condition_collection = Array[ExtResource("2_olp2e")]([SubResource("Resource_0jmiv"), SubResource("Resource_3bqwe")])
+must = true
+probability = 100
+dialog = ExtResource("1_pih2h")

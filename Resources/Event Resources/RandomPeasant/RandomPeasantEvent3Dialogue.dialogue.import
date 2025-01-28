@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://bru2bea05u5lh"
+path="res://.godot/imported/RandomPeasantEvent3Dialogue.dialogue-1c9465fe72a13a6e179b14b41e4fb863.tres"
+
+[deps]
+
+source_file="res://Resources/Event Resources/RandomPeasant/RandomPeasantEvent3Dialogue.dialogue"
+dest_files=["res://.godot/imported/RandomPeasantEvent3Dialogue.dialogue-1c9465fe72a13a6e179b14b41e4fb863.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://bdnj462gkc3bu"
+path="res://.godot/imported/AnneBoleynEvent1Dialogue.dialogue-c716ab84dea882864b3c75afc7ddaed0.tres"
+
+[deps]
+
+source_file="res://Resources/Event Resources/AnneBoleyn/AnneBoleynEvent1Dialogue.dialogue"
+dest_files=["res://.godot/imported/AnneBoleynEvent1Dialogue.dialogue-c716ab84dea882864b3c75afc7ddaed0.tres"]
+
+[params]
+
+defaults=true

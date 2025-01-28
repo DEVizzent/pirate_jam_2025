@@ -1,0 +1,14 @@
+~ main
+do DialogueEventBus.animate("RandomPeasant", "talk")
+A Random Peasant: Who, me?
+do DialogueEventBus.animate("RandomPeasant", "scared")
+A Random Peasant: But I am just a peasant! I am not a king!
+=> END
+~ presentation
+do DialogueEventBus.animate("RandomPeasant", "talk")
+A Random Peasant: Why would anyone choose me?
+A Random Peasant: I mean, I have ideas, after working the land for so long.
+A Random Peasant: I guess I could work on that...
+A Random Peasant: But I don't know how to do anything else!
+=> END
+"res://Resources/Event Resources/HenryVIII/HenryVIIIEvent1.tres"

@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="KingdomEvent" load_steps=8 format=3 uid="uid://b5l3jfgf6qyys"]
+
+[ext_resource type="Resource" uid="uid://dnojfdmcagqym" path="res://Resources/Event Resources/AnneBoleyn/AnneBoleynEvent2Dialogue.dialogue" id="1_7pkjn"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="2_vme6d"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition_has_tag.gd" id="3_3jle3"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_modifier.gd" id="3_rbp1p"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="4_k70e8"]
+
+[sub_resource type="Resource" id="Resource_237gd"]
+script = ExtResource("3_3jle3")
+has_not = false
+tag = 25
+
+[sub_resource type="Resource" id="Resource_gvmm7"]
+script = ExtResource("3_rbp1p")
+faith = 0
+food = 0
+force = 0
+add_tag = 0
+remove_tag = 0
+
+[resource]
+script = ExtResource("4_k70e8")
+internal_name = "AnneBoleynEvent2"
+kingdom_modifier = SubResource("Resource_gvmm7")
+event_condition_collection = Array[ExtResource("2_vme6d")]([SubResource("Resource_237gd")])
+must = true
+probability = 100
+dialog = ExtResource("1_7pkjn")

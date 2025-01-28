@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://6dge2skxq27c"
+path="res://.godot/imported/AnneBoleyn.dialogue-e40b613d2371fc2561dd7c0090150e9f.tres"
+
+[deps]
+
+source_file="res://Resources/Candidate Resources/Candidates Dialogue/AnneBoleyn.dialogue"
+dest_files=["res://.godot/imported/AnneBoleyn.dialogue-e40b613d2371fc2561dd7c0090150e9f.tres"]
+
+[params]
+
+defaults=true
