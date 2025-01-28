@@ -1,10 +1,14 @@
-[gd_resource type="Resource" script_class="Candidate" load_steps=6 format=3 uid="uid://cq0fxx5cg3vh6"]
+[gd_resource type="Resource" script_class="Candidate" load_steps=10 format=3 uid="uid://cq0fxx5cg3vh6"]
 
 [ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="1_d0sp4"]
 [ext_resource type="PackedScene" uid="uid://bvqnf42a5t62j" path="res://Test/CandidateEvents/candidate_cube.tscn" id="2_mdisj"]
 [ext_resource type="Resource" uid="uid://dp6tudqn82jf0" path="res://Resources/Candidate Resources/Candidates Dialogue/MassiveSoldier.dialogue" id="3_ebc1v"]
 [ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="4_igfuk"]
+[ext_resource type="Resource" uid="uid://bn57f6lpa6uij" path="res://Resources/Event Resources/MassiveSoldier/MassiveSoldierEvent1.tres" id="5_lhjp6"]
 [ext_resource type="Script" path="res://Resources/candidate.gd" id="5_o7641"]
+[ext_resource type="Resource" uid="uid://bu14q3dc2fwbk" path="res://Resources/Event Resources/MassiveSoldier/MassiveSoldierEvent2.tres" id="6_6oay8"]
+[ext_resource type="Resource" uid="uid://b46tglh0dkxaa" path="res://Resources/Event Resources/MassiveSoldier/MassiveSoldierEvent3.tres" id="7_1i3jh"]
+[ext_resource type="Resource" uid="uid://be6ibv6ubva1" path="res://Resources/Event Resources/MassiveSoldier/MassiveSoldierEvent4.tres" id="8_mgd3x"]
 
 [resource]
 script = ExtResource("5_o7641")
@@ -12,7 +16,7 @@ name = "MassiveSoldier"
 social_class = 1
 candidate_conditions = Array[ExtResource("1_d0sp4")]([])
 dialogue = ExtResource("3_ebc1v")
-kingdom_event_collection = Array[ExtResource("4_igfuk")]([])
+kingdom_event_collection = Array[ExtResource("4_igfuk")]([ExtResource("5_lhjp6"), ExtResource("6_6oay8"), ExtResource("7_1i3jh"), ExtResource("8_mgd3x")])
 minigame_difficulty = 10
 minigame_time = 10
 character_scene = ExtResource("2_mdisj")

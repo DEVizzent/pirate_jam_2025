@@ -3,14 +3,14 @@
 [ext_resource type="Script" path="res://Scenes/Game/game.gd" id="1_q5na8"]
 [ext_resource type="PackedScene" uid="uid://c0xv84l4ds1an" path="res://Scenes/RoyalHall/royal_hall.tscn" id="1_xd715"]
 [ext_resource type="Script" path="res://Resources/candidate.gd" id="2_0awwt"]
-[ext_resource type="Resource" path="res://Resources/Candidate Resources/MassiveSoldier.tres" id="3_daxlh"]
+[ext_resource type="Resource" uid="uid://cq0fxx5cg3vh6" path="res://Resources/Candidate Resources/MassiveSoldier.tres" id="3_daxlh"]
 [ext_resource type="PackedScene" uid="uid://bko0ifwwfqndb" path="res://Scenes/Menu/menu.tscn" id="3_stosb"]
 [ext_resource type="Script" path="res://Resources/game_candidates.gd" id="3_wtr34"]
 [ext_resource type="Resource" uid="uid://bv2s115vi22nf" path="res://Resources/Candidate Resources/Arthur.tres" id="4_dnbb4"]
-[ext_resource type="Resource" path="res://Resources/Candidate Resources/MedievalKing.tres" id="4_fxo54"]
+[ext_resource type="Resource" uid="uid://bxcasxjsqmoxa" path="res://Resources/Candidate Resources/MedievalKing.tres" id="4_fxo54"]
 [ext_resource type="PackedScene" uid="uid://dnij6wam3pspb" path="res://Scenes/SwordGame/MiniGame.tscn" id="4_o4ogt"]
 [ext_resource type="Resource" uid="uid://coyj65bhp68rf" path="res://Resources/Candidate Resources/Morgana.tres" id="5_5km70"]
-[ext_resource type="Resource" uid="uid://btmod3vtrh2y1" path="res://Resources/Candidate Resources/Merlin.tres" id="5_gpk0w"]
+[ext_resource type="Resource" uid="uid://2yqfqvho8le3" path="res://Resources/Candidate Resources/Merlin.tres" id="5_gpk0w"]
 
 [sub_resource type="Resource" id="Resource_xlayc"]
 script = ExtResource("3_wtr34")

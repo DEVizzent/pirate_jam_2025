@@ -24,5 +24,6 @@ script = ExtResource("4_vkism")
 internal_name = "DruidEvent1"
 kingdom_modifier = SubResource("Resource_gvmm7")
 event_condition_collection = Array[ExtResource("2_7a4nk")]([SubResource("Resource_my1my")])
+must = false
 probability = 25
 dialog = ExtResource("1_ii118")

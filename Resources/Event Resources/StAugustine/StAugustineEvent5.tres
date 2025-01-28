@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="KingdomEvent" load_steps=6 format=3 uid="uid://ccyc7nq8nfwuy"]
+
+[ext_resource type="Resource" uid="uid://blvx8jp6qkqkj" path="res://Resources/Event Resources/StAugustine/StAugustineEvent5Dialogue.dialogue" id="1_jhweu"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="2_w4sj3"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_modifier.gd" id="4_opk5y"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="5_wl2ig"]
+
+[sub_resource type="Resource" id="Resource_qua1r"]
+script = ExtResource("4_opk5y")
+faith = 0
+food = 0
+force = 1
+add_tag = 0
+remove_tag = 0
+
+[resource]
+script = ExtResource("5_wl2ig")
+internal_name = "StAugustineEvent1"
+kingdom_modifier = SubResource("Resource_qua1r")
+event_condition_collection = Array[ExtResource("2_w4sj3")]([])
+must = false
+probability = 50
+dialog = ExtResource("1_jhweu")

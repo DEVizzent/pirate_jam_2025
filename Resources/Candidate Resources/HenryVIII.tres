@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Candidate" load_steps=10 format=3 uid="uid://cdwacyitjh8yo"]
+
+[ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="1_v8mhw"]
+[ext_resource type="PackedScene" uid="uid://bvqnf42a5t62j" path="res://Test/CandidateEvents/candidate_cube.tscn" id="2_ur6k1"]
+[ext_resource type="Resource" uid="uid://0jtv2nqt4r5o" path="res://Resources/Candidate Resources/Candidates Dialogue/HenryVIII.dialogue" id="3_73x0e"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="4_4peuw"]
+[ext_resource type="Resource" uid="uid://bv0s88h8hd32i" path="res://Resources/Event Resources/HenryVIII/HenryVIIIEvent1.tres" id="5_ob2af"]
+[ext_resource type="Resource" uid="uid://bffoeed4jas7a" path="res://Resources/Event Resources/HenryVIII/HenryVIIIEvent2.tres" id="6_hytln"]
+[ext_resource type="Resource" uid="uid://c8rsguslhbh3" path="res://Resources/Event Resources/HenryVIII/HenryVIIIEvent3.tres" id="7_x2pi5"]
+[ext_resource type="Resource" uid="uid://bjdjbjx60xyyq" path="res://Resources/Event Resources/HenryVIII/HenryVIIIEvent4.tres" id="8_lwo2c"]
+[ext_resource type="Script" path="res://Resources/candidate.gd" id="10_11vw0"]
+
+[resource]
+script = ExtResource("10_11vw0")
+name = "HenryVIII"
+social_class = 1
+candidate_conditions = Array[ExtResource("1_v8mhw")]([])
+dialogue = ExtResource("3_73x0e")
+kingdom_event_collection = Array[ExtResource("4_4peuw")]([ExtResource("5_ob2af"), ExtResource("6_hytln"), ExtResource("7_x2pi5"), ExtResource("8_lwo2c")])
+minigame_difficulty = 10
+minigame_time = 10
+character_scene = ExtResource("2_ur6k1")

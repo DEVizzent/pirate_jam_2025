@@ -28,7 +28,11 @@ enum Tag {
 	DEBT_FORGIVEN,
 	GOD_SACRIFICED,
 	FAE_INFILTRATED,
-	FAE_ARMY
+	FAE_ARMY,
+	PILGRIMAGE,
+	NEW_ROME,
+	PROTESTANTS,
+	FRANCE_CONQUERED
 }
 
 @export var internal_name : String = ''

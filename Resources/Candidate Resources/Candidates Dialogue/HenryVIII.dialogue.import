@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://0jtv2nqt4r5o"
+path="res://.godot/imported/HenryVIII.dialogue-aefc5270f65bd0c7b58fa9661b409df0.tres"
+
+[deps]
+
+source_file="res://Resources/Candidate Resources/Candidates Dialogue/HenryVIII.dialogue"
+dest_files=["res://.godot/imported/HenryVIII.dialogue-aefc5270f65bd0c7b58fa9661b409df0.tres"]
+
+[params]
+
+defaults=true

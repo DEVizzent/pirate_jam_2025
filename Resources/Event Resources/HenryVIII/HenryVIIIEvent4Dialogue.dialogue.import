@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://jeh3hvbj1cx2"
+path="res://.godot/imported/HenryVIIIEvent4Dialogue.dialogue-128fbc2eee252ee24bad3ccb7197f89a.tres"
+
+[deps]
+
+source_file="res://Resources/Event Resources/HenryVIII/HenryVIIIEvent4Dialogue.dialogue"
+dest_files=["res://.godot/imported/HenryVIIIEvent4Dialogue.dialogue-128fbc2eee252ee24bad3ccb7197f89a.tres"]
+
+[params]
+
+defaults=true

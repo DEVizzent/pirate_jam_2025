@@ -25,5 +25,6 @@ script = ExtResource("4_nvnll")
 internal_name = "MassiveSoldierEvent1"
 kingdom_modifier = SubResource("Resource_j0fh0")
 event_condition_collection = Array[ExtResource("2_e4dtr")]([SubResource("Resource_a06jk")])
+must = false
 probability = 50
 dialog = ExtResource("1_sc8rf")

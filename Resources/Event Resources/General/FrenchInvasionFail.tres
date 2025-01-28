@@ -31,5 +31,6 @@ script = ExtResource("6_u158f")
 internal_name = "FrenchTithe"
 kingdom_modifier = SubResource("Resource_tvcvh")
 event_condition_collection = Array[ExtResource("2_lujg3")]([SubResource("Resource_b8c85"), SubResource("Resource_gvfy4")])
+must = false
 probability = 25
 dialog = ExtResource("1_18on8")

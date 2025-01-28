@@ -25,5 +25,6 @@ script = ExtResource("2_w5558")
 internal_name = "HighFoodFamine"
 kingdom_modifier = SubResource("Resource_tvcvh")
 event_condition_collection = Array[ExtResource("1_tdkty")]([SubResource("Resource_6pj80")])
+must = false
 probability = 50
 dialog = ExtResource("1_5u6e7")

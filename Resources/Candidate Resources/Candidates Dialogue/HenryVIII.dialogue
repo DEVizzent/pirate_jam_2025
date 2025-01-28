@@ -1,0 +1,13 @@
+~ main
+do DialogueEventBus.animate("HenryVIII", "sassy")
+Henry The VIII: I mean, look at me.
+Henry The VIII: No one looks more regal.
+=> END
+~ presentation
+do DialogueEventBus.animate("HenryVIII", "talk")
+Henry The VIII: Britain needs a strong ruler.
+Henry The VIII: And who can be stronger than me?
+do DialogueEventBus.animate("HenryVIII", "sassy")
+Henry The VIII: I mean, just look at me. Look at all the gold and fur I wear.
+Henry The VIII: Pure ruler material here.
+=> END

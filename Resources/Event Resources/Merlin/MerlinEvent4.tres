@@ -25,5 +25,6 @@ script = ExtResource("4_y51iv")
 internal_name = "MerlinEvent4"
 kingdom_modifier = SubResource("Resource_qua1r")
 event_condition_collection = Array[ExtResource("2_dj025")]([SubResource("Resource_xc3b8")])
+must = false
 probability = 50
 dialog = ExtResource("1_wqm6h")

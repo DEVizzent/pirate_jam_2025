@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="KingdomEvent" load_steps=6 format=3 uid="uid://c8rsguslhbh3"]
+
+[ext_resource type="Resource" uid="uid://bjvvkdoc8fflx" path="res://Resources/Event Resources/HenryVIII/HenryVIIIEvent3Dialogue.dialogue" id="1_1ksbp"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="2_6m6kx"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_modifier.gd" id="4_db1gu"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="5_bemit"]
+
+[sub_resource type="Resource" id="Resource_j0fh0"]
+script = ExtResource("4_db1gu")
+faith = 0
+food = 0
+force = 1
+add_tag = 0
+remove_tag = 0
+
+[resource]
+script = ExtResource("5_bemit")
+internal_name = "HenryVIIIEvent3"
+kingdom_modifier = SubResource("Resource_j0fh0")
+event_condition_collection = Array[ExtResource("2_6m6kx")]([])
+must = false
+probability = 50
+dialog = ExtResource("1_1ksbp")

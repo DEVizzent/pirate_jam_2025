@@ -1,10 +1,15 @@
-[gd_resource type="Resource" script_class="Candidate" load_steps=6 format=3 uid="uid://bxcasxjsqmoxa"]
+[gd_resource type="Resource" script_class="Candidate" load_steps=11 format=3 uid="uid://bxcasxjsqmoxa"]
 
 [ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="1_qk4d5"]
 [ext_resource type="PackedScene" uid="uid://bvqnf42a5t62j" path="res://Test/CandidateEvents/candidate_cube.tscn" id="3_l2c0g"]
 [ext_resource type="Resource" uid="uid://cs8kk3r2jv3ag" path="res://Resources/Candidate Resources/Candidates Dialogue/MedievalKing.dialogue" id="3_xaqel"]
 [ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="5_74640"]
+[ext_resource type="Resource" uid="uid://dqpasglukfc34" path="res://Resources/Event Resources/MedievalKing/MedievalKingEvent1.tres" id="5_rn0gp"]
+[ext_resource type="Resource" uid="uid://byqpk72r1fgf5" path="res://Resources/Event Resources/MedievalKing/MedievalKingEvent2.tres" id="6_1sxo1"]
 [ext_resource type="Script" path="res://Resources/candidate.gd" id="6_pfimg"]
+[ext_resource type="Resource" uid="uid://bjily2bip3hnw" path="res://Resources/Event Resources/MedievalKing/MedievalKingEvent3.tres" id="7_prs4d"]
+[ext_resource type="Resource" uid="uid://g17mst77xeg8" path="res://Resources/Event Resources/MedievalKing/MedievalKingEvent4.tres" id="8_8lwve"]
+[ext_resource type="Resource" uid="uid://bb57drxxktacf" path="res://Resources/Event Resources/MedievalKing/MedievalKingEvent5.tres" id="9_s1y1e"]
 
 [resource]
 script = ExtResource("6_pfimg")
@@ -12,7 +17,7 @@ name = "MedievalKing"
 social_class = 0
 candidate_conditions = Array[ExtResource("1_qk4d5")]([])
 dialogue = ExtResource("3_xaqel")
-kingdom_event_collection = Array[ExtResource("5_74640")]([])
+kingdom_event_collection = Array[ExtResource("5_74640")]([ExtResource("5_rn0gp"), ExtResource("6_1sxo1"), ExtResource("7_prs4d"), ExtResource("8_8lwve"), ExtResource("9_s1y1e")])
 minigame_difficulty = 10
 minigame_time = 10
 character_scene = ExtResource("3_l2c0g")

@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://dra0p2jo5tx5a"
+path="res://.godot/imported/StAugustineEvent1Dialogue.dialogue-b47ae05f85576eff809e120e638cf725.tres"
+
+[deps]
+
+source_file="res://Resources/Event Resources/StAugustine/StAugustineEvent1Dialogue.dialogue"
+dest_files=["res://.godot/imported/StAugustineEvent1Dialogue.dialogue-b47ae05f85576eff809e120e638cf725.tres"]
+
+[params]
+
+defaults=true
