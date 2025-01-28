@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://do26adyt6e3b0"
-path="res://.godot/imported/morgana.fbx-1c995e69336b1ed6ce03716288b2c899.scn"
+uid="uid://dm0fxs1yqgfe5"
+path="res://.godot/imported/arturo.fbx-a308449d1b138eb817f179931f4a0dd0.scn"
 
 [deps]
 
-source_file="res://Character Models/morgana.fbx"
-dest_files=["res://.godot/imported/morgana.fbx-1c995e69336b1ed6ce03716288b2c899.scn"]
+source_file="res://Character Models/character_fbxs/arturo.fbx"
+dest_files=["res://.godot/imported/arturo.fbx-a308449d1b138eb817f179931f4a0dd0.scn"]
 
 [params]
 
@@ -25,10 +25,10 @@ meshes/light_baking=1
 meshes/lightmap_texel_size=0.2
 meshes/force_disable_compression=false
 skins/use_named_skins=true
-animation/import=true
+animation/import=false
 animation/fps=30
-animation/trimming=true
-animation/remove_immutable_tracks=true
+animation/trimming=false
+animation/remove_immutable_tracks=false
 animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={}

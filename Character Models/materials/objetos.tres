@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://bc88ttfgc0wdf"]
+
+[ext_resource type="Texture2D" uid="uid://cciq0gp010bjr" path="res://Character Models/textures/objetos/corona-gorros.png" id="1_b1ww6"]
+[ext_resource type="Texture2D" uid="uid://b5hvuu4td1hwa" path="res://Character Models/textures/objetos/corona-gorros-metal.png" id="2_2g3iw"]
+
+[resource]
+albedo_texture = ExtResource("1_b1ww6")
+metallic = 1.0
+metallic_texture = ExtResource("2_2g3iw")

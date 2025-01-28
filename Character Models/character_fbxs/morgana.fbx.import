@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cybo4dngbnlfb"
-path="res://.godot/imported/arturo.fbx-6bb00497996e35a1ac58cf9bfc934d4b.scn"
+uid="uid://bvom5xohxksfk"
+path="res://.godot/imported/morgana.fbx-d1eae5b96b5047675ee47bc1fbeeccb2.scn"
 
 [deps]
 
-source_file="res://Character Models/arturo.fbx"
-dest_files=["res://.godot/imported/arturo.fbx-6bb00497996e35a1ac58cf9bfc934d4b.scn"]
+source_file="res://Character Models/character_fbxs/morgana.fbx"
+dest_files=["res://.godot/imported/morgana.fbx-d1eae5b96b5047675ee47bc1fbeeccb2.scn"]
 
 [params]
 
