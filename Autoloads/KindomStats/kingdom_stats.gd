@@ -20,7 +20,10 @@ var force : int:
 var tags : Array[KingdomEvent.Tag]
 
 func _ready() -> void:
-	restart_values()
+	faith = 0
+	force = 0
+	food = 0
+	EventBus.run_started.connect(restart_values)
 
 func restart_values() -> void:
 	faith = DEFAULT_STAT

@@ -1,0 +1,87 @@
+[gd_scene load_steps=11 format=3 uid="uid://bs7ljhmtjag06"]
+
+[ext_resource type="Script" path="res://Scenes/UI/Stats/ui_stats.gd" id="1_vchmw"]
+[ext_resource type="Texture2D" uid="uid://om1ess7tubcn" path="res://Scenes/UI/Stats/food_icon.png" id="3_5iv6x"]
+[ext_resource type="Texture2D" uid="uid://bok2vgqpdh5dd" path="res://Scenes/UI/Stats/faith_icon.png" id="4_n8wnv"]
+[ext_resource type="Shader" path="res://Scenes/UI/Stats/stat_icon.gdshader" id="4_sdybi"]
+[ext_resource type="Texture2D" uid="uid://b0427n0pg7u84" path="res://Scenes/UI/Stats/force_icon.png" id="5_l8juy"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jomo1"]
+bg_color = Color(0.6, 0.6, 0.6, 0.196078)
+border_width_left = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.408329, 0.408329, 0.408329, 1)
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="Theme" id="Theme_4mwf0"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_w8pum"]
+shader = ExtResource("4_sdybi")
+shader_parameter/stat_value = 0.0
+shader_parameter/shine_color = Color(0.549534, 0.473132, 0, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ersla"]
+shader = ExtResource("4_sdybi")
+shader_parameter/stat_value = 0.0
+shader_parameter/shine_color = Color(0.54902, 0.47451, 0, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ciol2"]
+shader = ExtResource("4_sdybi")
+shader_parameter/stat_value = 0.0
+shader_parameter/shine_color = Color(0.549534, 0.473132, 0, 1)
+
+[node name="UI_Stats" type="Control"]
+layout_mode = 3
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+grow_horizontal = 2
+mouse_filter = 2
+mouse_force_pass_scroll_events = false
+script = ExtResource("1_vchmw")
+
+[node name="Panel" type="Panel" parent="."]
+custom_minimum_size = Vector2(300, 90)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -150.0
+offset_right = 150.0
+offset_bottom = 90.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_jomo1")
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -150.0
+offset_right = 150.0
+offset_bottom = 79.0
+grow_horizontal = 2
+theme_override_constants/margin_top = 15
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/MarginContainer"]
+layout_mode = 2
+theme = SubResource("Theme_4mwf0")
+theme_override_constants/separation = 40
+alignment = 1
+
+[node name="FoodIcon" type="TextureRect" parent="Panel/MarginContainer/HBoxContainer"]
+material = SubResource("ShaderMaterial_w8pum")
+layout_mode = 2
+texture = ExtResource("3_5iv6x")
+
+[node name="FaithIcon" type="TextureRect" parent="Panel/MarginContainer/HBoxContainer"]
+material = SubResource("ShaderMaterial_ersla")
+layout_mode = 2
+texture = ExtResource("4_n8wnv")
+
+[node name="ForceIcon" type="TextureRect" parent="Panel/MarginContainer/HBoxContainer"]
+material = SubResource("ShaderMaterial_ciol2")
+layout_mode = 2
+texture = ExtResource("5_l8juy")

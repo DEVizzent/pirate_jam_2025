@@ -23,6 +23,7 @@ func _ready() -> void:
 	mini_game.game_ended.connect(_on_mini_game_ended)
 
 func start_run() -> void:
+	EventBus.emit_run_started()
 	MusicController.switch_to_level_song()
 	run_turn = Turn.TUTORIAL
 	prepare_turn_candidates()
@@ -93,19 +94,38 @@ func coronation(candidate: Candidate) -> void:
 	_move_character_to_position(candidate_instances[key], CharacterPositions.throne_position, 4.0)
 	await get_tree().create_timer(1.0).timeout
 	_move_camera(CAMERA_MAIN_VIEW_POSITION, CAMERA_MAIN_VIEW_ROTATION)
-	for event in candidate.kingdom_event_collection:
-		await event.invoke()
+	await execute_candidate_events(candidate.kingdom_event_collection)
 	next_round()
+
 func execute_candidate_events(candidate_events : Array[KingdomEvent]) -> void:
 	var number_of_events_to_execute : int = randi_range(3, 5)
+	print_debug("Number of events to execute: " + str(number_of_events_to_execute))
 	var number_of_executed_events : int = 0
+	general_events.shuffle()
+	for general_event in general_events:
+		if not general_event.must:
+			continue
+		if await general_event.invoke():
+			number_of_executed_events += 1
+		if number_of_executed_events >= number_of_events_to_execute:
+			return
 	for candidate_event in candidate_events:
+		if not candidate_event.must:
+			continue
 		if await candidate_event.invoke():
 			number_of_executed_events += 1
 		if number_of_executed_events >= number_of_events_to_execute:
 			return
-	general_events.shuffle()
+	for candidate_event in candidate_events:
+		if candidate_event.must:
+			continue
+		if await candidate_event.invoke():
+			number_of_executed_events += 1
+		if number_of_executed_events >= number_of_events_to_execute:
+			return
 	for general_event in general_events:
+		if general_event.must:
+			continue
 		if await general_event.invoke():
 			number_of_executed_events += 1
 		if number_of_executed_events >= number_of_events_to_execute:

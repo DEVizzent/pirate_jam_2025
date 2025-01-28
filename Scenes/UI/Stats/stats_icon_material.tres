@@ -1,0 +1,8 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://dlcc6r2kvesmi"]
+
+[ext_resource type="Shader" path="res://Scenes/UI/Stats/stat_icon.gdshader" id="1_6dijq"]
+
+[resource]
+shader = ExtResource("1_6dijq")
+shader_parameter/stat_value = 5.0
+shader_parameter/shine_color = Color(0.549534, 0.473132, 0, 1)
