@@ -7,6 +7,8 @@ const CAMERA_MAIN_VIEW_POSITION : Vector3 = Vector3(-7, 2, .5)
 const CAMERA_MAIN_VIEW_ROTATION : Vector3 = Vector3(-0.296706, 0.436332, 0)
 const CAMERA_MENU_VIEW_POSITION : Vector3 = Vector3(-5, 2.5, 12)
 const CAMERA_MENU_VIEW_ROTATION : Vector3 = Vector3(0, -0.654498, 0)
+const CAMERA_THRONE_VIEW_POSITION : Vector3 = Vector3(-6, 1.5, 5)
+const CAMERA_THRONE_VIEW_ROTATION : Vector3 = Vector3(-0.349066, 1.0472, 0)
 
 @onready var camera : Camera3D = $Camera3D
 @onready var mini_game : MiniGame = $MiniGame
@@ -78,9 +80,9 @@ func _mini_game_block() -> void:
 		_move_character_to_position(candidate, CharacterPositions.mini_game_position, randf_range(2., 3.))
 		await get_tree().create_timer(1.0).timeout
 		await start_minigame(turn_candidates[key])
-		await _move_camera(CAMERA_MAIN_VIEW_POSITION + Vector3(0, 0, -1), CAMERA_MAIN_VIEW_ROTATION)
+		await _move_camera(mini_game.position + Vector3(0, 1.5, -1), CAMERA_MAIN_VIEW_ROTATION)
 		if has_king:
-			await _move_camera(CAMERA_MAIN_VIEW_POSITION + Vector3(0, 1, -1), CAMERA_MAIN_VIEW_ROTATION)
+			await _move_camera(mini_game.position + Vector3(0, 2.5, -1), CAMERA_MAIN_VIEW_ROTATION)
 			coronation(mini_game.get_candidate())
 			return
 		else:
@@ -93,7 +95,7 @@ func coronation(candidate: Candidate) -> void:
 		push_error('Candidate character not found')
 	_move_character_to_position(candidate_instances[key], CharacterPositions.throne_position, 4.0)
 	await get_tree().create_timer(1.0).timeout
-	_move_camera(CAMERA_MAIN_VIEW_POSITION, CAMERA_MAIN_VIEW_ROTATION)
+	_move_camera(CAMERA_THRONE_VIEW_POSITION, CAMERA_THRONE_VIEW_ROTATION)
 	await execute_candidate_events(candidate.kingdom_event_collection)
 	next_round()
 

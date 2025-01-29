@@ -57,7 +57,7 @@ z_index = 10
 [node name="UI_Stats" parent="." instance=ExtResource("27_73ufp")]
 
 [node name="Camera3D2" type="Camera3D" parent="."]
-transform = Transform3D(0.906308, -0.123562, 0.404152, 0, 0.956305, 0.292372, -0.422618, -0.264979, 0.866706, -7, 2, 0.5)
+transform = Transform3D(0.5, -0.296198, 0.813798, 0, 0.939693, 0.34202, -0.866025, -0.17101, 0.469846, -7, 0.787, 4.25)
 
 [node name="arturo" parent="." instance=ExtResource("27_ocuuf")]
 transform = Transform3D(0.532285, -0.846565, -3.70045e-08, 0, -4.37114e-08, 1, -0.846565, -0.532285, -2.32669e-08, -10.2657, 0.444231, -1.30413)
@@ -70,3 +70,5 @@ transform = Transform3D(0.999997, -0.00226888, -9.91811e-11, 0, -4.37114e-08, 1,
 
 [node name="arturo4" parent="." instance=ExtResource("27_ocuuf")]
 transform = Transform3D(0.946913, 0.321489, 1.40527e-08, -1.27034e-17, -4.37114e-08, 1, 0.321489, -0.946913, -4.13909e-08, -5.68513, 0.444231, -4.06658)
+
+[editable path="AssetZooScene"]

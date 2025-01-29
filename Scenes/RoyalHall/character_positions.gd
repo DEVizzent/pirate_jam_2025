@@ -19,6 +19,6 @@ static var presentation_rotation : Array[Vector3] = [
 	Vector3(-1.5708, 0, 0),
 ]
 
-static var throne_position : Vector3 = Vector3(0, 0, 5)
+static var throne_position : Vector3 = Vector3(-7.7, 0., 4.)
 
 static var mini_game_position : Vector3 = Vector3(0, 0, -1)
