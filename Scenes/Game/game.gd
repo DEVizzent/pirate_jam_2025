@@ -44,9 +44,7 @@ func _introduce_game_candidates() -> void:
 		add_child(candidate_instance)
 		candidate_instances.append(candidate_instance)
 		candidate_instance.position = CharacterPositions.spawn_position[candidate_num]
-		candidate_instance.walk()
-		tween.tween_property(candidate_instance, "position", CharacterPositions.presentation_position[candidate_num], randf_range(3.0, 4.0))
-		tween.tween_callback(candidate_instance.iddle)
+		_move_character_to_position(candidate_instance, CharacterPositions.presentation_position[candidate_num], randf_range(3.0, 4.0))
 		candidate_num += 1
 	await get_tree().create_timer(3.)
 	for candidate in turn_candidates:
@@ -172,7 +170,11 @@ func _move_camera(camera_position: Vector3, camera_rotation: Vector3) -> void:
 
 func _move_character_to_position(character : Node3D, character_position: Vector3, duration: float) -> void:
 	var tween : Tween = get_tree().create_tween()
+	tween.tween_callback(character.look_at.bind(character_position))
+	tween.tween_callback(character.walk)
 	tween.tween_property(character, "position", character_position, duration)
+	tween.tween_callback(character.iddle)
+	tween.tween_callback(character.look_at.bind(camera.position))
 	await tween.finished
 	return
 
