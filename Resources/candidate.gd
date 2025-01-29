@@ -11,7 +11,7 @@ enum SocialClass {CLERGY, NOBILITY, PLEBE}
 @export_range(0, 300) var minigame_time : int = 10
 @export var character_scene : PackedScene = preload("res://Test/CandidateEvents/candidate_cube.tscn")
 
-func get_character() -> Node3D:
-	var character: Node3D = character_scene.instantiate()
+func get_character() -> Character:
+	var character: Character = character_scene.instantiate()
 	character.candidate_name = name
 	return character

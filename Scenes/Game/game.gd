@@ -16,7 +16,7 @@ const CAMERA_THRONE_VIEW_ROTATION : Vector3 = Vector3(-0.349066, 1.0472, 0)
 @export var general_events : Array[KingdomEvent]
 var run_turn : Turn
 var turn_candidates : Array[Candidate]
-var candidate_instances : Array[Node3D]
+var candidate_instances : Array[Character]
 var has_king : bool = false
 
 # Called when the node enters the scene tree for the first time.
@@ -34,25 +34,21 @@ func prepare_turn_candidates() -> void:
 	_move_camera(CAMERA_MAIN_VIEW_POSITION, CAMERA_MAIN_VIEW_ROTATION)
 	turn_candidates = game_candidates.get_candidates_by_turn(run_turn)
 	await _introduce_game_candidates()
-	
-
-func start_minigame(candidate : Candidate) -> void:
-	await _move_camera(mini_game.get_camera_position(), mini_game.get_camera_rotation())
-	mini_game.start(candidate)
-	await mini_game.game_ended
 
 func _introduce_game_candidates() -> void:
 	var candidate_num = 0
-	var tween : Tween = get_tree().create_tween()
-	tween.set_parallel()
+	
 	for candidate in turn_candidates:
+		var tween : Tween = get_tree().create_tween()
 		var candidate_instance = candidate.get_character()
 		add_child(candidate_instance)
 		candidate_instances.append(candidate_instance)
 		candidate_instance.position = CharacterPositions.spawn_position[candidate_num]
+		candidate_instance.walk()
 		tween.tween_property(candidate_instance, "position", CharacterPositions.presentation_position[candidate_num], randf_range(3.0, 4.0))
+		tween.tween_callback(candidate_instance.iddle)
 		candidate_num += 1
-	await tween.finished
+	await get_tree().create_timer(3.)
 	for candidate in turn_candidates:
 		DialogueManager.show_dialogue_balloon(candidate.dialogue, 'presentation')
 		await DialogueManager.dialogue_ended
@@ -88,6 +84,11 @@ func _mini_game_block() -> void:
 		else:
 			_move_character_to_position(candidate, previous_position, randf_range(2., 3.))
 	push_error('Implement no king case')
+
+func start_minigame(candidate : Candidate) -> void:
+	await _move_camera(mini_game.get_camera_position(), mini_game.get_camera_rotation())
+	mini_game.start(candidate)
+	await mini_game.game_ended
 
 func coronation(candidate: Candidate) -> void:
 	var key : int = turn_candidates.find(candidate)

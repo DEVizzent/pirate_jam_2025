@@ -33,7 +33,7 @@
 [ext_resource type="Material" uid="uid://d1pdorrqhh3h3" path="res://Environment/MM_Tileables_Stone.tres" id="31_fhotc"]
 [ext_resource type="ArrayMesh" uid="uid://c0agi8evlmf8u" path="res://Environment/Props/SM_Natural_Rock.obj" id="32_nhcd1"]
 [ext_resource type="ArrayMesh" uid="uid://cfbb1aiyonawd" path="res://Environment/Props/SM_Natural_Rock_B.obj" id="33_7yk7b"]
-[ext_resource type="Material" uid="uid://dhk4j2xb7gn73" path="res://Environment/PropMats/M_Extraprops_Mat.tres" id="34_f3h7a"]
+[ext_resource type="Material" path="res://Environment/PropMats/M_Extraprops_Mat.tres" id="34_f3h7a"]
 [ext_resource type="ArrayMesh" uid="uid://lnv137tth5sy" path="res://Environment/Props/SM_Banner.obj" id="35_mb233"]
 [ext_resource type="ArrayMesh" uid="uid://bhatlcdwnotdl" path="res://Environment/Props/SM_Chandelier.obj" id="36_e6bbn"]
 [ext_resource type="ArrayMesh" uid="uid://py37opydvj0a" path="res://Environment/Props/SM_Weapon_Rack.obj" id="37_yh7rv"]

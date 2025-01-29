@@ -1,9 +1,10 @@
-[gd_scene load_steps=44 format=4 uid="uid://d0tdr0jv0mdyi"]
+[gd_scene load_steps=45 format=4 uid="uid://d0tdr0jv0mdyi"]
 
 [ext_resource type="Texture2D" uid="uid://ek8e1tyainja" path="res://Character Models/textures/objetos/objetos_mano_uv.png" id="1_a70vk"]
+[ext_resource type="Script" path="res://Scenes/Game/character.gd" id="1_bmfhh"]
 [ext_resource type="Texture2D" uid="uid://b5hvuu4td1hwa" path="res://Character Models/textures/objetos/corona-gorros-metal.png" id="2_is1j1"]
 [ext_resource type="Texture2D" uid="uid://cwj1qihat2str" path="res://Character Models/textures/objetos/excalibur_uv.png" id="3_ghtf6"]
-[ext_resource type="Material" uid="uid://bc88ttfgc0wdf" path="res://Character Models/materials/objetos.tres" id="4_rq2nq"]
+[ext_resource type="Material" path="res://Character Models/materials/objetos.tres" id="4_rq2nq"]
 [ext_resource type="Shader" path="res://Character Models/materials/shaderCara.gdshader" id="5_yix4k"]
 [ext_resource type="Texture2D" uid="uid://dcnpr81poo8w8" path="res://Character Models/textures/caras/morgana.png" id="6_uiokk"]
 [ext_resource type="Texture2D" uid="uid://ftw44whqb3qu" path="res://Character Models/textures/piel/piel.png" id="7_d3hwd"]
@@ -13,7 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://05kpskhw6dlt" path="res://Character Models/textures/ropa/ropa_morgana.png" id="11_lgn4c"]
 [ext_resource type="Material" uid="uid://ct1b4hqo75s8r" path="res://Character Models/materials/cara_material.tres" id="12_cm2pb"]
 [ext_resource type="Texture2D" uid="uid://bi4ckrpcrbcy2" path="res://Character Models/textures/pelos/negro.png" id="13_cmo7g"]
-[ext_resource type="AnimationLibrary" uid="uid://b3a3w2j4a3lxo" path="res://Character Models/animations/anim.res" id="14_egwjm"]
+[ext_resource type="AnimationLibrary" path="res://Character Models/animations/anim.res" id="14_egwjm"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v4rli"]
 albedo_texture = ExtResource("1_a70vk")
@@ -1330,6 +1331,7 @@ _data = {
 }
 
 [node name="morgana" type="Node3D"]
+script = ExtResource("1_bmfhh")
 
 [node name="Armature" type="Node3D" parent="."]
 transform = Transform3D(-4.37114e-06, -100, 0, 100, -4.37114e-06, 0, 0, 0, 100, 0, 0, 0)
