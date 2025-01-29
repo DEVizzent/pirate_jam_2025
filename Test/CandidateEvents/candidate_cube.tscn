@@ -5,6 +5,8 @@
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ob7d1"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_e0w8i"]
+radius = 0.3
+height = 1.5
 
 [sub_resource type="Animation" id="Animation_om3pr"]
 length = 0.001

@@ -3,13 +3,13 @@
 [ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="1_otnyp"]
 [ext_resource type="Resource" uid="uid://b3uobovy7vyb" path="res://Resources/Candidate Resources/Candidates Dialogue/Arthur.dialogue" id="1_qqtdh"]
 [ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="2_41o7j"]
-[ext_resource type="PackedScene" uid="uid://bvqnf42a5t62j" path="res://Test/CandidateEvents/candidate_cube.tscn" id="2_baujs"]
+[ext_resource type="PackedScene" uid="uid://ccicookpac2o0" path="res://Character Models/Character Scenes/arturo.tscn" id="2_uml3t"]
 [ext_resource type="Script" path="res://Resources/candidate.gd" id="3_kmtak"]
 [ext_resource type="Resource" uid="uid://bq067tfua2wc7" path="res://Resources/Event Resources/Arthur/ArthurEvent1.tres" id="5_6x3o8"]
 [ext_resource type="Resource" uid="uid://c7c7lm6w6wrxf" path="res://Resources/Event Resources/Arthur/ArthurEvent2.tres" id="6_5xxwq"]
-[ext_resource type="Resource" uid="uid://clfw63mwxadq0" path="res://Resources/Event Resources/Arthur/ArthurEvent3.tres" id="7_0ejfw"]
-[ext_resource type="Resource" uid="uid://ckdi6kcx2ho4r" path="res://Resources/Event Resources/Arthur/ArthurEvent4.tres" id="8_3owpb"]
-[ext_resource type="Resource" uid="uid://c4ilkjobpunau" path="res://Resources/Event Resources/Arthur/ArthurEvent5.tres" id="9_emkki"]
+[ext_resource type="Resource" uid="uid://c4ht0h2eg44iy" path="res://Resources/Event Resources/Arthur/ArthurEvent3.tres" id="7_0ejfw"]
+[ext_resource type="Resource" uid="uid://dnsa4slkfirl8" path="res://Resources/Event Resources/Arthur/ArthurEvent4.tres" id="8_3owpb"]
+[ext_resource type="Resource" uid="uid://1ncyp54y0hlk" path="res://Resources/Event Resources/Arthur/ArthurEvent5.tres" id="9_emkki"]
 
 [resource]
 script = ExtResource("3_kmtak")
@@ -20,4 +20,4 @@ dialogue = ExtResource("1_qqtdh")
 kingdom_event_collection = Array[ExtResource("2_41o7j")]([ExtResource("5_6x3o8"), ExtResource("6_5xxwq"), ExtResource("7_0ejfw"), ExtResource("8_3owpb"), ExtResource("9_emkki")])
 minigame_difficulty = 0
 minigame_time = 10
-character_scene = ExtResource("2_baujs")
+character_scene = ExtResource("2_uml3t")
