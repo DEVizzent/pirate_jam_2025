@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://u3ocenlac5n2"
+path="res://.godot/imported/PiousCountryEnding.dialogue-f7d9cb398da6484c5a97ed7d4075613c.tres"
+
+[deps]
+
+source_file="res://Resources/Endings/PiousCountryEnding.dialogue"
+dest_files=["res://.godot/imported/PiousCountryEnding.dialogue-f7d9cb398da6484c5a97ed7d4075613c.tres"]
+
+[params]
+
+defaults=true

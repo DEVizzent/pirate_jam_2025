@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://3qw7wducou61"
+path="res://.godot/imported/RuleBritanniaEnding.dialogue-2213eb4f423645642616ead04b592982.tres"
+
+[deps]
+
+source_file="res://Resources/Endings/RuleBritanniaEnding.dialogue"
+dest_files=["res://.godot/imported/RuleBritanniaEnding.dialogue-2213eb4f423645642616ead04b592982.tres"]
+
+[params]
+
+defaults=true

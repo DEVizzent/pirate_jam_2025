@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://dhfbnhuxc44vf"
+path="res://.godot/imported/FaeVsGodsEnding.dialogue-f2d39f585a98d2bf85c003dd9260ea03.tres"
+
+[deps]
+
+source_file="res://Resources/Endings/FaeVsGodsEnding.dialogue"
+dest_files=["res://.godot/imported/FaeVsGodsEnding.dialogue-f2d39f585a98d2bf85c003dd9260ea03.tres"]
+
+[params]
+
+defaults=true

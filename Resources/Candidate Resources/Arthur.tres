@@ -7,9 +7,9 @@
 [ext_resource type="Script" path="res://Resources/candidate.gd" id="3_kmtak"]
 [ext_resource type="Resource" uid="uid://bq067tfua2wc7" path="res://Resources/Event Resources/Arthur/ArthurEvent1.tres" id="5_6x3o8"]
 [ext_resource type="Resource" uid="uid://c7c7lm6w6wrxf" path="res://Resources/Event Resources/Arthur/ArthurEvent2.tres" id="6_5xxwq"]
-[ext_resource type="Resource" uid="uid://c4ht0h2eg44iy" path="res://Resources/Event Resources/Arthur/ArthurEvent3.tres" id="7_0ejfw"]
-[ext_resource type="Resource" uid="uid://dnsa4slkfirl8" path="res://Resources/Event Resources/Arthur/ArthurEvent4.tres" id="8_3owpb"]
-[ext_resource type="Resource" uid="uid://1ncyp54y0hlk" path="res://Resources/Event Resources/Arthur/ArthurEvent5.tres" id="9_emkki"]
+[ext_resource type="Resource" uid="uid://clfw63mwxadq0" path="res://Resources/Event Resources/Arthur/ArthurEvent3.tres" id="7_0ejfw"]
+[ext_resource type="Resource" uid="uid://ckdi6kcx2ho4r" path="res://Resources/Event Resources/Arthur/ArthurEvent4.tres" id="8_3owpb"]
+[ext_resource type="Resource" uid="uid://c4ilkjobpunau" path="res://Resources/Event Resources/Arthur/ArthurEvent5.tres" id="9_emkki"]
 
 [resource]
 script = ExtResource("3_kmtak")

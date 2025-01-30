@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://6dp27gac55id"
+path="res://.godot/imported/NewVaticanEnding.dialogue-5c6a324ecd13518370076f0b20550352.tres"
+
+[deps]
+
+source_file="res://Resources/Endings/NewVaticanEnding.dialogue"
+dest_files=["res://.godot/imported/NewVaticanEnding.dialogue-5c6a324ecd13518370076f0b20550352.tres"]
+
+[params]
+
+defaults=true

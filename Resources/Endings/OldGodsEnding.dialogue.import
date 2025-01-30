@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://cyjrxlj8if2p7"
+path="res://.godot/imported/OldGodsEnding.dialogue-a7c2d8f856516b0e2a3e607225e2658f.tres"
+
+[deps]
+
+source_file="res://Resources/Endings/OldGodsEnding.dialogue"
+dest_files=["res://.godot/imported/OldGodsEnding.dialogue-a7c2d8f856516b0e2a3e607225e2658f.tres"]
+
+[params]
+
+defaults=true

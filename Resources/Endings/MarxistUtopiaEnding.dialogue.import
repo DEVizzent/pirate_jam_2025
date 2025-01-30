@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://cvju1vqtja3bo"
+path="res://.godot/imported/MarxistUtopiaEnding.dialogue-348f439b738b03d1d06afb76b4e07a1f.tres"
+
+[deps]
+
+source_file="res://Resources/Endings/MarxistUtopiaEnding.dialogue"
+dest_files=["res://.godot/imported/MarxistUtopiaEnding.dialogue-348f439b738b03d1d06afb76b4e07a1f.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://b3fcfo8obk1xk"
+path="res://.godot/imported/DragonQueenEnding.dialogue-22eaeb558379150997499045336096a8.tres"
+
+[deps]
+
+source_file="res://Resources/Endings/DragonQueenEnding.dialogue"
+dest_files=["res://.godot/imported/DragonQueenEnding.dialogue-22eaeb558379150997499045336096a8.tres"]
+
+[params]
+
+defaults=true

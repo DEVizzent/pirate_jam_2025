@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://cxfl2onea5ggm"
+path="res://.godot/imported/ConqueredByFranceEnding.dialogue-be9b43c9fbf81a31d801109e8d2a799e.tres"
+
+[deps]
+
+source_file="res://Resources/Endings/ConqueredByFranceEnding.dialogue"
+dest_files=["res://.godot/imported/ConqueredByFranceEnding.dialogue-be9b43c9fbf81a31d801109e8d2a799e.tres"]
+
+[params]
+
+defaults=true

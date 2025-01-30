@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://depxndjarbutf"
+path="res://.godot/imported/MilitaryCoupEnding.dialogue-39b0083b3d71c5f0c7a1e8a71858e728.tres"
+
+[deps]
+
+source_file="res://Resources/Endings/MilitaryCoupEnding.dialogue"
+dest_files=["res://.godot/imported/MilitaryCoupEnding.dialogue-39b0083b3d71c5f0c7a1e8a71858e728.tres"]
+
+[params]
+
+defaults=true
