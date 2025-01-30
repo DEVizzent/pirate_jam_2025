@@ -7,6 +7,7 @@ enum SocialClass {CLERGY, NOBILITY, PLEBE}
 @export var candidate_conditions : Array[EventCondition]
 @export var dialogue : DialogueResource
 @export var kingdom_event_collection : Array[KingdomEvent]
+@export_range(0, 10, .1) var minigame_sword_resistance : float = 3
 @export_range(0, 20) var minigame_difficulty : int = 10
 @export_range(0, 300) var minigame_time : int = 10
 @export var character_scene : PackedScene = preload("res://Test/CandidateEvents/candidate_cube.tscn")

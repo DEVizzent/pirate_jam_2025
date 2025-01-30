@@ -8,7 +8,7 @@ signal game_ended(excalibur_extracted : bool)
 signal sword_resistance_exhausted()
 signal candidate_energy_exhausted()
 
-@export var max_candidate_energy : float = 10.0
+var max_candidate_energy : float = 10.0
 var candidate_energy : float :
 	set(value):
 		candidate_energy = value
@@ -18,7 +18,7 @@ var candidate_energy : float :
 		if candidate_energy <= 0.0:
 			candidate_energy_exhausted.emit()
 
-@export var max_sword_resistance : float = 2.0
+var max_sword_resistance : float = 2.0
 var sword_resistance : float :
 	set(value):
 		sword_resistance = value
@@ -27,7 +27,7 @@ var sword_resistance : float :
 		update_resistance_progress_bar.emit(sword_resistance/max_sword_resistance)
 		if sword_resistance <= 0.0:
 			sword_resistance_exhausted.emit()
-
+var max_movement_strength : float = 10.
 var mouse_on_sword : bool = false
 var game_running : bool = false
 var candidate : Candidate
@@ -53,8 +53,12 @@ func get_camera_rotation() -> Vector3:
 func start(game_candidate : Candidate) -> void:
 	candidate = game_candidate
 	MusicController.switch_to_level_song()
-	sword_resistance = max_sword_resistance
+	max_sword_resistance = candidate.minigame_sword_resistance
+	sword_resistance = candidate.minigame_sword_resistance
+	max_candidate_energy = candidate.minigame_time
 	candidate_energy = candidate.minigame_time
+	max_movement_strength = candidate.minigame_difficulty
+	await $UI.start_count()
 	game_running = true
 	game_started.emit()
 
