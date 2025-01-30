@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://csk21t2i0qguo"]
+[gd_scene load_steps=38 format=3 uid="uid://csk21t2i0qguo"]
 
 [ext_resource type="Script" path="res://Scenes/Game/game.gd" id="1_q5na8"]
 [ext_resource type="Script" path="res://Resources/candidate.gd" id="2_0awwt"]
@@ -11,10 +11,19 @@
 [ext_resource type="PackedScene" uid="uid://dnij6wam3pspb" path="res://Scenes/SwordGame/MiniGame.tscn" id="4_o4ogt"]
 [ext_resource type="Resource" uid="uid://coyj65bhp68rf" path="res://Resources/Candidate Resources/Morgana.tres" id="5_5km70"]
 [ext_resource type="Resource" uid="uid://2yqfqvho8le3" path="res://Resources/Candidate Resources/Merlin.tres" id="5_gpk0w"]
+[ext_resource type="Resource" uid="uid://dbun5x3sti013" path="res://Resources/Candidate Resources/Cultist.tres" id="6_gtj2l"]
+[ext_resource type="Resource" uid="uid://cb88qidiw3sx6" path="res://Resources/Candidate Resources/Pope.tres" id="7_a1y3t"]
+[ext_resource type="Resource" uid="uid://cyfijdgjspvv" path="res://Resources/Candidate Resources/RoboArthur.tres" id="8_lyrh0"]
+[ext_resource type="Resource" uid="uid://sl0f3hb622l1" path="res://Resources/Candidate Resources/AngryPeasant.tres" id="9_xrhrc"]
 [ext_resource type="Resource" uid="uid://clvw122iaumw0" path="res://Resources/Event Resources/General/FrenchInvasion.tres" id="10_01ck1"]
+[ext_resource type="Resource" uid="uid://b0reofdmvpn3v" path="res://Resources/Candidate Resources/Druid.tres" id="10_pt47q"]
 [ext_resource type="Resource" uid="uid://cbnpuwdnysd6v" path="res://Resources/Event Resources/General/FrenchInvasionFail.tres" id="11_1d62c"]
+[ext_resource type="Resource" uid="uid://b4s34l1m3stdv" path="res://Resources/Candidate Resources/StAugustine.tres" id="11_8crgg"]
+[ext_resource type="Resource" uid="uid://cdwacyitjh8yo" path="res://Resources/Candidate Resources/HenryVIII.tres" id="12_1ym6e"]
 [ext_resource type="Resource" uid="uid://clp0438kg5xlk" path="res://Resources/Event Resources/General/FrenchTitheFail.tres" id="12_accmf"]
+[ext_resource type="Resource" uid="uid://di1j013s74n8" path="res://Resources/Candidate Resources/AnneBoleyn.tres" id="13_0eas8"]
 [ext_resource type="Resource" uid="uid://ojg3gkqmbn4s" path="res://Resources/Event Resources/General/FrenchTitheFailLang.tres" id="13_k4v65"]
+[ext_resource type="Resource" uid="uid://cnnl40q2yv2wx" path="res://Resources/Candidate Resources/RandomPeasant.tres" id="14_xo6hk"]
 [ext_resource type="Resource" uid="uid://dsvbh3bgjetyx" path="res://Resources/Event Resources/General/FrenchTithePass.tres" id="14_yji7q"]
 [ext_resource type="Resource" uid="uid://cfwyuh8c2oyh5" path="res://Resources/Event Resources/General/HighFaithAbandoment.tres" id="15_vy5vx"]
 [ext_resource type="Resource" uid="uid://bb1mt7pc3su0y" path="res://Resources/Event Resources/General/HighFaithMayhem.tres" id="16_md532"]
@@ -32,8 +41,8 @@
 script = ExtResource("3_wtr34")
 tutorial_candidates = Array[ExtResource("2_0awwt")]([ExtResource("4_dnbb4"), ExtResource("5_5km70")])
 early_game_candidates = Array[ExtResource("2_0awwt")]([ExtResource("3_daxlh"), ExtResource("4_fxo54"), ExtResource("5_gpk0w")])
-mid_game_candidates = Array[ExtResource("2_0awwt")]([])
-late_game_candidates = Array[ExtResource("2_0awwt")]([])
+mid_game_candidates = Array[ExtResource("2_0awwt")]([ExtResource("10_pt47q"), ExtResource("11_8crgg"), ExtResource("12_1ym6e"), ExtResource("13_0eas8"), ExtResource("14_xo6hk")])
+late_game_candidates = Array[ExtResource("2_0awwt")]([ExtResource("6_gtj2l"), ExtResource("7_a1y3t"), ExtResource("8_lyrh0"), ExtResource("9_xrhrc")])
 end_game_candidates = Array[ExtResource("2_0awwt")]([])
 
 [node name="Game" type="Node3D"]
