@@ -1,7 +1,8 @@
-[gd_scene load_steps=32 format=4 uid="uid://b27wdix6vgwbe"]
+[gd_scene load_steps=33 format=4 uid="uid://b27wdix6vgwbe"]
 
 [ext_resource type="AnimationLibrary" uid="uid://d3pjdun5r2fgd" path="res://Character Models/animations/anim.res" id="1_nheh8"]
 [ext_resource type="Material" uid="uid://fkpf6jyrxmnl" path="res://Character Models/materials/PERSONAJES/ropa_rey.tres" id="1_tg4ff"]
+[ext_resource type="Script" path="res://Scenes/Game/character.gd" id="1_xn1ve"]
 [ext_resource type="Material" uid="uid://bipy7ve6w0l0p" path="res://Character Models/materials/PERSONAJES/cara_rey.tres" id="2_5qpnq"]
 [ext_resource type="Texture2D" uid="uid://yp23kprbdxgr" path="res://Character Models/textures/pelos/rubio.png" id="3_qo48s"]
 [ext_resource type="Material" uid="uid://dsubecdsi4mgr" path="res://Character Models/materials/excalibur.tres" id="4_0o42k"]
@@ -1117,6 +1118,7 @@ _data = {
 }
 
 [node name="Medieval_king" type="Node3D"]
+script = ExtResource("1_xn1ve")
 
 [node name="Armature" type="Node3D" parent="."]
 transform = Transform3D(100, 0, 0, 0, -1.19209e-05, 100, 0, -100, -1.19209e-05, 0, 0, 5.60433e-10)

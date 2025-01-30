@@ -1,6 +1,7 @@
-[gd_scene load_steps=35 format=4 uid="uid://c8jbc60hdt8a2"]
+[gd_scene load_steps=36 format=4 uid="uid://c8jbc60hdt8a2"]
 
 [ext_resource type="AnimationLibrary" uid="uid://d3pjdun5r2fgd" path="res://Character Models/animations/anim.res" id="1_6mkxf"]
+[ext_resource type="Script" path="res://Scenes/Game/character.gd" id="1_c0lwc"]
 [ext_resource type="Material" uid="uid://cn3hnp282w4yx" path="res://Character Models/materials/PERSONAJES/ropa_enrique.tres" id="1_s0rs0"]
 [ext_resource type="Material" uid="uid://d3g8ktkx08uuj" path="res://Character Models/materials/PERSONAJES/cara_enrique.tres" id="2_6geeg"]
 [ext_resource type="Material" uid="uid://dsubecdsi4mgr" path="res://Character Models/materials/excalibur.tres" id="3_h3xvp"]
@@ -1131,6 +1132,7 @@ _data = {
 }
 
 [node name="enrique8" type="Node3D"]
+script = ExtResource("1_c0lwc")
 
 [node name="Armature" type="Node3D" parent="."]
 transform = Transform3D(100, 0, 0, 0, -1.19209e-05, 100, 0, -100, -1.19209e-05, 0, 0, 5.60433e-10)
