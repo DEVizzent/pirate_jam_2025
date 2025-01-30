@@ -26,8 +26,8 @@
 [ext_resource type="Resource" uid="uid://df70136wjnddx" path="res://Resources/Event Resources/General/LowForceChaos.tres" id="22_1fhks"]
 [ext_resource type="Resource" uid="uid://kn3cuhc6le1l" path="res://Resources/Event Resources/General/RepeatedFamine.tres" id="23_sy7e3"]
 [ext_resource type="PackedScene" uid="uid://bs7ljhmtjag06" path="res://Scenes/UI/Stats/ui_stats.tscn" id="27_73ufp"]
-[ext_resource type="PackedScene" uid="uid://ccicookpac2o0" path="res://Character Models/Character Scenes/arturo.tscn" id="27_ocuuf"]
-[ext_resource type="PackedScene" path="res://Scenes/RoyalHall/Throne_Scene_Env.tscn" id="28_6y4xv"]
+[ext_resource type="PackedScene" uid="uid://dey32xqvcuem0" path="res://Character Models/Character Scenes/arturo.tscn" id="27_ocuuf"]
+[ext_resource type="PackedScene" uid="uid://d13scoc7oku5y" path="res://Scenes/RoyalHall/Throne_Scene_Env.tscn" id="28_6y4xv"]
 
 [sub_resource type="Resource" id="Resource_xlayc"]
 script = ExtResource("3_wtr34")

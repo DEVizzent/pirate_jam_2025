@@ -31,3 +31,6 @@ func iddle() -> void:
 		animation_player.play("anim/iddle_cane")
 		return
 	animation_player.play("anim/iddle")
+
+func pensive_throne() -> void:
+	animation_player.play("anim/pensive_throne")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=4 uid="uid://diq22dghywffd"]
+[gd_scene load_steps=37 format=4 uid="uid://diq22dghywffd"]
 
 [ext_resource type="Script" path="res://Scenes/Game/character.gd" id="1_0ayef"]
 [ext_resource type="Material" uid="uid://dl1usc3sfulyq" path="res://Character Models/materials/PERSONAJES/ropa_merlin.tres" id="1_ksuei"]
