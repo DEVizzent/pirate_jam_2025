@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://dnij6wam3pspb"]
+[gd_scene load_steps=9 format=3 uid="uid://dnij6wam3pspb"]
 
 [ext_resource type="Script" path="res://Scenes/SwordGame/mini_game.gd" id="1_udgx5"]
 [ext_resource type="Script" path="res://Scenes/SwordGame/Move/sword.gd" id="2_y4lm2"]
@@ -12,6 +12,9 @@ radius = 0.2
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_4nkq8"]
 height = 0.35
 radius = 0.05
+
+[sub_resource type="LabelSettings" id="LabelSettings_abkta"]
+font_size = 250
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_mir5c"]
 size = Vector2(27, 27)
@@ -48,13 +51,32 @@ grow_horizontal = 2
 grow_vertical = 0
 script = ExtResource("3_p8j8n")
 
-[node name="MarginContainer" type="MarginContainer" parent="UI"]
+[node name="Counter" type="Label" parent="UI"]
+visible = false
 layout_mode = 1
-anchors_preset = 15
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -71.5
+offset_top = -342.0
+offset_right = 71.5
+grow_horizontal = 2
+grow_vertical = 0
+text = "3"
+label_settings = SubResource("LabelSettings_abkta")
+
+[node name="MarginContainer" type="MarginContainer" parent="UI"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_top = -34.0
 grow_horizontal = 2
-grow_vertical = 2
+grow_vertical = 0
 theme_override_constants/margin_left = 15
 theme_override_constants/margin_top = 15
 theme_override_constants/margin_right = 15
@@ -74,6 +96,7 @@ nine_patch_stretch = true
 texture_progress = SubResource("PlaceholderTexture2D_mir5c")
 
 [node name="CandidateEnergy" type="TextureProgressBar" parent="UI/MarginContainer/VBoxContainer"]
+visible = false
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 2.0
