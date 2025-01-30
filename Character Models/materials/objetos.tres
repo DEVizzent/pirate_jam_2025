@@ -7,3 +7,4 @@
 albedo_texture = ExtResource("1_b1ww6")
 metallic = 1.0
 metallic_texture = ExtResource("2_2g3iw")
+roughness = 0.1
