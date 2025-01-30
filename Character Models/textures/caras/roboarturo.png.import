@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bxj6h4jxqftxb"
-path.s3tc="res://.godot/imported/1.png-00bdd372e8ee4fff2533515d44095d53.s3tc.ctex"
+uid="uid://5v8g4x8yda6i"
+path.s3tc="res://.godot/imported/roboarturo.png-28bc28c1b8939fdf6cae8159415a7d76.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Character Models/textures/ropa/1.png"
-dest_files=["res://.godot/imported/1.png-00bdd372e8ee4fff2533515d44095d53.s3tc.ctex"]
+source_file="res://Character Models/textures/caras/roboarturo.png"
+dest_files=["res://.godot/imported/roboarturo.png-28bc28c1b8939fdf6cae8159415a7d76.s3tc.ctex"]
 
 [params]
 

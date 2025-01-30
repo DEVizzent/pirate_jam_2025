@@ -1,0 +1,15 @@
+[gd_resource type="ShaderMaterial" load_steps=4 format=3 uid="uid://ddhq7uxf7s6qs"]
+
+[ext_resource type="Shader" path="res://Character Models/materials/shaderCara.gdshader" id="1_dycpo"]
+[ext_resource type="Texture2D" uid="uid://5v8g4x8yda6i" path="res://Character Models/textures/caras/roboarturo.png" id="2_oktq0"]
+[ext_resource type="Texture2D" uid="uid://dxosq4kxnro4j" path="res://Character Models/textures/piel/robot.png" id="3_piqc4"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_dycpo")
+shader_parameter/ojos = Vector2(0.5, 0)
+shader_parameter/cejas = Vector2(0.75, 0.5)
+shader_parameter/boca = Vector2(0.5, 0.5)
+shader_parameter/tono_piel = Vector3(0.9, 0.8, 0.8)
+shader_parameter/piel_text = ExtResource("3_piqc4")
+shader_parameter/expr_text = ExtResource("2_oktq0")
