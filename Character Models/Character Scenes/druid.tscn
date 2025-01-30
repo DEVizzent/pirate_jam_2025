@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=4 uid="uid://dlacpjx6hbwe8"]
+[gd_scene load_steps=38 format=4 uid="uid://dlacpjx6hbwe8"]
 
 [ext_resource type="Material" uid="uid://bwhr1a5fpxjwi" path="res://Character Models/materials/PERSONAJES/ropa_druida.tres" id="1_cr8g0"]
 [ext_resource type="AnimationLibrary" uid="uid://d3pjdun5r2fgd" path="res://Character Models/animations/anim.res" id="1_u6jtr"]
@@ -7,6 +7,7 @@
 [ext_resource type="Material" uid="uid://dsubecdsi4mgr" path="res://Character Models/materials/excalibur.tres" id="4_ox3aa"]
 [ext_resource type="Material" uid="uid://cr5ysifxtqq7t" path="res://Character Models/materials/corona.tres" id="5_gfqmu"]
 [ext_resource type="Texture2D" uid="uid://crp26yttel22l" path="res://Character Models/textures/objetos/objetos_mano_tex.png" id="6_2rkiw"]
+[ext_resource type="Texture2D" uid="uid://bth11u75j7h00" path="res://Character Models/textures/objetos/uv-corona gorro_mago2.png" id="7_3tlb0"]
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_2snho"]
 resource_name = "Cube_132"
@@ -1197,6 +1198,7 @@ bind/24/bone = -1
 bind/24/pose = Transform3D(4.37114e-08, 0.990696, -0.136094, 3.02189e-17, -0.136094, -0.990696, -1, 4.33047e-08, -5.94885e-09, 0.000461672, -0.00375348, -0.0180068)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vv6uv"]
+albedo_texture = ExtResource("7_3tlb0")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_162bm"]
 resource_name = "Cube_139"

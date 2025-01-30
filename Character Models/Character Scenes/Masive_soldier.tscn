@@ -1,6 +1,7 @@
-[gd_scene load_steps=29 format=4 uid="uid://wddk85ms7q7"]
+[gd_scene load_steps=30 format=4 uid="uid://wddk85ms7q7"]
 
 [ext_resource type="AnimationLibrary" uid="uid://d3pjdun5r2fgd" path="res://Character Models/animations/anim.res" id="1_1rlo2"]
+[ext_resource type="Texture2D" uid="uid://bchkwtshhfk8q" path="res://Character Models/textures/objetos/paja-vik-yelmo.png" id="1_kabkf"]
 [ext_resource type="Material" uid="uid://iu1hafhw5cmb" path="res://Character Models/materials/PERSONAJES/ropa_soldado.tres" id="1_rnqhm"]
 [ext_resource type="Material" uid="uid://ro1umeap4g6s" path="res://Character Models/materials/PERSONAJES/cara_soldado.tres" id="2_6nibf"]
 [ext_resource type="Material" uid="uid://dsubecdsi4mgr" path="res://Character Models/materials/excalibur.tres" id="3_u41by"]
@@ -10,6 +11,9 @@
 [ext_resource type="Material" uid="uid://cr5ysifxtqq7t" path="res://Character Models/materials/corona.tres" id="7_nilp5"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xnt2c"]
+albedo_texture = ExtResource("1_kabkf")
+metallic = 0.95
+roughness = 0.2
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_l0bs8"]
 resource_name = "Cube_105"

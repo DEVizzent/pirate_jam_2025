@@ -1,10 +1,10 @@
 [gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://cr5ysifxtqq7t"]
 
-[ext_resource type="Texture2D" uid="uid://cciq0gp010bjr" path="res://Character Models/textures/objetos/corona-gorros.png" id="1_67sct"]
+[ext_resource type="Texture2D" uid="uid://ks0sqty5yfu5" path="res://Character Models/textures/objetos/uv-corona gorro_mago1.png" id="1_451jc"]
 
 [resource]
 cull_mode = 2
 albedo_color = Color(1, 0.603922, 0.137255, 1)
-albedo_texture = ExtResource("1_67sct")
+albedo_texture = ExtResource("1_451jc")
 metallic = 0.35
 roughness = 0.1

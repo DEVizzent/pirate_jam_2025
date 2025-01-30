@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dxrjhk1hugo25"
-path.s3tc="res://.godot/imported/gorro_enrique.png-aefb6eca58ba6e2d94a54fc883c4cd45.s3tc.ctex"
+uid="uid://bnqdwdgahfwsy"
+path.s3tc="res://.godot/imported/objetos_mano_tex2.png-d3ccf8b402f70bc31b750f9c1509c66b.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Character Models/textures/objetos/gorro_enrique.png"
-dest_files=["res://.godot/imported/gorro_enrique.png-aefb6eca58ba6e2d94a54fc883c4cd45.s3tc.ctex"]
+source_file="res://Character Models/textures/objetos/objetos_mano_tex2.png"
+dest_files=["res://.godot/imported/objetos_mano_tex2.png-d3ccf8b402f70bc31b750f9c1509c66b.s3tc.ctex"]
 
 [params]
 
