@@ -1,15 +1,15 @@
 ~ main
-do DialogueEventBus.animate("AngryPeasant", "angry")
+do DialogueEventBus.animate("AngryPeasant", "anim/jumpscare")
 An Angry Peasant: HELP! HELP! I’m being repressed!
-do DialogueEventBus.animate("AngryPeasant", "talk")
+do DialogueEventBus.animate("AngryPeasant", "anim/talk_cane_angry")
 An Angry Peasant: Swords in stones is no basis for a system of government!
-do DialogueEventBus.animate("AngryPeasant", "iddle")
+do DialogueEventBus.animate("AngryPeasant", "anim/iddle_cane")
 => END
 ~ presentation
-do DialogueEventBus.animate("AngryPeasant", "talk")
+do DialogueEventBus.animate("AngryPeasant", "anim/talk_cane_angry")
 An Angry Peasant: Supreme executive power derives from a mandate from the masses!
 An Angry Peasant: And the masses demand power to be distributed evenly!
 An Angry Peasant: Now, are you going to abide by the will of the masses?
 An Angry Peasant: Or are we going to see the violence inherent in the system?
-do DialogueEventBus.animate("AngryPeasant", "iddle")
+do DialogueEventBus.animate("AngryPeasant", "anim/iddle_cane")
 => END

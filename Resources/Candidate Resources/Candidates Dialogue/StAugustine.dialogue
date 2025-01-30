@@ -1,14 +1,14 @@
 ~ main
-do DialogueEventBus.animate("StAugustine", "talk")
+do DialogueEventBus.animate("StAugustine", "anim/talk_pensive_cane")
 Saint Augustine: There's just not enough churches in Britain.
-do DialogueEventBus.animate("StAugustine", "iddle")
+do DialogueEventBus.animate("StAugustine", "anim/iddle_cane")
 => END
 ~ presentation
-do DialogueEventBus.animate("StAugustine", "pray")
+do DialogueEventBus.animate("StAugustine", "anim/talk_cane")
 Saint Augustine: My name is Augustine Of Canterbury.
 Saint Augustine: A devout follower of God and Christ, as we all should be.
-do DialogueEventBus.animate("StAugustine", "talk")
+do DialogueEventBus.animate("StAugustine", "anim/talk_pensive_cane")
 Saint Augustine: I think Britain is missing churches. My plan is to build more and more.
 Saint Augustine: More churches will make God happier with us.
-do DialogueEventBus.animate("StAugustine", "iddle")
+do DialogueEventBus.animate("StAugustine", "anim/iddle_cane")
 => END

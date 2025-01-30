@@ -1,12 +1,12 @@
 ~ main
-do DialogueEventBus.animate("Cultist", "sniff")
+do DialogueEventBus.animate("Cultist", "anim/talk_pensive_cane")
 A Cultist: Those who sleep stir.
-do DialogueEventBus.animate("Cultist", "iddle")
+do DialogueEventBus.animate("Cultist", "anim/iddle_cane")
 => END
 ~ presentation
-do DialogueEventBus.animate("Cultist", "talk")
+do DialogueEventBus.animate("Cultist", "anim/talk_cane_evil")
 A Cultist: Can you hear that sound?
 A Cultist: They are waking.
 A Cultist: They will come. We need to be ready.
-do DialogueEventBus.animate("Cultist", "iddle")
+do DialogueEventBus.animate("Cultist", "anim/iddle_cane")
 => END

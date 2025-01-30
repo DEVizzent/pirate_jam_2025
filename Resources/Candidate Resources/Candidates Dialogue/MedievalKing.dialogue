@@ -1,14 +1,14 @@
 ~ main
-do DialogueEventBus.animate("MedievalKing", "talk")
+do DialogueEventBus.animate("MedievalKing", "anim/jumscare")
 A Medieval King: GOD HAS COME TO ME IN A DREAM!
 A Medieval King: I will rule Britain, and this sword will aid me in manifesting my destiny.
-do DialogueEventBus.animate("MedievalKing", "iddle")
+do DialogueEventBus.animate("MedievalKing", "anim/iddle")
 => END
 ~ presentation
-do DialogueEventBus.animate("MedievalKing", "talk")
+do DialogueEventBus.animate("MedievalKing", "anim/talk_pensive")
 A Medieval King: This kingdom needs to heed the word of God.
 A Medieval King: For too long we have been coerced into listening to myths and legends that pervert the souls of our noble men and women.
-do DialogueEventBus.animate("MedievalKing", "cheer")
+do DialogueEventBus.animate("MedievalKing", "anim/talk_sassy")
 A Medieval King: NO MORE! FOR GOD AND COUNTRY! (And king, which is going to be me.)
-do DialogueEventBus.animate("MedievalKing", "iddle")
+do DialogueEventBus.animate("MedievalKing", "anim/iddle")
 => END

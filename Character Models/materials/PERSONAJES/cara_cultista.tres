@@ -1,15 +1,15 @@
 [gd_resource type="ShaderMaterial" load_steps=4 format=3 uid="uid://doy1uwh3he32q"]
 
 [ext_resource type="Shader" path="res://Character Models/materials/shaderCara.gdshader" id="1_31hdr"]
-[ext_resource type="Texture2D" uid="uid://jed4s8lxqeox" path="res://Character Models/textures/caras/arturo.png" id="2_einoj"]
+[ext_resource type="Texture2D" uid="uid://q3jbavubwixj" path="res://Character Models/textures/caras/cult.png" id="2_ukpho"]
 [ext_resource type="Texture2D" uid="uid://ftw44whqb3qu" path="res://Character Models/textures/piel/piel.png" id="3_85jc2"]
 
 [resource]
 render_priority = 0
 shader = ExtResource("1_31hdr")
-shader_parameter/ojos = Vector2(0, 0)
-shader_parameter/cejas = Vector2(0.75, 0.25)
-shader_parameter/boca = Vector2(0, 0.5)
+shader_parameter/ojos = Vector2(0.5, 0.25)
+shader_parameter/cejas = Vector2(0.75, 0.5)
+shader_parameter/boca = Vector2(0.25, 0.75)
 shader_parameter/tono_piel = Vector3(1.4, 1.6, 2)
 shader_parameter/piel_text = ExtResource("3_85jc2")
-shader_parameter/expr_text = ExtResource("2_einoj")
+shader_parameter/expr_text = ExtResource("2_ukpho")

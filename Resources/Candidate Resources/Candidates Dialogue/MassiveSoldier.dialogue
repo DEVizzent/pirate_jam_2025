@@ -1,12 +1,12 @@
 ~ main
-do DialogueEventBus.animate("MassiveSoldier", "cheer")
+do DialogueEventBus.animate("MassiveSoldier", "anim/pointing_sword")
 A Massive Soldier: Britain must be prepared to defeat it's enemies!
-do DialogueEventBus.animate("MassiveSoldier", "iddle")
+do DialogueEventBus.animate("MassiveSoldier", "anim/iddle")
 => END
 ~ presentation
-do DialogueEventBus.animate("MassiveSoldier", "talk")
+do DialogueEventBus.animate("MassiveSoldier", "anim/talk_angry")
 A Massive Soldier: Whether at home or abroad, we are chased by those who hate us and want to put us down.
 A Massive Soldier: We need to establish a proper army and make sure that we will not be trampled.
 A Massive Soldier: Bring Lionheart to the throne and be ready for war.
-do DialogueEventBus.animate("MassiveSoldier", "iddle")
+do DialogueEventBus.animate("MassiveSoldier", "anim/iddle")
 => END

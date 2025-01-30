@@ -1,16 +1,16 @@
 ~ main
-do DialogueEventBus.animate("RandomPeasant", "talk")
+do DialogueEventBus.animate("RandomPeasant", "anim/talk_cane_scared")
 A Random Peasant: Who, me?
-do DialogueEventBus.animate("RandomPeasant", "scared")
+do DialogueEventBus.animate("RandomPeasant", "anim/talk_cane_sad")
 A Random Peasant: But I am just a peasant! I am not a king!
-do DialogueEventBus.animate("RandomPeasant", "iddle")
+do DialogueEventBus.animate("RandomPeasant", "anim/iddle_cane")
 => END
 ~ presentation
-do DialogueEventBus.animate("RandomPeasant", "talk")
+do DialogueEventBus.animate("RandomPeasant", "anim/talk_pensive_cane")
 A Random Peasant: Why would anyone choose me?
 A Random Peasant: I mean, I have ideas, after working the land for so long.
 A Random Peasant: I guess I could work on that...
 A Random Peasant: But I don't know how to do anything else!
-do DialogueEventBus.animate("RandomPeasant", "iddle")
+do DialogueEventBus.animate("RandomPeasant", "anim/iddle_cane")
 => END
-"res://Resources/Event Resources/HenryVIII/HenryVIIIEvent1.tres"
+#"res://Resources/Event Resources/HenryVIII/HenryVIIIEvent1.tres"

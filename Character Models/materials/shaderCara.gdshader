@@ -14,6 +14,6 @@ void fragment() {
 	vec3 textura_ojos = texture(expr_text, UVojos).rgb * texture(expr_text, UVojos).a;
 	vec3 textura_cejas = texture(expr_text, UVcejas).rgb * texture(expr_text, UVcejas).a;
 	vec3 textura_boca = texture(expr_text, UVboca).rgb * texture(expr_text, UVboca).a;
-	vec3 textura_expre_final = textura_ojos + textura_boca + textura_cejas;
+	vec3 textura_expre_final = (textura_ojos + textura_boca + textura_cejas);
 	ALBEDO = textura_piel_final + textura_expre_final;
 }

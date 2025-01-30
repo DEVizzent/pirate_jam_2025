@@ -1,13 +1,13 @@
 ~ main
-do DialogueEventBus.animate("AnneBoleyn", "talk")
+do DialogueEventBus.animate("AnneBoleyn", "anim/talk")
 Anne Boleyn: My name is Anne, I come from France.
 Anne Boleyn: I write, I sing, I dance.
-do DialogueEventBus.animate("AnneBoleyn", "iddle")
+do DialogueEventBus.animate("AnneBoleyn", "anim/iddle")
 => END
 ~ presentation
-do DialogueEventBus.animate("AnneBoleyn", "talk")
+do DialogueEventBus.animate("AnneBoleyn", "anim/talk_pensive")
 Anne Boleyn: Having an education is vital for a ruler.
 Anne Boleyn: And no one is better educated than me.
 Anne Boleyn: Your decision should be trivial. I am the legitimate ruler.
-do DialogueEventBus.animate("AnneBoleyn", "iddle")
+do DialogueEventBus.animate("AnneBoleyn", "anim/iddle")
 => END

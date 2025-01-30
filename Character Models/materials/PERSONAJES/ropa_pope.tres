@@ -1,0 +1,14 @@
+[gd_resource type="ShaderMaterial" load_steps=5 format=3 uid="uid://d1cux5ncdxebt"]
+
+[ext_resource type="Shader" path="res://Character Models/materials/ShaderRopa.gdshader" id="1_wyoq5"]
+[ext_resource type="Texture2D" uid="uid://d002n0awiyrrt" path="res://Character Models/textures/ropa/0.png" id="2_lr82t"]
+[ext_resource type="Texture2D" uid="uid://ftw44whqb3qu" path="res://Character Models/textures/piel/piel.png" id="2_wgagl"]
+[ext_resource type="Texture2D" uid="uid://ncp5c5y4fohs" path="res://Character Models/textures/ropa/pope.png" id="4_ur17h"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_wyoq5")
+shader_parameter/tono_piel = Vector3(1.25, 1.2, 1.4)
+shader_parameter/textura_piel = ExtResource("2_wgagl")
+shader_parameter/textura_ropa = ExtResource("4_ur17h")
+shader_parameter/text_metal = ExtResource("2_lr82t")

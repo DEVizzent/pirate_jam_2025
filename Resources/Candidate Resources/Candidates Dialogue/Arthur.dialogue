@@ -1,15 +1,15 @@
 ~ main
-do DialogueEventBus.animate("Arthur", "talk")
+do DialogueEventBus.animate("Arthur", "anim/pointing_sword")
 Arthur: Brittania will take it's righteous place at the helm of the world.
 Arthur: For God, for family, for country.
-do DialogueEventBus.animate("Arthur", "iddle")
+do DialogueEventBus.animate("Arthur", "anim/iddle")
 => END
 ~ presentation
-do DialogueEventBus.animate("Arthur", "cheer")
+do DialogueEventBus.animate("Arthur", "anim/talk_sassy")
 Arthur: I am Arthur, son of Uther!
 Arthur: I am the legitimate next ruler of Britain, as dictated by God.
-do DialogueEventBus.animate("Arthur", "talk")
+do DialogueEventBus.animate("Arthur", "anim/talk")
 Arthur: And several French writers a couple of centuries from now.
 Arthur: You must pick me!
-do DialogueEventBus.animate("Arthur", "iddle")
+do DialogueEventBus.animate("Arthur", "anim/iddle")
 => END

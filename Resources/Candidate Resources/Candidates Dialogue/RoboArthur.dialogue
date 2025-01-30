@@ -1,14 +1,14 @@
 ~ main
-do DialogueEventBus.animate("RoboArthur", "talk")
+do DialogueEventBus.animate("RoboArthur", "anim/pointing_sword")
 RoboArthur: *Meeeeks* FOR BRITAIN *Zxssss*
-do DialogueEventBus.animate("RoboArthur", "iddle")
+do DialogueEventBus.animate("RoboArthur", "anim/iddle")
 => END
 ~ presentation
-do DialogueEventBus.animate("RoboArthur", "talk")
+do DialogueEventBus.animate("RoboArthur", "anim/talk_evil")
 RoboArthur: *Frxcccts* FOR BRITAIN *Vswsddddd*
 RoboArthur: *Lktttl* FOR BRITAIN *Drrrrmlll*
-do DialogueEventBus.animate("RoboArthur", "cheer")
+do DialogueEventBus.animate("RoboArthur", "anim/pointing_sword")
 RoboArthur: 01101011 01101001 01101100 01101100 01101101 01100101
 RoboArthur: *Xrrrtssss* FOR BRITAIN *Brrrxst*
-do DialogueEventBus.animate("RoboArthur", "iddle")
+do DialogueEventBus.animate("RoboArthur", "anim/iddle")
 => END

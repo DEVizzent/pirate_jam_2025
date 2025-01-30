@@ -1,0 +1,83 @@
+[gd_scene load_steps=30 format=3 uid="uid://csk21t2i0qguo"]
+
+[ext_resource type="Script" path="res://Scenes/Game/game.gd" id="1_q5na8"]
+[ext_resource type="Script" path="res://Resources/candidate.gd" id="2_0awwt"]
+[ext_resource type="Resource" uid="uid://cq0fxx5cg3vh6" path="res://Resources/Candidate Resources/MassiveSoldier.tres" id="3_daxlh"]
+[ext_resource type="PackedScene" uid="uid://bko0ifwwfqndb" path="res://Scenes/Menu/menu.tscn" id="3_stosb"]
+[ext_resource type="Script" path="res://Resources/game_candidates.gd" id="3_wtr34"]
+[ext_resource type="Resource" uid="uid://bv2s115vi22nf" path="res://Resources/Candidate Resources/Arthur.tres" id="4_dnbb4"]
+[ext_resource type="Resource" uid="uid://bxcasxjsqmoxa" path="res://Resources/Candidate Resources/MedievalKing.tres" id="4_fxo54"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="4_lq6fh"]
+[ext_resource type="PackedScene" uid="uid://dnij6wam3pspb" path="res://Scenes/SwordGame/MiniGame.tscn" id="4_o4ogt"]
+[ext_resource type="Resource" uid="uid://coyj65bhp68rf" path="res://Resources/Candidate Resources/Morgana.tres" id="5_5km70"]
+[ext_resource type="Resource" uid="uid://2yqfqvho8le3" path="res://Resources/Candidate Resources/Merlin.tres" id="5_gpk0w"]
+[ext_resource type="Resource" uid="uid://clvw122iaumw0" path="res://Resources/Event Resources/General/FrenchInvasion.tres" id="10_01ck1"]
+[ext_resource type="Resource" uid="uid://cbnpuwdnysd6v" path="res://Resources/Event Resources/General/FrenchInvasionFail.tres" id="11_1d62c"]
+[ext_resource type="Resource" uid="uid://clp0438kg5xlk" path="res://Resources/Event Resources/General/FrenchTitheFail.tres" id="12_accmf"]
+[ext_resource type="Resource" uid="uid://ojg3gkqmbn4s" path="res://Resources/Event Resources/General/FrenchTitheFailLang.tres" id="13_k4v65"]
+[ext_resource type="Resource" uid="uid://dsvbh3bgjetyx" path="res://Resources/Event Resources/General/FrenchTithePass.tres" id="14_yji7q"]
+[ext_resource type="Resource" uid="uid://cfwyuh8c2oyh5" path="res://Resources/Event Resources/General/HighFaithAbandoment.tres" id="15_vy5vx"]
+[ext_resource type="Resource" uid="uid://bb1mt7pc3su0y" path="res://Resources/Event Resources/General/HighFaithMayhem.tres" id="16_md532"]
+[ext_resource type="Resource" uid="uid://bn14q23qa60o8" path="res://Resources/Event Resources/General/HighFoodFamine.tres" id="17_03xk5"]
+[ext_resource type="Resource" uid="uid://b2g7dqjwoeml1" path="res://Resources/Event Resources/General/HighForceUnrest.tres" id="18_noyvk"]
+[ext_resource type="Resource" uid="uid://bw1ubh41tkabh" path="res://Resources/Event Resources/General/LowFaithFlood.tres" id="19_kidb5"]
+[ext_resource type="Resource" uid="uid://b3k7b38qix07r" path="res://Resources/Event Resources/General/LowFaithMonsters.tres" id="20_5kxyg"]
+[ext_resource type="Resource" uid="uid://da3jhxxrnt1o" path="res://Resources/Event Resources/General/LowFoodCrops.tres" id="21_un61x"]
+[ext_resource type="Resource" uid="uid://df70136wjnddx" path="res://Resources/Event Resources/General/LowForceChaos.tres" id="22_1fhks"]
+[ext_resource type="Resource" uid="uid://kn3cuhc6le1l" path="res://Resources/Event Resources/General/RepeatedFamine.tres" id="23_sy7e3"]
+[ext_resource type="PackedScene" uid="uid://bs7ljhmtjag06" path="res://Scenes/UI/Stats/ui_stats.tscn" id="27_73ufp"]
+<<<<<<< Updated upstream
+[ext_resource type="PackedScene" uid="uid://ccicookpac2o0" path="res://Character Models/Character Scenes/arturo.tscn" id="27_ocuuf"]
+[ext_resource type="PackedScene" path="res://Scenes/RoyalHall/Throne_Scene_Env.tscn" id="28_6y4xv"]
+=======
+[ext_resource type="PackedScene" uid="uid://dey32xqvcuem0" path="res://Character Models/Character Scenes/arturo.tscn" id="27_ocuuf"]
+[ext_resource type="PackedScene" uid="uid://d13scoc7oku5y" path="res://Scenes/RoyalHall/Throne_Scene_Env.tscn" id="28_6y4xv"]
+>>>>>>> Stashed changes
+
+[sub_resource type="Resource" id="Resource_xlayc"]
+script = ExtResource("3_wtr34")
+tutorial_candidates = Array[ExtResource("2_0awwt")]([ExtResource("4_dnbb4"), ExtResource("5_5km70")])
+early_game_candidates = Array[ExtResource("2_0awwt")]([ExtResource("3_daxlh"), ExtResource("4_fxo54"), ExtResource("5_gpk0w")])
+mid_game_candidates = Array[ExtResource("2_0awwt")]([])
+late_game_candidates = Array[ExtResource("2_0awwt")]([])
+end_game_candidates = Array[ExtResource("2_0awwt")]([])
+
+[node name="Game" type="Node3D"]
+script = ExtResource("1_q5na8")
+game_candidates = SubResource("Resource_xlayc")
+general_events = Array[ExtResource("4_lq6fh")]([ExtResource("10_01ck1"), ExtResource("11_1d62c"), ExtResource("12_accmf"), ExtResource("13_k4v65"), ExtResource("14_yji7q"), ExtResource("15_vy5vx"), ExtResource("16_md532"), ExtResource("17_03xk5"), ExtResource("18_noyvk"), ExtResource("19_kidb5"), ExtResource("20_5kxyg"), ExtResource("21_un61x"), ExtResource("22_1fhks"), ExtResource("23_sy7e3")])
+
+[node name="AssetZooScene" parent="." instance=ExtResource("28_6y4xv")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -12, 0, 0)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.793353, 0, -0.608761, 0, 1, 0, 0.608761, 0, 0.793353, -5, 2.5, 12)
+
+[node name="MiniGame" parent="." instance=ExtResource("4_o4ogt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.36031, 2.05467, 11.2237)
+
+[node name="Menu" parent="." instance=ExtResource("3_stosb")]
+z_index = 10
+
+[node name="UI_Stats" parent="." instance=ExtResource("27_73ufp")]
+
+[node name="Camera3D2" type="Camera3D" parent="."]
+transform = Transform3D(0.5, -0.296198, 0.813798, 0, 0.939693, 0.34202, -0.866025, -0.17101, 0.469847, -8.25, 0.3, 4)
+
+[node name="arturo" parent="." instance=ExtResource("27_ocuuf")]
+transform = Transform3D(0.532285, -0.846565, -3.70045e-08, 0, -4.37114e-08, 1, -0.846565, -0.532285, -2.32669e-08, -10.2657, 0.444231, -1.30413)
+visible = false
+
+[node name="arturo2" parent="." instance=ExtResource("27_ocuuf")]
+transform = Transform3D(0.696076, -0.717968, -3.13834e-08, 0, -4.37114e-08, 1, -0.717968, -0.696076, -3.04264e-08, -9.96895, 0.444231, -3.75701)
+visible = false
+
+[node name="arturo3" parent="." instance=ExtResource("27_ocuuf")]
+transform = Transform3D(0.999997, -0.00226888, -9.91811e-11, 0, -4.37114e-08, 1, -0.00226888, -0.999997, -4.37113e-08, -7.50263, 0.444231, -5.62029)
+visible = false
+
+[node name="arturo4" parent="." instance=ExtResource("27_ocuuf")]
+transform = Transform3D(0.946913, 0.321489, 1.40527e-08, -1.27034e-17, -4.37114e-08, 1, 0.321489, -0.946913, -4.13909e-08, -5.68513, 0.444231, -4.06658)
+visible = false
+
+[editable path="AssetZooScene"]

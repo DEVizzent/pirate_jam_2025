@@ -1,14 +1,14 @@
 ~ main
-do DialogueEventBus.animate("Merlin", "talk")
+do DialogueEventBus.animate("Merlin", "anim/talk_pensive_cane")
 Merlin: Well, well, well...
 Merlin: Since Arthur wasn't King, the future of the realm is in jeopardy.
-do DialogueEventBus.animate("Merlin", "iddle")
+do DialogueEventBus.animate("Merlin", "anim/iddle_cane")
 => END
 ~ presentation
-do DialogueEventBus.animate("Merlin", "talk")
+do DialogueEventBus.animate("Merlin", "anim/talk_pensive_cane")
 Merlin: Maybe the realm needs magic and mysticism instead of kings and wars.
 Merlin: I don't know what the future holds, but I know my allegiances. 
-do DialogueEventBus.animate("Merlin", "cheer")
+do DialogueEventBus.animate("Merlin", "anim/pointing_sword")
 Merlin: I will serve the will of Excalibur as well as I can.
-do DialogueEventBus.animate("Merlin", "iddle")
+do DialogueEventBus.animate("Merlin", "anim/iddle_cane")
 => END

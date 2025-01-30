@@ -1,15 +1,15 @@
 ~ main
-do DialogueEventBus.animate("Morgana", "talk")
+do DialogueEventBus.animate("Morgana", "anim/talk_pensive_cane")
 Morgana: The land is changing. You can change.
-do DialogueEventBus.animate("Morgana", "iddle")
+do DialogueEventBus.animate("Morgana", "anim/iddle_cane")
 => END
 ~ presentation
-do DialogueEventBus.animate("Morgana", "talk")
+do DialogueEventBus.animate("Morgana", "anim/talk_cane_scared")
 Morgana: Oh, wait. You are supposed to pick my brother, right?
-do DialogueEventBus.animate("Morgana", "sassy")
+do DialogueEventBus.animate("Morgana", "anim/talk_pensive_cane")
 Morgana: I am just filler, and disposable. That is what you are implying.
-do DialogueEventBus.animate("Morgana", "talk")
+do DialogueEventBus.animate("Morgana", "anim/talk_cane_sad")
 Morgana: Look, I don't want to spend my energy changing your mind, but you don't have to abide by the rules.
 Morgana: You can build your own destiny.
-do DialogueEventBus.animate("Morgana", "iddle")
+do DialogueEventBus.animate("Morgana", "anim/iddle_cane")
 => END
