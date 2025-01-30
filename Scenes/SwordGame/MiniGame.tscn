@@ -106,5 +106,7 @@ value = 1.0
 nine_patch_stretch = true
 texture_progress = SubResource("PlaceholderTexture2D_mir5c")
 
+[connection signal="game_ended" from="." to="Sword" method="_on_game_game_ended"]
+[connection signal="game_started" from="." to="Sword" method="_on_game_game_started"]
 [connection signal="mouse_entered" from="Sword/StaticBody3D" to="Sword" method="_on_static_body_3d_mouse_entered"]
 [connection signal="mouse_exited" from="Sword/StaticBody3D" to="Sword" method="_on_static_body_3d_mouse_exited"]

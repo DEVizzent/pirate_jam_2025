@@ -5,6 +5,7 @@ signal sword_mouse_exit()
 
 var tween : Tween
 var rand : RandomNumberGenerator
+var candidate_strength : float = 20.0
 #TODO: add difficulty logic
 
 func _ready() -> void:
@@ -19,7 +20,7 @@ func _on_static_body_3d_mouse_exited():
 	sword_mouse_exit.emit()
 
 
-func _on_game_game_ended() -> void:
+func _on_game_game_ended(_extracted:bool) -> void:
 	if not tween:
 		return
 	tween.stop()
@@ -33,7 +34,7 @@ func apply_movement() -> void:
 	tween = create_tween()
 	tween.set_parallel(true)
 	tween.set_ease(Tween.EASE_IN)
-	var target_rotation = Vector3(deg_to_rad(rand.randf_range(-20.0, 20.0)), 0.0, deg_to_rad(rand.randf_range(-30.0, 30.0)))
+	var target_rotation = Vector3(deg_to_rad(rand.randf_range(-candidate_strength, candidate_strength)), 0.0, deg_to_rad(rand.randf_range(-30.0, 30.0)))
 	tween.tween_property(self,"rotation", target_rotation, rand.randf_range(0.5, 1.5))
 	tween.finished.connect(apply_next_movement)
 	tween.play()
@@ -41,3 +42,7 @@ func apply_movement() -> void:
 func apply_next_movement() -> void:
 	await get_tree().create_timer(randf_range(0.01, 0.3)).timeout
 	apply_movement()
+
+
+func _on_mini_game_game_started() -> void:
+	pass # Replace with function body.

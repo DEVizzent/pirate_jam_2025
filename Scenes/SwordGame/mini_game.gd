@@ -27,7 +27,6 @@ var sword_resistance : float :
 		update_resistance_progress_bar.emit(sword_resistance/max_sword_resistance)
 		if sword_resistance <= 0.0:
 			sword_resistance_exhausted.emit()
-var max_movement_strength : float = 10.
 var mouse_on_sword : bool = false
 var game_running : bool = false
 var candidate : Candidate
@@ -57,7 +56,7 @@ func start(game_candidate : Candidate) -> void:
 	sword_resistance = candidate.minigame_sword_resistance
 	max_candidate_energy = candidate.minigame_time
 	candidate_energy = candidate.minigame_time
-	max_movement_strength = candidate.minigame_difficulty
+	$Sword.candidate_strength = candidate.minigame_difficulty
 	await $UI.start_count()
 	game_running = true
 	game_started.emit()
