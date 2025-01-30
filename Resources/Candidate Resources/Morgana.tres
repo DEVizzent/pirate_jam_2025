@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="1_2fql8"]
 [ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="1_upd1q"]
-[ext_resource type="PackedScene" uid="uid://d0tdr0jv0mdyi" path="res://Character Models/Character Scenes/morgana.tscn" id="2_ibreo"]
+[ext_resource type="PackedScene" uid="uid://c3l6ky7nyjbcq" path="res://Character Models/Character Scenes/morgana.tscn" id="2_ibreo"]
 [ext_resource type="Script" path="res://Resources/candidate.gd" id="2_vkw4g"]
 [ext_resource type="Resource" uid="uid://d20a5lcjrhfw8" path="res://Resources/Candidate Resources/Candidates Dialogue/Morgana.dialogue" id="3_idwi0"]
 [ext_resource type="Resource" uid="uid://b5niwg6ntdh3s" path="res://Resources/Event Resources/Morgana/MorganaEvent1.tres" id="5_4payn"]
