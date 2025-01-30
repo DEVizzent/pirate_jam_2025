@@ -8,7 +8,7 @@
 [resource]
 render_priority = 0
 shader = ExtResource("1_4w7yi")
-shader_parameter/tono_piel = Vector3(0.6, 0.4, 0.3)
+shader_parameter/tono_piel = Vector3(0.8, 0.6, 0.6)
 shader_parameter/textura_piel = ExtResource("3_1qn7u")
 shader_parameter/textura_ropa = ExtResource("4_ed4y2")
 shader_parameter/text_metal = ExtResource("2_w4jph")

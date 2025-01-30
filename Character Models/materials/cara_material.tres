@@ -1,15 +1,15 @@
 [gd_resource type="ShaderMaterial" load_steps=4 format=3 uid="uid://ct1b4hqo75s8r"]
 
 [ext_resource type="Shader" path="res://Character Models/materials/shaderCara.gdshader" id="1_51gla"]
-[ext_resource type="Texture2D" uid="uid://df2t0gnnfmdc0" path="res://Character Models/textures/caras/caramorgana.png" id="2_588gt"]
+[ext_resource type="Texture2D" uid="uid://jed4s8lxqeox" path="res://Character Models/textures/caras/arturo.png" id="2_bpg7l"]
 [ext_resource type="Texture2D" uid="uid://ftw44whqb3qu" path="res://Character Models/textures/piel/piel.png" id="3_tlorr"]
 
 [resource]
 render_priority = 0
 shader = ExtResource("1_51gla")
-shader_parameter/ojos = Vector2(0.5, 0)
-shader_parameter/cejas = Vector2(0.5, 0.25)
-shader_parameter/boca = Vector2(0.5, 0.5)
+shader_parameter/ojos = Vector2(0, 0)
+shader_parameter/cejas = Vector2(0.75, 0.25)
+shader_parameter/boca = Vector2(0, 0.5)
 shader_parameter/tono_piel = Vector3(1, 1, 1)
 shader_parameter/piel_text = ExtResource("3_tlorr")
-shader_parameter/expr_text = ExtResource("2_588gt")
+shader_parameter/expr_text = ExtResource("2_bpg7l")

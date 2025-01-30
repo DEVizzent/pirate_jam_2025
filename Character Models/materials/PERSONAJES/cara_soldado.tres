@@ -7,9 +7,9 @@
 [resource]
 render_priority = 0
 shader = ExtResource("1_p2mir")
-shader_parameter/ojos = Vector2(0.75, 0)
-shader_parameter/cejas = Vector2(0.75, 0.75)
-shader_parameter/boca = Vector2(0, 0.75)
-shader_parameter/tono_piel = Vector3(0.6, 0.4, 0.3)
+shader_parameter/ojos = Vector2(0, 0)
+shader_parameter/cejas = Vector2(0.75, 0.25)
+shader_parameter/boca = Vector2(0, 0.5)
+shader_parameter/tono_piel = Vector3(0.8, 0.6, 0.6)
 shader_parameter/piel_text = ExtResource("3_jxp0r")
 shader_parameter/expr_text = ExtResource("2_pwfgn")

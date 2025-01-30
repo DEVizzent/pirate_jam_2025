@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://c2mf38luynh05"]
+
+[ext_resource type="ArrayMesh" uid="uid://d4a6svg77cp4c" path="res://Character Models/excalibur.obj" id="1_v5at7"]
+[ext_resource type="Material" uid="uid://dsubecdsi4mgr" path="res://Character Models/materials/excalibur.tres" id="2_byw5d"]
+
+[node name="excalibur" type="MeshInstance3D"]
+mesh = ExtResource("1_v5at7")
+surface_material_override/0 = ExtResource("2_byw5d")
