@@ -39,14 +39,13 @@ func _introduce_game_candidates() -> void:
 	var candidate_num = 0
 	
 	for candidate in turn_candidates:
-		var tween : Tween = get_tree().create_tween()
 		var candidate_instance = candidate.get_character()
 		add_child(candidate_instance)
 		candidate_instances.append(candidate_instance)
 		candidate_instance.position = CharacterPositions.spawn_position[candidate_num]
-		_move_character_to_position(candidate_instance, CharacterPositions.presentation_position[candidate_num], randf_range(3.0, 4.0))
+		_move_character_to_position_rotation(candidate_instance, CharacterPositions.presentation_position[candidate_num], CharacterPositions.presentation_rotation[candidate_num], randf_range(3.0, 4.0))
 		candidate_num += 1
-	await get_tree().create_timer(3.)
+	await get_tree().create_timer(3.).timeout
 	for candidate in turn_candidates:
 		DialogueManager.show_dialogue_balloon(candidate.dialogue, 'presentation')
 		await DialogueManager.dialogue_ended
@@ -71,7 +70,7 @@ func _mini_game_block() -> void:
 	for candidate in candidate_instances:
 		key = candidate_instances.find(candidate)
 		previous_position = candidate.position
-		_move_character_to_position(candidate, CharacterPositions.mini_game_position, randf_range(2., 3.))
+		_move_character_to_position(candidate, CharacterPositions.mini_game_position + Vector3.BACK, randf_range(2., 3.))
 		await get_tree().create_timer(1.0).timeout
 		await start_minigame(turn_candidates[key])
 		await _move_camera(mini_game.position + Vector3(0, 1.5, -1), CAMERA_MAIN_VIEW_ROTATION)
@@ -92,7 +91,7 @@ func coronation(candidate: Candidate) -> void:
 	var key : int = turn_candidates.find(candidate)
 	if not candidate_instances[key]:
 		push_error('Candidate character not found')
-	_move_character_to_position(candidate_instances[key], CharacterPositions.throne_position, 4.0)
+	_move_character_to_position_rotation(candidate_instances[key], CharacterPositions.throne_position, CharacterPositions.throne_rotation, 4.0, candidate_instances[key].pensive_throne)
 	await get_tree().create_timer(1.0).timeout
 	_move_camera(CAMERA_THRONE_VIEW_POSITION, CAMERA_THRONE_VIEW_ROTATION)
 	await execute_candidate_events(candidate.kingdom_event_collection)
@@ -168,15 +167,28 @@ func _move_camera(camera_position: Vector3, camera_rotation: Vector3) -> void:
 	await tween.finished
 	return
 
-func _move_character_to_position(character : Node3D, character_position: Vector3, duration: float) -> void:
+func _move_character_to_position(character : Node3D, character_position: Vector3, duration: float, final_callback: Callable = do_nothing) -> void:
 	var tween : Tween = get_tree().create_tween()
-	tween.tween_callback(character.look_at.bind(character_position))
+	tween.tween_callback(character.look_at.bind(character_position, Vector3.UP, true))
 	tween.tween_callback(character.walk)
 	tween.tween_property(character, "position", character_position, duration)
 	tween.tween_callback(character.iddle)
-	tween.tween_callback(character.look_at.bind(camera.position))
+	tween.tween_callback(character.look_at.bind(camera.position, Vector3.UP, true))
+	tween.tween_callback(final_callback)
 	await tween.finished
 	return
+func _move_character_to_position_rotation(character : Node3D, character_position: Vector3, character_rotation: Vector3, duration: float, final_callback: Callable = do_nothing) -> void:
+	var tween : Tween = get_tree().create_tween()
+	tween.tween_callback(character.look_at.bind(character_position, Vector3.UP, true))
+	tween.tween_callback(character.walk)
+	tween.tween_property(character, "position", character_position, duration)
+	tween.tween_callback(character.iddle)
+	tween.tween_property(character, "rotation", character_rotation, .25)
+	tween.tween_callback(final_callback)
+	await tween.finished
+	return
+func do_nothing() -> void:
+	pass
 
 func _on_mini_game_ended(excalibur_extracted : bool) -> void:
 	has_king = excalibur_extracted
