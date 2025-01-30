@@ -1,26 +1,20 @@
-[gd_scene load_steps=10 format=3 uid="uid://6771eq8g0v84"]
+[gd_scene load_steps=9 format=3 uid="uid://6771eq8g0v84"]
 
 [ext_resource type="Script" path="res://Scenes/SwordGame/Move/game.gd" id="1_fsyiv"]
 [ext_resource type="Script" path="res://Scenes/SwordGame/Move/sword.gd" id="1_gwcxj"]
 [ext_resource type="Script" path="res://Scenes/SwordGame/Move/ui.gd" id="3_fuqa8"]
+[ext_resource type="PackedScene" uid="uid://djk0sxhh28s4p" path="res://Character Models/excalibur.tscn" id="3_rhdlj"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7n8wi"]
 albedo_color = Color(0.374841, 0.217951, 0, 1)
 
-[sub_resource type="CylinderMesh" id="CylinderMesh_83ov2"]
-top_radius = 0.03
-bottom_radius = 0.03
-height = 1.5
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_ii4tj"]
+height = 0.05
+radius = 0.2
 
-[sub_resource type="SphereShape3D" id="SphereShape3D_fae8y"]
-radius = 0.1
-
-[sub_resource type="SphereMesh" id="SphereMesh_8piwy"]
-radius = 0.1
-height = 0.2
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p0tt6"]
-albedo_color = Color(1, 1, 0, 1)
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_2dyjx"]
+height = 0.35
+radius = 0.05
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_n35qy"]
 size = Vector2(27, 27)
@@ -42,20 +36,19 @@ transform = Transform3D(1, 0, 0, 0, 0.415281, 0.909693, 0, -0.909693, 0.415281, 
 [node name="Sword" type="Node3D" parent="."]
 script = ExtResource("1_gwcxj")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Sword"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.233695, 0)
-mesh = SubResource("CylinderMesh_83ov2")
-
 [node name="StaticBody3D" type="StaticBody3D" parent="Sword"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Sword/StaticBody3D"]
-shape = SubResource("SphereShape3D_fae8y")
+[node name="Disc" type="CollisionShape3D" parent="Sword/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.146974, 0)
+shape = SubResource("CylinderShape3D_ii4tj")
 
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="Sword/StaticBody3D"]
-mesh = SubResource("SphereMesh_8piwy")
-skeleton = NodePath("../..")
-surface_material_override/0 = SubResource("StandardMaterial3D_p0tt6")
+[node name="Handler" type="CollisionShape3D" parent="Sword/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.00687587, 0)
+shape = SubResource("CylinderShape3D_2dyjx")
+
+[node name="excalibur" parent="Sword" instance=ExtResource("3_rhdlj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
 
 [node name="UI" type="Control" parent="."]
 custom_minimum_size = Vector2(0, 100)

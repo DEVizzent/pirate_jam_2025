@@ -1,8 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://c2mf38luynh05"]
+[gd_scene load_steps=3 format=3 uid="uid://djk0sxhh28s4p"]
 
 [ext_resource type="ArrayMesh" uid="uid://d4a6svg77cp4c" path="res://Character Models/excalibur.obj" id="1_v5at7"]
 [ext_resource type="Material" uid="uid://dsubecdsi4mgr" path="res://Character Models/materials/excalibur.tres" id="2_byw5d"]
 
-[node name="excalibur" type="MeshInstance3D"]
+[node name="ExcaliburNode" type="Node3D"]
+
+[node name="excalibur" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 1.4, 0)
 mesh = ExtResource("1_v5at7")
 surface_material_override/0 = ExtResource("2_byw5d")
