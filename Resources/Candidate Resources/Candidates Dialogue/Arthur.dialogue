@@ -2,6 +2,7 @@
 do DialogueEventBus.animate("Arthur", "talk")
 Arthur: Brittania will take it's righteous place at the helm of the world.
 Arthur: For God, for family, for country.
+do DialogueEventBus.animate("Arthur", "iddle")
 => END
 ~ presentation
 do DialogueEventBus.animate("Arthur", "cheer")
@@ -10,4 +11,5 @@ Arthur: I am the legitimate next ruler of Britain, as dictated by God.
 do DialogueEventBus.animate("Arthur", "talk")
 Arthur: And several French writers a couple of centuries from now.
 Arthur: You must pick me!
+do DialogueEventBus.animate("Arthur", "iddle")
 => END

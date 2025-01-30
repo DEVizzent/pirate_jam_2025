@@ -1,6 +1,7 @@
 ~ main
 do DialogueEventBus.animate("RoboArthur", "talk")
 RoboArthur: *Meeeeks* FOR BRITAIN *Zxssss*
+do DialogueEventBus.animate("RoboArthur", "iddle")
 => END
 ~ presentation
 do DialogueEventBus.animate("RoboArthur", "talk")
@@ -9,4 +10,5 @@ RoboArthur: *Lktttl* FOR BRITAIN *Drrrrmlll*
 do DialogueEventBus.animate("RoboArthur", "cheer")
 RoboArthur: 01101011 01101001 01101100 01101100 01101101 01100101
 RoboArthur: *Xrrrtssss* FOR BRITAIN *Brrrxst*
+do DialogueEventBus.animate("RoboArthur", "iddle")
 => END
