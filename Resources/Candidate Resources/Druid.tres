@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="1_6wgd3"]
 [ext_resource type="Script" path="res://Resources/Events/event_condition_has_tag.gd" id="2_6qm86"]
-[ext_resource type="PackedScene" uid="uid://bvqnf42a5t62j" path="res://Test/CandidateEvents/candidate_cube.tscn" id="2_wmgcj"]
+[ext_resource type="PackedScene" uid="uid://dlacpjx6hbwe8" path="res://Character Models/Character Scenes/druid.tscn" id="3_ss1gq"]
 [ext_resource type="Resource" uid="uid://depmuk8ravow2" path="res://Resources/Candidate Resources/Candidates Dialogue/Druid.dialogue" id="4_jo7jk"]
 [ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="4_sw0sj"]
 [ext_resource type="Script" path="res://Resources/candidate.gd" id="5_gd2gr"]
@@ -26,4 +26,4 @@ dialogue = ExtResource("4_jo7jk")
 kingdom_event_collection = Array[ExtResource("4_sw0sj")]([ExtResource("6_5a37h"), ExtResource("7_pjytf"), ExtResource("8_l7gh3"), ExtResource("9_wxaic"), ExtResource("10_21l1m")])
 minigame_difficulty = 10
 minigame_time = 10
-character_scene = ExtResource("2_wmgcj")
+character_scene = ExtResource("3_ss1gq")

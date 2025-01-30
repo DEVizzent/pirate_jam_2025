@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="1_cg8yv"]
 [ext_resource type="Script" path="res://Resources/Events/event_condition_has_tag.gd" id="2_smoc3"]
-[ext_resource type="PackedScene" uid="uid://bvqnf42a5t62j" path="res://Test/CandidateEvents/candidate_cube.tscn" id="2_x6ml3"]
+[ext_resource type="PackedScene" uid="uid://diq22dghywffd" path="res://Character Models/Character Scenes/merlin.tscn" id="3_xxl0p"]
 [ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="4_h8u4e"]
 [ext_resource type="Resource" uid="uid://bpvtkkj112qr4" path="res://Resources/Candidate Resources/Candidates Dialogue/Merlin.dialogue" id="4_x2p65"]
 [ext_resource type="Script" path="res://Resources/candidate.gd" id="5_uegyy"]
@@ -25,4 +25,4 @@ dialogue = ExtResource("4_x2p65")
 kingdom_event_collection = Array[ExtResource("4_h8u4e")]([ExtResource("6_ooxd7"), ExtResource("7_ue4pu"), ExtResource("8_18eix"), ExtResource("9_oyw2o")])
 minigame_difficulty = 10
 minigame_time = 10
-character_scene = ExtResource("2_x6ml3")
+character_scene = ExtResource("3_xxl0p")
