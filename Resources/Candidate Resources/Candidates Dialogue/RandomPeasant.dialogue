@@ -10,5 +10,6 @@ A Random Peasant: Why would anyone choose me?
 A Random Peasant: I mean, I have ideas, after working the land for so long.
 A Random Peasant: I guess I could work on that...
 A Random Peasant: But I don't know how to do anything else!
+do DialogueEventBus.animate("RandomPeasant", "iddle")
 => END
 "res://Resources/Event Resources/HenryVIII/HenryVIIIEvent1.tres"

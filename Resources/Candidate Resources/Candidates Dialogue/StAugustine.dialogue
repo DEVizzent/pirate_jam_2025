@@ -1,6 +1,7 @@
 ~ main
 do DialogueEventBus.animate("StAugustine", "talk")
 Saint Augustine: There's just not enough churches in Britain.
+do DialogueEventBus.animate("StAugustine", "iddle")
 => END
 ~ presentation
 do DialogueEventBus.animate("StAugustine", "pray")
@@ -9,4 +10,5 @@ Saint Augustine: A devout follower of God and Christ, as we all should be.
 do DialogueEventBus.animate("StAugustine", "talk")
 Saint Augustine: I think Britain is missing churches. My plan is to build more and more.
 Saint Augustine: More churches will make God happier with us.
+do DialogueEventBus.animate("StAugustine", "iddle")
 => END

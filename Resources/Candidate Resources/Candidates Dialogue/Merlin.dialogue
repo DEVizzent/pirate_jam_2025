@@ -2,6 +2,7 @@
 do DialogueEventBus.animate("Merlin", "talk")
 Merlin: Well, well, well...
 Merlin: Since Arthur wasn't King, the future of the realm is in jeopardy.
+do DialogueEventBus.animate("Merlin", "iddle")
 => END
 ~ presentation
 do DialogueEventBus.animate("Merlin", "talk")
@@ -9,4 +10,5 @@ Merlin: Maybe the realm needs magic and mysticism instead of kings and wars.
 Merlin: I don't know what the future holds, but I know my allegiances. 
 do DialogueEventBus.animate("Merlin", "cheer")
 Merlin: I will serve the will of Excalibur as well as I can.
+do DialogueEventBus.animate("Merlin", "iddle")
 => END

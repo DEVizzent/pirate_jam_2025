@@ -1,10 +1,12 @@
 ~ main
 do DialogueEventBus.animate("Pope", "pray")
 A Pope: God has blessed Britain.
+do DialogueEventBus.animate("Pope", "iddle")
 => END
 ~ presentation
 do DialogueEventBus.animate("Pope", "talk")
 A Pope: I am so happy to serve my Lord.
 A Pope: Britain will become a Holy Land.
 A Pope: Every Briton will be the Lord's servant.
+do DialogueEventBus.animate("Pope", "iddle")
 => END
