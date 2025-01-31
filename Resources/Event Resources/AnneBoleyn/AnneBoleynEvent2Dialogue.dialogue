@@ -1,4 +1,5 @@
 ~ main
-You adopt a pet dragon. [[TBD]]
-[[ACTIVATE DRAGON QUEEN ENDING]]
+For the longest time, there has been what you thought was an ornamental egg in the treasure room.
+Today, it stirs.
+do DialogueEventBus.throw_the_end("DragonQueenEnding")
 => END

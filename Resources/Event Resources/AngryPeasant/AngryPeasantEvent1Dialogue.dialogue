@@ -1,4 +1,5 @@
 ~ main
-You reject all clergy and nobles and give the land to the farmers. [[TBD]]
-[[ACTIVATE MARXIST UTOPIA ENDING]]
+You fianlly are ready. You have it. You can do it.
+do DialogueEventBus.throw_the_end("MarxistUtopiaEnding")
+
 => END
