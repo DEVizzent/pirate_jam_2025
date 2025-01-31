@@ -42,6 +42,9 @@ func _process(delta: float) -> void:
 		return
 	if not mouse_on_sword:
 		sword_resistance -= delta
+		$Sword/particles.emitting = false
+	else:
+		$Sword/particles.emitting = true
 	candidate_energy -= delta
 
 func get_camera_position() -> Vector3:
