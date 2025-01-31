@@ -63,7 +63,7 @@ func _game_candidates_main() -> void:
 	var key : int
 	for candidate in candidate_instances:
 		key = candidate_instances.find(candidate)
-		_move_camera(candidate.position + Vector3(2, 1, 2), CAMERA_MAIN_VIEW_ROTATION)
+		_move_camera(candidate.position + Vector3(1., 1.5, 2), CAMERA_MAIN_VIEW_ROTATION)
 		DialogueManager.show_dialogue_balloon(turn_candidates[key].dialogue, 'main')
 		await DialogueManager.dialogue_ended
 	_move_camera(CAMERA_MAIN_VIEW_POSITION, CAMERA_MAIN_VIEW_ROTATION)
