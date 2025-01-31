@@ -30,24 +30,26 @@ theme_override_constants/separation = 40
 [node name="Title" type="Label" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 48
-text = "A GAME"
+text = "Rule, Britannia!"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="PlayButton" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
+size_flags_horizontal = 4
 text = "Play"
 
-[node name="PlayButton2" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-text = "Play Keep"
-
 [node name="Options" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
+size_flags_horizontal = 4
 text = "Options"
 
 [node name="Credits" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
+size_flags_horizontal = 4
 text = "Credits"
 
 [node name="CreditsPanel" type="Panel" parent="."]
