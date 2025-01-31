@@ -1,4 +1,4 @@
 ~ main
-You are conquered by France [[TBD]]
-[[ACTIVATE CONQUERED BY FRANCE ENDING]]
+Oh, so it turns out having a strong army was sort of important.
+do DialogueEventBus.throw_the_end("MilitaryCoupEnding")
 => END

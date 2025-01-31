@@ -1,4 +1,4 @@
 ~ main
-You conquer the world through superior firepower. [[TBD]]
-[[ACTIVATE RULE BRITANNIA ENDING]]
+Oh, so it turns out having a strong army was sort of important.
+do DialogueEventBus.throw_the_end("RuleBritanniaEnding")
 => END

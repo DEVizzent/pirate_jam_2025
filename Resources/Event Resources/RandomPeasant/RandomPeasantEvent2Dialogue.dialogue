@@ -1,4 +1,4 @@
 ~ main
-The army REALLY doesn't like you [[TBD]]
-[[ACTIVATE MILITARY COUP ENDING]]
+Seems like the army doesn't care that the land is becoming more fertile.
+do DialogueEventBus.throw_the_end("MilitaryCoupEnding")
 => END
