@@ -16,7 +16,6 @@ func switch_to_level_song() -> void:
 func _process(delta: float) -> void:
 	if is_fading_in:
 		volume_db += speed_fading * delta
-		print(volume_db)
 		if volume_db >= 0:
 			volume_db = 0
 			is_fading_in = false

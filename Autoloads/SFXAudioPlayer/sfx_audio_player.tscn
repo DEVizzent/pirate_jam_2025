@@ -1,11 +1,12 @@
-[gd_scene load_steps=10 format=3 uid="uid://ttspdatssrfs"]
+[gd_scene load_steps=11 format=3 uid="uid://ttspdatssrfs"]
 
 [ext_resource type="Script" path="res://Autoloads/SFXAudioPlayer/sfx_audio_player.gd" id="1_l21os"]
 [ext_resource type="Script" path="res://Autoloads/SFXAudioPlayer/sfx_collection.gd" id="2_0mesw"]
 [ext_resource type="Script" path="res://Autoloads/SFXAudioPlayer/sfx_resource.gd" id="3_jxsb1"]
 [ext_resource type="AudioStream" uid="uid://cx3oj0hggp0hm" path="res://Audio/mouse-click-153941.ogg" id="4_d1vc6"]
-[ext_resource type="AudioStream" uid="uid://ccxquewhfv0j5" path="res://Audio/victory.mp3" id="5_527ve"]
-[ext_resource type="AudioStream" uid="uid://3i6vvl06o8hi" path="res://Audio/defeat.mp3" id="6_j1k2e"]
+[ext_resource type="AudioStream" uid="uid://dxwv7h43meep6" path="res://Audio/victory_short.ogg" id="5_cui7j"]
+[ext_resource type="AudioStream" uid="uid://cnipena4mr0uq" path="res://Audio/defeat_short.ogg" id="6_elcph"]
+[ext_resource type="AudioStream" uid="uid://gsq3nwwgjx2k" path="res://Audio/click.mp3" id="7_ks3tg"]
 
 [sub_resource type="Resource" id="Resource_87kte"]
 script = ExtResource("3_jxsb1")
@@ -27,12 +28,13 @@ stream = SubResource("AudioStreamOggVorbis_qk5fs")
 bus = &"sfx"
 
 [node name="AudioStreamPlayer1" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("5_527ve")
+stream = ExtResource("5_cui7j")
 bus = &"sfx"
 
 [node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("6_j1k2e")
+stream = ExtResource("6_elcph")
 bus = &"sfx"
 
 [node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_ks3tg")
 bus = &"sfx"
