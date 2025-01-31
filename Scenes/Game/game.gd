@@ -18,11 +18,15 @@ var run_turn : Turn
 var turn_candidates : Array[Candidate]
 var candidate_instances : Array[Character]
 var has_king : bool = false
+var is_game_over : bool = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	$Menu.play_game_pressed.connect(start_run)
 	mini_game.game_ended.connect(_on_mini_game_ended)
+	EventBus.faith_changed.connect(check_end)
+	EventBus.food_changed.connect(check_end)
+	EventBus.force_changed.connect(check_end)
 
 func start_run() -> void:
 	EventBus.emit_run_started()
@@ -107,6 +111,7 @@ func execute_candidate_events(candidate_events : Array[KingdomEvent]) -> void:
 			continue
 		if await general_event.invoke():
 			number_of_executed_events += 1
+			await game_over()
 		if number_of_executed_events >= number_of_events_to_execute:
 			return
 	for candidate_event in candidate_events:
@@ -114,6 +119,7 @@ func execute_candidate_events(candidate_events : Array[KingdomEvent]) -> void:
 			continue
 		if await candidate_event.invoke():
 			number_of_executed_events += 1
+			await game_over()
 		if number_of_executed_events >= number_of_events_to_execute:
 			return
 	for candidate_event in candidate_events:
@@ -121,6 +127,7 @@ func execute_candidate_events(candidate_events : Array[KingdomEvent]) -> void:
 			continue
 		if await candidate_event.invoke():
 			number_of_executed_events += 1
+			await game_over()
 		if number_of_executed_events >= number_of_events_to_execute:
 			return
 	for general_event in general_events:
@@ -128,6 +135,7 @@ func execute_candidate_events(candidate_events : Array[KingdomEvent]) -> void:
 			continue
 		if await general_event.invoke():
 			number_of_executed_events += 1
+			await game_over()
 		if number_of_executed_events >= number_of_events_to_execute:
 			return
 	
@@ -196,3 +204,20 @@ func _on_mini_game_ended(excalibur_extracted : bool) -> void:
 		SfxAudioPlayer.play("victory")
 	else:
 		SfxAudioPlayer.play("defeat")
+
+func check_end(_previous: int, value: int) -> void:
+	if value <= 0:
+		is_game_over = true
+func game_over() -> void:
+	if not is_game_over:
+		return
+	if KingdomStats.food <= 0:
+		DialogueManager.show_dialogue_balloon(load("res://Resources/Endings/ZeroFoodEnding.dialogue"))
+		await DialogueManager.dialogue_ended
+	if KingdomStats.force <= 0:
+		DialogueManager.show_dialogue_balloon(load("res://Resources/Endings/ZeroForceEnding.dialogue"))
+		await DialogueManager.dialogue_ended
+	if KingdomStats.faith <= 0:
+		DialogueManager.show_dialogue_balloon(load("res://Resources/Endings/ZeroForceEnding.dialogue"))
+		await DialogueManager.dialogue_ended
+		
