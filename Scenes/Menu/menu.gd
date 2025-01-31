@@ -9,7 +9,6 @@ signal play_game_pressed()
 func _ready() -> void:
 	MusicController.switch_to_menu_song()
 	$VBoxContainer/PlayButton.pressed.connect(_on_play_button_pressed)
-	$VBoxContainer/PlayButton2.pressed.connect(_on_play_keep_button_pressed)
 	$VBoxContainer/Options.pressed.connect(_on_options_pressed)
 	$VBoxContainer/Credits.pressed.connect(_on_credits_pressed)
 	$CreditsPanel/CloseButton.pressed.connect(_on_close_button_pressed)
@@ -20,13 +19,6 @@ func _on_play_button_pressed() -> void:
 	visible = false
 	#DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
 	play_game_pressed.emit()
-	
-
-func _on_play_keep_button_pressed() -> void:
-	SfxAudioPlayer.play("MouseClick")
-	DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
-	get_tree().change_scene_to_packed(play_keep_scene)
-
 
 func _on_options_pressed() -> void:
 	options_panel.show()

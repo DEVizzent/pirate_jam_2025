@@ -1,7 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://bko0ifwwfqndb"]
+[gd_scene load_steps=5 format=3 uid="uid://bko0ifwwfqndb"]
 
 [ext_resource type="Script" path="res://Scenes/Menu/menu.gd" id="1_8jp8g"]
+[ext_resource type="FontFile" uid="uid://c61twbtenv6e5" path="res://Scenes/Menu/Ancient Medium.ttf" id="2_psbph"]
 [ext_resource type="Script" path="res://Scenes/Menu/volumeSlider.gd" id="5_2dd7u"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_70kmx"]
+font = ExtResource("2_psbph")
+font_size = 85
+outline_size = 5
+outline_color = Color(0, 0, 0, 1)
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -31,6 +38,7 @@ theme_override_constants/separation = 40
 layout_mode = 2
 theme_override_font_sizes/font_size = 48
 text = "Rule, Britannia!"
+label_settings = SubResource("LabelSettings_70kmx")
 horizontal_alignment = 1
 vertical_alignment = 1
 
