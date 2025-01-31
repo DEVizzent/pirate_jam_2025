@@ -12,14 +12,19 @@ func _ready() -> void:
 	audio_stream_pool.append($AudioStreamPlayer)
 	audio_stream_loaded_tracks.append("")
 	audio_stream_pool.append($AudioStreamPlayer1)
-	audio_stream_loaded_tracks.append("")
+	audio_stream_loaded_tracks.append("victory")
 	audio_stream_pool.append($AudioStreamPlayer2)
-	audio_stream_loaded_tracks.append("")
+	audio_stream_loaded_tracks.append("defeat")
 	audio_stream_pool.append($AudioStreamPlayer3)
 	audio_stream_loaded_tracks.append("")
 	pool_size = audio_stream_pool.size()
+	
+	for streamplayer in audio_stream_pool:
+		streamplayer.finished.connect(resetvol)
 
 func play(sfx_name : StringName) -> void:
+	if sfx_name == "victory" or sfx_name == "defeat":
+		MusicController.lower_volume()
 	var loaded_stream_index_pool : int = audio_stream_loaded_tracks.find(sfx_name)
 	if loaded_stream_index_pool != -1:
 		audio_stream_pool[loaded_stream_index_pool].play()
@@ -31,3 +36,6 @@ func play(sfx_name : StringName) -> void:
 	audio_stream_loaded_tracks[current_stream] = sfx_name
 	audio_stream_pool[current_stream].play()
 	current_stream = (current_stream + 1) % pool_size
+
+func resetvol():
+	MusicController.fade_in()

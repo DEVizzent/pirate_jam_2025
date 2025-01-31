@@ -192,3 +192,7 @@ func do_nothing() -> void:
 
 func _on_mini_game_ended(excalibur_extracted : bool) -> void:
 	has_king = excalibur_extracted
+	if has_king:
+		SfxAudioPlayer.play("victory")
+	else:
+		SfxAudioPlayer.play("defeat")

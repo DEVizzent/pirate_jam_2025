@@ -2,7 +2,7 @@
 
 [ext_resource type="AudioStream" uid="uid://c7swdp5vyrn1a" path="res://Audio/Spring_In_My_Step.ogg" id="1_kd4xn"]
 [ext_resource type="Script" path="res://Autoloads/MusicController/music_controller.gd" id="1_t431j"]
-[ext_resource type="AudioStream" uid="uid://cev5h7xscfaj" path="res://Audio/I3-Modern - Anticipation Alternative.ogg" id="2_j8bwn"]
+[ext_resource type="AudioStream" uid="uid://cbfpoq6j127w4" path="res://Audio/excalibur_loop.mp3" id="2_xhaks"]
 
 [sub_resource type="AudioStreamInteractive" id="AudioStreamInteractive_qugp5"]
 clip_count = 2
@@ -10,7 +10,7 @@ clip_0/name = &"MenuSong"
 clip_0/stream = ExtResource("1_kd4xn")
 clip_0/auto_advance = 0
 clip_1/name = &"LevelSong"
-clip_1/stream = ExtResource("2_j8bwn")
+clip_1/stream = ExtResource("2_xhaks")
 clip_1/auto_advance = 0
 
 [node name="MusicController" type="AudioStreamPlayer"]
