@@ -1,6 +1,9 @@
 ~ main
 do DialogueEventBus.animate("Morgana", "anim/talk_pensive_cane")
 Morgana: The land is changing. You can change.
+TUTORIAL: CHOOSE WHO WILL RULE THE KINGDOM BY ALLOWING THE RIGHT CANDIDATES TO PICK YOU UP.
+TUTORIAL: WHEN MORGANA ATTEMPTS TO PICK THE SWORD, KEEP YOUR MOUSE ON THE HILT OR SHE WILL BECOME QUEEN WHICH WOULD BE VERY VERY BAD.
+TUTORIAL: WHEN ARTHUR ATTEMPTS TO PICK THE SWORD, KEEP YOUR MOUSE AWAY FROM THE HILT SO THE STORY CAN CONTINUE LIKE IT SHOULD.
 do DialogueEventBus.animate("Morgana", "anim/iddle_cane")
 => END
 ~ presentation
@@ -10,8 +13,5 @@ do DialogueEventBus.animate("Morgana", "anim/talk_cane_sad")
 Morgana: Look, I don't want to spend my energy changing your mind, but you don't have to abide by the rules.
 Morgana: You can build your own destiny.
 do DialogueEventBus.animate("Morgana", "anim/iddle_cane")
-TUTORIAL: CHOOSE WHO WILL RULE THE KINGDOM BY ALLOWING THE RIGHT CANDIDATES TO PICK YOU UP.
-TUTORIAL: WHEN MORGANA ATTEMPTS TO PICK THE SWORD, KEEP YOUR MOUSE ON THE HILT OR SHE WILL BECOME QUEEN WHICH WOULD BE VERY VERY BAD.
-TUTORIAL: WHEN ARTHUR ATTEMPTS TO PICK THE SWORD, KEEP YOUR MOUSE AWAY FROM THE HILT SO THE STORY CAN CONTINUE LIKE IT SHOULD.
-do DialogueEventBus.animate("Morgana", "anim/iddle_cane")
+
 => END
