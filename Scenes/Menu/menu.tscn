@@ -76,6 +76,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Title" type="Label" parent="CreditsPanel"]
+visible = false
 layout_mode = 0
 offset_left = 408.0
 offset_top = 224.0
@@ -88,12 +89,17 @@ vertical_alignment = 1
 
 [node name="Credits Line 1" type="Label" parent="CreditsPanel"]
 layout_mode = 0
-offset_left = 408.0
-offset_top = 272.0
-offset_right = 648.0
-offset_bottom = 320.0
+offset_left = 340.0
+offset_top = 281.0
+offset_right = 727.0
+offset_bottom = 408.0
 theme_override_font_sizes/font_size = 16
-text = "by David Church Rodríguez"
+text = "Main Programmer: DEVizzent
+Character Artist: NSuprem
+Narrative Designer: David \"Rabbitz\" Church Rodríguez
+Enviroment Artist: Dani Palacio
+Sound Artist: VictorSeven
+"
 horizontal_alignment = 1
 vertical_alignment = 1
 
