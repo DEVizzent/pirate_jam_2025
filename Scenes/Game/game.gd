@@ -14,6 +14,7 @@ const CAMERA_THRONE_VIEW_ROTATION : Vector3 = Vector3(-0.349066, 1.0472, 0)
 @onready var mini_game : MiniGame = $MiniGame
 @export var game_candidates : GameCandidates 
 @export var general_events : Array[KingdomEvent]
+@export var no_king_event_collection : Array[KingdomEvent]
 var run_turn : Turn
 var turn_candidates : Array[Candidate]
 var candidate_instances : Array[Character]
@@ -88,7 +89,7 @@ func _mini_game_block() -> void:
 			return
 		else:
 			_move_character_to_position(candidate, previous_position, randf_range(2., 3.))
-	push_error('Implement no king case')
+	no_king_coronation()
 
 func start_minigame(candidate : Candidate) -> void:
 	await _move_camera(mini_game.get_camera_position(), mini_game.get_camera_rotation())
@@ -103,6 +104,12 @@ func coronation(candidate: Candidate) -> void:
 	await get_tree().create_timer(1.0).timeout
 	_move_camera(CAMERA_THRONE_VIEW_POSITION, CAMERA_THRONE_VIEW_ROTATION)
 	await execute_candidate_events(candidate.kingdom_event_collection)
+	next_round()
+
+func no_king_coronation() -> void:
+	_move_camera(CAMERA_THRONE_VIEW_POSITION, CAMERA_THRONE_VIEW_ROTATION)
+	for no_king_event in no_king_event_collection:
+		await no_king_event.invoke()
 	next_round()
 
 func execute_candidate_events(candidate_events : Array[KingdomEvent]) -> void:
