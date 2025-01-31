@@ -1,4 +1,4 @@
 ~ main
-The Vatican is moved to Canterbury. [[TBD]]
-[[ACTIVATE NEW VATICAN ENDING]]
+The Pope sits on the throne, and prays, only to be given straight directions over what to do.
+do DialogueEventBus.throw_the_end("NewVatican")
 => END

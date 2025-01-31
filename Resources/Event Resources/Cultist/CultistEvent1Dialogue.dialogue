@@ -1,4 +1,4 @@
 ~ main
-The Old Gods wake, and the Fae Army fights them. [[TBD]]
-[[ACTIVATE FAE V GODS ENDING]]
+The Cultist ends the ritual as soon as the sit on the throne, and the land cries in pain.
+do DialogueEventBus.throw_the_end("FaeVsGodsEnding")
 => END

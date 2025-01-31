@@ -1,4 +1,4 @@
 ~ main
-Britain becomes a Pious country, but the Vatican holds sway over you. [[TBD]]
-[[ACTIVATE PIOUS COUNTRY ENDING]]
+The Pope sits on the throne, and prays, only to be given straight directions over what to do.
+do DialogueEventBus.throw_the_end("PiousCountryEnding")
 => END
