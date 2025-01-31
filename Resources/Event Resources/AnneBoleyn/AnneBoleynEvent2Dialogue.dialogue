@@ -1,5 +1,12 @@
 ~ main
 For the longest time, there has been what you thought was an ornamental egg in the treasure room.
 Today, it stirs.
-do DialogueEventBus.throw_the_end("DragonQueenEnding")
+ENDING\: DRAGON QUEEN.
+As you sit in the throne, you realize that the egg you were given as a gift is now hatching.
+A small cute dragon climbs out of it, and crawls around your ankles.
+You spend your days feeding it, and once it's big enough, you bring it into battle.
+It can now feed itself, so you just stride along as it blazes a path for you to finally be the queen you were born to be.
+You and your dragon take the place in history that you deserve.
+Rule Britannia!
+do DialogueEventBus.throw_the_end()
 => END

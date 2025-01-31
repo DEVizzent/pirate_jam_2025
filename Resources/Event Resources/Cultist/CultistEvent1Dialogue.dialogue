@@ -1,4 +1,15 @@
 ~ main
 The Cultist ends the ritual as soon as the sit on the throne, and the land cries in pain.
-do DialogueEventBus.throw_the_end("FaeVsGodsEnding")
+ENDING\: THOSE WHO SLEEP GET PUSHED BACK.
+Those Who Sleep start stirring, and the land is sundered as creatures start terrorizing the land.
+Your subjects suffer in fear as their fields and houses become distorted and twisted.
+And then, from the most unexpected place, help comes.
+From the rank of your army, you start hearing rumours.
+Werewolves, vampires, fae... They all have worn your colours for so long that they are willing to fight for you.
+So they rush to the battlefield, and what follows, no human can understand.
+When dust settles, your country is ruined, your land is desecrated...
+But you are alive.
+And the land now has a new debt that will need to be repaid sometime.
+Rule Britannia!
+do DialogueEventBus.throw_the_end()
 => END

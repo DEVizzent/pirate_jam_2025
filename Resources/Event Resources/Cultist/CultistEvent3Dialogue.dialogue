@@ -1,4 +1,13 @@
 ~ main
 The Cultist ends the ritual as soon as the sit on the throne, and the land cries in pain.
-do DialogueEventBus.throw_the_end("OldGodsLoveYouEnding")
+ENDING\: A SACRIFICE PAID OFF
+Those Who Sleep start stirring, and the land is sundered as creatures start terrorizing the land.
+Your subjects suffer in fear as their fields and houses become distorted and twisted.
+The castle bends over itself in weird angles and impossible foldings, as hyperdimensional beings run amock.
+Mostly, you remember the sounds, because they are the easiest things for your brain to understand.
+And then, they smile at you.
+Your sanity broken, you wave them when they return to sleep.
+Everyone is dead, and in aeons to come, you will wake with your new found friends.
+Rule the void!
+do DialogueEventBus.throw_the_end()
 => END
