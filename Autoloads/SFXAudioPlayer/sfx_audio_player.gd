@@ -12,11 +12,11 @@ func _ready() -> void:
 	audio_stream_pool.append($AudioStreamPlayer)
 	audio_stream_loaded_tracks.append("")
 	audio_stream_pool.append($AudioStreamPlayer1)
-	audio_stream_loaded_tracks.append("victory")
+	audio_stream_loaded_tracks.append("")
 	audio_stream_pool.append($AudioStreamPlayer2)
-	audio_stream_loaded_tracks.append("defeat")
+	audio_stream_loaded_tracks.append("")
 	audio_stream_pool.append($AudioStreamPlayer3)
-	audio_stream_loaded_tracks.append("click")
+	audio_stream_loaded_tracks.append("")
 	pool_size = audio_stream_pool.size()
 	
 	for streamplayer in audio_stream_pool:

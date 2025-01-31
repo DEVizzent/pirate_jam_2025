@@ -51,7 +51,7 @@ func get_camera_rotation() -> Vector3:
 
 func start(game_candidate : Candidate) -> void:
 	candidate = game_candidate
-	MusicController.switch_to_level_song()
+	#MusicController.switch_to_level_song()
 	max_sword_resistance = candidate.minigame_sword_resistance
 	sword_resistance = candidate.minigame_sword_resistance
 	max_candidate_energy = candidate.minigame_time

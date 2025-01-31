@@ -1,23 +1,36 @@
-[gd_scene load_steps=11 format=3 uid="uid://ttspdatssrfs"]
+[gd_scene load_steps=14 format=3 uid="uid://ttspdatssrfs"]
 
 [ext_resource type="Script" path="res://Autoloads/SFXAudioPlayer/sfx_audio_player.gd" id="1_l21os"]
 [ext_resource type="Script" path="res://Autoloads/SFXAudioPlayer/sfx_collection.gd" id="2_0mesw"]
 [ext_resource type="Script" path="res://Autoloads/SFXAudioPlayer/sfx_resource.gd" id="3_jxsb1"]
-[ext_resource type="AudioStream" uid="uid://cx3oj0hggp0hm" path="res://Audio/mouse-click-153941.ogg" id="4_d1vc6"]
+[ext_resource type="AudioStream" uid="uid://c8o1va1o8g2ay" path="res://Audio/click.ogg" id="4_8ivr0"]
 [ext_resource type="AudioStream" uid="uid://dxwv7h43meep6" path="res://Audio/victory_short.ogg" id="5_cui7j"]
 [ext_resource type="AudioStream" uid="uid://cnipena4mr0uq" path="res://Audio/defeat_short.ogg" id="6_elcph"]
-[ext_resource type="AudioStream" uid="uid://gsq3nwwgjx2k" path="res://Audio/click.mp3" id="7_ks3tg"]
 
 [sub_resource type="Resource" id="Resource_87kte"]
 script = ExtResource("3_jxsb1")
 sfx_name = "MouseClick"
-sfx_stream = ExtResource("4_d1vc6")
+sfx_stream = ExtResource("4_8ivr0")
+
+[sub_resource type="Resource" id="Resource_kcgqh"]
+script = ExtResource("3_jxsb1")
+sfx_name = "victory"
+sfx_stream = ExtResource("5_cui7j")
+
+[sub_resource type="Resource" id="Resource_1bsye"]
+script = ExtResource("3_jxsb1")
+sfx_name = "defeat"
+sfx_stream = ExtResource("6_elcph")
 
 [sub_resource type="Resource" id="Resource_vmfdw"]
 script = ExtResource("2_0mesw")
-sfx_resources = Array[ExtResource("3_jxsb1")]([SubResource("Resource_87kte")])
+sfx_resources = Array[ExtResource("3_jxsb1")]([SubResource("Resource_87kte"), SubResource("Resource_kcgqh"), SubResource("Resource_1bsye")])
 
 [sub_resource type="AudioStreamOggVorbis" id="AudioStreamOggVorbis_qk5fs"]
+
+[sub_resource type="AudioStreamOggVorbis" id="AudioStreamOggVorbis_rbqfg"]
+
+[sub_resource type="AudioStreamOggVorbis" id="AudioStreamOggVorbis_6gjll"]
 
 [node name="SfxAudioPlayer" type="Node"]
 script = ExtResource("1_l21os")
@@ -28,13 +41,12 @@ stream = SubResource("AudioStreamOggVorbis_qk5fs")
 bus = &"sfx"
 
 [node name="AudioStreamPlayer1" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("5_cui7j")
+stream = SubResource("AudioStreamOggVorbis_rbqfg")
 bus = &"sfx"
 
 [node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("6_elcph")
+stream = SubResource("AudioStreamOggVorbis_6gjll")
 bus = &"sfx"
 
 [node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("7_ks3tg")
 bus = &"sfx"
