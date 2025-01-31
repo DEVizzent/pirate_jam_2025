@@ -72,4 +72,13 @@ visible = false
 transform = Transform3D(1, 0, 0, 0, 0.973523, 0.228589, 0, -0.228589, 0.973523, -4, 3.5, 14)
 spot_attenuation = -0.5
 
+[node name="SpotLight3D2" type="SpotLight3D" parent="."]
+transform = Transform3D(0.866025, -0.12941, 0.482963, 0, 0.965926, 0.258819, -0.5, -0.224144, 0.836516, -4.71428, 1.93125, 1)
+light_energy = 0.7
+spot_range = 8.0
+spot_attenuation = 0.3
+
+[node name="SpotLight3D3" type="SpotLight3D" parent="."]
+transform = Transform3D(-0.122337, 0, 0.992489, 0, 1, 0, -0.992489, 0, -0.122337, -4.60635, 1, 4.00594)
+
 [editable path="AssetZooScene"]
