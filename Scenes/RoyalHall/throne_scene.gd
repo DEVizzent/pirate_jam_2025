@@ -21,6 +21,11 @@ func _ready() -> void:
 	EventBus.faith_changed.connect(faith_updated)
 	EventBus.food_changed.connect(food_updated)
 	EventBus.force_changed.connect(force_updated)
+	EventBus.pagan_state.connect(activate_pagan_state)
+	
+func activate_pagan_state() -> void:
+	pagan_state = true
+	faith_updated(0,KingdomStats.faith)
 
 func faith_updated(_from: int, to: int) -> void:
 	if to < 7:
