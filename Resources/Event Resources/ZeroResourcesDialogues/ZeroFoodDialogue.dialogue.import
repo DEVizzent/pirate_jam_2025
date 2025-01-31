@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://cl5sc8iwcp22a"
+path="res://.godot/imported/ZeroFoodDialogue.dialogue-a8341f4213931dcc5c873ae6a9c1b206.tres"
+
+[deps]
+
+source_file="res://Resources/Event Resources/ZeroResourcesDialogues/ZeroFoodDialogue.dialogue"
+dest_files=["res://.godot/imported/ZeroFoodDialogue.dialogue-a8341f4213931dcc5c873ae6a9c1b206.tres"]
+
+[params]
+
+defaults=true

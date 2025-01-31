@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://bk4koq17fw8p6"
+path="res://.godot/imported/ZeroFoodEnding.dialogue-8300c12edf39f31180030f6d208b68bf.tres"
+
+[deps]
+
+source_file="res://Resources/Endings/ZeroFoodEnding.dialogue"
+dest_files=["res://.godot/imported/ZeroFoodEnding.dialogue-8300c12edf39f31180030f6d208b68bf.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://b51fpjfb6s7u8"
+path="res://.godot/imported/ZeroFaithEnding.dialogue-5428b8838eb225a8dba4b33ac49bd4f4.tres"
+
+[deps]
+
+source_file="res://Resources/Endings/ZeroFaithEnding.dialogue"
+dest_files=["res://.godot/imported/ZeroFaithEnding.dialogue-5428b8838eb225a8dba4b33ac49bd4f4.tres"]
+
+[params]
+
+defaults=true

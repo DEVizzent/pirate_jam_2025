@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://cu45k1x263srr"
+path="res://.godot/imported/ZeroForceDialogue.dialogue-4b264b42182c4b05c2b2414696bab311.tres"
+
+[deps]
+
+source_file="res://Resources/Event Resources/ZeroResourcesDialogues/ZeroForceDialogue.dialogue"
+dest_files=["res://.godot/imported/ZeroForceDialogue.dialogue-4b264b42182c4b05c2b2414696bab311.tres"]
+
+[params]
+
+defaults=true

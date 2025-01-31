@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://bem2xylxx01v7"
+path="res://.godot/imported/ZeroForceEnding.dialogue-2478769ff23af611c498d3e1e910849a.tres"
+
+[deps]
+
+source_file="res://Resources/Endings/ZeroForceEnding.dialogue"
+dest_files=["res://.godot/imported/ZeroForceEnding.dialogue-2478769ff23af611c498d3e1e910849a.tres"]
+
+[params]
+
+defaults=true

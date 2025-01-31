@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://cbxsw8gkxsnla"
+path="res://.godot/imported/ZeroFaithDialogue.dialogue-f9bd7d0b98a8d6111a030d1d68a4e62f.tres"
+
+[deps]
+
+source_file="res://Resources/Event Resources/ZeroResourcesDialogues/ZeroFaithDialogue.dialogue"
+dest_files=["res://.godot/imported/ZeroFaithDialogue.dialogue-f9bd7d0b98a8d6111a030d1d68a4e62f.tres"]
+
+[params]
+
+defaults=true
