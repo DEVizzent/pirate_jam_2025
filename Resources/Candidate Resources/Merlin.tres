@@ -23,6 +23,7 @@ social_class = 0
 candidate_conditions = Array[ExtResource("1_cg8yv")]([SubResource("Resource_32ji3")])
 dialogue = ExtResource("4_x2p65")
 kingdom_event_collection = Array[ExtResource("4_h8u4e")]([ExtResource("6_ooxd7"), ExtResource("7_ue4pu"), ExtResource("8_18eix"), ExtResource("9_oyw2o")])
+minigame_sword_resistance = 3.0
 minigame_difficulty = 10
 minigame_time = 10
 character_scene = ExtResource("3_xxl0p")
