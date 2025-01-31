@@ -6,10 +6,12 @@ do DialogueEventBus.animate("Morgana", "anim/iddle_cane")
 ~ presentation
 do DialogueEventBus.animate("Morgana", "anim/talk_cane_scared")
 Morgana: Oh, wait. You are supposed to pick my brother, right?
-do DialogueEventBus.animate("Morgana", "anim/talk_pensive_cane")
-Morgana: I am just filler, and disposable. That is what you are implying.
 do DialogueEventBus.animate("Morgana", "anim/talk_cane_sad")
 Morgana: Look, I don't want to spend my energy changing your mind, but you don't have to abide by the rules.
 Morgana: You can build your own destiny.
+do DialogueEventBus.animate("Morgana", "anim/iddle_cane")
+TUTORIAL: CHOOSE WHO WILL RULE THE KINGDOM BY ALLOWING THE RIGHT CANDIDATES TO PICK YOU UP.
+TUTORIAL: WHEN MORGANA ATTEMPTS TO PICK THE SWORD, KEEP YOUR MOUSE AWAY FROM THE HILT.
+TUTORIAL: WHEN ARTHUR ATTEMPTS TO PICK THE SWORD, KEEP YOUR MOUSE ON THE HILT.
 do DialogueEventBus.animate("Morgana", "anim/iddle_cane")
 => END
