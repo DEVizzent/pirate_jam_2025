@@ -19,6 +19,7 @@ var turn_candidates : Array[Candidate]
 var candidate_instances : Array[Character]
 var has_king : bool = false
 var is_game_over : bool = false
+@onready var spot_light_3d: SpotLight3D = $SpotLight3D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -32,6 +33,9 @@ func start_run() -> void:
 	EventBus.emit_run_started()
 	MusicController.switch_to_level_song()
 	run_turn = Turn.TUTORIAL
+	$UI_Stats.show()
+	if spot_light_3d:
+		spot_light_3d.queue_free()
 	prepare_turn_candidates()
 
 func prepare_turn_candidates() -> void:

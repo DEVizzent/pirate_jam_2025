@@ -64,7 +64,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.36031, 2.05467, 11.2237)
 z_index = 10
 
 [node name="UI_Stats" parent="." instance=ExtResource("27_73ufp")]
+visible = false
 
 [node name="Control" parent="." instance=ExtResource("37_5vejs")]
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.973523, 0.228589, 0, -0.228589, 0.973523, -4, 3.5, 14)
+spot_attenuation = -0.5
 
 [editable path="AssetZooScene"]
