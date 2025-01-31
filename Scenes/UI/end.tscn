@@ -1,0 +1,239 @@
+[gd_scene load_steps=8 format=3 uid="uid://cx4gwgprxvuuv"]
+
+[ext_resource type="Script" path="res://Scenes/UI/end.gd" id="1_7yadl"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ehqa6"]
+font_size = 150
+
+[sub_resource type="LabelSettings" id="LabelSettings_fca3n"]
+font_size = 100
+
+[sub_resource type="LabelSettings" id="LabelSettings_yhppq"]
+font_size = 40
+
+[sub_resource type="Animation" id="Animation_ncinx"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("VBoxContainer:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-376, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ColorRect:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-1000, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_1gbc6"]
+resource_name = "move"
+length = 10.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("VBoxContainer:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.03333, 3.03333, 6, 7.03333, 10),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-376, 0), Vector2(-376, -400), Vector2(-376, -400), Vector2(-376, -1170), Vector2(-376, -1170), Vector2(-376, -2250)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ColorRect:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.0666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-1000, 0), Vector2(-1000, -1500)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_vtpcj"]
+_data = {
+"RESET": SubResource("Animation_ncinx"),
+"move": SubResource("Animation_1gbc6")
+}
+
+[node name="CanvasLayer" type="CanvasLayer"]
+layer = 128
+
+[node name="End" type="Control" parent="."]
+process_mode = 3
+modulate = Color(1, 1, 1, 0)
+z_index = 4096
+z_as_relative = false
+layout_mode = 3
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -76.0
+offset_right = -76.0
+grow_horizontal = 2
+grow_vertical = 0
+script = ExtResource("1_7yadl")
+
+[node name="ColorRect" type="ColorRect" parent="End"]
+custom_minimum_size = Vector2(2000, 2000)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = -1000.0
+offset_right = 1000.0
+offset_bottom = 2000.0
+grow_horizontal = 2
+color = Color(0, 0, 0, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="End"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -376.0
+offset_right = 529.0
+offset_bottom = 1574.0
+grow_horizontal = 2
+theme_override_constants/separation = 300
+alignment = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="End/VBoxContainer"]
+layout_mode = 2
+
+[node name="TheEnd" type="Label" parent="End/VBoxContainer/CenterContainer"]
+layout_mode = 2
+text = "The End"
+label_settings = SubResource("LabelSettings_ehqa6")
+
+[node name="CenterContainer2" type="CenterContainer" parent="End/VBoxContainer"]
+visible = false
+layout_mode = 2
+
+[node name="GameOver" type="Label" parent="End/VBoxContainer/CenterContainer2"]
+layout_mode = 2
+text = "Game Over"
+label_settings = SubResource("LabelSettings_ehqa6")
+
+[node name="Control" type="VBoxContainer" parent="End/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 60
+alignment = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="End/VBoxContainer/Control"]
+layout_mode = 2
+
+[node name="Credits" type="Label" parent="End/VBoxContainer/Control/CenterContainer"]
+layout_mode = 2
+text = "Credits"
+label_settings = SubResource("LabelSettings_fca3n")
+
+[node name="GridContainer" type="GridContainer" parent="End/VBoxContainer/Control"]
+layout_mode = 2
+theme_override_constants/h_separation = 150
+theme_override_constants/v_separation = 40
+columns = 2
+
+[node name="Label" type="Label" parent="End/VBoxContainer/Control/GridContainer"]
+layout_mode = 2
+text = "DEVizzent"
+label_settings = SubResource("LabelSettings_yhppq")
+
+[node name="Label2" type="Label" parent="End/VBoxContainer/Control/GridContainer"]
+layout_mode = 2
+text = "Main Programmer"
+label_settings = SubResource("LabelSettings_yhppq")
+
+[node name="Label3" type="Label" parent="End/VBoxContainer/Control/GridContainer"]
+layout_mode = 2
+text = "NSuprem"
+label_settings = SubResource("LabelSettings_yhppq")
+
+[node name="Label4" type="Label" parent="End/VBoxContainer/Control/GridContainer"]
+layout_mode = 2
+text = "Character Artist"
+label_settings = SubResource("LabelSettings_yhppq")
+
+[node name="Label5" type="Label" parent="End/VBoxContainer/Control/GridContainer"]
+layout_mode = 2
+text = "Rabbitz"
+label_settings = SubResource("LabelSettings_yhppq")
+
+[node name="Label6" type="Label" parent="End/VBoxContainer/Control/GridContainer"]
+layout_mode = 2
+text = "Narrative Designer"
+label_settings = SubResource("LabelSettings_yhppq")
+
+[node name="Label7" type="Label" parent="End/VBoxContainer/Control/GridContainer"]
+layout_mode = 2
+text = "Dani Palacio"
+label_settings = SubResource("LabelSettings_yhppq")
+
+[node name="Label8" type="Label" parent="End/VBoxContainer/Control/GridContainer"]
+layout_mode = 2
+text = "Enviroment Artist"
+label_settings = SubResource("LabelSettings_yhppq")
+
+[node name="Label9" type="Label" parent="End/VBoxContainer/Control/GridContainer"]
+layout_mode = 2
+text = "VictorSeven"
+label_settings = SubResource("LabelSettings_yhppq")
+
+[node name="Label10" type="Label" parent="End/VBoxContainer/Control/GridContainer"]
+layout_mode = 2
+text = "Sound Artist"
+label_settings = SubResource("LabelSettings_yhppq")
+
+[node name="CenterContainer3" type="CenterContainer" parent="End/VBoxContainer"]
+layout_mode = 2
+
+[node name="Thanks" type="Label" parent="End/VBoxContainer/CenterContainer3"]
+layout_mode = 2
+text = "Thanks For Playing"
+label_settings = SubResource("LabelSettings_fca3n")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="End"]
+libraries = {
+"": SubResource("AnimationLibrary_vtpcj")
+}

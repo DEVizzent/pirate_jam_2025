@@ -9,7 +9,6 @@ func _ready() -> void:
 	DialogueEventBus.play_character_animation.connect(play_animation)
 
 func play_animation(character : String, animation: String) -> void:
-	animation = 'anim/' + animation
 	if character != candidate_name:
 		return
 	if not animation_player.has_animation(animation):
