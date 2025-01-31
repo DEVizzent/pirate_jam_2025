@@ -12,6 +12,6 @@ func apply() -> void:
 	KingdomStats.food = KingdomStats.food + food
 	KingdomStats.force = KingdomStats.force + force
 	if add_tag:
-		KingdomStats.tags.append(add_tag)
+		KingdomStats.add_tag(add_tag)
 	if remove_tag:
-		KingdomStats.tags.erase(remove_tag)
+		KingdomStats.remove_tag(remove_tag)

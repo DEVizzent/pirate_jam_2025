@@ -1,6 +1,7 @@
-[gd_scene load_steps=44 format=3 uid="uid://d13scoc7oku5y"]
+[gd_scene load_steps=45 format=3 uid="uid://d13scoc7oku5y"]
 
 [ext_resource type="ArrayMesh" uid="uid://casasvqcqxi6b" path="res://Environment/Tileables/SM_StainedGlass_Circular.obj" id="1_bddbi"]
+[ext_resource type="Script" path="res://Scenes/RoyalHall/throne_scene.gd" id="1_ssw46"]
 [ext_resource type="ArrayMesh" uid="uid://djnyin6umt3qo" path="res://Environment/Tileables/SM_Stained_Glass_Arc.obj" id="2_hlshn"]
 [ext_resource type="Material" uid="uid://egy44fwa5vyr" path="res://Environment/Tileables/M_Stone.tres" id="3_r5sbi"]
 [ext_resource type="ArrayMesh" uid="uid://lyxsiygovs2w" path="res://Environment/Tileables/SM_Wall_Inset.obj" id="4_bms5s"]
@@ -54,8 +55,9 @@ sky = SubResource("Sky_q74xm")
 
 [sub_resource type="Compositor" id="Compositor_u2oyn"]
 
-[node name="AssetZooScene" type="Node3D"]
+[node name="ThroneScene" type="Node3D"]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+script = ExtResource("1_ssw46")
 
 [node name="SmStainedGlassCircular" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.486488, 0, -1.53398)
@@ -415,11 +417,7 @@ mesh = ExtResource("12_spiyq")
 
 [node name="SmCrossGold" type="MeshInstance3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.760882, -0.0663828, 1.95504)
-material_override = ExtResource("13_bmruv")
-mesh = ExtResource("14_dhk0n")
-
-[node name="EXCALIBUR PLACEHOLDER" type="MeshInstance3D" parent="."]
-transform = Transform3D(-9.58106e-09, 0, 0.219189, 0.0434743, 0.214834, 1.90032e-09, -0.214834, 0.0434743, -9.39071e-09, 3.80447, 0.965039, 5.59893)
+visible = false
 material_override = ExtResource("13_bmruv")
 mesh = ExtResource("14_dhk0n")
 
@@ -430,21 +428,25 @@ mesh = ExtResource("16_twink")
 
 [node name="SmPaganStatueHastur" type="MeshInstance3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.760882, -0.0663828, 1.95504)
+visible = false
 material_override = ExtResource("17_qoqoq")
 mesh = ExtResource("18_1lf8o")
 
 [node name="SmPaganStatueSatire" type="MeshInstance3D" parent="."]
 transform = Transform3D(2.98023e-08, 0, 1, 0, 1, 0, -1, 0, 2.98023e-08, 0.760882, -0.0663828, 1.95504)
+visible = false
 material_override = ExtResource("19_jg7bm")
 mesh = ExtResource("20_53h8y")
 
 [node name="SmThroneChristian" type="MeshInstance3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1.79723, -0.0776938, 2.02348)
+visible = false
 material_override = ExtResource("21_1qi3p")
 mesh = ExtResource("22_2ayh7")
 
 [node name="SmThronePagan" type="MeshInstance3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1.79723, -0.0776938, 2.02348)
+visible = false
 material_override = ExtResource("23_r0oul")
 mesh = ExtResource("24_be6mk")
 
@@ -455,6 +457,7 @@ mesh = ExtResource("26_j0d6i")
 
 [node name="SmThroneSwords" type="MeshInstance3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 1.79723, -0.0776938, 2.02348)
+visible = false
 material_override = ExtResource("27_wl2jg")
 mesh = ExtResource("28_llxx7")
 

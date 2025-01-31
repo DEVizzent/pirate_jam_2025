@@ -25,6 +25,14 @@ func _ready() -> void:
 	food = 0
 	EventBus.run_started.connect(restart_values)
 
+func add_tag(tag : KingdomEvent.Tag) -> void:
+	if tag == KingdomEvent.Tag.FAE_DIPLOMACY:
+		EventBus.emit_pagan_state()
+	tags.append(tag)
+
+func remove_tag(tag : KingdomEvent.Tag) -> void:
+	tags.erase(tag)
+
 func restart_values() -> void:
 	faith = DEFAULT_STAT
 	food = DEFAULT_STAT
