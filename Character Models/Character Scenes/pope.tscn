@@ -1,6 +1,7 @@
-[gd_scene load_steps=32 format=4 uid="uid://cvx2uqfo7q8h5"]
+[gd_scene load_steps=33 format=4 uid="uid://cvx2uqfo7q8h5"]
 
 [ext_resource type="Material" uid="uid://d1cux5ncdxebt" path="res://Character Models/materials/PERSONAJES/ropa_pope.tres" id="1_qonan"]
+[ext_resource type="Script" path="res://Scenes/Game/character.gd" id="1_xnsb7"]
 [ext_resource type="Material" uid="uid://drif6ds8lvipi" path="res://Character Models/materials/PERSONAJES/cara_pope.tres" id="2_xvqkb"]
 [ext_resource type="Texture2D" uid="uid://cyy6tjfj645gs" path="res://Character Models/textures/objetos/cultpapa.png" id="3_mbth5"]
 [ext_resource type="Material" uid="uid://dsubecdsi4mgr" path="res://Character Models/materials/excalibur.tres" id="3_nlhq1"]
@@ -1006,6 +1007,7 @@ bind/24/bone = -1
 bind/24/pose = Transform3D(3.46362e-08, 0.792384, 0, 0, 0, -0.792384, -0.792384, 3.46362e-08, 0, -6.4969e-05, 0.00136211, -6.15016e-06)
 
 [node name="base_modelos" type="Node3D"]
+script = ExtResource("1_xnsb7")
 
 [node name="Armature" type="Node3D" parent="."]
 transform = Transform3D(100, 0, 0, 0, -1.19209e-05, 100, 0, -100, -1.19209e-05, 0, 0, 5.60433e-10)

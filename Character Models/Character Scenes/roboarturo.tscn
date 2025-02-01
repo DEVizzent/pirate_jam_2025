@@ -1,9 +1,9 @@
-[gd_scene load_steps=38 format=4 uid="uid://d4lq3q4a1tvkw"]
+[gd_scene load_steps=38 format=4 uid="uid://cuegkhu0ibw5p"]
 
 [ext_resource type="Script" path="res://Scenes/Game/character.gd" id="1_jbr5j"]
 [ext_resource type="Texture2D" uid="uid://cj8hha2ays0v" path="res://Character Models/textures/pelos/canoso.png" id="2_s3va2"]
-[ext_resource type="Material" uid="uid://dkda0sxevcwqd" path="res://Character Models/materials/PERSONAJES/ropa_ROBOarturo.tres" id="3_d24mb"]
-[ext_resource type="Material" uid="uid://ddhq7uxf7s6qs" path="res://Character Models/materials/PERSONAJES/cara_ROBOarturo.tres" id="4_65rtv"]
+[ext_resource type="Material" path="res://Character Models/materials/PERSONAJES/ropa_ROBOarturo.tres" id="3_d24mb"]
+[ext_resource type="Material" path="res://Character Models/materials/PERSONAJES/cara_ROBOarturo.tres" id="4_65rtv"]
 [ext_resource type="Material" uid="uid://dsubecdsi4mgr" path="res://Character Models/materials/excalibur.tres" id="5_7s7l0"]
 [ext_resource type="Texture2D" uid="uid://crp26yttel22l" path="res://Character Models/textures/objetos/objetos_mano_tex.png" id="6_uiiob"]
 [ext_resource type="Texture2D" uid="uid://dqc00ig7rmprq" path="res://Character Models/textures/objetos/objetos_mano_met.png" id="7_vub36"]
