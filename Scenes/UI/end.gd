@@ -18,4 +18,5 @@ func set_game_over() -> void:
 	$VBoxContainer/CenterContainer2.show()
 
 func reset(_anim_name: StringName) -> void:
+	get_tree().paused = false
 	get_tree().reload_current_scene()

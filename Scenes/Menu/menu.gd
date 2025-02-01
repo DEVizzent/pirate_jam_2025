@@ -2,7 +2,6 @@ extends Control
 
 signal play_game_pressed()
 
-@onready var play_keep_scene: PackedScene = preload("res://Scenes/SwordGame/Keep/game.tscn")
 @onready var options_panel : Panel = $OptionsPanel
 @onready var credits_panel : Panel = $CreditsPanel
 
