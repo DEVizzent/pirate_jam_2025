@@ -39,6 +39,7 @@ jobs:
         run: |
           ./godot --headless --export-release html
           ./godot --headless --export-release linux
+          ./godot --headless --export-release windows
 
       - name: Zip HTML Export
         run: |
@@ -77,3 +78,5 @@ jobs:
         run: |
           ./butler push ./exports/$PROJECT_NAME-html.zip $ITCHIO_USERNAME/$PROJECT_NAME:html
           ./butler push ./exports/$PROJECT_NAME-linux.zip $ITCHIO_USERNAME/$PROJECT_NAME:linux
+          ./butler push ./exports/$PROJECT_NAME-windows.zip $ITCHIO_USERNAME/$PROJECT_NAME:windows
+
