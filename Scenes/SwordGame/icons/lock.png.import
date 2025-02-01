@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dju22vivgt7fv"
-path="res://.godot/imported/sword-stone.png-7972e57520deb8b0040ec2a963024352.ctex"
+uid="uid://bnk6pjfei3854"
+path="res://.godot/imported/lock.png-453748cbd80fda22ff297301dc53bd52.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Scenes/SwordGame/sword-stone.png"
-dest_files=["res://.godot/imported/sword-stone.png-7972e57520deb8b0040ec2a963024352.ctex"]
+source_file="res://Scenes/SwordGame/icons/lock.png"
+dest_files=["res://.godot/imported/lock.png-453748cbd80fda22ff297301dc53bd52.ctex"]
 
 [params]
 

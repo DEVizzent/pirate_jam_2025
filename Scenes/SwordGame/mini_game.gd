@@ -30,14 +30,16 @@ var sword_resistance : float :
 var mouse_on_sword : bool = false
 var game_running : bool = false
 var candidate : Candidate
-var resistance_icon : Texture = preload("res://Scenes/SwordGame/sword-stone.png")
-var free_icon : Texture = preload("res://Scenes/SwordGame/sword.png")
+var resistance_icon : Texture = preload("res://Scenes/SwordGame/icons/lock.png")
+var free_icon : Texture = preload("res://Scenes/SwordGame/icons/lock_unlocked.png")
+var default_mouse_icon : Texture = preload("res://Scenes/SwordGame/icons/gauntlet_default.png")
 
 func _ready() -> void:
 	candidate_energy_exhausted.connect(_on_candidate_energy_exhausted)
 	sword_resistance_exhausted.connect(_on_sword_resistance_exhausted)
 	$Sword.sword_mouse_over.connect(_on_sword_sword_mouse_over)
 	$Sword.sword_mouse_exit.connect(_on_sword_sword_mouse_exit)
+	Input.set_custom_mouse_cursor(default_mouse_icon)
 
 func _process(delta: float) -> void:
 	if not game_running:
@@ -71,18 +73,18 @@ func get_candidate() -> Candidate:
 
 func _on_sword_sword_mouse_over() -> void:
 	mouse_on_sword = true
-	#Input.set_custom_mouse_cursor(resistance_icon)
+	Input.set_custom_mouse_cursor(resistance_icon)
 
 func _on_sword_sword_mouse_exit() -> void:
 	mouse_on_sword = false
-	#Input.set_custom_mouse_cursor(free_icon)
+	Input.set_custom_mouse_cursor(free_icon)
 
 func _on_candidate_energy_exhausted() -> void:
 	game_running = false
 	game_ended.emit(false)
-	#Input.set_custom_mouse_cursor(null)
+	Input.set_custom_mouse_cursor(default_mouse_icon)
 
 func _on_sword_resistance_exhausted() -> void:
 	game_running = false
 	game_ended.emit(true)
-	#Input.set_custom_mouse_cursor(null)
+	Input.set_custom_mouse_cursor(default_mouse_icon)

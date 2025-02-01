@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dwfji5pctdh56"
-path="res://.godot/imported/sword.png-c7d285f53828310349211e65942077e6.ctex"
+uid="uid://cvbdxqoeoao3u"
+path="res://.godot/imported/lock_unlocked.png-4a2c2c0d8cc8c908f13fffdb118db5b9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Scenes/SwordGame/sword.png"
-dest_files=["res://.godot/imported/sword.png-c7d285f53828310349211e65942077e6.ctex"]
+source_file="res://Scenes/SwordGame/icons/lock_unlocked.png"
+dest_files=["res://.godot/imported/lock_unlocked.png-4a2c2c0d8cc8c908f13fffdb118db5b9.ctex"]
 
 [params]
 
