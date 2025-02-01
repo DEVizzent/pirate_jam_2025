@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="Candidate" load_steps=12 format=3 uid="uid://cnnl40q2yv2wx"]
 
 [ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="1_h04q1"]
-[ext_resource type="PackedScene" uid="uid://bvqnf42a5t62j" path="res://Test/CandidateEvents/candidate_cube.tscn" id="2_2c2t5"]
+[ext_resource type="PackedScene" uid="uid://b6up3pcdia74" path="res://Character Models/Character Scenes/peasant.tscn" id="2_v4y1x"]
 [ext_resource type="Resource" uid="uid://bk4wark1n15q7" path="res://Resources/Candidate Resources/Candidates Dialogue/RandomPeasant.dialogue" id="3_jvl3u"]
 [ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="4_82l3i"]
 [ext_resource type="Resource" uid="uid://bkpu512p3icxr" path="res://Resources/Event Resources/RandomPeasant/RandomPeasantEvent1.tres" id="5_g3nd5"]
@@ -22,4 +22,4 @@ kingdom_event_collection = Array[ExtResource("4_82l3i")]([ExtResource("5_g3nd5")
 minigame_sword_resistance = 3.0
 minigame_difficulty = 10
 minigame_time = 10
-character_scene = ExtResource("2_2c2t5")
+character_scene = ExtResource("2_v4y1x")

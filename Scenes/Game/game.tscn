@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=3 uid="uid://csk21t2i0qguo"]
+[gd_scene load_steps=43 format=3 uid="uid://csk21t2i0qguo"]
 
 [ext_resource type="Script" path="res://Scenes/Game/game.gd" id="1_q5na8"]
 [ext_resource type="Script" path="res://Resources/candidate.gd" id="2_0awwt"]
@@ -36,6 +36,8 @@
 [ext_resource type="Resource" uid="uid://kn3cuhc6le1l" path="res://Resources/Event Resources/General/RepeatedFamine.tres" id="23_sy7e3"]
 [ext_resource type="PackedScene" uid="uid://bs7ljhmtjag06" path="res://Scenes/UI/Stats/ui_stats.tscn" id="27_73ufp"]
 [ext_resource type="PackedScene" uid="uid://d13scoc7oku5y" path="res://Scenes/RoyalHall/Throne_Scene_Env.tscn" id="28_6y4xv"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="33_wwua2"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_modifier.gd" id="34_oeeyr"]
 [ext_resource type="PackedScene" uid="uid://cx4gwgprxvuuv" path="res://Scenes/UI/end.tscn" id="37_5vejs"]
 
 [sub_resource type="Resource" id="Resource_xlayc"]
@@ -44,12 +46,29 @@ tutorial_candidates = Array[ExtResource("2_0awwt")]([ExtResource("4_dnbb4"), Ext
 early_game_candidates = Array[ExtResource("2_0awwt")]([ExtResource("3_daxlh"), ExtResource("4_fxo54"), ExtResource("5_gpk0w")])
 mid_game_candidates = Array[ExtResource("2_0awwt")]([ExtResource("10_pt47q"), ExtResource("11_8crgg"), ExtResource("12_1ym6e"), ExtResource("13_0eas8"), ExtResource("14_xo6hk")])
 late_game_candidates = Array[ExtResource("2_0awwt")]([ExtResource("6_gtj2l"), ExtResource("7_a1y3t"), ExtResource("8_lyrh0"), ExtResource("9_xrhrc")])
-end_game_candidates = Array[ExtResource("2_0awwt")]([])
+end_game_candidates = Array[ExtResource("2_0awwt")]([ExtResource("9_xrhrc")])
+
+[sub_resource type="Resource" id="Resource_d7ip3"]
+script = ExtResource("34_oeeyr")
+faith = 0
+food = 0
+force = -2
+add_tag = 0
+remove_tag = 0
+
+[sub_resource type="Resource" id="Resource_4fb6a"]
+script = ExtResource("4_lq6fh")
+internal_name = "No king less army"
+kingdom_modifier = SubResource("Resource_d7ip3")
+event_condition_collection = Array[ExtResource("33_wwua2")]([])
+must = false
+probability = 100
 
 [node name="Game" type="Node3D"]
 script = ExtResource("1_q5na8")
 game_candidates = SubResource("Resource_xlayc")
 general_events = Array[ExtResource("4_lq6fh")]([ExtResource("10_01ck1"), ExtResource("11_1d62c"), ExtResource("12_accmf"), ExtResource("13_k4v65"), ExtResource("14_yji7q"), ExtResource("15_vy5vx"), ExtResource("16_md532"), ExtResource("17_03xk5"), ExtResource("18_noyvk"), ExtResource("19_kidb5"), ExtResource("20_5kxyg"), ExtResource("21_un61x"), ExtResource("22_1fhks"), ExtResource("23_sy7e3")])
+no_king_event_collection = Array[ExtResource("4_lq6fh")]([SubResource("Resource_4fb6a")])
 
 [node name="AssetZooScene" parent="." instance=ExtResource("28_6y4xv")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -12, 0, 0)

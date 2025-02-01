@@ -71,18 +71,18 @@ func get_candidate() -> Candidate:
 
 func _on_sword_sword_mouse_over() -> void:
 	mouse_on_sword = true
-	Input.set_custom_mouse_cursor(resistance_icon)
+	#Input.set_custom_mouse_cursor(resistance_icon)
 
 func _on_sword_sword_mouse_exit() -> void:
 	mouse_on_sword = false
-	Input.set_custom_mouse_cursor(free_icon)
+	#Input.set_custom_mouse_cursor(free_icon)
 
 func _on_candidate_energy_exhausted() -> void:
 	game_running = false
 	game_ended.emit(false)
-	Input.set_default_cursor_shape(Input.CURSOR_ARROW)
+	#Input.set_custom_mouse_cursor(null)
 
 func _on_sword_resistance_exhausted() -> void:
 	game_running = false
 	game_ended.emit(true)
-	Input.set_default_cursor_shape(Input.CURSOR_ARROW)
+	#Input.set_custom_mouse_cursor(null)

@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="Candidate" load_steps=11 format=3 uid="uid://sl0f3hb622l1"]
 
 [ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="1_iudmx"]
-[ext_resource type="PackedScene" uid="uid://bvqnf42a5t62j" path="res://Test/CandidateEvents/candidate_cube.tscn" id="2_dih5d"]
 [ext_resource type="Script" path="res://Resources/Events/event_condition_has_tag.gd" id="2_fws8y"]
 [ext_resource type="Script" path="res://Resources/Events/event_condition_has_stat.gd" id="3_fe50l"]
 [ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="4_fn3sk"]
+[ext_resource type="PackedScene" uid="uid://b6up3pcdia74" path="res://Character Models/Character Scenes/peasant.tscn" id="4_xs8hy"]
 [ext_resource type="Resource" uid="uid://d16vkoqa0t5pu" path="res://Resources/Candidate Resources/Candidates Dialogue/AngryPeasant.dialogue" id="5_swhvq"]
 [ext_resource type="Resource" uid="uid://dwk5tr65e77qo" path="res://Resources/Event Resources/AngryPeasant/AngryPeasantEvent1.tres" id="7_lgmup"]
 [ext_resource type="Script" path="res://Resources/candidate.gd" id="11_1tgxp"]
@@ -30,4 +30,4 @@ kingdom_event_collection = Array[ExtResource("4_fn3sk")]([ExtResource("7_lgmup")
 minigame_sword_resistance = 3.0
 minigame_difficulty = 10
 minigame_time = 10
-character_scene = ExtResource("2_dih5d")
+character_scene = ExtResource("4_xs8hy")

@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://c3k6cpph5e8yn"
+path="res://.godot/imported/LessArmy.dialogue-0a365d28b46af3fe73f7ed31fcef6679.tres"
+
+[deps]
+
+source_file="res://Resources/Event Resources/NoKing/LessArmy.dialogue"
+dest_files=["res://.godot/imported/LessArmy.dialogue-0a365d28b46af3fe73f7ed31fcef6679.tres"]
+
+[params]
+
+defaults=true

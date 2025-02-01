@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="1_u0m8c"]
 [ext_resource type="Script" path="res://Resources/Events/event_condition_has_stat.gd" id="2_7p827"]
-[ext_resource type="PackedScene" uid="uid://bvqnf42a5t62j" path="res://Test/CandidateEvents/candidate_cube.tscn" id="2_87r0y"]
+[ext_resource type="PackedScene" path="res://Character Models/Character Scenes/roboarturo.tscn" id="3_ig3k8"]
 [ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="4_snj1f"]
 [ext_resource type="Resource" uid="uid://cmk0ukrhtmmf2" path="res://Resources/Candidate Resources/Candidates Dialogue/RoboArthur.dialogue" id="4_xs3on"]
 [ext_resource type="Resource" uid="uid://c56mjlxiwb5um" path="res://Resources/Event Resources/RoboArthur/RoboArthurEvent1.tres" id="6_snupw"]
@@ -24,4 +24,4 @@ kingdom_event_collection = Array[ExtResource("4_snj1f")]([ExtResource("6_snupw")
 minigame_sword_resistance = 3.0
 minigame_difficulty = 0
 minigame_time = 10
-character_scene = ExtResource("2_87r0y")
+character_scene = ExtResource("3_ig3k8")
