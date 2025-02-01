@@ -14,6 +14,7 @@ clip_1/stream = ExtResource("2_xhaks")
 clip_1/auto_advance = 0
 
 [node name="MusicController" type="AudioStreamPlayer"]
+process_mode = 3
 stream = SubResource("AudioStreamInteractive_qugp5")
 autoplay = true
 bus = &"music"
