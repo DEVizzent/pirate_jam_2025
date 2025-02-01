@@ -6,4 +6,5 @@ As the dead pile, those that remain become ill and wither.
 With your final breaths, you realize that you will always be remembered as the ruler that killed their country.
 That is, if anybody at all remembers you at all.
 Rule Britannia!
+do DialogueEventBus.throw_game_over()
 => END

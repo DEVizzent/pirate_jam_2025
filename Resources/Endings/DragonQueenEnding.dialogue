@@ -6,4 +6,5 @@ You spend your days feeding it, and once it's big enough, you bring it into batt
 It can now feed itself, so you just stride along as it blazes a path for you to finally be the queen you were born to be.
 You and your dragon take the place in history that you deserve.
 Rule Britannia!
+do DialogueEventBus.throw_the_end()
 => END

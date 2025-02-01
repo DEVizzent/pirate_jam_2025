@@ -8,4 +8,5 @@ And then, as the door opens, the soldier realizes their mother is leading the ri
 So you are alone again.
 The looters are good and you get to keep your life, but they remove all your dignity and power.
 Rule Britannia!
+do DialogueEventBus.throw_game_over()
 => END

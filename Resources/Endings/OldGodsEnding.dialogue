@@ -7,4 +7,5 @@ Mostly, you remember the sounds, because they are the easiest things for your br
 The screaming, mostly yours, hunts your last seconds of live.
 So when the creatures are satisfied and return to sleep, no one is there to see them leave.
 Rule this barren lifeless rock floating through space!
+do DialogueEventBus.throw_the_end()
 => END

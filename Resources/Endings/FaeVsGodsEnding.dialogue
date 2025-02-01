@@ -10,4 +10,5 @@ When dust settles, your country is ruined, your land is desecrated...
 But you are alive.
 And the land now has a new debt that will need to be repaid sometime.
 Rule Britannia!
+do DialogueEventBus.throw_the_end()
 => END

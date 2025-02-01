@@ -6,4 +6,5 @@ Stone by stone, priest by priest, you bring the whole thing over.
 Of course, God is happy, and you know this because you are happy.
 So finally Britain is doing it's God-given task of leading the world in the Faith.
 Rule Britannia!
+do DialogueEventBus.throw_the_end()
 => END

@@ -8,4 +8,5 @@ And then, they smile at you.
 Your sanity broken, you wave them when they return to sleep.
 Everyone is dead, and in aeons to come, you will wake with your new found friends.
 Rule the void!
+do DialogueEventBus.throw_the_end()
 => END

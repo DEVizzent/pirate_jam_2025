@@ -6,4 +6,5 @@ And then, as the flags start showing up, your men cower.
 The flags start coming, and they don't stop coming.
 Before you know it, the French walk into the throne room, and you are deposed.
 Vive le Bretagne!
+do DialogueEventBus.throw_the_end()
 => END

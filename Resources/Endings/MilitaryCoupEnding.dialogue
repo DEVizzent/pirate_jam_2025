@@ -6,4 +6,5 @@ They never liked you, and they are here to finally take over.
 You don't know how to resist, and they take advantage of that.
 You have, at least, the strength to not beg for your life.
 Rule Britannia!
+do DialogueEventBus.throw_the_end()
 => END
