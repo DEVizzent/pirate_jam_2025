@@ -1,8 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://bko0ifwwfqndb"]
+[gd_scene load_steps=8 format=3 uid="uid://bko0ifwwfqndb"]
 
 [ext_resource type="Script" path="res://Scenes/Menu/menu.gd" id="1_8jp8g"]
 [ext_resource type="FontFile" uid="uid://c61twbtenv6e5" path="res://Scenes/Menu/Ancient Medium.ttf" id="2_psbph"]
+[ext_resource type="Texture2D" uid="uid://byy1750lk641i" path="res://Scenes/Menu/banner_classic_curtain.png" id="3_u28qy"]
+[ext_resource type="Theme" uid="uid://3ob4gbcbcoia" path="res://Scenes/Menu/ui_theme.tres" id="4_up85j"]
 [ext_resource type="Script" path="res://Scenes/Menu/volumeSlider.gd" id="5_2dd7u"]
+[ext_resource type="Texture2D" uid="uid://bg1yogf3pjxeg" path="res://Scenes/Menu/checkbox_grey_cross.png" id="5_42776"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_70kmx"]
 font = ExtResource("2_psbph")
@@ -17,6 +20,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("4_up85j")
 script = ExtResource("1_8jp8g")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
@@ -34,7 +38,11 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 40
 
-[node name="Title" type="Label" parent="VBoxContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_bottom = 30
+
+[node name="Title" type="Label" parent="VBoxContainer/MarginContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 48
 text = "Rule, Britannia!"
@@ -42,22 +50,42 @@ label_settings = SubResource("LabelSettings_70kmx")
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/MarginContainer/Title"]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -311.5
+offset_top = -66.0
+offset_right = 200.5
+offset_bottom = 62.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("3_u28qy")
+
 [node name="PlayButton" type="Button" parent="VBoxContainer"]
 custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
 size_flags_horizontal = 4
+theme = ExtResource("4_up85j")
 text = "Play"
 
 [node name="Options" type="Button" parent="VBoxContainer"]
 custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
 size_flags_horizontal = 4
+theme = ExtResource("4_up85j")
 text = "Options"
 
 [node name="Credits" type="Button" parent="VBoxContainer"]
 custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
 size_flags_horizontal = 4
+theme = ExtResource("4_up85j")
 text = "Credits"
 
 [node name="CreditsPanel" type="Panel" parent="."]
@@ -68,31 +96,54 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -536.0
-offset_top = -288.0
-offset_right = 536.0
-offset_bottom = 288.0
+offset_left = -300.0
+offset_top = -150.0
+offset_right = 300.0
+offset_bottom = 150.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Title" type="Label" parent="CreditsPanel"]
-visible = false
-layout_mode = 0
-offset_left = 408.0
-offset_top = 224.0
-offset_right = 648.0
-offset_bottom = 272.0
+[node name="MarginContainer" type="MarginContainer" parent="CreditsPanel"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_right = -16.0
+offset_bottom = 24.0
+grow_horizontal = 0
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 0
+
+[node name="CloseButton" type="TextureButton" parent="CreditsPanel/MarginContainer"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+texture_normal = ExtResource("5_42776")
+texture_hover = ExtResource("5_42776")
+texture_focused = ExtResource("5_42776")
+
+[node name="CenterContainer" type="CenterContainer" parent="CreditsPanel"]
+layout_mode = 2
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 580.0
+offset_bottom = 280.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CreditsPanel/CenterContainer"]
+layout_mode = 2
+theme_override_constants/separation = 40
+
+[node name="Title" type="Label" parent="CreditsPanel/CenterContainer/VBoxContainer"]
+layout_mode = 2
 theme_override_font_sizes/font_size = 28
-text = "A Game"
+text = "Credits"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Credits Line 1" type="Label" parent="CreditsPanel"]
-layout_mode = 0
-offset_left = 340.0
-offset_top = 281.0
-offset_right = 727.0
-offset_bottom = 408.0
+[node name="Credits Line 1" type="Label" parent="CreditsPanel/CenterContainer/VBoxContainer"]
+layout_mode = 2
 theme_override_font_sizes/font_size = 16
 text = "Main Programmer: DEVizzent
 Character Artist: NSuprem
@@ -103,14 +154,6 @@ Sound Artist: VictorSeven
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="CloseButton" type="Button" parent="CreditsPanel"]
-layout_mode = 0
-offset_left = 1024.0
-offset_top = 16.0
-offset_right = 1056.0
-offset_bottom = 48.0
-text = "X"
-
 [node name="OptionsPanel" type="Panel" parent="."]
 visible = false
 layout_mode = 1
@@ -119,83 +162,90 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -536.0
-offset_top = -288.0
-offset_right = 536.0
-offset_bottom = 288.0
+offset_left = -300.0
+offset_top = -150.0
+offset_right = 300.0
+offset_bottom = 150.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Title" type="Label" parent="OptionsPanel"]
-layout_mode = 0
-offset_left = 408.0
-offset_top = 56.0
-offset_right = 648.0
-offset_bottom = 104.0
+[node name="MarginContainer" type="MarginContainer" parent="OptionsPanel"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_right = -16.0
+offset_bottom = 39.0
+grow_horizontal = 0
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 0
+
+[node name="CloseButton" type="TextureButton" parent="OptionsPanel/MarginContainer"]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+texture_normal = ExtResource("5_42776")
+texture_hover = ExtResource("5_42776")
+texture_focused = ExtResource("5_42776")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="OptionsPanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -50.5
+offset_top = -49.0
+offset_right = 50.5
+offset_bottom = 49.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 40
+alignment = 1
+
+[node name="Title" type="Label" parent="OptionsPanel/VBoxContainer"]
+layout_mode = 2
 theme_override_font_sizes/font_size = 28
 text = "Options
 "
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="CloseButton" type="Button" parent="OptionsPanel"]
-layout_mode = 0
-offset_left = 1024.0
-offset_top = 16.0
-offset_right = 1056.0
-offset_bottom = 48.0
-text = "X"
+[node name="GridContainer" type="GridContainer" parent="OptionsPanel/VBoxContainer"]
+layout_mode = 2
+columns = 2
 
-[node name="MasterVolume" type="Label" parent="OptionsPanel"]
-layout_mode = 0
-offset_left = 400.0
-offset_top = 144.0
-offset_right = 518.0
-offset_bottom = 167.0
+[node name="MasterVolume" type="Label" parent="OptionsPanel/VBoxContainer/GridContainer"]
+layout_mode = 2
 text = "Master Volume"
 
-[node name="AudioBusSlider" type="HSlider" parent="OptionsPanel/MasterVolume"]
-layout_mode = 0
-offset_left = 144.0
-offset_right = 244.0
-offset_bottom = 16.0
+[node name="AudioBusSlider" type="HSlider" parent="OptionsPanel/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
 max_value = 1.0
 step = 0.001
 script = ExtResource("5_2dd7u")
 bus_name = "Master"
 
-[node name="MusicVolume" type="Label" parent="OptionsPanel"]
-layout_mode = 0
-offset_left = 400.0
-offset_top = 176.0
-offset_right = 518.0
-offset_bottom = 199.0
+[node name="MusicVolume" type="Label" parent="OptionsPanel/VBoxContainer/GridContainer"]
+layout_mode = 2
 text = "Music Volume
 "
 
-[node name="AudioBusSlider" type="HSlider" parent="OptionsPanel/MusicVolume"]
-layout_mode = 0
-offset_left = 144.0
-offset_right = 244.0
-offset_bottom = 16.0
+[node name="AudioBusSlider2" type="HSlider" parent="OptionsPanel/VBoxContainer/GridContainer"]
+layout_mode = 2
 max_value = 1.0
 step = 0.001
 script = ExtResource("5_2dd7u")
 bus_name = "music"
 
-[node name="SFXVolume" type="Label" parent="OptionsPanel"]
-layout_mode = 0
-offset_left = 400.0
-offset_top = 208.0
-offset_right = 518.0
-offset_bottom = 231.0
+[node name="SFXVolume" type="Label" parent="OptionsPanel/VBoxContainer/GridContainer"]
+layout_mode = 2
 text = "SFX Volume"
 
-[node name="AudioBusSlider" type="HSlider" parent="OptionsPanel/SFXVolume"]
-layout_mode = 0
-offset_left = 144.0
-offset_right = 244.0
-offset_bottom = 16.0
+[node name="AudioBusSlider3" type="HSlider" parent="OptionsPanel/VBoxContainer/GridContainer"]
+layout_mode = 2
 max_value = 1.0
 step = 0.001
 script = ExtResource("5_2dd7u")

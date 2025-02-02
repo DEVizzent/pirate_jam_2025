@@ -10,8 +10,8 @@ func _ready() -> void:
 	$VBoxContainer/PlayButton.pressed.connect(_on_play_button_pressed)
 	$VBoxContainer/Options.pressed.connect(_on_options_pressed)
 	$VBoxContainer/Credits.pressed.connect(_on_credits_pressed)
-	$CreditsPanel/CloseButton.pressed.connect(_on_close_button_pressed)
-	$OptionsPanel/CloseButton.pressed.connect(_on_close_button_pressed)
+	$CreditsPanel/MarginContainer/CloseButton.pressed.connect(_on_close_button_pressed)
+	$OptionsPanel/MarginContainer/CloseButton.pressed.connect(_on_close_button_pressed)
 
 func _on_play_button_pressed() -> void:
 	SfxAudioPlayer.play("MouseClick")
