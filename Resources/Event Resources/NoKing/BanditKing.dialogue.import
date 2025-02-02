@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://ctixtb1i8g3op"
+path="res://.godot/imported/BanditKing.dialogue-103ca036495c0964125345e8a2c41971.tres"
+
+[deps]
+
+source_file="res://Resources/Event Resources/NoKing/BanditKing.dialogue"
+dest_files=["res://.godot/imported/BanditKing.dialogue-103ca036495c0964125345e8a2c41971.tres"]
+
+[params]
+
+defaults=true

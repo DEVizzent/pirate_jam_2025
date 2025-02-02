@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://bfyuww3plh1ub"
+path="res://.godot/imported/MiracleSpring.dialogue-ba0a86ad2003a11d0b5bd6486be83992.tres"
+
+[deps]
+
+source_file="res://Resources/Event Resources/NoKing/MiracleSpring.dialogue"
+dest_files=["res://.godot/imported/MiracleSpring.dialogue-ba0a86ad2003a11d0b5bd6486be83992.tres"]
+
+[params]
+
+defaults=true

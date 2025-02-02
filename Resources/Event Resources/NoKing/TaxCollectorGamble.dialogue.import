@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://bvk7glshn5pyg"
+path="res://.godot/imported/TaxCollectorGamble.dialogue-426d289d27ee3853bdee6cd714faa254.tres"
+
+[deps]
+
+source_file="res://Resources/Event Resources/NoKing/TaxCollectorGamble.dialogue"
+dest_files=["res://.godot/imported/TaxCollectorGamble.dialogue-426d289d27ee3853bdee6cd714faa254.tres"]
+
+[params]
+
+defaults=true

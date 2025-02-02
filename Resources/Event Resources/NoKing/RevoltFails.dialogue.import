@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://bfrw87hlikvvu"
+path="res://.godot/imported/RevoltFails.dialogue-75928b88e978c6048cff9dca3d65dbf2.tres"
+
+[deps]
+
+source_file="res://Resources/Event Resources/NoKing/RevoltFails.dialogue"
+dest_files=["res://.godot/imported/RevoltFails.dialogue-75928b88e978c6048cff9dca3d65dbf2.tres"]
+
+[params]
+
+defaults=true

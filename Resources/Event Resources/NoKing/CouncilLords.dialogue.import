@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://jkmfw1chsnn4"
+path="res://.godot/imported/CouncilLords.dialogue-7f6bd5771394c5ccdc688f71560d88af.tres"
+
+[deps]
+
+source_file="res://Resources/Event Resources/NoKing/CouncilLords.dialogue"
+dest_files=["res://.godot/imported/CouncilLords.dialogue-7f6bd5771394c5ccdc688f71560d88af.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://bburkcryon0ih"
+path="res://.godot/imported/HarvestFestival.dialogue-7d522070a7d2aa6302cc028d67a44500.tres"
+
+[deps]
+
+source_file="res://Resources/Event Resources/NoKing/HarvestFestival.dialogue"
+dest_files=["res://.godot/imported/HarvestFestival.dialogue-7d522070a7d2aa6302cc028d67a44500.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="KingdomEvent" load_steps=6 format=3 uid="uid://dnvykmnybtit0"]
+
+[ext_resource type="Resource" uid="uid://bfyuww3plh1ub" path="res://Resources/Event Resources/NoKing/MiracleSpring.dialogue" id="1_3lsa1"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="2_fxm1j"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_modifier.gd" id="3_r3650"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="4_bdeq4"]
+
+[sub_resource type="Resource" id="Resource_0sla2"]
+script = ExtResource("3_r3650")
+faith = 2
+food = 0
+force = -1
+add_tag = 0
+remove_tag = 0
+
+[resource]
+script = ExtResource("4_bdeq4")
+internal_name = "Miracle Spring"
+kingdom_modifier = SubResource("Resource_0sla2")
+event_condition_collection = Array[ExtResource("2_fxm1j")]([])
+must = false
+probability = 30
+dialog = ExtResource("1_3lsa1")

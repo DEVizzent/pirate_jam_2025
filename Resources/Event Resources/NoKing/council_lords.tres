@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="KingdomEvent" load_steps=6 format=3 uid="uid://bdmg2l0cr483l"]
+
+[ext_resource type="Resource" uid="uid://jkmfw1chsnn4" path="res://Resources/Event Resources/NoKing/CouncilLords.dialogue" id="1_k4qlb"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="2_k6rmk"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_modifier.gd" id="3_j4byv"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="4_jhs3m"]
+
+[sub_resource type="Resource" id="Resource_0sla2"]
+script = ExtResource("3_j4byv")
+faith = 1
+food = 0
+force = -2
+add_tag = 0
+remove_tag = 0
+
+[resource]
+script = ExtResource("4_jhs3m")
+internal_name = "Council Lords"
+kingdom_modifier = SubResource("Resource_0sla2")
+event_condition_collection = Array[ExtResource("2_k6rmk")]([])
+must = false
+probability = 70
+dialog = ExtResource("1_k4qlb")

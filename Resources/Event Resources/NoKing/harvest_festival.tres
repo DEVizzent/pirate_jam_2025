@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="KingdomEvent" load_steps=6 format=3 uid="uid://bqq0f2nb2tw3j"]
+
+[ext_resource type="Resource" uid="uid://bburkcryon0ih" path="res://Resources/Event Resources/NoKing/HarvestFestival.dialogue" id="1_s54qt"]
+[ext_resource type="Script" path="res://Resources/Events/event_condition.gd" id="2_4v3yf"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_modifier.gd" id="3_eafpx"]
+[ext_resource type="Script" path="res://Resources/Events/kingdom_event.gd" id="4_dul0p"]
+
+[sub_resource type="Resource" id="Resource_0sla2"]
+script = ExtResource("3_eafpx")
+faith = 0
+food = 2
+force = -1
+add_tag = 0
+remove_tag = 0
+
+[resource]
+script = ExtResource("4_dul0p")
+internal_name = "Harvest Festival"
+kingdom_modifier = SubResource("Resource_0sla2")
+event_condition_collection = Array[ExtResource("2_4v3yf")]([])
+must = false
+probability = 70
+dialog = ExtResource("1_s54qt")
