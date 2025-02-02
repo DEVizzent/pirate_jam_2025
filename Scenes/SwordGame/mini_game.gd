@@ -22,8 +22,6 @@ var max_sword_resistance : float = 2.0
 var sword_resistance : float :
 	set(value):
 		sword_resistance = value
-		if not game_running:
-			return
 		update_resistance_progress_bar.emit(sword_resistance/max_sword_resistance)
 		if sword_resistance <= 0.0:
 			sword_resistance_exhausted.emit()
