@@ -117,12 +117,12 @@ grow_vertical = 0
 script = ExtResource("1_7yadl")
 
 [node name="ColorRect" type="ColorRect" parent="End"]
-custom_minimum_size = Vector2(2000, 2000)
+custom_minimum_size = Vector2(3000, 2000)
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
-offset_left = -1000.0
-offset_right = 1000.0
+offset_left = -1500.0
+offset_right = 1500.0
 offset_bottom = 2000.0
 grow_horizontal = 2
 color = Color(0, 0, 0, 1)
