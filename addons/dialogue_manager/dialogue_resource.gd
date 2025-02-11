@@ -38,6 +38,10 @@ func get_next_dialogue_line(title: String, extra_game_states: Array = [], mutati
 func get_titles() -> PackedStringArray:
 	return titles.keys()
 
+func has_title(title : String) -> bool:
+	var content = titles.get(title)
+	return content != null
+
 
 func _to_string() -> String:
 	return "<DialogueResource titles=\"%s\">" % [",".join(titles.keys())]

@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://cw3vdwofmfwxu"
+path="res://.godot/imported/how_to_play.dialogue-1ad10143c95a85d1d87fb92d103a6221.tres"
+
+[deps]
+
+source_file="res://Resources/how_to_play.dialogue"
+dest_files=["res://.godot/imported/how_to_play.dialogue-1ad10143c95a85d1d87fb92d103a6221.tres"]
+
+[params]
+
+defaults=true

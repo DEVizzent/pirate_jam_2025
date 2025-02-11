@@ -15,6 +15,7 @@ const CAMERA_THRONE_VIEW_ROTATION : Vector3 = Vector3(-0.349066, 1.0472, 0)
 @export var game_candidates : GameCandidates 
 @export var general_events : Array[KingdomEvent]
 @export var no_king_event_collection : Array[KingdomEvent]
+@export var how_to_play_dialogue : DialogueResource
 var run_turn : Turn
 var turn_candidates : Array[Candidate]
 var candidate_instances : Array[Character]
@@ -35,6 +36,11 @@ func start_run() -> void:
 	MusicController.switch_to_level_song()
 	run_turn = Turn.TUTORIAL
 	$UI_Stats.show()
+	game_introduction()
+
+func game_introduction() -> void:
+	DialogueManager.show_dialogue_balloon(how_to_play_dialogue, 'introduction')
+	await DialogueManager.dialogue_ended
 	if spot_light_3d:
 		spot_light_3d.queue_free()
 	prepare_turn_candidates()
@@ -93,7 +99,7 @@ func _mini_game_block() -> void:
 
 func start_minigame(candidate : Candidate) -> void:
 	await _move_camera(mini_game.get_camera_position(), mini_game.get_camera_rotation())
-	mini_game.start(candidate)
+	mini_game.start(candidate, how_to_play_dialogue)
 	await mini_game.game_ended
 
 func coronation(candidate: Candidate) -> void:
