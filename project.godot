@@ -28,6 +28,10 @@ MusicController="*res://Autoloads/MusicController/music_controller.tscn"
 KingdomStats="*res://Autoloads/KindomStats/kingdom_stats.gd"
 DialogueEventBus="*res://Autoloads/DialogueEventBus/dialogue_event_bus.gd"
 
+[dialogue_manager]
+
+general/balloon_path="res://Scenes/UI/dialogue_ballon/balloon.tscn"
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
