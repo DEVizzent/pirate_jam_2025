@@ -58,7 +58,12 @@ func get_camera_rotation() -> Vector3:
 
 func start(game_candidate : Candidate, how_to_play_dialogue : DialogueResource) -> void:
 	if game_candidate.name == 'Arthur' or game_candidate.name == 'Morgana':
-		DialogueManager.show_dialogue_balloon(how_to_play_dialogue, 'ready')
+		$Tutorial/AnimationPlayer.play("handlegrip")
+		DialogueManager.show_dialogue_balloon(how_to_play_dialogue, 'keepSword')
+		await DialogueManager.dialogue_ended
+		$Tutorial/AnimationPlayer.play("free")
+		DialogueManager.show_dialogue_balloon(how_to_play_dialogue, 'freeSword')
+		await DialogueManager.dialogue_ended
 		in_counter = 0
 		out_counter = 0
 		sword.sword_mouse_over.connect(_dialogue_sword_in.bind(game_candidate.name, how_to_play_dialogue))

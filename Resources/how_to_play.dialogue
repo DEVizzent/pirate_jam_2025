@@ -12,3 +12,9 @@ Take your choice resist or free the sword
 ~ Morgana_out_1
 FAST KEEP THE MOUSE ON THE HANDLEGRIP!!!
 => END!
+~ keepSword
+While you keep holding the sword handlegrip nobody will be able to free me
+=> END!
+~ freeSword
+But if you feel he/she must be the next king free the handlegrip
+=> END!
