@@ -40,6 +40,7 @@ func _ready() -> void:
 	sword.sword_mouse_over.connect(_on_sword_sword_mouse_over)
 	sword.sword_mouse_exit.connect(_on_sword_sword_mouse_exit)
 	Input.set_custom_mouse_cursor(default_mouse_icon)
+	resistance_icon
 
 func _process(delta: float) -> void:
 	if not game_running:
@@ -57,17 +58,13 @@ func get_camera_rotation() -> Vector3:
 	return Vector3(-1.14319, .0, .0)
 
 func start(game_candidate : Candidate, how_to_play_dialogue : DialogueResource) -> void:
-	if game_candidate.name == 'Arthur' or game_candidate.name == 'Morgana':
-		$Tutorial/AnimationPlayer.play("handlegrip")
-		DialogueManager.show_dialogue_balloon(how_to_play_dialogue, 'keepSword')
-		await DialogueManager.dialogue_ended
-		$Tutorial/AnimationPlayer.play("free")
-		DialogueManager.show_dialogue_balloon(how_to_play_dialogue, 'freeSword')
-		await DialogueManager.dialogue_ended
-		in_counter = 0
-		out_counter = 0
-		sword.sword_mouse_over.connect(_dialogue_sword_in.bind(game_candidate.name, how_to_play_dialogue))
-		sword.sword_mouse_exit.connect(_dialogue_sword_out.bind(game_candidate.name, how_to_play_dialogue))
+	if game_candidate.name == 'Morgana':
+		await tutorial(how_to_play_dialogue)
+	#if game_candidate.name == 'Arthur' or game_candidate.name == 'Morgana':
+		#in_counter = 0
+		#out_counter = 0
+		#sword.sword_mouse_over.connect(_dialogue_sword_in.bind(game_candidate.name, how_to_play_dialogue))
+		#sword.sword_mouse_exit.connect(_dialogue_sword_out.bind(game_candidate.name, how_to_play_dialogue))
 	candidate = game_candidate
 	#MusicController.switch_to_level_song()
 	max_sword_resistance = candidate.minigame_sword_resistance
@@ -78,6 +75,15 @@ func start(game_candidate : Candidate, how_to_play_dialogue : DialogueResource) 
 	await $UI.start_count()
 	game_running = true
 	game_started.emit()
+
+func tutorial(how_to_play_dialogue: DialogueResource) -> void:
+	$Tutorial/AnimationPlayer.play("handlegrip")
+	DialogueManager.show_dialogue_balloon(how_to_play_dialogue, 'keepSword')
+	await DialogueManager.dialogue_ended
+	$Tutorial/AnimationPlayer.play("free")
+	DialogueManager.show_dialogue_balloon(how_to_play_dialogue, 'freeSword')
+	await DialogueManager.dialogue_ended
+	$Tutorial/AnimationPlayer.play("RESET")
 
 func get_candidate() -> Candidate:
 	return candidate
