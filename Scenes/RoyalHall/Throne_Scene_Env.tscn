@@ -47,7 +47,8 @@ sun_angle_max = 0.0
 sky_material = SubResource("ProceduralSkyMaterial_qk4xj")
 
 [sub_resource type="Environment" id="Environment_d2aic"]
-background_mode = 2
+background_mode = 1
+background_color = Color(0.384872, 0.349494, 0.254568, 1)
 background_energy_multiplier = 0.18
 sky = SubResource("Sky_q74xm")
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=3 uid="uid://csk21t2i0qguo"]
+[gd_scene load_steps=50 format=3 uid="uid://csk21t2i0qguo"]
 
 [ext_resource type="Script" path="res://Scenes/Game/game.gd" id="1_q5na8"]
 [ext_resource type="Script" path="res://Resources/candidate.gd" id="2_0awwt"]
@@ -44,6 +44,10 @@
 [ext_resource type="Resource" uid="uid://ce0ach14twt7r" path="res://Resources/Event Resources/NoKing/revolt_fails.tres" id="37_8e72x"]
 [ext_resource type="Resource" uid="uid://pmqbmq7kobvp" path="res://Resources/Event Resources/NoKing/tax_collectors_gamble.tres" id="38_eh5xy"]
 [ext_resource type="Resource" uid="uid://cw3vdwofmfwxu" path="res://Resources/how_to_play.dialogue" id="39_xl16f"]
+[ext_resource type="Material" uid="uid://cq2gglskg7k5y" path="res://Environment/PropMats/M_ExtraPropis_V2.tres" id="41_pmghn"]
+[ext_resource type="ArrayMesh" uid="uid://cemipswuyqynm" path="res://Environment/Props/SM_Carpet.obj" id="41_sa01w"]
+[ext_resource type="ArrayMesh" uid="uid://cr17yeryhg3x6" path="res://Environment/Props/SM_Jar.obj" id="42_nn0iu"]
+[ext_resource type="ArrayMesh" uid="uid://duvw3x423fnod" path="res://Environment/Props/SM_Pagan_Shield.obj" id="43_m22um"]
 
 [sub_resource type="Resource" id="Resource_xlayc"]
 script = ExtResource("3_wtr34")
@@ -62,6 +66,59 @@ how_to_play_dialogue = ExtResource("39_xl16f")
 
 [node name="AssetZooScene" parent="." instance=ExtResource("28_6y4xv")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -12, 0, 0)
+
+[node name="OmniLight3D" parent="AssetZooScene" index="63"]
+light_size = 0.828
+
+[node name="OmniLight3D5" type="OmniLight3D" parent="AssetZooScene"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 8.04342, 1.4026, -2.47684)
+light_color = Color(0.821126, 0.608511, 0.411029, 1)
+light_energy = 0.492
+light_size = 0.242
+shadow_blur = 3.828
+omni_range = 12.0
+
+[node name="OmniLight3D6" type="OmniLight3D" parent="AssetZooScene"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 7.95024, 1.4026, 6.88621)
+light_color = Color(0.821126, 0.608511, 0.411029, 1)
+light_energy = 0.492
+light_size = 0.242
+shadow_blur = 3.828
+omni_range = 12.0
+
+[node name="SmBanner3" parent="AssetZooScene" index="92"]
+material_override = ExtResource("41_pmghn")
+
+[node name="SmBanner10" parent="AssetZooScene" index="99"]
+material_override = ExtResource("41_pmghn")
+
+[node name="SmShield" parent="AssetZooScene" index="107"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0.202813, 1.12097, -0.334828)
+
+[node name="SmCarpet" type="MeshInstance3D" parent="AssetZooScene"]
+transform = Transform3D(0.805723, 0, 0, 0, 0.5, 0, 0, 0, 0.78807, 3.05164, -0.0759698, 2.06875)
+material_override = ExtResource("41_pmghn")
+mesh = ExtResource("41_sa01w")
+
+[node name="SmJar" type="MeshInstance3D" parent="AssetZooScene"]
+transform = Transform3D(-0.243602, 0, 0.436644, 0, 0.5, 0, -0.436644, 0, -0.243602, 2.3647, 0.572936, -2.33738)
+material_override = ExtResource("41_pmghn")
+mesh = ExtResource("42_nn0iu")
+
+[node name="SmJar2" type="MeshInstance3D" parent="AssetZooScene"]
+transform = Transform3D(-0.243602, 0, 0.436644, 0, 0.5, 0, -0.436644, 0, -0.243602, 2.5086, 0.572936, -2.21889)
+material_override = ExtResource("41_pmghn")
+mesh = ExtResource("42_nn0iu")
+
+[node name="SmPaganShield2" type="MeshInstance3D" parent="AssetZooScene"]
+transform = Transform3D(0.205193, 0, 0.87567, 0, 0.89939, 0, -0.87567, 0, 0.205193, 5.03749, 1.16367, -3.72702)
+material_override = ExtResource("41_pmghn")
+mesh = ExtResource("43_m22um")
+
+[node name="SmPaganShield3" type="MeshInstance3D" parent="AssetZooScene"]
+transform = Transform3D(-3.93136e-08, 0, 0.89939, 0, 0.89939, 0, -0.89939, 0, -3.93136e-08, 1.69212, 1.89701, -3.1545)
+mesh = ExtResource("43_m22um")
+surface_material_override/0 = ExtResource("41_pmghn")
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(0.793353, 0, -0.608761, 0, 1, 0, 0.608761, 0, 0.793353, -5, 2.5, 12)
