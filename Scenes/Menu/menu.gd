@@ -15,7 +15,12 @@ func _ready() -> void:
 
 func _on_play_button_pressed() -> void:
 	SfxAudioPlayer.play("MouseClick")
+	MusicController.switch_to_level_song()
+	var tween : Tween = create_tween()
+	tween.tween_property(self, 'position', Vector2(0., -650.), 1.5)
+	await tween.finished
 	visible = false
+	position = Vector2.ZERO
 	#DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
 	play_game_pressed.emit()
 

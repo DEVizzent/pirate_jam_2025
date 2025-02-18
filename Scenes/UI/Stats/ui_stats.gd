@@ -16,6 +16,7 @@ func _ready() -> void:
 	EventBus.food_changed.connect(update_food)
 	EventBus.force_changed.connect(update_force)
 	EventBus.pagan_state.connect(change_to_pagan)
+	EventBus.run_started.connect(show_animated)
 
 func update_faith(_from: int, to : int) -> void:
 	tween_update(faith_icon, to)
@@ -30,4 +31,9 @@ func tween_update(icon : TextureRect, to: int) -> void:
 	var tween : Tween = get_tree().create_tween()
 	tween.set_ease(Tween.EASE_OUT)
 	tween.tween_property(icon, "material:shader_parameter/stat_value", float(to), UPDATE_ICON_TIME)
-	
+
+func show_animated() -> void:
+	position.y -= 100
+	visible = true
+	var tween : Tween = create_tween()
+	tween.tween_property(self, 'position', position + Vector2(0., 100), 1.)

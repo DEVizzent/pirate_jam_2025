@@ -40,7 +40,6 @@ func _ready() -> void:
 	sword.sword_mouse_over.connect(_on_sword_sword_mouse_over)
 	sword.sword_mouse_exit.connect(_on_sword_sword_mouse_exit)
 	Input.set_custom_mouse_cursor(default_mouse_icon)
-	resistance_icon
 
 func _process(delta: float) -> void:
 	if not game_running:

@@ -33,9 +33,7 @@ func _ready() -> void:
 
 func start_run() -> void:
 	EventBus.emit_run_started()
-	MusicController.switch_to_level_song()
 	run_turn = Turn.TUTORIAL
-	$UI_Stats.show()
 	game_introduction()
 
 func game_introduction() -> void:
@@ -85,7 +83,8 @@ func _mini_game_block() -> void:
 	for candidate in candidate_instances:
 		key = candidate_instances.find(candidate)
 		previous_position = candidate.position
-		_move_character_to_position(candidate, CharacterPositions.mini_game_position + Vector3.BACK, randf_range(2., 3.))
+		_move_character_to_sword(candidate)
+		#_move_character_to_position(candidate, CharacterPositions.mini_game_position + Vector3.BACK, randf_range(2., 3.))
 		await get_tree().create_timer(1.0).timeout
 		await start_minigame(turn_candidates[key])
 		await _move_camera(mini_game.position + Vector3(0, 1.5, -1), CAMERA_MAIN_VIEW_ROTATION)
@@ -106,7 +105,8 @@ func coronation(candidate: Candidate) -> void:
 	var key : int = turn_candidates.find(candidate)
 	if not candidate_instances[key]:
 		push_error('Candidate character not found')
-	_move_character_to_position_rotation(candidate_instances[key], CharacterPositions.throne_position, CharacterPositions.throne_rotation, 4.0, candidate_instances[key].pensive_throne)
+	_move_character_to_throne(candidate_instances[key])
+	#_move_character_to_position_rotation(candidate_instances[key], CharacterPositions.throne_position, CharacterPositions.throne_rotation, 4.0, candidate_instances[key].pensive_throne)
 	await get_tree().create_timer(1.0).timeout
 	_move_camera(CAMERA_THRONE_VIEW_POSITION, CAMERA_THRONE_VIEW_ROTATION)
 	await execute_candidate_events(candidate.kingdom_event_collection)
@@ -191,6 +191,36 @@ func _move_camera(camera_position: Vector3, camera_rotation: Vector3) -> void:
 	tween.tween_property(camera, "rotation", camera_rotation, 2.0)
 	await tween.finished
 	return
+
+func _move_character_to_sword(character : Node3D) -> void:
+	var path_follow : PathFollow3D = $SwordPath/PathFollow3D
+	var tween : Tween = get_tree().create_tween()
+	tween.tween_callback(character.look_at.bind($SwordPath/PathFollow3D.global_position, Vector3.UP, true))
+	tween.tween_callback(character.walk)
+	tween.tween_property(character, "position", path_follow.position, .5)
+	await tween.finished
+	character.reparent(path_follow, true)
+	tween = get_tree().create_tween()
+	tween.tween_property(path_follow, 'progress_ratio', .9, 2.5)
+	tween.tween_property(path_follow, 'progress_ratio', 1., 1.)
+	await tween.finished
+	character.look_at(camera.position - 1.5*Vector3.UP, Vector3.UP, true)
+	character.iddle()
+	character.reparent(self, true)
+	path_follow.progress_ratio = 0
+
+func _move_character_to_throne(character : Node3D) -> void:
+	var path_follow : PathFollow3D = $ThronePath/PathFollow3D
+	character.reparent(path_follow, true)
+	var tween : Tween = get_tree().create_tween()
+	tween.tween_property(path_follow, 'progress_ratio', 1., 3.)
+	tween.tween_callback(character.reparent.bind(self, true))
+	tween.tween_property(character, 'rotation', CharacterPositions.throne_rotation, .2)
+	await tween.finished
+	character.position.y -= .4
+	character.pensive_throne()
+	path_follow.progress_ratio = 0
+	
 
 func _move_character_to_position(character : Node3D, character_position: Vector3, duration: float, final_callback: Callable = do_nothing) -> void:
 	var tween : Tween = get_tree().create_tween()

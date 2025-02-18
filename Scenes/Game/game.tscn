@@ -1,4 +1,4 @@
-[gd_scene load_steps=50 format=3 uid="uid://csk21t2i0qguo"]
+[gd_scene load_steps=49 format=3 uid="uid://csk21t2i0qguo"]
 
 [ext_resource type="Script" path="res://Scenes/Game/game.gd" id="1_q5na8"]
 [ext_resource type="Script" path="res://Resources/candidate.gd" id="2_0awwt"]
@@ -45,9 +45,6 @@
 [ext_resource type="Resource" uid="uid://pmqbmq7kobvp" path="res://Resources/Event Resources/NoKing/tax_collectors_gamble.tres" id="38_eh5xy"]
 [ext_resource type="Resource" uid="uid://cw3vdwofmfwxu" path="res://Resources/how_to_play.dialogue" id="39_xl16f"]
 [ext_resource type="Material" uid="uid://cq2gglskg7k5y" path="res://Environment/PropMats/M_ExtraPropis_V2.tres" id="41_pmghn"]
-[ext_resource type="ArrayMesh" uid="uid://cemipswuyqynm" path="res://Environment/Props/SM_Carpet.obj" id="41_sa01w"]
-[ext_resource type="ArrayMesh" uid="uid://cr17yeryhg3x6" path="res://Environment/Props/SM_Jar.obj" id="42_nn0iu"]
-[ext_resource type="ArrayMesh" uid="uid://duvw3x423fnod" path="res://Environment/Props/SM_Pagan_Shield.obj" id="43_m22um"]
 
 [sub_resource type="Resource" id="Resource_xlayc"]
 script = ExtResource("3_wtr34")
@@ -56,6 +53,22 @@ early_game_candidates = Array[ExtResource("2_0awwt")]([ExtResource("3_daxlh"), E
 mid_game_candidates = Array[ExtResource("2_0awwt")]([ExtResource("10_pt47q"), ExtResource("11_8crgg"), ExtResource("12_1ym6e"), ExtResource("13_0eas8"), ExtResource("14_xo6hk")])
 late_game_candidates = Array[ExtResource("2_0awwt")]([ExtResource("6_gtj2l"), ExtResource("7_a1y3t"), ExtResource("8_lyrh0"), ExtResource("9_xrhrc")])
 end_game_candidates = Array[ExtResource("2_0awwt")]([ExtResource("9_xrhrc")])
+
+[sub_resource type="Curve3D" id="Curve3D_xq7xu"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -6.809, 0.000751019, -0.380831, 0, 0, 0, 0, 0, 0, -6.60279, 6.05583e-05, 0.47207, 0, 0, 0, 0, 0, 0, -4.51989, -0.00621128, 8.34761, 0, 0, 0, 0, 0, 0, 0.74006, -0.00908804, 11.9609, 0, 0, 0, 0, 0, 0, 0.821038, -0.0100932, 13.2242, 0, 0, 0, 0, 0, 0, -1.09005, -0.00988674, 12.9651, 0, 0, 0, 0, 0, 0, -3.35215, 1.89597, 11.3964, 0, 0, -0.3, 0, 0, 0, -3.9, 2, 10.7),
+"tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, -0.139736)
+}
+point_count = 8
+up_vector_enabled = false
+
+[sub_resource type="Curve3D" id="Curve3D_6h4t0"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -3.9, 2, 10.7, 0, 0, 0, 0, 0, 0, -3.62701, 1.96377, 11.4876, 0, 0, 0, 0, 0, 0, -3.13361, 1.66022, 11.9864, 0, 0, 0, 0, 0, 0, -1.10137, 0.435186, 12.5789, 0, 0, 0, 0, 0, 0, -1.155, -0.125127, 11.582, 0, 0, 0, 0, 0, 0, -8.25, -0.133519, 4),
+"tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0)
+}
+point_count = 6
+up_vector_enabled = false
 
 [node name="Game" type="Node3D"]
 script = ExtResource("1_q5na8")
@@ -70,55 +83,14 @@ transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -12, 0, 0)
 [node name="OmniLight3D" parent="AssetZooScene" index="63"]
 light_size = 0.828
 
-[node name="OmniLight3D5" type="OmniLight3D" parent="AssetZooScene"]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 8.04342, 1.4026, -2.47684)
-light_color = Color(0.821126, 0.608511, 0.411029, 1)
-light_energy = 0.492
-light_size = 0.242
-shadow_blur = 3.828
-omni_range = 12.0
-
-[node name="OmniLight3D6" type="OmniLight3D" parent="AssetZooScene"]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 7.95024, 1.4026, 6.88621)
-light_color = Color(0.821126, 0.608511, 0.411029, 1)
-light_energy = 0.492
-light_size = 0.242
-shadow_blur = 3.828
-omni_range = 12.0
-
-[node name="SmBanner3" parent="AssetZooScene" index="92"]
+[node name="SmBanner3" parent="AssetZooScene" index="90"]
 material_override = ExtResource("41_pmghn")
 
-[node name="SmBanner10" parent="AssetZooScene" index="99"]
+[node name="SmBanner10" parent="AssetZooScene" index="97"]
 material_override = ExtResource("41_pmghn")
 
-[node name="SmShield" parent="AssetZooScene" index="107"]
+[node name="SmShield" parent="AssetZooScene" index="105"]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0.202813, 1.12097, -0.334828)
-
-[node name="SmCarpet" type="MeshInstance3D" parent="AssetZooScene"]
-transform = Transform3D(0.805723, 0, 0, 0, 0.5, 0, 0, 0, 0.78807, 3.05164, -0.0759698, 2.06875)
-material_override = ExtResource("41_pmghn")
-mesh = ExtResource("41_sa01w")
-
-[node name="SmJar" type="MeshInstance3D" parent="AssetZooScene"]
-transform = Transform3D(-0.243602, 0, 0.436644, 0, 0.5, 0, -0.436644, 0, -0.243602, 2.3647, 0.572936, -2.33738)
-material_override = ExtResource("41_pmghn")
-mesh = ExtResource("42_nn0iu")
-
-[node name="SmJar2" type="MeshInstance3D" parent="AssetZooScene"]
-transform = Transform3D(-0.243602, 0, 0.436644, 0, 0.5, 0, -0.436644, 0, -0.243602, 2.5086, 0.572936, -2.21889)
-material_override = ExtResource("41_pmghn")
-mesh = ExtResource("42_nn0iu")
-
-[node name="SmPaganShield2" type="MeshInstance3D" parent="AssetZooScene"]
-transform = Transform3D(0.205193, 0, 0.87567, 0, 0.89939, 0, -0.87567, 0, 0.205193, 5.03749, 1.16367, -3.72702)
-material_override = ExtResource("41_pmghn")
-mesh = ExtResource("43_m22um")
-
-[node name="SmPaganShield3" type="MeshInstance3D" parent="AssetZooScene"]
-transform = Transform3D(-3.93136e-08, 0, 0.89939, 0, 0.89939, 0, -0.89939, 0, -3.93136e-08, 1.69212, 1.89701, -3.1545)
-mesh = ExtResource("43_m22um")
-surface_material_override/0 = ExtResource("41_pmghn")
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(0.793353, 0, -0.608761, 0, 1, 0, 0.608761, 0, 0.793353, -5, 2.5, 12)
@@ -146,5 +118,17 @@ spot_attenuation = 0.3
 
 [node name="SpotLight3D3" type="SpotLight3D" parent="."]
 transform = Transform3D(-0.122337, 0, 0.992489, 0, 1, 0, -0.992489, 0, -0.122337, -4.60635, 1, 4.00594)
+
+[node name="SwordPath" type="Path3D" parent="."]
+curve = SubResource("Curve3D_xq7xu")
+
+[node name="PathFollow3D" type="PathFollow3D" parent="SwordPath"]
+transform = Transform3D(-0.971995, 0.000184917, -0.235002, -7.27596e-12, 1, 0.000786872, 0.235003, 0.000764836, -0.971994, -6.809, 0.000751019, -0.380831)
+
+[node name="ThronePath" type="Path3D" parent="."]
+curve = SubResource("Curve3D_6h4t0")
+
+[node name="PathFollow3D" type="PathFollow3D" parent="ThronePath"]
+transform = Transform3D(-0.944851, 0.0142194, -0.327191, 4.65661e-10, 0.999055, 0.0434183, 0.3275, 0.0410237, -0.94396, -3.9, 2, 10.7)
 
 [editable path="AssetZooScene"]
